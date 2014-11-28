@@ -6384,29 +6384,8 @@ ul.tag-label {
   overflow: hidden;
   display: inline-block;
   float: left;
-  margin: 0px 0.8em 0 0;
+  margin: 0px 0.8em 0.8em 0;
   padding: 0; }
-
-.fl-block .block-title {
-  background-color: #753f7f;
-  text-transform: uppercase;
-  color: white;
-  font-size: 1em;
-  letter-spacing: 1px;
-  border: none;
-  padding-top: 0.8em;
-  padding-bottom: 0.7em;
-  font-weight: 700;
-  margin-top: -1px; }
-
-.fl-block .block-title.naked {
-  background-color: white !important;
-  text-transform: none;
-  font-size: 1.4em;
-  letter-spacing: 0;
-  padding: 0.8em 1.08em 0 1em;
-  font-weight: 400;
-  margin: 0; }
 
 .fl-block .block-date {
   text-transform: uppercase;
@@ -6455,8 +6434,31 @@ ul.tag-label {
   background-color: #b05dbf; }
 
 .fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {
-  color: #753f7f; }
+  color: #753f7f !important; }
 
 .fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {
   color: white;
   display: block; }
+
+.fl-block .block-title {
+  background-color: #753f7f;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border: none;
+  padding-top: 0.8em;
+  padding-bottom: 0.7em;
+  font-weight: 700;
+  margin-top: -1px; }
+
+/*.fl-block .block-title.naked{
+  background-color:$white !important;text-transform: none;
+  font-size:1.4em;letter-spacing:0;
+  padding:0.8em 1.08em 0 1em;font-weight:400;margin:0
+}*/
+.block-text h4 a {
+  font-family: 'Flanders Art Sans Medium', sans-serif;
+  color: #753f7f !important;
+  font-size: 1.1em;
+  margin: -8px 0 0 0;
+  padding: 0; }
