@@ -1,4 +1,0 @@
-erfgoedstijl
-============
-
-Foundation erfgoedstijl
