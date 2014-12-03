@@ -77,82 +77,33 @@
 
 <!-- content -->
 
-
-<div class="row">
-
-
-  <div class="large-8 columns">
-      
-       <div class="panel">
-
- <h1>Content</h1> 
-  <img src="https://inventaris.onroerenderfgoed.be/afbeeldingen/173708?size=full">
+<!-- start -->
+<p class="text-center">type 2</p>
 
 
+    <div class="row">
+      <div class="large-12 columns">
 
-        <h2>Content</h2> 
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>  
+        <div class="panel">
 
-  <h3>Content</h3> 
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor fini bus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>  
+            <div class="row">
+            
+              <div class="large-8 medium-8 columns">
+                  <h2>Content </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tempus feugiat tortor, congue ornare tellus tempus ac. Suspendisse ac sagittis orci, at iaculis lectus. Integer et nunc vel ante dictum sollicitudin. Nam ut sapien ac quam aliquet fermentum et et velit. Aliquam in tincidunt sem. Phasellus molestie metus elit, in semper arcu rhoncus ut.</p>
+              </div>
 
-<ul>
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
+              <div class="large-4 medium-4 columns">
+                  <h3>Content </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              </div>
+                     
+            </div>
 
-</ul>
+         </div>
+
       </div>
-
-  </div>
-
-
-<div class="large-4 columns">
-      
-
-<!-- nieuws -->
-
-      <div class="fl-block style-2">
-
-        <h4 class="block-title field"><a href="#">Nieuws</a></h4>
-
-          <div class="field full news">
-             <a href="#">
-                <h5>Vlaamse overheid is werkgever van het jaar</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-          </div>
-
-      <div class="field full news">
-            <a href="#">
-            <figure><img src="https://inventaris.onroerenderfgoed.be/afbeeldingen/180002?size=small.png" width="90" alt="Alt descritpion" /></figure>
-            <h5>De stemmen zijn geteld</h5> 
-            <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-      </div>
-   
-      <div class="field full news">
-          <a href="#">
-          <h5>Huurpremie na 4 jaar wachten op sociale woning</h5> 
-          <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-          </a>
-      </div>
-
-    
-    <div class="field"><a class="more" href="#">toon alles  &rsaquo;</a></div>
-    
-
-</div>
-<!-- end nieuws -->
-
-
-
-
-  </div>
-
-
-</div>
-
+   </div>
 
 <!-- end content -->
 

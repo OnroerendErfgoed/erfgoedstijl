@@ -42,7 +42,7 @@ html, body {
 
 body {
   background: #f5F5F5;
-  color: #222;
+  color: #666666;
   padding: 0;
   margin: 0;
   font-family: "Flanders Art Sans", Arial, sans-serif;
@@ -5069,7 +5069,7 @@ dl dd {
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #666666;
   cursor: help; }
 
 abbr {
@@ -6175,11 +6175,6 @@ footer#footer-bottom .inner nav ul.lang-switch li {
     left: 10px; }
  }
 
-/*------------------------------------*\
-
-    FONTS
-  
-\*------------------------------------*/
 @font-face {
   font-family: "Flanders Art Sans Light";
   src: url("/fonts/FlandersArtSans-Light.eot");
@@ -6274,6 +6269,16 @@ h6 {
   font-size: 0.8em;
   float: right;
   margin-bottom: 20px; }
+
+.searchBox fieldset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em; }
+
+.searchBox fieldset input {
+  float: left; }
 
 li {
   list-style-type: none; }
@@ -6462,3 +6467,374 @@ ul.tag-label {
   font-size: 1.1em;
   margin: -8px 0 0 0;
   padding: 0; }
+
+/*------------------------------------*\
+
+    Only for demostration purposes
+    For this example we used FlexSlider, feel free to implement your own/other slider. It's the result that counts
+  
+\*------------------------------------*/
+/* standard declaration FlexSlider */
+.flexslider a:active, .flanders-slider a:focus {
+  outline: none; }
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.flanders-slider {
+  margin: 0;
+  padding: 0; }
+
+.flanders-slider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  height: 386px;
+  background-color: #39b9be; }
+
+.flanders-slider .slides img {
+  display: block; }
+
+.flanders-slider {
+  width: 556px;
+  max-width: 100%;
+  position: relative; }
+
+.flanders-slider ul {
+  padding: 0; }
+
+/* controls */
+ul.flex-direction-nav {
+  position: absolute;
+  bottom: 1.5em;
+  right: 1.2em;
+  list-style: none; }
+
+ul.flex-direction-nav li {
+  float: left; }
+
+ul.flex-direction-nav li a {
+  text-decoration: none; }
+
+ul.flex-direction-nav li a i {
+  display: block;
+  line-height: 38px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 2px;
+  color: #ffffff;
+  -moz-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+
+ul.flex-direction-nav li a.flex-prev i {
+  background-color: #379da1; }
+
+ul.flex-direction-nav li a.flex-next i {
+  background-color: #35878a; }
+
+ul.flex-direction-nav li a:hover i {
+  background-color: #ffffff;
+  color: #35878a; }
+
+/* inner content */
+.flanders-slider li footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5em 10em 1.5em 1.2em;
+  background-color: rgba(57, 185, 190, 0.76);
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff; }
+
+.flanders-slider li footer h4 {
+  color: #ffffff;
+  font-family: 'Flanders Art Sans Bold', sans-serif;
+  display: inline;
+  font-size: 1.2em; }
+
+.flanders-slider li h2 {
+  color: #ffffff;
+  font-family: 'Flanders Art Sans Light', sans-serif;
+  font-size: 3em;
+  padding: 0.7em 0.4em;
+  font-weight: 200; }
+
+/* counter */
+.slider-counter {
+  position: absolute;
+  bottom: 2em;
+  right: 7.2em;
+  z-index: 20;
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 'Flanders Art Sans Bold', sans-serif; }
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.table {
+  width: 100%;
+  margin-bottom: 18px; }
+
+.table th, .table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd; }
+
+.table th {
+  font-weight: bold;
+  font-family: 'Flanders Art Sans Bold', sans-serif; }
+
+.table thead th {
+  vertical-align: bottom; }
+
+.table thead:first-child tr th, .table thead:first-child tr td {
+  border-top: 0; }
+
+.table tbody + tbody {
+  border-top: 2px solid #ddd; }
+
+.table tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #f5f5f5; }
+
+.table.border tbody tr td, .table.border tr th {
+  border-right: 1px solid #DDDDDD; }
+
+.table.border tbody tr td:last-child {
+  border-right: 1px solid #DDDDDD; }
+
+/* Right align numbers for demo */
+.table.border tr td, .table.border tr th {
+  text-align: right; }
+
+.table.border tr td:first-child, .table.border tr th:first-child {
+  text-align: left; }
+
+ul.socialbox {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+  position: relative; }
+
+ul.socialbox:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+ul.socialbox > li {
+  float: left;
+  display: block;
+  margin-right: 0.4em;
+  line-height: 0; }
+
+ul.socialbox > li > a, ul.socialbox > li > span, ul.socialbox li i {
+  display: inline-block;
+  line-height: 2.4em;
+  height: 2.4em;
+  padding: 0 0.8em;
+  overflow: hidden;
+  color: #ffffff;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+ul.socialbox li i {
+  padding: 0;
+  display: inline;
+  float: none; }
+
+ul.socialbox li a:hover {
+  text-decoration: none; }
+
+ul.socialbox li.more span {
+  padding: 0 1.2em;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2) url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgOTMuMzMzIDkzLjMzMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTMuMzMzIDkzLjMzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNOTMuMzMzLDQxLjk4djkuMzY4SDUxLjM0OXY0MS45ODRoLTkuMzYzVjUxLjM0OEgwVjQxLjk4aDQxLjk4NlYwaDkuMzYzVjQxLjk4SDkzLjMzM3oiLz4NCjwvc3ZnPg0K') no-repeat center center; }
+
+ul.socialbox li.more span.open {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgOTMuMzMzIDEwMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTMuMzMzIDEwMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNOTMuMzMzLDQ2LjgxNnY5LjM2N0gwdi05LjM2N0g5My4zMzN6Ii8+DQo8L3N2Zz4NCg=='); }
+
+ul.socialbox li.toggle {
+  display: none; }
+
+ul.socialbox.open li.toggle {
+  display: block; }
+
+/* dropdown */
+ul.socialbox li ul {
+  display: none;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  position: absolute; }
+
+ul.socialbox li ul li {
+  padding: 0; }
+
+ul.socialbox li ul li a {
+  padding: 0 1em;
+  display: block; }
+
+ul.socialbox li ul li a i {
+  padding-right: 0.3em; }
+
+ul.socialbox li:hover ul {
+  display: block; }
+
+ul.socialbox li ul li a:hover {
+  background-color: #fbfbfb; }
+
+/* background colors */
+ul.socialbox > li.facebook > a {
+  background-color: #3567a6; }
+
+ul.socialbox > li.facebook > a:hover {
+  background-color: #255592; }
+
+ul.socialbox > li.twitter > a {
+  background-color: #2da5da; }
+
+ul.socialbox > li.twitter > a:hover {
+  background-color: #2690bf; }
+
+ul.socialbox > li.linkedin > a {
+  background-color: #007ab9; }
+
+ul.socialbox > li.linkedin > a:hover {
+  background-color: #006ca4; }
+
+ul.socialbox > li.mail > a {
+  background-color: #926da5; }
+
+ul.socialbox > li.mail > a:hover {
+  background-color: #7a588b; }
+
+ul.socialbox > li.print > a {
+  background-color: #888888; }
+
+ul.socialbox > li.print > a:hover {
+  background-color: #6e6e6e; }
+
+ul.socialbox li li.linkedin a, ul.socialbox li li.linkedin a i {
+  color: #007ab9; }
+
+ul.socialbox li li.mail a, ul.socialbox li li.mail a i {
+  color: #926da5; }
+
+ul.socialbox li li.print a, ul.socialbox li li.print a i {
+  color: #888888; }
+
+/* dropdown */
+ul.socialbox li ul {
+  display: none;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  position: absolute; }
+
+ul.socialbox li ul li {
+  padding: 0; }
+
+ul.socialbox li ul li a {
+  padding: 0 1em;
+  display: block; }
+
+ul.socialbox li ul li a i {
+  padding-right: 0.3em; }
+
+ul.socialbox.dropdown li.more:hover span {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgOTMuMzMzIDEwMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTMuMzMzIDEwMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNOTMuMzMzLDQ2LjgxNnY5LjM2N0gwdi05LjM2N0g5My4zMzN6Ii8+DQo8L3N2Zz4NCg=='); }
+
+ul.socialbox li:hover ul {
+  display: block; }
+
+ul.socialbox li ul li a:hover {
+  background-color: #fbfbfb; }
+
+/* background colors */
+ul.socialbox > li.facebook > a {
+  background-color: #3567a6; }
+
+ul.socialbox > li.twitter > a {
+  background-color: #2da5da; }
+
+ul.socialbox > li.linkedin > a {
+  background-color: #007ab9; }
+
+ul.socialbox > li.mail > a {
+  background-color: #926da5; }
+
+ul.socialbox > li.print > a {
+  background-color: #888888; }
+
+ul.socialbox li li.linkedin a, ul.socialbox li li.linkedin a i {
+  color: #007ab9; }
+
+ul.socialbox li li.mail a, ul.socialbox li li.mail a i {
+  color: #926da5; }
+
+ul.socialbox li li.print a, ul.socialbox li li.print a i {
+  color: #888888; }
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.table {
+  width: 100%;
+  margin-bottom: 18px; }
+
+.table th, .table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd; }
+
+.table th {
+  font-weight: bold;
+  font-family: 'Flanders Art Sans Bold', sans-serif; }
+
+.table thead th {
+  vertical-align: bottom; }
+
+.table thead:first-child tr th, .table thead:first-child tr td {
+  border-top: 0; }
+
+.table tbody + tbody {
+  border-top: 2px solid #ddd; }
+
+.table tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #f5f5f5; }
+
+.table.border tbody tr td, .table.border tr th {
+  border-right: 1px solid #DDDDDD; }
+
+.table.border tbody tr td:last-child {
+  border-right: 1px solid #DDDDDD; }
+
+/* Right align numbers for demo */
+.table.border tr td, .table.border tr th {
+  text-align: right; }
+
+.table.border tr td:first-child, .table.border tr th:first-child {
+  text-align: left; }

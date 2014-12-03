@@ -1,17 +1,5 @@
-// Foundation by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
 
 
-
-
-
-
-/*------------------------------------*\
-
-    FONTS
-  
-\*------------------------------------*/
 
 @font-face {
   font-family: "Flanders Art Sans Light";
@@ -59,6 +47,7 @@
 
 
 /* Headings */
+
 h1,h2,h3,h4,h5,h6 {line-height: 1.2em;font-weight:200;font-family: 'Flanders Art Sans Medium', sans-serif;}
 h4,h5 {font-family: 'Flanders Art Sans Light', sans-serif;font-weight:200;}
 h1{font-size:2.19em;color:$dark-purple !important}
@@ -98,11 +87,6 @@ $h3-font-reduction: rem-calc(5) !default;
 $h4-font-reduction: rem-calc(5) !default;
 $h5-font-reduction: 0 !default;
 $h6-font-reduction: 0 !default;
-
-
-
-
-
 
 
 
