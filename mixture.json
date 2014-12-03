@@ -11,8 +11,8 @@
     "oe_style",
     "assets"
   ],
-  "preprocessorScriptOutput": "assets/js",
-  "preprocessorStyleOutput": "assets/css",
+  "preprocessorScriptOutput": "static/js",
+  "preprocessorStyleOutput": "static/css",
   "projectDescription": "The most advanced responsive front-end framework in the world.",
   "projectName": "test2",
   "publishedId": null,
