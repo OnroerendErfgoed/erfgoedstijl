@@ -8,9 +8,9 @@
   "modelSource": null,
   "preprocessorLocations": [
     "bower_components/foundation/scss",
-    "oe_style",
-    "assets"
-  ],
+    "static/scss",
+    "static"
+    ],
   "preprocessorScriptOutput": "static/js",
   "preprocessorStyleOutput": "static/css",
   "projectDescription": "The most advanced responsive front-end framework in the world.",

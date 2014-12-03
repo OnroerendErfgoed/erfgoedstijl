@@ -1,4 +1,14 @@
-{% block content %} 
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Foundation 5</title>
+  		<link href="/static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<script src="/bower_components/foundation/js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		 
   
 
  <!-- header -->
@@ -33,7 +43,7 @@
 <a href="/">
 <h1>Beeldbank</h1>
 
-<img src="/img/OE-vlaanderen-logo.png" width="65">
+<img src="/static/img/pyoes/OE-vlaanderen-logo.png" width="65">
 
 <h2>Vlaanderen</h2>
 <h4>is Onroerend Erfgoed</h4>
@@ -272,4 +282,12 @@
         </div>
       </div>
     </div>
-{% endblock %}
+
+  		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/static/js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+</script>
+
+	</body>
+</html>
