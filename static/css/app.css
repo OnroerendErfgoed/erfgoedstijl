@@ -1490,12 +1490,12 @@ select {
       .breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {
         text-decoration: none; }
     .breadcrumbs > *.unavailable {
-      color: #999999; }
+      color: #000000; }
       .breadcrumbs > *.unavailable a {
-        color: #999999; }
+        color: #000000; }
       .breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:focus, .breadcrumbs > *.unavailable a:focus {
         text-decoration: none;
-        color: #999999;
+        color: #000000;
         cursor: default; }
     .breadcrumbs > *:before {
       content: "/";
@@ -3401,7 +3401,7 @@ label.error {
     margin-right: 6px;
     border-radius: 1000px; }
     .orbit-bullets li.active {
-      background: #999999; }
+      background: #000000; }
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
@@ -3449,7 +3449,7 @@ ul.pagination {
     ul.pagination li a, ul.pagination li button {
       display: block;
       padding: 0.0625rem 0.625rem 0.0625rem;
-      color: #999999;
+      color: #000000;
       background: none;
       border-radius: 3px;
       font-weight: normal;
@@ -3460,7 +3460,7 @@ ul.pagination {
       background: #e6e6e6; }
     ul.pagination li.unavailable a, ul.pagination li.unavailable button {
       cursor: default;
-      color: #999999; }
+      color: #000000; }
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
       background: transparent; }
     ul.pagination li.current a, ul.pagination li.current button {
@@ -3948,13 +3948,13 @@ dialog {
     font-family: "Flanders Art Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
-    color: #999999; }
+    color: #000000; }
     .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
       text-decoration: none;
-      color: #999999;
+      color: #000000;
       padding: 0.1875rem 1rem; }
       .sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
-        color: #737373; }
+        color: black; }
     .sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
       border-radius: 3px;
       font-weight: normal;
@@ -5170,7 +5170,7 @@ blockquote, blockquote p {
     content: ""; }
 
   pre, blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #000000;
     page-break-inside: avoid; }
 
   thead {
@@ -5358,7 +5358,7 @@ ul.off-canvas-list {
   ul.off-canvas-list li label {
     display: block;
     padding: 0.3rem 0.9375rem;
-    color: #999999;
+    color: #000000;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
@@ -5543,7 +5543,7 @@ ul.off-canvas-list {
     -webkit-backface-visibility: hidden; }
   .left-submenu .back > a {
     padding: 0.3rem 0.9375rem;
-    color: #999999;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     background: #444;
@@ -5595,7 +5595,7 @@ ul.off-canvas-list {
     -webkit-backface-visibility: hidden; }
   .right-submenu .back > a {
     padding: 0.3rem 0.9375rem;
-    color: #999999;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     background: #444;
@@ -5969,7 +5969,6 @@ th.hide-for-touch {
 .wrapper {
   background: white; }
 
-
 .logo-block {
   width: 410px;
   background: url(../img/pyoes/header-logo-bg.png) no-repeat;
@@ -6236,7 +6235,7 @@ h5 {
 
 h6 {
   font-size: 1em;
-  color: #999999 !important; }
+  color: #000000 !important; }
 
 .Searchbox {
   border-top: 5px solid #753f7f; }
