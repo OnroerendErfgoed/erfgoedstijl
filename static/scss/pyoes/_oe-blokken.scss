@@ -1,6 +1,6 @@
 
 //
-// OE custom blokken nieuws / 
+// OE custom blokken  
 //
 
 
@@ -31,7 +31,7 @@
 
 
 
-.fl-block .block-date{
+.fl-block .block-date {
   text-transform: uppercase;border:none;font-size:1em;background-color:$dark-purple;
   padding:0.75em 1.5em 0.65em;color:$white;
 }
@@ -56,12 +56,16 @@
 
 /* -- styles -- */
 
-.fl-block.style-1 .block-title, .fl-block.style-2 .block-title {background-color:$dark-purple;font-size:1em;margin:0;}
-.fl-block.style-3 .block-title {background-color:$light-purple;}
+.fl-block.style-1 .block-title, .fl-block.style-2 .block-title, .fl-block.style-3 .block-title {background-color:$dark-purple;font-size:1em;margin:0;color:$white !important}
+.fl-block.style-3 .block-title {background-color:$light-purple; color:$white !important}
 
 .fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:$dark-purple !important}
 
+
+
 .fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:$white;display:block}
+
+
 
 .fl-block .block-title {
   background-color:$dark-purple;text-transform: uppercase;
@@ -80,79 +84,6 @@
   color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;padding:0
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------*\
-
-    Only for demostration purposes
-    For this example we used FlexSlider, feel free to implement your own/other slider. It's the result that counts
-  
-\*------------------------------------*/
-
-/* standard declaration FlexSlider */
-.flexslider a:active,
-.flanders-slider a:focus  {outline: none;}
-.slides{margin: 0; padding: 0; list-style: none;}
-.flanders-slider {margin: 0; padding: 0;}
-.flanders-slider .slides > li {
-  display: none; -webkit-backface-visibility: hidden;
-  position: relative;height:386px;background-color:#39b9be;
-}
-.flanders-slider .slides img {display: block;}
-
-.flanders-slider{width:556px;max-width:100%;position: relative;}
-.flanders-slider ul{padding:0;}
-
-/* controls */
-ul.flex-direction-nav{position: absolute;bottom:1.5em;right:1.2em;list-style: none;}
-ul.flex-direction-nav li{float:left;} 
-ul.flex-direction-nav li a{text-decoration: none;} 
-ul.flex-direction-nav li a i{
-  display:block;line-height:38px;width:40px;
-  text-align:center;font-size:1.2em;
-  padding-bottom:2px;color:#ffffff;
-  -moz-transition: all 0.2s ease 0s;
-  -webkit-transition: all 0.2s ease 0s;
-  -o-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
-} 
-
-ul.flex-direction-nav li a.flex-prev i{background-color:#379da1;} 
-ul.flex-direction-nav li a.flex-next i{background-color:#35878a;} 
-ul.flex-direction-nav li a:hover i{background-color:#ffffff;color:#35878a;} 
-
-/* inner content */
-.flanders-slider li footer{
-  position: absolute;bottom:0;padding:1.5em 10em 1.5em 1.2em;
-  background-color:rgba(57,185,190,0.76);
-  width:100%;box-sizing: border-box;color:#ffffff;
-}
-.flanders-slider li footer h4{
-  color:#ffffff;font-family: 'Flanders Art Sans Bold', sans-serif;
-  display:inline;font-size:1.2em;
-}
-.flanders-slider li h2{
-  color:#ffffff;font-family: 'Flanders Art Sans Light', sans-serif;
-  font-size:3em;padding:0.7em  0.4em;font-weight:200;
-}
-
-/* counter */
-.slider-counter{
-  position: absolute;bottom:2em;right:7.2em;z-index:20;font-size:1em;
-  color:#ffffff;font-family: 'Flanders Art Sans Bold', sans-serif;  
-}
 
 
 

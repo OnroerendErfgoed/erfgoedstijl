@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Foundation 5</title>
+		<title>Erfgoedstijl</title>
   		{{ "static/css/app.css" | asset_url | stylesheet_tag }}
   		<script src="{{ "modernizr.js" | asset_url }}"></script>
 	</head>
@@ -11,7 +11,8 @@
         {% block header %}
             {% include "header" %}
         {% endblock %}
-		{% block content %}{% endblock %}
+		{% block content %}
+		{% endblock %}
         {% block footer %}
         {% endblock %}
   		{% include "scripts" %}

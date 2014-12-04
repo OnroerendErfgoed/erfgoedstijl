@@ -1,9 +1,12 @@
+
+
+
 footer#footer-bottom {clear: both;overflow: hidden;background:$white;border-top:5px solid $dark-purple;}
 footer#footer-bottom .inner nav ul{margin:1em 0;}
 footer#footer-bottom .inner nav > ul{float:left;width:25%;}
 footer#footer-bottom .inner nav ul li a{display:block;line-height:1em;padding:0.4em 0;font-size:0.875em;}
-footer#footer-bottom .inner nav ul li a:hover{color:#1d7d81;}
-footer#footer-bottom .inner nav ul li a.active{color:#1d7d81;font-family: 'Flanders Art Sans', sans-serif;}
+footer#footer-bottom .inner nav ul li a:hover{color:$black;}
+footer#footer-bottom .inner nav ul li a.active{color:$dark-purple;font-family: 'Flanders Art Sans', sans-serif;}
 footer#footer-bottom .inner article img{margin:auto 0 auto auto;display:block;}
 footer#footer-bottom .inner nav ul.lang-switch li{float:left;margin-right:0.5em;font-size:0.875em;}
 
