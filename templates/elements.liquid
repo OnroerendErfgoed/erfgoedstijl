@@ -329,20 +329,37 @@
 
 
 
-<br><br><br><br><br><br><br>
-
 <form>
   <div class="row">
+
     <div class="small-8 columns">
+
       <div class="row">
+
         <div class="small-3 columns">
-          <label for="right-label" class="right inline">Label</label>
+          <label for="label1" class="right inline">Naam</label>
         </div>
+
         <div class="small-9 columns">
-          <input type="text" id="right-label" placeholder="Inline Text Input">
+          <input type="text" id="label1" placeholder="Inline Text Input">
         </div>
+
       </div>
+
+        <div class="row">
+
+        <div class="small-3 columns">
+          <label for="label2" class="right inline">Voornaam</label>
+        </div>
+
+        <div class="small-9 columns">
+          <input type="text" id="label2" placeholder="Inline Text Input">
+        </div>
+
+      </div>
+
     </div>
+
   </div>
 </form>
 
@@ -363,6 +380,7 @@
 
 
 
+<br><br><br><br><br><br><br>
 
 
 <form>
@@ -432,14 +450,33 @@
   </div>
 </form>
 
+<div class="switch">
+  <input id="exampleCheckboxSwitch" type="checkbox">
+  <label for="exampleCheckboxSwitch"></label>
+</div> 
 
 
 
-<label>
-  Name
-  <input type="text" name="name">
-</label>
+<div class="switch">
+  <input id="exampleCheckboxSwitch" type="checkbox">
+  <label for="exampleCheckboxSwitch"></label>
+</div> 
 
+<!-- Using radio buttons – each switch turns off the other two -->
+<div class="switch small">
+  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label for="exampleRadioSwitch1"></label>
+</div> 
+
+<div class="switch radius">
+  <input id="exampleRadioSwitch2" type="radio" name="testGroup">
+  <label for="exampleRadioSwitch2"></label>
+</div> 
+
+<div class="switch round large">
+  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+  <label for="exampleRadioSwitch3"></label>
+</div>
 
 
 
