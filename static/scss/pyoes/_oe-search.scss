@@ -6,6 +6,8 @@
 		border-top:5px solid $dark-purple
 			}
 
+  .Searchbox_fieldset, .Searchbox_fieldset input  {border:none;padding:0;margin:0;line-height:16px}
+  
 
     .searchBox {
         position: relative;
@@ -52,17 +54,11 @@
     }
 
   .searchBox fieldset label {
- 
-     
-    
     }
 
  .searchBox fieldset input {
-   float:left;
-     
-    
+   float:left; 
     }
-
 
 
 

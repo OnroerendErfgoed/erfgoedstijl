@@ -6240,6 +6240,12 @@ h6 {
 .Searchbox {
   border-top: 5px solid #753f7f; }
 
+.Searchbox_fieldset, .Searchbox_fieldset input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 16px; }
+
 .searchBox {
   position: relative;
   padding: 0px; }
@@ -6326,11 +6332,72 @@ ul.tag-label {
 .top-bar {
   margin-bottom: 20px; }
 
+/*in elements page circles*/
+.circles {
+  margin: 0px auto; }
+
+.circles > div {
+  overflow: hidden;
+  float: left;
+  width: auto;
+  height: auto;
+  position: relative;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  background: #eee; }
+
+.circles > div > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.circles > div > div > div {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.circles > div > div > div > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+@media (max-width: 320px) {
+  .circles > div {
+    padding: 50%; }
+ }
+
+@media (min-width: 321px) and (max-width: 800px) {
+  .circles > div {
+    padding: 25%; }
+ }
+
+@media (min-width: 801px) {
+  .circles {
+    width: 800px; }
+
+  .circles > div {
+    padding: 12.5%; }
+ }
+
+.fl-block {
+  margin: 0 0 20px 0; }
+
 .fl-block .fl-block.no-gap {
   padding: 0; }
 
 .fl-block .field {
   padding: 1.6em 1.4em 1.2em 1.4em;
+  border-bottom: 1px solid #e4e4e4;
+  overflow: hidden;
+  background-color: white;
+  position: relative; }
+
+.fl-block .fullfeed {
+  padding: 1em 1.4em 0.8em 1.4em;
   border-bottom: 1px solid #e4e4e4;
   overflow: hidden;
   background-color: white;
@@ -6349,15 +6416,34 @@ ul.tag-label {
   color: #5e5e5e;
   font-size: 0.8em; }
 
+.fl-block .field.fullfeed > a {
+  display: block;
+  padding: 0;
+  color: #5e5e5e;
+  font-size: 0.8em; }
+
 .fl-block .field.full a:hover {
   background-color: #fbfbfb;
   text-decoration: underline; }
 
-.fl-block .field.full a h5 {
+.fl-block .field.fullfeed a:hover {
+  background-color: #fbfbfb;
+  text-decoration: underline; }
+
+.fl-block .field.full a h5, .fl-block .field.fullfeed a h5 {
   text-transform: uppercase;
   font-family: 'Flanders Art Sans Medium', sans-serif;
-  line-height: 1.2em;
+  line-height: 1em;
   font-size: 1.2em; }
+
+.fl-block .field.fullfeed a h5 {
+  font-size: 1.2em;
+  float: left;
+  margin-right: 10px; }
+
+.fl-block .field.fullfeed a p {
+  font-size: 1.1em;
+  float: left; }
 
 .fl-block .field.full a:hover h5 {
   text-decoration: underline; }
@@ -6458,11 +6544,16 @@ ul.tag-label {
   font-weight: 700;
   margin-top: -1px; }
 
-/*.fl-block .block-title.naked{
-  background-color:$white !important;text-transform: none;
-  font-size:1.4em;letter-spacing:0;
-  padding:0.8em 1.08em 0 1em;font-weight:400;margin:0
-}*/
+.fl-block .block-title.naked {
+  background-color: white !important;
+  text-transform: none;
+  color: #753f7f !important;
+  font-size: 1.4em;
+  letter-spacing: 0;
+  padding: 0.8em 1.08em 0 1em;
+  font-weight: 400;
+  margin: 0; }
+
 .block-text h4 a {
   font-family: 'Flanders Art Sans Medium', sans-serif;
   color: #753f7f !important;

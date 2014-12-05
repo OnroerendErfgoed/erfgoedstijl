@@ -27,3 +27,58 @@ ul.tag-label  {margin:10px 0 0 0;}
 
 
 .top-bar {margin-bottom:20px}
+
+
+
+/*in elements page circles*/
+
+
+.circles{
+    margin:0px auto;
+}
+.circles > div {
+    overflow:hidden;
+    float:left;
+    width:auto;
+    height:auto;
+    position: relative;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -khtml-border-radius: 50%;
+    background:#eee;
+}
+
+.circles > div > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.circles > div > div > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.circles > div > div > div > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (max-width: 320px)
+{
+    .circles > div {padding: 50%;}
+}
+
+@media (min-width: 321px) and (max-width: 800px)
+{
+    .circles > div {padding: 25%;}
+}
+
+@media (min-width: 801px)
+{
+    .circles{width:800px}
+    .circles > div {padding: 12.5%;}
+}
