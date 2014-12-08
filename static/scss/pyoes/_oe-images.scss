@@ -5,3 +5,61 @@
 
 figure {margin:0 0 20px 0}
 figcaption {margin:0 0 20px 0;border-bottom:1px solid $light-gray;padding:10px 0;font-size: $small-font-size;}
+
+
+
+
+
+//slider 
+
+.flexslider a:active,
+.flanders-slider a:focus  {outline: none;}
+.slides{margin: 0; padding: 0; list-style: none;}
+.flanders-slider {margin: 0; padding: 0;}
+.flanders-slider .slides > li {
+  display: none; -webkit-backface-visibility: hidden;
+  position: relative;height:386px;background-color:#39b9be;
+}
+.flanders-slider .slides img {display: block;}
+
+.flanders-slider{width:556px;max-width:100%;position: relative;}
+.flanders-slider ul{padding:0;}
+
+/* controls */
+ul.flex-direction-nav{position: absolute;bottom:1.5em;right:1.2em;list-style: none;}
+ul.flex-direction-nav li{float:left;} 
+ul.flex-direction-nav li a{text-decoration: none;} 
+ul.flex-direction-nav li a i{
+  display:block;line-height:38px;width:40px;
+  text-align:center;font-size:1.2em;
+  padding-bottom:2px;color:#ffffff;
+  -moz-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+} 
+
+ul.flex-direction-nav li a.flex-prev i{background-color:#379da1;} 
+ul.flex-direction-nav li a.flex-next i{background-color:#35878a;} 
+ul.flex-direction-nav li a:hover i{background-color:#ffffff;color:#35878a;} 
+
+/* inner content */
+.flanders-slider li footer{
+  position: absolute;bottom:0;padding:1.5em 10em 1.5em 1.2em;
+  background-color:rgba(57,185,190,0.76);
+  width:100%;box-sizing: border-box;color:#ffffff;
+}
+.flanders-slider li footer h4{
+  color:#ffffff;font-family: 'Flanders Art Sans Bold', sans-serif;
+  display:inline;font-size:1.2em;
+}
+.flanders-slider li h2{
+  color:#ffffff;font-family: 'Flanders Art Sans Light', sans-serif;
+  font-size:3em;padding:0.7em  0.4em;font-weight:200;
+}
+
+/* counter */
+.slider-counter{
+  position: absolute;bottom:2em;right:7.2em;z-index:20;font-size:1em;
+  color:#ffffff;font-family: 'Flanders Art Sans Bold', sans-serif;  
+}

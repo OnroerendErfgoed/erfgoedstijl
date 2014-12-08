@@ -14,40 +14,39 @@
 
   <div class="row">
     <div class="large-12 ">
-        <input type="text" placeholder="naam" />
+        <input type="text" placeholder="naam" class="error" />
+        <small class="error">Gelieve onderstaand veld correct in te vullen</small>
         <input type="text" placeholder="voornaam" />
         <input type="text" placeholder="straat" />
+        <input type="text" placeholder="gemeente" name="name" aria-describedby="nameHelpText">
+        <p id="nameHelpText"> Geef uw postcode of gemeente in</p>
     </div>
   </div>
 
  
   <div class="row">
-    <div class="large-12 ">
+    <div class="large-12 columns">
       
-      
-    <div class="large-4 columns">
+
+
+
+<div class="row">
+     
+    <div class="large-4 medium-4">
         <input type="text" placeholder="telefoonnummer" />
-        <small>vb 000 00 00 00</small>
-    </div>
+        <p id="nameHelpText">vb 000 00 00 00</p>
 
-    <div class="row">
-      <div class="large-4 columns">
+    </div>            
+
+    <div class="large-4 medium-4">
          <input type="text" placeholder="postcode" />
     </div>
 
-    <div class="row">
-      <div class="large-4 columns">
-         <input type="text" placeholder="postcode" />
+    <div class="large-4 medium-4">
+          <input type="text" placeholder="postcode" />
     </div>
-
-    </div>
-  </div>
-
-
-
-
-
-
+                     
+</div>
 
 
 
@@ -66,6 +65,8 @@
   </div>
 
 
+
+
   <div class="row">
 
     <div class="large-6 columns">
@@ -73,6 +74,7 @@
       <input type="radio" name="" value="" id="radio1"><label for="radio1">Radio 1</label>
       <input type="radio" name="" value="" id="radio2"><label for="radio2">Radio 2</label>
     </div>
+
     <div class="large-6 columns">
       <label>Label bij checkbox</label>
       <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
@@ -107,130 +109,67 @@
       </label>
     </div>
   </div>
-</form>
+
+
+
+<div class="row">
+   <div class="large-12 columns">
+          <div class="panel">
+              <form>
+                <fieldset>
+                 <legend>Fieldset Legend</legend>
+                  <label><!--Naam -->
+                  <input type="text" placeholder="Naam...">
+                  </label>
+                  <label>
+                  <input type="text" placeholder="Voornaam...">
+                  </label>
+                  </fieldset>
+              </form>
+          </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="switch small">
+
+  <input id="exampleCheckboxSwitch" type="checkbox">
+  <label for="exampleCheckboxSwitch"></label>
+</div> 
+
+
+<!-- Using radio buttons – each switch turns off the other two -->
+
+<div class="switch small">
+  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label for="exampleRadioSwitch1"></label>
+</div> 
+
+
+
+
+
+
+
+<label id="ageLabel">Slider</label>
+<div class="range-slider" data-slider>
+  <span class="range-slider-handle" role="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText"></span>
+  <span class="range-slider-active-segment"></span>
+  <input type="hidden">
+</div>
+
 
 
 <a href="#" class="button [tiny small large]">Default Button</a>
 
 <a href="#" class="button disabled [tiny small large]">Disabled Button</a>
 
+</form>
 <!-- end form type 1 -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br>
-
-
-<form>
-  <fieldset>
-    <legend>Fieldset Legend</legend>
-
-    <label>Input Label
-      <input type="text" placeholder="Inputs and other form elements go inside...">
-    </label>
-  </fieldset>
-</form>
-
-
-
-
-
-
-
-<div class="switch">
-  <input id="exampleCheckboxSwitch" type="checkbox">
-  <label for="exampleCheckboxSwitch"></label>
-</div> 
-
-
-
-<div class="switch">
-  <input id="exampleCheckboxSwitch" type="checkbox">
-  <label for="exampleCheckboxSwitch"></label>
-</div> 
-
-<!-- Using radio buttons – each switch turns off the other two -->
-<div class="switch small">
-  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
-  <label for="exampleRadioSwitch1"></label>
-</div> 
-
-<div class="switch radius">
-  <input id="exampleRadioSwitch2" type="radio" name="testGroup">
-  <label for="exampleRadioSwitch2"></label>
-</div> 
-
-<div class="switch round large">
-  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
-  <label for="exampleRadioSwitch3"></label>
-</div>
-
-
-
-<label>
-  Name
-  <input type="text" name="name" aria-describedby="nameHelpText">
-</label>
-<p id="nameHelpText">Enter your name.</p>
-
-
-
-ERROR
-
-
-<form>
-  <div class="row">
-    <div class="large-6 columns">
-      <label class="error">Error
-        <input type="text" class="error" />
-      </label>
-      <small class="error">Invalid entry</small>
-    </div>
-    <div class="large-6 columns error">
-      <label>Another Error
-        <input type="text" />
-      </label>
-      <small class="error">Invalid entry</small>
-    </div>
-  </div>
-  <textarea class="error" placeholder="Message..."></textarea>
-  <small class="error">Invalid entry</small>
-</form>
-
-
-
-
-
-
-
-Label help text
-
-
-<label> Name <input type="text" name="name" aria-describedby="nameHelpText"></label>
-<p id="nameHelpText">Enter your name.</p>
-
-
-
-Label custom inputs
-
-<label id="ageLabel">Age</label>
-<div class="range-slider" data-slider>
-  <span class="range-slider-handle" role="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText"></span>
-  <span class="range-slider-active-segment"></span>
-  <input type="hidden">
-</div>
-<p id="ageHelpText">How old are you?</p>
 
 

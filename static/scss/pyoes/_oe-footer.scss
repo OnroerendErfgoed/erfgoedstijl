@@ -4,6 +4,7 @@
 footer#footer-bottom {clear: both;overflow: hidden;background:$white;border-top:5px solid $dark-purple;}
 footer#footer-bottom .inner nav ul{margin:1em 0;}
 footer#footer-bottom .inner nav > ul{float:left;width:25%;}
+footer#footer-bottom .inner nav ul li {list-style-type:none}
 footer#footer-bottom .inner nav ul li a{display:block;line-height:1em;padding:0.4em 0;font-size:0.875em;}
 footer#footer-bottom .inner nav ul li a:hover{color:$black;}
 footer#footer-bottom .inner nav ul li a.active{color:$dark-purple;font-family: 'Flanders Art Sans', sans-serif;}
