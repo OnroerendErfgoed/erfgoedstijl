@@ -1,10 +1,18 @@
 
+//
+// OE searchbox 
+//
 
 
 
 	.Searchbox {
 		border-top:5px solid $dark-purple
 			}
+
+  .Searchbox form {
+    margin-top:25px
+      }
+
 
   .Searchbox_fieldset, .Searchbox_fieldset input  {border:none;padding:0;margin:0;line-height:16px}
   
@@ -46,20 +54,19 @@
     }
 
   
-
    .searchBox fieldset {
    background:none;border:none;padding:0;margin:0;
-      font-size:0.8em;
-    
+   font-size:0.8em;
     }
 
-  .searchBox fieldset label {
-    }
 
  .searchBox fieldset input {
    float:left; 
     }
 
+ .searchBox h3 {
+   padding-bottom:60px;border:1px solid #C03
+    }
 
 
 

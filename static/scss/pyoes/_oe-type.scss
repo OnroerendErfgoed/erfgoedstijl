@@ -46,16 +46,18 @@
 }
 
 
+
+
 /* Headings */
 
 h1,h2,h3,h4,h5,h6 {line-height: 1.2em;font-weight:200;font-family: 'Flanders Art Sans Medium', sans-serif;}
-h4,h5 {font-family: 'Flanders Art Sans Light', sans-serif;font-weight:200;}
+h4,h5,h6 {font-family: 'Flanders Art Sans Light', sans-serif;font-weight:200;}
 h1{font-size:2.19em;color:$dark-purple !important}
-h2{font-size:1.88em;color:$jet !important}
+h2{font-size:1.88em;color:$jet !important;padding:10px 0 0 0}
 h3{font-size:1.56em;color:$dark-purple !important}
 h4{font-size:1.25em;color:$light-purple !important}
 h5{font-size:1.13em;color:$mid-purple !important}
-h6{font-size:1em;color:$aluminum !important}
+h6{font-size:1em;color:$steel !important;padding:5px 0}
 
 
 

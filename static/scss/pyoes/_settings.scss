@@ -63,10 +63,11 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-// $base-font-size: 100%;
 
-// The $base-font-size is 100% while $base-line-height is 150%
- $base-line-height: 150%;
+$base-font-size: 100%;
+
+// The $base-font-size is 100% while $base-line-height is 10%
+ $base-line-height: 140%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
@@ -166,6 +167,10 @@ $jet            : #333333 !default;
 $ghost          : #FAFAFA;
 $aluminum       : #efefef;
 
+// OE specific
+
+$fresh-blue     : #2da3ce;
+$gray-blue      : #86abbe;
 
 
 
@@ -284,8 +289,8 @@ $small-font-size: 80%;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
+$paragraph-font-size: 1rem;
+$paragraph-line-height: 1.4;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -330,11 +335,12 @@ $small-font-size: 80%;
 
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 2px solid $mid-purple;
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
+
 
 // Acronym styles
 // $acronym-underline: 1px dotted $gainsboro;
@@ -444,26 +450,26 @@ $small-font-size: 80%;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
-// $crumb-side-padding: rem-calc(12);
+$crumb-side-padding: rem-calc(14);
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
-// $crumb-border-size: 1px;
+ $crumb-border-size: 0px;
 // $crumb-border-style: solid;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
-// $crumb-font-size: rem-calc(11);
+$crumb-font-size: rem-calc(13);
 // $crumb-font-color: $primary-color;
-// $crumb-font-color-current: $oil;
-// $crumb-font-color-unavailable: $aluminum;
+$crumb-font-color-current: $dark-gray;
+$crumb-font-color-unavailable: $silver;
 // $crumb-font-transform: uppercase;
 // $crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: $base;
-// $crumb-slash: "/";
+$crumb-slash: "›";
 
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -689,12 +695,12 @@ $small-font-size: 80%;
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
 // $fieldset-border-width: 1px;
-// $fieldset-border-color: $gainsboro;
+ $fieldset-border-color: $silver;
 // $fieldset-padding: rem-calc(20);
 // $fieldset-margin: rem-calc(18 0);
 
 // We use these to style the legends when you use them
-// $legend-bg: $white;
+$legend-bg: none;
 // $legend-font-weight: $font-weight-bold;
 // $legend-padding: rem-calc(0 3);
 
@@ -711,13 +717,14 @@ $small-font-size: 80%;
 // $input-number-spinners: true;
 
 // We use these to style the error states for inputs and labels
-// $input-error-message-padding: rem-calc(6 9 9);
-// $input-error-message-top: -1px;
-// $input-error-message-font-size: rem-calc(12);
-// $input-error-message-font-weight: $font-weight-normal;
-// $input-error-message-font-style: italic;
-// $input-error-message-font-color: $white;
-// $input-error-message-font-color-alt: $oil;
+
+ $input-error-message-padding: rem-calc(3 6 6);
+ $input-error-message-top: -1px;
+ $input-error-message-font-size: rem-calc(12);
+ $input-error-message-font-weight: $font-weight-normal;
+ $input-error-message-font-style: normal;
+ $input-error-message-font-color: $alert-color;
+ $input-error-message-font-color-alt: $light-purple;
 
 // We use this to style the glowing effect of inputs when focused
 // $input-include-glowing-effect: true;
@@ -725,8 +732,10 @@ $small-font-size: 80%;
 // $glowing-effect-color: $input-focus-border-color;
 
 // Select variables
-// $select-bg-color: $ghost;
-// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+$select-bg-color: $white;
+$select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+
+
 
 // 12. Icon Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -977,18 +986,18 @@ $small-font-size: 80%;
 // We use these to set the list-item properties
 // $pagination-li-float: $default-float;
 // $pagination-li-height: rem-calc(24);
-// $pagination-li-font-color: $jet;
-// $pagination-li-font-size: rem-calc(14);
-// $pagination-li-margin: rem-calc(5);
+$pagination-li-font-color: $dark-purple;
+$pagination-li-font-size: rem-calc(14);
+$pagination-li-margin: rem-calc(5);
 
 // We use these for the pagination anchor links
 // $pagination-link-pad: rem-calc(1 10 1);
-// $pagination-link-font-color: $aluminum;
-// $pagination-link-active-bg: scale-color($white, $lightness: -10%);
+$pagination-link-font-color: $light-purple;
+$pagination-link-active-bg: scale-color($white, $lightness: -10%);
 
 // We use these for disabled anchor links
 // $pagination-link-unavailable-cursor: default;
-// $pagination-link-unavailable-font-color: $aluminum;
+$pagination-link-unavailable-font-color: $silver;
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
@@ -1258,7 +1267,7 @@ $panel-bg: scale-color($white, $lightness: 95%);
 // We use this to control the definition
 // $sub-nav-font-family: $body-font-family;
 // $sub-nav-font-size: rem-calc(14);
-// $sub-nav-font-color: $aluminum;
+$sub-nav-font-color: $light-purple;
 // $sub-nav-font-weight: $font-weight-normal;
 // $sub-nav-text-decoration: none;
 // $sub-nav-padding: rem-calc(3 16);
@@ -1367,7 +1376,7 @@ $tabs-navigation-font-size: rem-calc(14);
 // $tabs-vertical-navigation-margin-bottom: 1.25rem;
 
 // custon background 
-.tabs-content {background: $light-gray;padding:5px 10px}
+.tabs-content {background:$light-gray;padding:5px 10px;border:1px solid $dark-purple}
 
 
 // 32. Thumbnails
@@ -1424,7 +1433,7 @@ $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
-// $topbar-margin-bottom: 0;
+$topbar-margin-bottom: 20px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;

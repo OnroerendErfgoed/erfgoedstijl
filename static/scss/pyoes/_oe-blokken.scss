@@ -7,11 +7,8 @@
 .fl-block  {margin: 0 0 20px 0}
 .fl-block .fl-block.no-gap {padding:0}
 
-.fl-block .field{padding:1.6em 1.4em 1.2em 1.4em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
+.fl-block .field {padding:1.6em 1.4em 1.2em 1.4em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
 
-
-
-.fl-block .fullfeed{padding:1em 1.4em 0.8em 1.4em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
 
 
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
@@ -21,16 +18,11 @@
 .fl-block .field.full {padding:0;}
 
 .fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.2em 1.4em;color:#5e5e5e;font-size:0.8em;}
-.fl-block .field.fullfeed > a {display:block;padding:0;color:#5e5e5e;font-size:0.8em;}
 
-
-.fl-block .field.full a:hover{background-color:#fbfbfb;text-decoration: underline;}
-.fl-block .field.fullfeed a:hover{background-color:#fbfbfb;text-decoration: underline;}
+.fl-block .field.full a:hover{background-color:#fbfbfb;text-decoration: none;}
 
 .fl-block .field.full a h5, .fl-block .field.fullfeed a h5 {text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1em;font-size:1.2em;}
 
-.fl-block .field.fullfeed a h5 {font-size:1.2em;float:$default-float;margin-right:10px}
-.fl-block .field.fullfeed a p {font-size:1.1em;float:$default-float;}
 .fl-block .field.full a:hover h5{text-decoration: underline;}
 
 
@@ -62,18 +54,25 @@
 
 
 
-
-
-
-
 /* -- RSS -- */
-.fl-block .field.full.rss a{padding:0.6em 2.6em 0.4em 1.4em;}
+.fl-block .field.full.rss a{padding:0.6em 1.4em 0.4em 1.4em;}
 .fl-block .field.full.rss a h5{float:left;margin-right:0.4em;}
 .fl-block .field.full.rss a .posted{
   position: absolute;right:1em;font-size:1.15em;line-height:1em;
-  color:#dddddd;font-family: 'Flanders Art Sans Medium',sans-serif;
+  color:$gray;font-family: 'Flanders Art Sans Medium',sans-serif;
   top:50%;margin-top:-0.5em;
 }
+
+/* -- Downloads -- */
+.fl-block .field.full.download a{padding:0.6em 1.4em 0.4em 1.4em;}
+.fl-block .field.full.download a h5{float:left;margin-right:0.4em;}
+.fl-block .field.full.download a .posted{
+  position: absolute;right:1em;font-size:1.15em;line-height:1em;
+  color:$gray;font-family: 'Flanders Art Sans Medium',sans-serif;
+  top:50%;margin-top:-0.5em;
+}
+
+
 
 
 
@@ -90,18 +89,18 @@
 
 
 
-.fl-block .block-title {
+.fl-block .block-title, .fl-block .block-title.naked {
   background-color:$dark-purple;text-transform: uppercase;
   font-size:1em;letter-spacing:1px;border:none;
   padding-top:0.8em;padding-bottom:0.7em;font-weight:700;margin-top:-1px
 }
 
 
-.fl-block .block-title.naked{
-  background-color:$white !important;text-transform: none;color:$dark-purple !important;
-  font-size:1.4em;letter-spacing:0;
-  padding:0.8em 1.08em 0 1em;font-weight:400;margin:0
+.fl-block .block-title.naked {
+  background-color:$white !important;color:$dark-purple !important;padding-top:0.4em;padding-bottom:0;
 }
+
+
 
 .block-text h4 a {font-family: 'Flanders Art Sans Medium',sans-serif;
   color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;padding:0
