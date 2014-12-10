@@ -9,14 +9,15 @@
 li {list-style-type:none}
 
 // li disk
-ul.disk {margin:0}
+ul.disk {margin:0;}
 .disk li:before {
     content: "• ";float:left;
     color: $fresh-blue;padding:0 10px 0 0;margin:0;clear:both
 }
 
-ul.disk li a {color:$dark-purple !important;float:left; }
-ul.disk li a:hover {color:$light-purple !important }
+ul.disk li a {color:$dark-purple !important;float:left; text-decoration:underline; }
+
+ul.disk li a:hover {color:$light-purple !important ; text-decoration:none}
 
 
 dt {font-family: $font-family-bold-serif;font-weight:700;}
@@ -25,8 +26,8 @@ dl {}
 
 b, strong {font-family: $font-family-bold-serif;font-weight:700;}
 
-h4 > em {padding:5px 0 10px 0;display:block;line-height:1.3em}
-
+h4 > em {padding:5px 0 10px 0;display:block;font-size:1.3em;line-height:1.3em}
+article > h1 {padding-bottom:18px;}
 
 // beeldbank caption info detail image and tags
 
@@ -43,6 +44,8 @@ ul.tag-label  {margin:10px 0 0 0;}
 
 .tag-label li a  {text-decoration:none !important;color:$black}
 .tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
+
+
 
 
 
@@ -66,12 +69,10 @@ select {height:42px}
     margin:20px auto;
 }
 
-
-
 .circles > div {
     overflow:hidden;
     float:left;
-width:auto;
+    width:auto;
     height:auto;
     position: relative;
     border-radius:50%;

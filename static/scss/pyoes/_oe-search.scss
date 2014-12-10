@@ -4,7 +4,6 @@
 //
 
 
-
 	.Searchbox {
 		border-top:5px solid $dark-purple
 			}
@@ -13,23 +12,22 @@
     margin-top:25px
       }
 
-
   .Searchbox_fieldset, .Searchbox_fieldset input  {border:none;padding:0;margin:0;line-height:16px}
-  
-
-    .searchBox {
+  .Searchbox_fieldset select  {width:95%}
+    
+  .searchBox {
         position: relative;
         padding: 0px;
     }
 
 
-    .searchBox input {
+  .searchBox input {
         box-sizing: border-box;
         width: 100%;
         padding: 20px;
     }
 
-    .searchBox button {
+  .searchBox button {
         padding:12px 30px;
         position: absolute;
         top: 0px;
@@ -63,6 +61,7 @@
  .searchBox fieldset input {
    float:left; 
     }
+
 
  .searchBox h3 {
    padding-bottom:60px;border:1px solid #C03

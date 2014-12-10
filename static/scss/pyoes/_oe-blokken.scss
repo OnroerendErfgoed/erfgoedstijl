@@ -4,12 +4,12 @@
 //
 
 
-.fl-block  {margin: 0 0 20px 0}
+.fl-block  {margin: 0 0 30px 0}
 .fl-block .fl-block.no-gap {padding:0}
 
 .fl-block .field {padding:1.6em 1.4em 1.2em 1.4em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
 
-
+.fl-block .fl-block.no-gap{padding:0;}
 
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
 
@@ -21,9 +21,25 @@
 
 .fl-block .field.full a:hover{background-color:#fbfbfb;text-decoration: none;}
 
-.fl-block .field.full a h5, .fl-block .field.fullfeed a h5 {text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1em;font-size:1.2em;}
-
+.fl-block .field.full a h5, .fl-block .field.fullfeed a h5, .largeimagefield a h5{ text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1.3em;font-size:1.2em;}
 .fl-block .field.full a:hover h5{text-decoration: underline;}
+
+
+
+// flanders-block-large home
+
+.fl-block-largeimage {text-align:center}
+.fl-block-largeimage img {margin:10px 0; height:150px;border-radius:50%;width:180px;height:180px}
+.fl-block-largeimage a h5 {text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1.3em;font-size:1em;}
+
+.fl-block-largeimage .posted {
+  font-size:1em;line-height:1em;
+  color:$silver;
+  margin-top:-0.5em;
+}
+
+
+
 
 
 
@@ -39,7 +55,6 @@
 .fl-block .field figure {overflow:hidden;display:inline-block;float:$default-float;margin:0px 0.8em 0.8em 0;padding:0}
 
 
-
 .fl-block .block-date {
   text-transform: uppercase;border:none;font-size:1em;background-color:$dark-purple;
   padding:0.75em 1.5em 0.65em;color:$white;
@@ -52,25 +67,20 @@
 
 
 
-
-
 /* -- RSS -- */
+
 .fl-block .field.full.rss a{padding:0.6em 1.4em 0.4em 1.4em;}
 .fl-block .field.full.rss a h5{float:left;margin-right:0.4em;}
-.fl-block .field.full.rss a .posted{
-  position: absolute;right:1em;font-size:1.15em;line-height:1em;
-  color:$gray;font-family: 'Flanders Art Sans Medium',sans-serif;
+.fl-block .field.full.rss a .posted {
+  position: absolute;right:1em;font-size:1em;line-height:1em;
+  color:$silver;
   top:50%;margin-top:-0.5em;
 }
 
+
 /* -- Downloads -- */
-.fl-block .field.full.download a{padding:0.6em 1.4em 0.4em 1.4em;}
-.fl-block .field.full.download a h5{float:left;margin-right:0.4em;}
-.fl-block .field.full.download a .posted{
-  position: absolute;right:1em;font-size:1.15em;line-height:1em;
-  color:$gray;font-family: 'Flanders Art Sans Medium',sans-serif;
-  top:50%;margin-top:-0.5em;
-}
+
+.fl-block .field.full.download a {padding:0.8em 1.4em 0.9em 1.4em;font-size:1em}
 
 
 
@@ -83,30 +93,41 @@
 
 .fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:$dark-purple !important}
 
-
-
 .fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:$white;display:block}
-
-
 
 .fl-block .block-title, .fl-block .block-title.naked {
   background-color:$dark-purple;text-transform: uppercase;
-  font-size:1em;letter-spacing:1px;border:none;
-  padding-top:0.8em;padding-bottom:0.7em;font-weight:700;margin-top:-1px
+  font-size:0.8em;letter-spacing:1px;border:none;
+  padding-top:0.5em;padding-bottom:0.5em;font-weight:700;margin-top:-1px
 }
-
 
 .fl-block .block-title.naked {
   background-color:$white !important;color:$dark-purple !important;padding-top:0.4em;padding-bottom:0;
 }
 
-
+.block-text h4 {font-family: 'Flanders Art Sans Medium',sans-serif;
+  color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;
+}
 
 .block-text h4 a {font-family: 'Flanders Art Sans Medium',sans-serif;
   color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;padding:0
 }
 
 
+/* -- social -- */
 
+.fl-block .field.social > a{font-size:1em;}
+.fl-block .field.social i.fa{float:none;font-size:1.6em;margin:0 1em 0 0.4em;display:inline-block;line-height:1em;}
+.fl-block .fl-block{border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;}
+.fl-block .fl-block .field.full > a{padding:2em 0 0.5em;text-align: center;font-size:0.8em;}
+.fl-block .fl-block .field.full > a i{margin:0;font-size:2.3em;display:block;}
+
+.fl-block .field.social > a{font-family: 'Flanders Art Sans Medium', sans-serif;font-weight:400;}
+.fl-block .field.social > a:hover{text-decoration: none;}
+
+.fl-block .field.social.twitter > a{color:$soc-twitter ;}
+.fl-block .field.social.facebook > a{color:$soc-facebook;}
+.fl-block .field.social.mail > a{color:$soc-mail;}
+.fl-block .field.social.linkedin > a{color:$soc-linkedin;}
 
 
