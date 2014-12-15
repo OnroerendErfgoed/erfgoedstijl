@@ -182,7 +182,7 @@ $gray-blue      : #86abbe;
 
 // We use these to control various global styles
 $body-bg: #f5F5F5;
-$body-font-color: $steel;
+$body-font-color: $silver;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
@@ -1033,7 +1033,7 @@ $panel-bg: scale-color($white, $lightness: 95%);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-// $panel-font-color: $white;
+$panel-font-color: $steel;
 // $panel-font-color-alt: $white;
 
 // $panel-header-adjust: true;

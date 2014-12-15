@@ -6,33 +6,29 @@
 
 
 
-li {list-style-type:none}
+// li colored disk
 
-// li disk
+li {list-style-type:none}
 ul.disk {margin:0;}
 .disk li:before {
-    content: "• ";float:left;
-    color: $fresh-blue;padding:0 10px 0 0;margin:0;clear:both
-}
+    content: "• "; color: $light-purple;padding:0 10px 0 0;margin:0;clear:both }
 
-ul.disk li a {color:$dark-purple !important;float:left; text-decoration:underline; }
-
-ul.disk li a:hover {color:$light-purple !important ; text-decoration:none}
+ul.disk li a {color:$fresh-blue !important; text-decoration:underline;}
+ul.disk li a:hover {text-decoration:none} 
 
 
-dt {font-family: $font-family-bold-serif;font-weight:700;}
-dl {}
-
-
-b, strong {font-family: $font-family-bold-serif;font-weight:700;}
+ol > li {list-style-type: decimal;} 
+dt, b, strong {font-family: $font-family-bold-serif;font-weight:700;}
 
 h4 > em {padding:5px 0 10px 0;display:block;font-size:1.3em;line-height:1.3em}
 article > h1 {padding-bottom:18px;}
+article a, .panel p a  {color:$fresh-blue;text-decoration:underline}
+article a:hover, .panel p a:hover  {color:$fresh-blue;text-decoration:none}
+
 
 // beeldbank caption info detail image and tags
 
 .caption-info dt {font-size:1em;padding:10px 0 0 0;}
-/*.caption-info dd {margin:-26px 0 0 170px;line-height:1.3em;}*/
 .caption-info dd {margin:0;line-height:1.3em;}
 
 .bb-imagelarge {margin:0 0 30px 0;padding:0}
@@ -46,10 +42,7 @@ ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
 
 
-
-
-
-
+.button {text-transform:uppercase}
 
 // errors
 .error {background: none !important}
@@ -61,62 +54,46 @@ input.error {border: 1px solid $alert-color}
 select {height:42px}
 
 
+// statistieken circle
 
-// statistieken circles
-
-
-.circles{
-    margin:20px auto;
-}
-
-.circles > div {
-    overflow:hidden;
-    float:left;
-    width:auto;
-    height:auto;
-    position: relative;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    -khtml-border-radius: 50%;
-    background:$light-gray ;
-}
-
-.circles > div > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.circles > div > div > div {
-    display: table;
-    width: 100%;
-    height:100%;
-}
-.circles > div > div > div > div {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+.circle { 
+margin: 0 auto 15px auto;
+border-radius: 50%;
+width: 100%;
+position: relative;
+background-color: $light-gray ;
 }
 
 
-
-@media (max-width: 574px)
-{
-    .circles > div {padding: 50%;margin:0 auto}
+.circle:before {
+content: "";
+display: block;
+padding-top: 100%;
 }
 
-@media (min-width: 574px) and (max-width: 880px)
-{
-    .circles > div {padding: 60px;}
+.circle-inner {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+text-align: center;
 }
 
-@media (min-width: 888px)
-{
-    .circles{width:888px}
-    .circles > div {padding: 60px;}
+.score-text {
+margin: auto;
+position: absolute;
+top: -60px;
+left: 0;
+bottom: 0;
+right: 0;
+height: 1em;
+line-height: 1em;
+font-size: 1em;
 }
 
-
-
+.score-text h3 {
+height: 3vw;
+line-height: 3vw;
+font-size: 3vw;
+}

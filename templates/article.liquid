@@ -13,17 +13,18 @@
 
 
     <article class="" itemscope itemtype="http://schema.org/Article">
+
         <h1>Erkende intergemeentelijke onroerenderfgoeddiensten</h1> 
 
         <figure>
-          <img src="https://www.onroerenderfgoed.be/assets/files/made/assets/files/content/images/Oostkerke_Lettenburgstr_IMG_9062_832_370_s_c1.jpg" alt="">
+          <img itemprop="image" src="https://www.onroerenderfgoed.be/assets/files/made/assets/files/content/images/Oostkerke_Lettenburgstr_IMG_9062_832_370_s_c1.jpg" alt="">
             <figcaption>Maecenas ac tortor nec ligula facilisis commodo. Foto door <a href="#">Richard Clark</a></figcaption>
         </figure>
         
-
+<section itemprop="articleBody">
 <h4><em>Gemeenten kunnen de krachten bundelen en een intergemeentelijke onroerenderfgoeddienst (IOED) oprichten.</em></h4>
 
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Cras leo lacus, ultrices in orci id, porttitor finibus metus</strong>. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque <a href="">habitant morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas.</p>  
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Cras leo lacus, ultrices in orci id, porttitor finibus metus</strong>. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque <a itemprop="url" href="" >habitant morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas.</p>  
 
 
 <h2>Content</h2> 
@@ -43,8 +44,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrice
 <h5>Disk list item</h5>
 
 <ul class="disk">
-  <li>List item with a much longer description or more content.</li>
-  <li>List item</li>
+  <li><a href="">List item with a much longer description or more content.</a></li>
+  <li><a href="">List item with a much longer description or more content.</a></li>
   <li>List item
     <ul>
       <li>Nested List Item</li>
@@ -83,19 +84,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrice
 
 
 <hr>
-{% include "elements/social" %}
+{% include "blokken/social-2" %}
 <hr>
-
-
-
-
-
-
-
 {% include "elements/form-2" %}
 
-
-
+</section>
 
 </article>
 
@@ -124,55 +117,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrice
 
 
 <!-- footer -->
-  <footer id="footer-bottom" role="contentinfo">
-    <div class="footer-bottom-inner inner">
-      <nav class="footer-doormat clearfix">
-        <ul>
-          <li><a class="active" href="#">Onderwijs &amp; vorming</a></li>
-          <li><a href="#">Leren</a></li>
-          <li><a href="#">Werken in het onderwijs</a></li>
-          <li><a href="#">A-Z index</a></li>
-          <li><a href="#">Wegwijs in de administratie</a></li>
-          <li><a href="#">Departementen</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="#">Nieuws</a></li>
-          <li><a href="#">Publicaties</a></li>
-          <li><a href="#">Nieuwsbrief</a></li>
-          <li><a href="#">Statistieken</a></li>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Nieuws</a></li>
-          <li><a href="#">Publicaties</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><span class="is-vishidden">Language</span>
-            <ul class="lang-switch clearfix">
-              <li><a class="active" href="#">NL</a></li>
-              <li><a href="#">FR</a></li>
-              <li><a href="#">DE</a></li>
-              <li><a href="#">EN</a></li>
-            </ul>
-          </li>
-        </ul>
-        
-        <article>
-          <a href="#"><img alt="Alt tag" src="img/footer-300x250.jpg"></a>
-        </article>
-      </nav>
-    </div>
-  </footer>
+{% include "footer" %}
 <!-- end footer -->
-
- 
-
-<!-- embed -->
-<div class="temp-embed"></div>
-<!-- end embed vlaanderen -->
 
  
   

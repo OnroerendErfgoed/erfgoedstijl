@@ -1,26 +1,19 @@
 
 //
-// OE blokken  (nieuws)
+// OE blokken  (nieuws, downloads, social , nieuwsbrief, evenementen)
 //
-
 
 .fl-block  {margin: 0 0 30px 0}
 .fl-block .fl-block.no-gap {padding:0}
-
-.fl-block .field {padding:1.6em 1.4em 1.2em 1.4em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
+.fl-block .field {padding:1.6em 1.2em 1.2em 1.2em;border-bottom:1px solid #e4e4e4;overflow:hidden;background-color:$white;position:relative;}
+.fl-block .field p {font-size:1em;margin:0}
 
 .fl-block .fl-block.no-gap{padding:0;}
-
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
 
-
-
 .fl-block .field.full {padding:0;}
-
-.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.2em 1.4em;color:#5e5e5e;font-size:0.8em;}
-
+.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;font-size:0.8em;}
 .fl-block .field.full a:hover{background-color:#fbfbfb;text-decoration: none;}
-
 .fl-block .field.full a h5, .fl-block .field.fullfeed a h5, .largeimagefield a h5{ text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1.3em;font-size:1.2em;}
 .fl-block .field.full a:hover h5{text-decoration: underline;}
 
@@ -30,20 +23,10 @@
 
 .fl-block-largeimage {text-align:center}
 .fl-block-largeimage img {margin:10px 0; height:150px;border-radius:50%;width:180px;height:180px}
-.fl-block-largeimage a h5 {text-transform: uppercase;font-family: 'Flanders Art Sans Medium',sans-serif;line-height:1.3em;font-size:1em;}
+.fl-block-largeimage a h5 {text-transform: uppercase;line-height:1.3em;font-size:1em;}
+.fl-block-largeimage .posted { font-size:1em;line-height:1em;color:$silver;margin-top:-0.5em;}
 
-.fl-block-largeimage .posted {
-  font-size:1em;line-height:1em;
-  color:$silver;
-  margin-top:-0.5em;
-}
-
-
-
-
-
-
-
+// flanders-block-more link
 
 .fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa{float:right;text-decoration:none;}
 .fl-block .field a.more:hover{text-decoration:underline;}
@@ -66,30 +49,35 @@
 .fl-block .field.block-image img{width:100%;display:block;}
 
 
+/* -- news-- */
+.fl-block .field.full.news img {margin:7px 5px 5px 0}
 
-/* -- RSS -- */
 
-.fl-block .field.full.rss a{padding:0.6em 1.4em 0.4em 1.4em;}
-.fl-block .field.full.rss a h5{float:left;margin-right:0.4em;}
-.fl-block .field.full.rss a .posted {
-  position: absolute;right:1em;font-size:1em;line-height:1em;
-  color:$silver;
-  top:50%;margin-top:-0.5em;
-}
+/* -- RSS newsfeed-- */
+
+.fl-block .field.full.rss a {padding:0.8em 1.4em 0.4em 1.4em;}
+.fl-block .field.full.rss a h5 {margin-right:1.8em;}
+.fl-block .field.full.rss a .posted { position: absolute;right:1em;font-size:0.9em;line-height:1em;
+  color:$silver;top:50%;margin-top:-0.5em;}
 
 
 /* -- Downloads -- */
 
-.fl-block .field.full.download a {padding:0.8em 1.4em 0.9em 1.4em;font-size:1em}
+.fl-block .field.full.download a {font-size:1em}
 
 
 
 
 
-/* -- styles -- */
+/* -- titles -- */
 
 .fl-block.style-1 .block-title, .fl-block.style-2 .block-title, .fl-block.style-3 .block-title {background-color:$dark-purple;font-size:1em;margin:0;color:$white !important}
-.fl-block.style-3 .block-title {background-color:$light-purple; color:$white !important}
+.fl-block.style-3 .block-title {background-color:$fresh-blue; color:$white !important}
+
+
+
+
+
 
 .fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:$dark-purple !important}
 
@@ -98,19 +86,22 @@
 .fl-block .block-title, .fl-block .block-title.naked {
   background-color:$dark-purple;text-transform: uppercase;
   font-size:0.8em;letter-spacing:1px;border:none;
-  padding-top:0.5em;padding-bottom:0.5em;font-weight:700;margin-top:-1px
+  padding-top:0.6em;padding-bottom:0.6em;font-weight:400;margin-top:-1px
 }
 
 .fl-block .block-title.naked {
-  background-color:$white !important;color:$dark-purple !important;padding-top:0.4em;padding-bottom:0;
+  background-color:$white !important;color:$dark-purple !important;padding:0;font-size:1em;
 }
 
-.block-text h4 {font-family: 'Flanders Art Sans Medium',sans-serif;
-  color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;
+.block-text h4, .block-text h4 a {font-weight:700;
+  color:$dark-purple !important; font-size:0.8em;margin:-8px 0 0 0;letter-spacing:-1px
 }
 
-.block-text h4 a {font-family: 'Flanders Art Sans Medium',sans-serif;
-  color:$dark-purple !important; font-size:1.1em;margin:-8px 0 0 0;padding:0
+
+.block-text h3 a {
+  color:$dark-purple !important;margin:-8px 0 0 0;letter-spacing:-1px
+}
+.block-text h3 a:hover { text-decoration:underline !important
 }
 
 
@@ -122,12 +113,14 @@
 .fl-block .fl-block .field.full > a{padding:2em 0 0.5em;text-align: center;font-size:0.8em;}
 .fl-block .fl-block .field.full > a i{margin:0;font-size:2.3em;display:block;}
 
-.fl-block .field.social > a{font-family: 'Flanders Art Sans Medium', sans-serif;font-weight:400;}
+.fl-block .field.social > a{font-weight:400;}
 .fl-block .field.social > a:hover{text-decoration: none;}
 
-.fl-block .field.social.twitter > a{color:$soc-twitter ;}
+.fl-block .field.social.twitter > a{color:$soc-twitter;}
 .fl-block .field.social.facebook > a{color:$soc-facebook;}
 .fl-block .field.social.mail > a{color:$soc-mail;}
 .fl-block .field.social.linkedin > a{color:$soc-linkedin;}
 
+.coloredbg {background-color:$light-purple !important; color:$white}
+.coloredbg h3 a {color:$white !important}
 
