@@ -116,13 +116,14 @@ $alert-transition-ease: ease-out !default;
 
       &.radius    { @include radius($alert-radius); }
       &.round     { @include radius($global-rounded); }
-
       &.success   { @include alert-style($success-color); }
       &.alert     { @include alert-style($alert-color); }
       &.secondary { @include alert-style($secondary-color); }
-      &.warning { @include alert-style($warning-color); }
-      &.info { @include alert-style($info-color); }
+      &.warning   { @include alert-style($warning-color); }
+      &.info      { @include alert-style($info-color); }
+      &.custom    { @include alert-style($custom-color); }
       &.alert-close { opacity: 0}
     }
   }
 }
+

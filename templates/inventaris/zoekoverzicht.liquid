@@ -1,0 +1,203 @@
+{% layout "inventaris-layout" %}
+{% block content %}
+
+
+ 
+<!-- content -->
+
+<div class="row">
+ <div class="large-12 columns">
+	<div data-alert class="alert-box alert ">
+	  Er werd geen dibe relict gevonden met ID: . Probeer het eens via het zoekformulier. 
+	  <a href="#" class="close">&times;</a>
+	</div>
+</div>
+</div>
+
+<div class="row">
+
+  <div class="large-8 columns">
+      
+       <div class="panel">
+ 
+
+        <h1>De Inventaris van het Bouwkundig Erfgoed</h1>
+
+        <h2>Een relict zoeken</h2>
+
+
+<form action="/dibe/relicten" method="get" id="relict_form" dojoType="dijit.form.Form">
+
+<fieldset>
+    <legend>Snel zoeken</legend>
+    <ul class="">
+        <li>
+            <label for="naam">Naam</label>
+            <input type="text" name="naam" id="naam" dojoType="dijit.form.TextBox" />
+        </li>
+    </ul>
+</fieldset>
+
+<fieldset>
+    <legend>Geografisch zoeken</legend>
+    <ul class="">
+        <li>
+            <label for="provincie">Provincie</label>
+            <select name="provincie" id="kzlProvincie" dojoType="dijit.form.FilteringSelect" required="false">
+                <option value="">Maak uw keuze</option>
+<option value="10000">Antwerpen</option>
+<option value="20001">Vlaams-Brabant</option>
+<option value="30000">West-Vlaanderen</option>
+<option value="40000">Oost-Vlaanderen</option>
+<option value="70000">Limburg</option>
+            </select>
+        </li>
+        <li>
+            <div dojoType="dojo.data.ItemFileReadStore" jsId="gemeenteStore" url="/portaal/thesaurus/gemeenten/datastore" />
+            <label for="gemeente">Gemeente</label>
+            <select name="gemeente" id="kzlGemeente" dojoType="dijit.form.FilteringSelect" 
+                    required="false" store="gemeenteStore" searchAttr="naam" pageSize="10">
+            </select>
+        </li>
+        <li>
+            <div dojoType="dojo.data.ItemFileReadStore" jsId="deelgemeenteStore" url="/portaal/thesaurus/deelgemeenten/datastore" />
+            <label for="deelgemeente">Deelgemeente</label>
+            <input type="text" name="deelgemeente_naam" id="kzlDeelgemeente" dojoType="dijit.form.ComboBox" 
+                    required="false" store="deelgemeenteStore" searchAttr="naam" labelAttr="naam" pageSize="10"/>
+        </li>
+        <li>
+            <label for="kzlStraat">Straat</label>
+            <input type="text" name="straat_naam" id="kzlStraat" title="Indien je zoekt op een straat, moet je eerst een gemeente opgeven" dojoType="dijit.form.ComboBox" required="false" searchAttr="naam" hasDownArrow="false" pageSize="10" autocomplete="false"/>
+        </li>
+    </ul>
+</fieldset>
+
+
+<div dojoType="oeps/dibe/persoon/QueryStore" jsId="persoonStore" url="/dibe/personen.json"></div>
+
+<fieldset>
+    <legend>Thematisch-typologisch zoeken</legend>
+    <ul class="">
+        <li>
+            <label for="typologie">Typologie</label>
+            <input type="text" name="typologie" id="typologie" dojoType="dijit/form/ComboBox"
+                   searchAttr="term" labelAttr="term"
+                   autocomplete="false"    maxlength="150" pageSize="10" hasDownArrow="false"
+                                />
+            <div dojoType="dijit/form/DropDownButton" label="Kies Typologie" showLabel="false" iconClass="toonthesaurusknop">
+                <div dojoType="dijit/TooltipDialog" id="dialog_typologie" title="Typologie Dialog"></div>
+            </div>
+        </li>
+        <li>
+            <label for="context">Context</label>
+            <input type="text" name="context" id="context" dojoType="dijit/form/ComboBox"
+                   searchAttr="term" labelAttr="term"
+                   autocomplete="false"    maxlength="150" pageSize="10" hasDownArrow="false"
+                                />
+            <div dojoType="dijit/form/DropDownButton" label="Kies Context" showLabel="false" iconClass="toonthesaurusknop">
+                <div dojoType="dijit/TooltipDialog" id="dialog_context" title="Context Dialog"></div>
+            </div>
+        </li>
+
+        <li>
+            <label for="datering">Datering</label>
+            <input type="text" name="datering" id="datering" dojoType="dijit/form/ComboBox"
+                   searchAttr="term" labelAttr="term"
+                   autocomplete="false" maxlength="150" pageSize="10" hasDownArrow="false"
+                                />
+            <div dojoType="dijit/form/DropDownButton" label="Kies Datering" showLabel="false" iconClass="toonthesaurusknop">
+                <div dojoType="dijit/TooltipDialog" id="dialog_datering" title="Datering Dialog"></div>
+            </div>
+        </li>
+        <li>
+            <label for="stijl">Stijl en/of Cultuur</label>
+            <input type="text" name="stijl" id="stijl" dojoType="dijit/form/ComboBox"
+                   searchAttr="term" labelAttr="term"
+                   autocomplete="false" maxlength="150" pageSize="10" hasDownArrow="false"
+                                />
+            <div dojoType="dijit/form/DropDownButton" label="Kies Stijl" iconClass="toonthesaurusknop" showLabel="false">
+                <div dojoType="dijit/TooltipDialog" id="dialog_stijl" title="Stijl Dialog"></div>
+            </div>
+        </li>
+        <li>
+            <label for="persoon">Persoon of Groepering</label>
+            <input type="text" name="persoon_naam" id="persoon"
+                   title="Momenteel zijn enkel de namen van ontwerpers (architecten, architectenbureaus) opgenomen"
+                   dojoType="dijit.form.ComboBox" required="false"
+                   store="persoonStore" searchAttr="omschrijving" labelAttr="omschrijving"
+                   autocomplete="true" maxlength="100" hasDownArrow="false" pageSize="10" searchDelay="200" />
+        </li>
+    </ul>
+</fieldset>
+
+
+
+
+
+
+<button type="submit" value="zoeken" name="zoeken" id="" dojoType="dijit.form.Button" class="button  [tiny small large]">Zoeken</button>
+
+</form>
+
+<div data-alert class="alert-box custom">
+<i class="fa fa-warning" style="font-size:2em;float:left;margin:6px 10px 0 0"></i>
+Dit zoekformulier werkt mogelijk niet optimaal met Internet Explorer 6 of 7. Gebruik bij voorkeur <a href="http://www.microsoft.com/netherlands/windows/internet-explorer/default.aspx">Internet Explorer 8</a>. U kunt ook een andere, geijkte browser zoals <a href="http://www.mozilla-europe.org/nl/firefox">Mozilla Firefox</a>, <a href="http://www.google.com/chrome">Google Chrome</a> of <a href="http://www.apple.com/nl/safari">Apple Safari</a> gebruiken.
+</div>
+
+           
+
+      </div>
+
+  </div>
+
+
+<div class="large-4 columns">
+      
+
+        
+{% include "blokken/search-5" %}  
+
+
+<div class="panel Searchbox">
+
+<h4>Ik zoek een ...</h4>
+ <ul class="disk">
+        <li><a href="/dibe/relict/zoeken" title="Zoeken naar gebouwen, beelden, waterpompen, ...">bouwkundig relict</a></li>
+        <li><a href="/dibe/gehelen/zoeken" title="Zoeken naar straten, gemeentes, plaatsen, begijnhoven, ...">(bouwkundig) geheel</a></li>
+        <li><a href="/ile/park/zoeken" title="Zoeken naar tuinen en parken">tuin of park</a></li>
+        <li><a href="/ile/boom/zoeken" title="Zoeken naar bomen, struiken, boomgaarden, bossen, ...">boom of struik</a></li>
+        <li><a href="/ivm/varend/zoeken" title="Zoeken naar varend erfgoed">vaartuig</a></li>
+        <li><a href="/woi/relict/zoeken" title="Zoeken naar bunkers, loopgraven, gedenktekens, ...">oorlogsrelict</a></li>
+        <li><a href="/dibe/orgels/zoeken" title="Zoeken naar orgels met erfgoedwaarde">orgel</a></li>
+        <li><a href="/dibe/personen/zoeken" title="Zoeken naar (tuin)architecten, bouwmeesters, orgelbouwers, ...">persoon of collectief</a></li>
+    </ul>   
+
+    </div>
+
+
+
+
+{% include "blokken/nieuws-2" %}
+{% include "blokken/downloads-1" %}
+{% include "blokken/nieuws-3" %}
+{% include "blokken/social-1" %}
+
+  
+
+  </div>
+
+</div>
+
+
+<!-- end content -->
+
+
+
+
+<!-- footer -->
+{% include "footer" %}
+<!-- end footer -->
+
+ 
+  
+{% endblock %}

@@ -149,18 +149,20 @@ $secondary-color: #e7e7e7 !default;
 $alert-color: #ff0000 !default;    
 $success-color: #43AC6A !default;  
 $warning-color: #f08a24 !default;  
-$info-color: #a0d3e8 !default;     
+$info-color: #a0d3e8 !default;   
+$custom-color:#FFFFCC !default; 
 
-$dark-purple    : rgb(117,63,127);   
-$mid-purple     : rgb(148,78,161);
-$light-purple   : rgb(176,93,191);
-$white          : rgb(255,255,255);
-$black          : rgb(0, 0, 0);
-$dark-gray      : rgb(63,56,64);
-$mid-gray       : rgb(229,229,229);
-$light-gray     : rgb(237,237,237);
-$gray           : rgb(213,213,213);
-$silver         : rgb(152,152,152);
+
+$dark-purple    : rgb(117,63,127); // #753F7F  
+$mid-purple     : rgb(148,78,161); // #944EA1
+$light-purple   : rgb(176,93,191); // #B05DBF
+$white          : rgb(255,255,255); // #FFFFFF
+$black          : rgb(0, 0, 0); // #000000
+$dark-gray      : rgb(63,56,64); // #3F3840
+$mid-gray       : rgb(229,229,229); // #E5E5E5
+$light-gray     : rgb(237,237,237); // #EDEDED
+$gray           : rgb(213,213,213); // #D5D5D5
+$silver         : rgb(152,152,152); // #989898
 $steel          : #666666 !default;
 $jet            : #333333 !default;
 $ghost          : #FAFAFA;
@@ -432,6 +434,7 @@ $blockquote-border: 3px solid $mid-purple;
 // $alert-transition-speed: 300ms;
 // $alert-transition-ease: ease-out;
 
+
 // 03. Block Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -701,7 +704,7 @@ $crumb-slash: "›";
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
 // $fieldset-border-width: 1px;
- $fieldset-border-color: $silver;
+ $fieldset-border-color: $mid-gray;
 // $fieldset-padding: rem-calc(20);
 // $fieldset-margin: rem-calc(18 0);
 
@@ -1038,6 +1041,7 @@ $panel-font-color: $steel;
 
 // $panel-header-adjust: true;
 // $callout-panel-link-color: $primary-color;
+
 
 // 22. Pricing Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -

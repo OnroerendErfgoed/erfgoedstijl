@@ -1152,6 +1152,10 @@ select {
     background-color: #a0d3e8;
     border-color: #74bfdd;
     color: #4f4f4f; }
+  .alert-box.custom {
+    background-color: #FFFFCC;
+    border-color: #ffff8c;
+    color: #4f4f4f; }
   .alert-box.alert-close {
     opacity: 0; }
 
@@ -2787,7 +2791,7 @@ input[type="file"] {
 /* HTML5 Number spinners settings */
 /* We add basic fieldset styling */
 fieldset {
-  border: 1px solid #989898;
+  border: 1px solid #e5e5e5;
   padding: 1.25rem;
   margin: 1.125rem 0; }
   fieldset legend {
@@ -7900,6 +7904,16 @@ h6 {
   padding-bottom: 60px;
   border: 1px solid #C03; }
 
+table, table2 {
+  width: 100%; }
+
+table2 td {
+  width: 75%; }
+
+legend {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+
 li {
   list-style-type: none; }
 
@@ -7911,7 +7925,8 @@ ul.disk {
   color: #b05dbf;
   padding: 0 10px 0 0;
   margin: 0;
-  clear: both; }
+  float: left;
+  clear: left; }
 
 ul.disk li a {
   color: #2da3ce !important;
@@ -8123,7 +8138,7 @@ select {
 .fl-block .field figure {
   overflow: hidden;
   display: inline-block;
-  float: left;
+  /*float:$default-float;*/
   margin: 0px 0.8em 0.8em 0;
   padding: 0; }
 
@@ -8363,7 +8378,6 @@ table {
   border-top: 1px solid #dddddd; }
 
 .table th {
-  font-weight: bold;
   font-family: 'Flanders Art Sans Bold', sans-serif; }
 
 .table thead th {
@@ -8387,7 +8401,7 @@ table {
 .table.border tbody tr td:last-child {
   border-right: 1px solid #DDDDDD; }
 
-/* Right align numbers for demo */
+/* Right align numbers */
 .table.border tr td, .table.border tr th {
   text-align: right; }
 
