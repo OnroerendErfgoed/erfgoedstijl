@@ -4,23 +4,24 @@
 //
 
 
+
 // table
-table, table2 {width:100%}
-
-
+table, table2 {width:100%;margin:20px 0}
+table th, table2 th {width:150px}
 
 
 
 // legend /fieldset
+
 legend {text-transform:uppercase;font-size:0.8em}
 
 // li colored disk
 
 li {list-style-type:none}
-
-
 ul.disk {margin:10px 0;}
-.disk li:before { content: "• "; color: $light-purple;padding:0 10px 0 0;margin:0;float:left;clear:left;}
+.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left; }
+
+
 ul.disk li a {color:$fresh-blue !important; text-decoration:underline;margin-bottom:8px}
 ul.disk li a:hover {text-decoration:none} 
 
@@ -45,10 +46,8 @@ ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li {float:$default-float;background-color:$light-gray;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.9em}
 .tag-label li:first-child {background:none;padding-left:0}
 .tag-label li:last-child {background-color:$aluminum;}
-
 .tag-label li a  {text-decoration:none !important;color:$black}
 .tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
-
 
 .button {text-transform:uppercase}
 
@@ -67,11 +66,10 @@ select {height:42px}
 .circle { 
 margin: 0 auto 15px auto;
 border-radius: 50%;
-width: 100%;
+width:150px;
 position: relative;
 background-color: $light-gray ;
 }
-
 
 .circle:before {
 content: "";
@@ -101,7 +99,5 @@ font-size: 1em;
 }
 
 .score-text h3 {
-height: 3vw;
-line-height: 3vw;
-font-size: 3vw;
+font-size: 2.5em;
 }

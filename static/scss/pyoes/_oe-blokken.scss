@@ -34,22 +34,14 @@
 .fl-block .field a.more {font-family: $font-family-medium-serif;color:$dark-purple}
 .fl-block .field a.fa {margin-top:2em;}
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
-.fl-block .field figure {overflow:hidden;display:inline-block;float:$default-float;margin:0.4em 1.5em 0.8em 0;padding:0;}
+.fl-block .field figure {float:$default-float;overflow:hidden;display:inline-block;margin:0.4em 1.5em 0.8em 0;padding:0;}
 
 
-.fl-block .block-date {
-  text-transform: uppercase;border:none;background-color:$dark-purple;
-  padding:0.75em 1.5em 0.65em;color:$white;
-}
-
-
+.fl-block .block-date {text-transform: uppercase;border:none;background-color:$dark-purple;padding:0.75em 1.5em 0.65em;color:$white;}
 .fl-block .field.block-date i {float:none;margin-right:0.4em;}
 .fl-block .field.block-image {border-bottom:0;}
 .fl-block .field.block-image img{width:100%;display:block;}
 
-
-/* -- news-- */
-.fl-block .field.full.news figure {/*margin:7px 5px 5px 0*/;float:$default-float}
 
 
 /* -- RSS newsfeed-- */
@@ -66,24 +58,12 @@
 .fl-block.style-1 .block-title, .fl-block.style-2 .block-title, .fl-block.style-3 .block-title { background-color:$dark-purple;margin:0;color:$white !important;font-size:$switch-font-size-med}
 .fl-block.style-3 .block-title {background-color:$fresh-blue; color:$white !important}
 
-
-
 .fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:$dark-purple !important}
-
 .fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:$white;display:block}
 
-.fl-block .block-title, .fl-block .block-title.naked {
-  background-color:$dark-purple;text-transform: uppercase; letter-spacing:1px;border:none; margin-top:-1px;padding:0.9em 1.4em 0.8em 1.2em;
-}
+.fl-block .block-title, .fl-block .block-title.naked { background-color:$dark-purple;text-transform: uppercase; letter-spacing:1px;border:none; margin-top:-1px;padding:0.9em 1.4em 0.8em 1.2em;}
 
-.fl-block .block-title.naked {
-  background-color:$white !important;color:$dark-purple !important;padding:0;
-}
-/*
-.block-text h4, .block-text h4 a {font-weight:700;
-  color:$dark-purple !important; font-size:$switch-font-size-med;margin:-8px 0 0 0;letter-spacing:-1px;
-}*/
-
+.fl-block .block-title.naked { background-color:$white !important;color:$dark-purple !important;padding:0;}
 
 .block-text h3 a { color:$dark-purple !important;margin:-8px 0 0 0;letter-spacing:-1px}
 .block-text h3 a:hover { text-decoration:underline !important }
@@ -91,14 +71,8 @@
 
 /* -- social -- */
 
-
 .fl-block .field.social i.fa {float:none;margin:0 1em 0 0.4em;display:inline-block;line-height:1em;font-size:1.6em}
 .fl-block .fl-block{border-right:1px solid $mid-gray;border-bottom:1px solid $mid-gray ;}
-
-
-
-
-
 .fl-block .field.social > a{font-weight:400;}
 .fl-block .field.social > a:hover{text-decoration: none;}
 
