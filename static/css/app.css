@@ -1226,7 +1226,7 @@ select {
   margin-left: 0;
   list-style: none;
   border-style: solid;
-  border-width: 0px;
+  border-width: 0;
   background-color: #f4f4f4;
   border-color: gainsboro;
   border-radius: 3px; }
@@ -4161,11 +4161,11 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0;
       padding-left: 15px;
       font-family: "Flanders Art Sans", Arial, sans-serif;
-      font-size: 1rem;
+      font-size: 0.875rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
-        font-size: 1rem;
+        font-size: 0.875rem;
         padding-right: 15px;
         padding-left: 15px;
         background-color: #944EA1;
@@ -4208,7 +4208,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
           color: white; }
     .top-bar-section ul li > button {
-      font-size: 1rem;
+      font-size: 0.875rem;
       padding-right: 15px;
       padding-left: 15px;
       background-color: #944EA1;
@@ -5800,14 +5800,13 @@ footer#footer-bottom .inner nav ul.lang-switch li {
   font-style: normal;
   font-weight: 700; }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   font-weight: 200;
-  font-family: 'Flanders Art Sans Medium', sans-serif; }
+  font-family: "Flanders Art Sans Medium", Arial, sans-serif; }
 
 h4, h5, h6 {
-  font-family: 'Flanders Art Sans Light', sans-serif;
+  font-family: "Flanders Art Sans Light", Arial, sans-serif;
   font-weight: 200; }
 
 h1 {
@@ -6054,19 +6053,19 @@ h6 {
 .fa-file-excel-o:before {
   content: "\f1c3"; }
 
-.Searchbox {
+.fl-block-search {
   border-top: 5px solid #753f7f; }
 
-.Searchbox form {
+.fl-block-search form {
   margin-top: 25px; }
 
-.Searchbox_fieldset, .Searchbox_fieldset input {
+.fl-block-search_fieldset, .fl-block-search_fieldset input {
   border: none;
   padding: 0;
   margin: 0;
   line-height: 16px; }
 
-.Searchbox_fieldset select {
+.fl-block-search_fieldset select {
   width: 95%; }
 
 .searchBox {
@@ -6113,13 +6112,6 @@ h6 {
   padding-bottom: 60px;
   border: 1px solid #C03; }
 
-table, table2 {
-  width: 100%;
-  margin: 20px 0; }
-
-table th, table2 th {
-  width: 150px; }
-
 legend {
   text-transform: uppercase;
   font-size: 0.8em; }
@@ -6130,14 +6122,6 @@ li {
 ul.disk {
   margin: 10px 0; }
 
-.disk li:before {
-  content: "•";
-  color: #b05dbf;
-  padding: 0 10px 0 0;
-  margin: 0;
-  float: left;
-  clear: left; }
-
 ul.disk li a {
   color: #2da3ce !important;
   text-decoration: underline;
@@ -6145,6 +6129,14 @@ ul.disk li a {
 
 ul.disk li a:hover {
   text-decoration: none; }
+
+.disk li:before {
+  content: "•";
+  color: #b05dbf;
+  padding: 0 10px 0 0;
+  margin: 0;
+  float: left;
+  clear: left; }
 
 ol > li {
   list-style-type: decimal; }
@@ -6208,9 +6200,6 @@ ul.tag-label {
   margin: 2px 0 0 10px;
   color: #ff0000; }
 
-.button {
-  text-transform: uppercase; }
-
 .error {
   background: none !important; }
 
@@ -6253,6 +6242,15 @@ select {
 
 .score-text h3 {
   font-size: 2.5em; }
+
+/* inventaris article margin */
+.articlemargin {
+  width: 70%;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 578px) {
+  .articlemargin {
+    width: 100%; } }
 
 .fl-block {
   margin: 0 0 2em 0;
@@ -6518,6 +6516,15 @@ ul.socialbox li li.mail a, ul.socialbox li li.mail a i {
 ul.socialbox li li.print a, ul.socialbox li li.print a i {
   color: #888888; }
 
+/* table inventaris article */
+table {
+  width: 100%;
+  margin: 30px 0; }
+
+table th {
+  width: 150px; }
+
+/* base table layout */
 table {
   max-width: 100%;
   border-collapse: collapse;

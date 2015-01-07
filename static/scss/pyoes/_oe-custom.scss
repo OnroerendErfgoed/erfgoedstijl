@@ -5,12 +5,6 @@
 
 
 
-// table
-table, table2 {width:100%;margin:20px 0}
-table th, table2 th {width:150px}
-
-
-
 // legend /fieldset
 
 legend {text-transform:uppercase;font-size:0.8em}
@@ -19,12 +13,9 @@ legend {text-transform:uppercase;font-size:0.8em}
 
 li {list-style-type:none}
 ul.disk {margin:10px 0;}
-.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left; }
-
-
 ul.disk li a {color:$fresh-blue !important; text-decoration:underline;margin-bottom:8px}
 ul.disk li a:hover {text-decoration:none} 
-
+.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left;}
 
 ol > li {list-style-type: decimal;} 
 dt, b, strong {font-family: $font-family-bold-serif;font-weight:700;}
@@ -49,7 +40,6 @@ ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li a  {text-decoration:none !important;color:$black}
 .tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
 
-.button {text-transform:uppercase}
 
 // errors
 .error {background: none !important}
@@ -59,6 +49,8 @@ input.error {border: 1px solid $alert-color}
 // select optionform beeldbank
 
 select {height:42px}
+
+
 
 
 // statistieken circle
@@ -98,6 +90,20 @@ line-height: 1em;
 font-size: 1em;
 }
 
-.score-text h3 {
-font-size: 2.5em;
+.score-text h3 { font-size: 2.5em;}
+
+
+
+/* inventaris article margin */
+
+.articlemargin {width:70%;margin:0 auto}
+
+@media only screen and (max-width:578px) {
+   .articlemargin  {width:100%}
+
 }
+
+
+
+
+
