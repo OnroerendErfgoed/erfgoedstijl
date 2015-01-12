@@ -54,7 +54,7 @@ nav#main-navigation .main-navigation-inner{padding:0;position:relative;}
 /* service nav */
 
 #service-navigation	  {float:$opposite-direction;padding:0;}
-#service-navigation > li {margin-top:0.4em;float:$default-float;}
+#service-navigation > li {margin-top:0.4em;float:$default-float;list-style-type:none}
 #service-navigation > li a {font-size:0.75em;color:$steel;line-height:1.8em;} 
 #service-navigation > li > a {border-left:1px solid $mid-gray;padding:0 1em;} 
 #service-navigation > li:first-child > a {border-left:0;} 

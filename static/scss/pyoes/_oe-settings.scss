@@ -50,19 +50,19 @@ $font-weight-bold: bold !default;
 
 $primary-color: #944EA1 !default;  
 $secondary-color: #e7e7e7 !default;
-$alert-color: #ff0000 !default;    
+$alert-color: #FF0000 !default;    
 $success-color: #43AC6A !default;  
 $warning-color: #f08a24 !default;  
 $info-color: #a0d3e8 !default;   
 $custom-color:#FFFFCC !default; 
 
 
-$dark-purple    : rgb(117,63,127); // #753F7F  
-$mid-purple     : rgb(148,78,161); // #944EA1
-$light-purple   : rgb(176,93,191); // #B05DBF
+$dark-purple    : rgb(117,63,127); 	// #753F7F  
+$mid-purple     : rgb(148,78,161); 	// #944EA1
+$light-purple   : rgb(176,93,191); 	// #B05DBF
 $white          : rgb(255,255,255); // #FFFFFF
-$black          : rgb(0, 0, 0); // #000000
-$dark-gray      : rgb(63,56,64); // #3F3840
+$black          : rgb(0, 0, 0);		// #000000
+$dark-gray      : rgb(63,56,64); 	// #3F3840
 $mid-gray       : rgb(229,229,229); // #E5E5E5
 $light-gray     : rgb(237,237,237); // #EDEDED
 $gray           : rgb(213,213,213); // #D5D5D5
@@ -80,10 +80,10 @@ $soc-twitter 	: #2da5da;
 $soc-facebook 	: #3567a6;
 $soc-mail 	    : #926da5;
 $soc-linkedin 	: #007ab9;
-$soc-twitter_hover 		: #2690bf;
-$soc-facebook_hover 	: #255592;
-$soc-mail_hover 	    : #7a588b;
-$soc-linkedin_hover 	: #006ca4;
+$soc-twitter_hover 	: #2690bf;
+$soc-facebook_hover : #255592;
+$soc-mail_hover 	: #7a588b;
+$soc-linkedin_hover : #006ca4;
 
 // OE specific
 
@@ -91,9 +91,8 @@ $fresh-blue     : #2da3ce;
 $gray-blue      : #86abbe;
 
 
-
 // We use these to control various global styles
-$body-bg: #f5F5F5;
+$body-bg: #F5F5F5;
 $body-font-color: $silver;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
@@ -113,6 +112,9 @@ $medium-range: (36.128em, 55.500em) !default;
 $large-range: (55.503em, 73.125em) !default;
 $xlarge-range: (73.128em, 120em) !default;
 $xxlarge-range: (120.063em, 99999999em) !default;
+
+
+
 
 
 // e. Typography
