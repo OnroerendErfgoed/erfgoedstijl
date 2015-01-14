@@ -6054,6 +6054,104 @@ h6 {
 .fa-file-excel-o:before {
   content: "\f1c3"; }
 
+ul.disk {
+  margin: 10px 0;
+  padding-left: 1em; }
+
+ul.disk li {
+  list-style: disc outside none;
+  color: #b05dbf; }
+
+ul.disk li span {
+  color: #3f3840; }
+
+ul.disk li a {
+  color: #2da3ce !important;
+  text-decoration: underline;
+  margin-bottom: 8px; }
+
+ul.disk li a:hover {
+  text-decoration: none; }
+
+/*.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left;}*/
+ul.nodisk {
+  margin-left: 0em; }
+
+ul.nodisk li {
+  list-style: inside none; }
+
+ul.source li {
+  list-style-type: none; }
+
+ul.source {
+  margin: 20px 0;
+  padding-left: 0;
+  font-size: 0.8em; }
+
+ul.reactions {
+  margin: 0;
+  font-size: 0.9em; }
+
+.reactions li {
+  list-style-type: none;
+  padding: 5px 10px; }
+
+.reactions li:nth-child(2) {
+  background-color: #ededed; }
+
+.reactions cite {
+  font-family: "Flanders Art Sans Bold", Arial, sans-serif;
+  font-size: 1em; }
+
+.reactions blockquote {
+  border: none;
+  color: #3f3840;
+  padding-left: 0;
+  margin: 0 0 5px 0; }
+
+ol > li {
+  list-style-type: decimal; }
+
+ol.nonumbers {
+  margin-left: 0; }
+
+ol.nonumbers > li {
+  list-style-type: none; }
+
+.circle {
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  width: 150px;
+  position: relative;
+  background-color: #ededed; }
+
+.circle:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }
+
+.circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center; }
+
+.score-text {
+  margin: auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1em;
+  line-height: 1em;
+  font-size: 1em; }
+
+.score-text h3 {
+  font-size: 2.5em; }
+
 .fl-block-search {
   border-top: 5px solid #753f7f; }
 
@@ -6120,66 +6218,14 @@ legend {
   text-transform: uppercase;
   font-size: 0.8em; }
 
-ul.disk {
-  margin: 10px 0;
-  padding-left: 1em; }
+.error {
+  background: none !important; }
 
-ul.disk li {
-  list-style: disc outside none;
-  color: #b05dbf; }
+input.error {
+  border: 1px solid #FF0000; }
 
-ul.disk li span {
-  color: #3f3840; }
-
-ul.disk li a {
-  color: #2da3ce !important;
-  text-decoration: underline;
-  margin-bottom: 8px; }
-
-ul.disk li a:hover {
-  text-decoration: none; }
-
-/*.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left;}*/
-ul.nodisk {
-  margin-left: 0em; }
-
-ul.nodisk li {
-  list-style: inside none; }
-
-ul.source li {
-  list-style-type: none; }
-
-ul.source {
-  margin: 20px 0;
-  padding-left: 0;
-  font-size: 0.8em; }
-
-ul.reactions {
-  margin: 0; }
-
-.reactions li {
-  list-style-type: none;
-  padding: 5px 15px; }
-
-.reactions li:nth-child(2) {
-  background-color: #ededed; }
-
-.reactions cite {
-  font-size: 1em; }
-
-.reactions blockquote {
-  border: none;
-  color: #3f3840;
-  padding-left: 0; }
-
-ol > li {
-  list-style-type: decimal; }
-
-ol.nonumbers {
-  margin-left: 0; }
-
-ol.nonumbers > li {
-  list-style-type: none; }
+select {
+  height: 42px; }
 
 dt, b, strong {
   font-family: "Flanders Art Sans Bold", Arial, sans-serif;
@@ -6201,18 +6247,6 @@ article a, .panel p a {
 article a:hover, .panel p a:hover {
   color: #2da3ce;
   text-decoration: none; }
-
-.caption-info dt {
-  font-size: 1em;
-  padding: 10px 0 0 0; }
-
-.caption-info dd {
-  margin: 0;
-  line-height: 1.3em; }
-
-.bb-imagelarge {
-  margin: 0 0 30px 0;
-  padding: 0; }
 
 ul.tag-label {
   margin: 10px 0 0 0; }
@@ -6239,49 +6273,6 @@ ul.tag-label {
 .tag-label li a span {
   margin: 2px 0 0 10px;
   color: #FF0000; }
-
-.error {
-  background: none !important; }
-
-input.error {
-  border: 1px solid #FF0000; }
-
-select {
-  height: 42px; }
-
-.circle {
-  margin: 0 auto 15px auto;
-  border-radius: 50%;
-  width: 150px;
-  position: relative;
-  background-color: #ededed; }
-
-.circle:before {
-  content: "";
-  display: block;
-  padding-top: 100%; }
-
-.circle-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center; }
-
-.score-text {
-  margin: auto;
-  position: absolute;
-  top: -60px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 1em;
-  line-height: 1em;
-  font-size: 1em; }
-
-.score-text h3 {
-  font-size: 2.5em; }
 
 /* inventaris article margin */
 .articlemargin {
@@ -6617,3 +6608,18 @@ figcaption {
   border-bottom: 1px solid #ededed;
   padding: 10px 0;
   font-size: 80%; }
+
+.caption-info dt {
+  font-size: 1em;
+  padding: 10px 0 0 0; }
+
+.caption-info dd {
+  margin: 0;
+  line-height: 1.3em; }
+
+.bb-imagelarge {
+  margin: 0 0 30px 0;
+  padding: 0; }
+
+aside img {
+  margin: 5px 30px 5px 0; }

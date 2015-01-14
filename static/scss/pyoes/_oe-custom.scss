@@ -1,64 +1,33 @@
 
 //
-// OE custom CLASSES
+// OE custom CLASSES form and articles
 //
 
 
+// form custom
+
+// all buttons text uppercase
 .button {text-transform:uppercase}
 
 // legend /fieldset
 legend {text-transform:uppercase;font-size:0.8em}
 
+// errors
+.error {background: none !important}
+input.error {border: 1px solid $alert-color}
+
+// select optionform beeldbank
+select {height:42px}
 
 
-// li colored disk
-ul.disk {margin:10px 0;padding-left: 1em;}
-ul.disk li {list-style: disc outside none;color: $light-purple;}
-ul.disk li span {color: $dark-gray;}
-ul.disk li a {color:$fresh-blue !important; text-decoration:underline;margin-bottom:8px;}
-ul.disk li a:hover {text-decoration:none} 
-/*.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left;}*/
-
-// li no disk
-ul.nodisk {margin-left: 0em;}
-ul.nodisk li {list-style: inside none;}
-
-
-// source list
-ul.source li {list-style-type: none;}
-ul.source {margin:20px 0;padding-left: 0;font-size:0.8em;}
-
-// reactions list
-ul.reactions {margin:0}
-.reactions li {list-style-type:none;padding:5px 15px}
-.reactions li:nth-child(2) {background-color:$light-gray}
-.reactions cite {font-size:1em}
-.reactions blockquote {border:none;color:$dark-gray;padding-left:0}
-
-
-//ordered list
-ol > li {list-style-type: decimal;} 
-// ordered list no number
-ol.nonumbers {margin-left:0} 
-ol.nonumbers > li {list-style-type: none;} 
+// articles
 
 dt, b, strong {font-family: $font-family-bold-serif;font-weight:700;}
-
-
-
-
 h4 > em {padding:5px 0 10px 0;display:block;font-size:1.3em;line-height:1.3em}
 article > h1 {padding-bottom:18px;}
 article a, .panel p a  {color:$fresh-blue;text-decoration:underline}
 article a:hover, .panel p a:hover  {color:$fresh-blue;text-decoration:none}
 
-
-// beeldbank caption info detail image and tags
-
-.caption-info dt {font-size:1em;padding:10px 0 0 0;}
-.caption-info dd {margin:0;line-height:1.3em;}
-
-.bb-imagelarge {margin:0 0 30px 0;padding:0}
 
 ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li {float:$default-float;background-color:$light-gray;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.9em}
@@ -68,57 +37,11 @@ ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
 
 
-// errors
-.error {background: none !important}
-input.error {border: 1px solid $alert-color}
-
-
-// select optionform beeldbank
-
-select {height:42px}
 
 
 
 
-// statistics circle
-
-.circle { 
-margin: 0 auto 15px auto;
-border-radius: 50%;
-width:150px;
-position: relative;
-background-color: $light-gray ;
-}
-
-.circle:before {
-content: "";
-display: block;
-padding-top: 100%;
-}
-
-.circle-inner {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-text-align: center;
-}
-
-.score-text {
-margin: auto;
-position: absolute;
-top: -60px;
-left: 0;
-bottom: 0;
-right: 0;
-height: 1em;
-line-height: 1em;
-font-size: 1em;
-}
-
-.score-text h3 { font-size: 2.5em;}
-
+// temp
 
 /* inventaris article margin */
 
