@@ -5614,10 +5614,6 @@ th.hide-for-touch {
   right: 0;
   z-index: 0; }
 
-.temp-embed {
-  background: #333;
-  height: 40px; }
-
 nav#main-navigation .main-navigation-inner {
   padding: 0;
   position: relative; }
@@ -5695,7 +5691,8 @@ footer#footer-bottom {
   border-top: 5px solid #753f7f; }
 
 footer#footer-bottom .inner nav ul {
-  margin: 1em 0; }
+  margin: 1em 0;
+  padding-left: 1.4em; }
 
 footer#footer-bottom .inner nav > ul {
   float: left;
@@ -5753,7 +5750,6 @@ footer#footer-bottom .inner nav ul.lang-switch li {
     text-align: left;
     border: none;
     padding-left: 20px;
-    transition: all 0.3s ease 0s;
     color: #3e3d3f;
     display: block;
     line-height: 36px;
@@ -5765,8 +5761,7 @@ footer#footer-bottom .inner nav ul.lang-switch li {
   footer#footer-bottom .inner nav > ul li > a:before {
     position: absolute;
     content: "> ";
-    left: 4px;
-    transition: all 0.3s ease 0.1s; }
+    left: 4px; }
   footer#footer-bottom .inner nav > ul li.active-trail > a {
     background: none;
     color: #b4ac11; }
@@ -6073,7 +6068,6 @@ ul.disk li a {
 ul.disk li a:hover {
   text-decoration: none; }
 
-/*.disk li:before {content: "•"; color: $light-purple;padding:0 10px 0 0;margin:0;float:$default-float;clear:left;}*/
 ul.nodisk {
   margin-left: 0em; }
 
@@ -6273,6 +6267,11 @@ ul.tag-label {
 .tag-label li a span {
   margin: 2px 0 0 10px;
   color: #FF0000; }
+
+h4.header-img-panel {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 20px 0; }
 
 /* inventaris article margin */
 .articlemargin {
