@@ -5582,8 +5582,10 @@ th.hide-for-touch {
   padding: 0 25px 0 13px; }
 
 .logo-block h1 {
-  padding-top: 45px;
-  font-size: 34px;
+  /*padding-top:45px;*/
+  padding-top: 54px;
+  /*font-size:34px;*/
+  font-size: 2.9vmin;
   color: #753f7f;
   float: left; }
 
@@ -6048,6 +6050,9 @@ h6 {
 
 .fa-file-excel-o:before {
   content: "\f1c3"; }
+
+.fa-pencil:before {
+  content: "\f040"; }
 
 ul.disk {
   margin: 10px 0;

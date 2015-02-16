@@ -1,0 +1,309 @@
+{% layout "actoren-layout" %}
+{% block content %} 
+  
+
+
+<div class="row">
+
+      
+
+
+  <div class="large-12 columns">
+
+
+
+    <div class="button-bar" style="width:290px;margin:0 auto;">
+        <ul class="button-group" style="">
+          <li><a href="#" data-reveal-id="myModal1" class="small button">Actoren</a></li>
+          <li><a href="#" data-reveal-id="myModal2" class="small button">VKBO</a></li>
+          <li><a href="#" data-reveal-id="myModal3" class="small button">VKBP</a></li>
+        </ul>
+    </div>
+
+
+<div class="panel">
+
+
+<!-- zoek actoren -->
+  <div id="myModal1" class="reveal-modal" data-reveal>
+
+  <h3>Zoek actoren</h3>
+
+  <form>
+  <hr>
+  <div class="row">
+            
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="naam " />
+         <input type="text" placeholder="voornaam" />
+         <input type="text" placeholder="email " />
+         <input type="text" placeholder="telefoon" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" style="width:80px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postbus" style="width:80px" />
+        <input type="text" placeholder="gemeente" style="width:204px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postcode" style="width:80px" />
+              
+       <select>
+          <option value="0">land</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+  </div>
+
+                     
+   </div>
+<hr>
+<div class="clearfix">
+    <a class="small button right">Zoek</a>
+</div>
+
+
+
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- end zoek actoren -->
+
+
+<div id="myModal2" class="reveal-modal" data-reveal>
+
+<h3>Zoek VKBO</h3>
+ 
+<form>
+ <hr>
+  <div class="row">
+            
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="naam " />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" style="width:80px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postbus" style="width:80px" />
+        <input type="text" placeholder="gemeente" style="width:204px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postcode" style="width:80px" />
+  </div>
+
+                     
+   </div>
+<hr>
+<div class="clearfix">
+    <a class="small button right">Zoek</a>
+</div>
+
+
+
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+
+
+</div>
+
+
+
+<div id="myModal3" class="reveal-modal" data-reveal>
+
+  <h3>Zoek VKBP</h3>
+
+  <form>
+ <hr>
+  <div class="row">
+            
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="naam " />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" style="width:80px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postbus" style="width:80px" />
+        <input type="text" placeholder="gemeente" style="width:204px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postcode" style="width:80px" />
+  </div>
+
+                     
+   </div>
+<hr>
+<div class="clearfix">
+    <a class="small button right">Zoek</a>
+</div>
+
+
+
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+
+</div>
+
+
+
+
+
+<h5>Je zocht in Actoren op "naam"</h5>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th style="width:20px">#</th>
+        <th>Naam</th>
+        <th>Pers ID</th>
+        <th>Mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="#" data-reveal-id="myModal4">Thomas bell</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Yan Chapel</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pit Sampras</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Yan Chapel</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+<!-- zoek detail -->
+  <div id="myModal4" class="reveal-modal" data-reveal>
+
+      <h3>Zoek actoren - Thomas Bell</h3>
+
+
+      <hr>
+
+  <form>
+
+  <div class="row">
+            
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="00-ABC-DEFGHIJ" />
+      <input type="text" placeholder="00.00.00-000.00" />
+  </div>
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="Thomas" />
+         <input type="text" placeholder="Bell" />
+         <input type="text" placeholder="Thomas@yahoo.com " />
+         <input type="text" placeholder="0000/000000" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="Bellstraat" />
+        <input type="text" placeholder="00" style="width:80px;float:left;margin-right:18px" />
+        <input type="text" placeholder="postbus" style="width:80px" />
+        <input type="text" placeholder="Antwerpen" style="width:290px;float:left;margin-right:18px" />
+        <input type="text" placeholder="0000" style="width:80px" />
+              
+       <select>
+          <option value="0">land</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+  </div>
+<hr>
+  <p class="text-center">
+  <a class="small button">Editeer <i class="fa fa-pencil"></i></a>
+  <a class="small button right">Volgende</a>
+  <a class="small button disabled left">Vorige</a>
+  </p>                   
+  </div>
+
+
+
+<!--div class="clearfix">
+    <a class="small button right">Volgende</a>
+    <a class="small button disabled left">Vorige</a>
+</div-->
+
+
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+
+
+
+
+</div>
+
+
+{% endblock %}
