@@ -222,7 +222,7 @@ $tabs-navigation-bg-color: $mid-purple  ;
 $tabs-navigation-active-bg-color: $dark-purple;
 $tabs-navigation-font-color: $white;
 $tabs-navigation-font-size: rem-calc(14);
-.tabs-content {background:$light-gray;padding:5px 10px;border:1px solid $dark-purple}
+.tabs-content {background:$light-gray;padding:5px 10px;margin-top:1px;}
 
 // 34. Top Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -

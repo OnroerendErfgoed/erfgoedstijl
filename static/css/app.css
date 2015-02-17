@@ -6,7 +6,7 @@
 .tabs-content {
   background: #ededed;
   padding: 5px 10px;
-  border: 1px solid #753f7f; }
+  margin-top: 1px; }
 
 meta.foundation-version {
   font-family: "/5.4.7/"; }
@@ -6053,6 +6053,15 @@ h6 {
 
 .fa-pencil:before {
   content: "\f040"; }
+
+.fa-save:before {
+  content: "\f0c7"; }
+
+.fa-plus-circle:before {
+  content: "\f055"; }
+
+.fa-trash-o:before {
+  content: "\f014"; }
 
 ul.disk {
   margin: 10px 0;
