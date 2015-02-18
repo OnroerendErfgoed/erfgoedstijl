@@ -7,18 +7,15 @@
 
       
 
+<div class="large-12 columns">
 
-  <div class="large-12 columns">
-
-
-
-    <div class="button-bar" style="width:290px;margin:0 auto;">
+<div class="button-bar" style="width:290px;margin:0 auto;">
         <ul class="button-group">
-          <li><a href="#" data-reveal-id="myModal1" class="small button">Actoren</a></li>
-          <li><a href="#" data-reveal-id="myModal2" class="small button">VKBO</a></li>
-          <li><a href="#" data-reveal-id="myModal3" class="small button">VKBP</a></li>
+          <li><a href="#" data-reveal-id="myModal1" class="tiny button">Actoren</a></li>
+          <li><a href="#" data-reveal-id="myModal2" class="tiny button">VKBO</a></li>
+          <li><a href="#" data-reveal-id="myModal3" class="tiny button">VKBP</a></li>
         </ul>
-    </div>
+</div>
 
 
 <div class="panel">
@@ -28,13 +25,13 @@
 
 <div id="myModal1" class="reveal-modal" data-reveal>
 
-  <a class="close-reveal-modal">&#215;</a>
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
 
     <header class="clearfix">
         <h3 class="left" style="margin:6px 20px 0 0">Actoren</h3>
-            <dl class="tabs left" data-tab>
-              <dd class="active" style="margin-right:1px"><a href="#panel1">zoeken</a></dd>
-              <dd><a href="#panel2">aanmaken</a></dd>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">ZOEKEN</a></dd>
+              <dd><a href="#panel2" class="tiny">AANMAKEN</a></dd>
             </dl>
     </header>
 
@@ -58,7 +55,7 @@
         <input type="text" placeholder="straat" />
         <input type="text" placeholder="nummer" class="left" style="width:45%;" />
         <input type="text" placeholder="postbus" class="right" style="width:45%" />
-        <div class="clearfix" style="clear:both;">
+        <div class="clearfix">
         <input type="text" placeholder="postcode" class="left"  style="width:30%" />
         <input type="text" placeholder="gemeente" class="right" style="width:60%" />
         </div>
@@ -92,9 +89,10 @@
 
   </div>
 
-  <hr>
-  <div class="clearfix">
-        <a class="small button right">Zoek</a>
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">Zoek</a>
   </div> 
 
 </form>
@@ -115,34 +113,32 @@
       <input type="text" readonly="readonly" value="naam" />
   
       <input type="text" readonly="readonly" value="achternaam" />
-   
+
       <input type="text" readonly="readonly" value="e-mail" />
+   
+  <div class="clearfix">
 
-      <input type="text" readonly="readonly" value="mobile nummer" />
-
-      <div style="margin-bottom:10px"><small><a href="">nieuw veld</a></small></div>
-
-      <div style="margin-bottom:10px"><small>nieuwe dropdownlijst</small></div>
-
-        <select>
-          <option value="0">aantal velden</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+      <input type="text" placeholder="e-mail" class="left" style="width:60%" />
+      <select class="right" style="width:30%">
+          <option value="0">thuis</option>
+          <option value="1">werk</option>
        </select>
 
-    <div class="clearfix">
-        <input type="text" placeholder="Lijst label ingeven" value="" style="width:90%" class="left" />
-        <span class="right" style="padding-top:8px"><a href="#"><i class="fa fa-trash-o"></i></a></span>
-    </div>
+  </div>
 
+      <input type="text" readonly="readonly" value="telefoon" />
 
-     <div class="clearfix">
-        <input type="text" placeholder="Lijst label ingeven" value="" style="width:90%" class="left" />
-        <span class="right" style="padding-top:8px"><a href="#"><i class="fa fa-trash-o"></i></a></span>
-    </div>
+  <div class="clearfix">
+
+       <input type="text" placeholder="telefoon" class="left" style="width:60%"" />
+       <select class="right" style="width:30%">
+          <option value="0">thuis</option>
+          <option value="1">werk</option>
+       </select>
+
+  </div>
+
+ 
 
   </div>
 
@@ -153,8 +149,7 @@
 
         <input type="text" readonly="readonly" value="nummer" class="left" style="width:45%;" />
         <input type="text" readonly="readonly" value="postbus" class="right" style="width:45%;" />
-
-        <div class="clearfix" style="clear:both;">
+        <div class="clearfix">
         <input type="text" readonly="readonly" value="postcode" class="left" style="width:30%" />
         <input type="text" readonly="readonly" value="gemeente" class="right" style="width:60%" />
         </div>
@@ -163,45 +158,22 @@
           
 
 
-      <div style="margin-bottom:10px"><small><a href="">nieuw veld</a></small></div>
-
-      <div style="margin-bottom:10px"><small></i> <a href="">nieuwe dropdownlijst</a></small></div>
-
   </div>
 
     <div class="large-4 columns">
-
-       <select>
-          <option value="0">actortype</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-       </select>
-       <small style="">nieuw lijstitem toevoegen</small>
-
-        <div class="clearfix" style="margin-bottom:20px">
-            <input type="text" placeholder="Lijst label ingeven" value="" style="width:90%" class="left" />
-            <span class="right" style="padding-top:8px"><a href="#"><i class="fa fa-trash-o"></i></a></span>
-        </div>
-
-
+      
+      <input type="text" readonly="readonly" value="Actortype : " />
       <input type="text" readonly="readonly" value="ID : 00-ABC-DEFGHIJ" />
       <input type="text" readonly="readonly" value="RR : 00.00.00-000.00" />
 
-
-      <div style="margin-bottom:10px"><small><a href="">nieuw veld</a></small></div>
-
-      <div style="margin-bottom:10px"><small><a href="">nieuwe dropdownlijst</a></small></div>
-
-
   </div>
   </div>
-                
-<hr>
 
-  <a href="" class="small button right">bewaar <i class="fa fa-save"></i></a>
-  
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">bewaar</a>
+  </div> 
+
 
 
 </div>
@@ -217,110 +189,112 @@
 
 
 
-
-
 <div id="myModal2" class="reveal-modal" data-reveal>
 
-<h3>Zoek VKBO</h3>
- 
-<form>
- <hr>
-  <div class="row">
-            
-      <div class="large-4 columns">
+<h3>VKBO</h3>
 
-       <select>
-          <option value="0">actortype</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-       </select>
+<div class="tabs-content">
 
-      <input type="text" placeholder="pers id" /> 
-      <input type="text" placeholder="rijksregisternummer" />
-  </div>
+<div class="content active" id="panel1">
+
+<form style="padding-top:10px">
 
   <div class="large-4 columns">
          <input type="text" placeholder="naam " />
   </div>
 
   <div class="large-4 columns">
+
         <input type="text" placeholder="straat" />
-        <input type="text" placeholder="nummer" style="width:80px;float:left;margin-right:18px" />
-        <input type="text" placeholder="postbus" style="width:80px" />
-        <input type="text" placeholder="gemeente" style="width:204px;float:left;margin-right:18px" />
-        <input type="text" placeholder="postcode" style="width:80px" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%;" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left" style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
+
   </div>
 
+  <div class="row">
+            
+      <div class="large-4 columns">
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
                      
    </div>
-<hr>
-<div class="clearfix">
-    <a class="small button right">Zoek</a>
-</div>
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">zoek</a>
+  </div> 
 
 
 
 </form>
-  <a class="close-reveal-modal">&#215;</a>
 
 
 </div>
 
+</div>
+
+ 
+<a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+
+</div>
 
 
 <div id="myModal3" class="reveal-modal" data-reveal>
 
-  <h3>Zoek VKBP</h3>
 
-  <form>
- <hr>
+<h3>Zoek VKBP</h3>
+
+<div class="tabs-content">
+
+<div class="content active" id="panel1">
+
+
+
+  <form style="padding-top:10px">
+
   <div class="row">
             
-      <div class="large-4 columns">
-
-       <select>
-          <option value="0">actortype</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-       </select>
-
-      <input type="text" placeholder="pers id" /> 
-      <input type="text" placeholder="rijksregisternummer" />
-  </div>
 
   <div class="large-4 columns">
-         <input type="text" placeholder="naam " />
+     <input type="text" placeholder="naam" />
   </div>
 
   <div class="large-4 columns">
         <input type="text" placeholder="straat" />
-        <input type="text" placeholder="nummer" style="width:80px;float:left;margin-right:18px" />
-        <input type="text" placeholder="postbus" style="width:80px" />
-        <input type="text" placeholder="gemeente" style="width:204px;float:left;margin-right:18px" />
-        <input type="text" placeholder="postcode" style="width:80px" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%;" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left" style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
   </div>
 
+  <div class="large-4 columns">
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
                      
    </div>
-<hr>
-<div class="clearfix">
-    <a class="small button right">Zoek</a>
-</div>
 
+  <div class="clearfix text-center">
+      <a href="" class="small button">zoek</a>
+  </div> 
 
 
 </form>
   <a class="close-reveal-modal">&#215;</a>
 
 </div>
+</div>
+</div>
 
 
-
-
+<!-- lijst -->
 
 <h5>Je zocht in Actoren op "naam"</h5>
 
@@ -335,37 +309,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#" data-reveal-id="myModal4">Thomas bell</a></td>
+        <td><a href="#" data-reveal-id="myModal5"><strong>Thomas Bell</strong></a></td>
         <td></td>
         <td></td>
-        <td><div class="right">
-        <span class="[success secondary] label ">updated</span>
-        <a href="#" data-reveal-id="myModal4"><i class="fa fa-pencil "></i></a>
-        </div>
-
-        </td>
+        <td><span class="success label right">updated</span></td>
 
       </tr>
       <tr>
-        <td>Yan Chapel</td>
+        <td><strong>Yan Chapel</strong></td>
         <td></td>
         <td></td>
-        <td><a href="#" data-reveal-id="myModal4"><i class="fa fa-pencil right "></i></a></td>
+        <td><a href="#"><span class="label right ">kopieer naar actoren</span></a></td>
       </tr>
       <tr>
-        <td>Pit Sampras</td>
+        <td><strong>Pit Sampras</strong></td>
         <td></td>
         <td></td>
         <td></td>
       </tr>
       <tr>
-        <td>Yan Chapel</td>
+        <td><strong>Yan Chapel</strong></td>
         <td></td>
         <td></td>
         <td></td>
       </tr>
     </tbody>
 </table>
+
+<!-- end lijst -->
 
 
     </div>
@@ -376,24 +347,26 @@
 
 
 <!-- zoek detail -->
-  <div id="myModal4" class="reveal-modal" data-reveal>
 
+<div id="myModal5" class="reveal-modal" data-reveal>
 
-<header class="clearfix">
-<h3 class="left" style="margin:6px 20px 0 0">Actoren</h3>
-<dl class="tabs left" data-tab>
-  <dd class="active" style="margin-right:1px"><a href="#panel3">profiel</a></dd>
-  <dd><a href="#panel4">bewerken</a></dd>
-</dl>
-</header>
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
 
+    <header class="clearfix">
+        <h3 class="left " style="margin:6px 20px 0 0">Actoren</h3>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">PROFIEL</a></dd>
+              <dd><a href="#panel2" class="tiny">BEWERKEN</a></dd>
+            </dl>
+    </header>
 
-<!-- tab person content -->
 <div class="tabs-content">
 
-<div class="content active" id="panel3">
+  <div class="content active" id="panel1">
 
-<form style="padding-top:10px">
+  <form style="padding-top:10px">
+
+
 
   <div class="large-4 columns">
          <input type="text" readonly="readonly" value="Thomas" />
@@ -421,8 +394,8 @@
             
       <div class="large-4 columns">
       <input type="text" readonly="readonly" value="Actortype: 1" />
-      <input type="text" readonly="readonly" value="00-ABC-DEFGHIJ" />
-      <input type="text" readonly="readonly" value="00.00.00-000.00" />
+      <input type="text" readonly="readonly" value="ID : 00-ABC-DEFGHIJ" />
+      <input type="text" readonly="readonly" value="RR : 00.00.00-000.00" />
   </div>
         
   </div>
@@ -433,7 +406,10 @@
 </div>
 
 
-<div class="content active" id="panel4">
+<!-- start bewerken-->
+
+<div class="content" id="panel2">
+
 
 <form style="padding-top:10px">
  
@@ -451,7 +427,7 @@
         <input type="text" placeholder="Bell straat" />
         <input type="text" placeholder="00" class="left" style="width:45%;" />
         <input type="text" placeholder="postbus" class="right" style="width:45%" />
-        <div class="clearfix" style="clear:both;">
+        <div class="clearfix">
         <input type="text" placeholder="0000" class="left"  style="width:30%" />
         <input type="text" placeholder="Antwerpen" class="right" style="width:60%" />
         </div>
@@ -476,8 +452,8 @@
           <option value="4">4</option>
        </select>
 
-      <input type="text" placeholder="ID: 00-ABC-DEFGHIJ" /> 
-      <input type="text" placeholder="RR: 00.00.00-000.00" />
+      <input type="text" placeholder="ID : 00-ABC-DEFGHIJ" /> 
+      <input type="text" placeholder="RR : 00.00.00-000.00" />
 
   </div>
                
@@ -485,20 +461,28 @@
   </div>
 
 
-  <hr>
-
-  <a href="" class="small button right">bewaar <i class="fa fa-save"></i></a>
-  
+  <div class="clearfix text-center">
+      <a href="" class="small button">bewaar</a>
+  </div> 
 
 </form>
+  </div>
+
+
+</div>
+
+<!-- end aanmaken -->
+
 
 </div>
 
 </div>
-<!-- end tab person content -->
 
 
-<a class="close-reveal-modal">&#215;</a>
+<!-- end zoek detail -->
+
+
+
 
 </div>
 
