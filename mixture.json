@@ -1,7 +1,12 @@
 {
   "convertHtml": {
-    "relativePaths": false
+    "extension": ".html",
+    "path": null,
+    "ignoreUrls": null,
+    "relativePaths": true,
+    "default": null
   },
+
   "debug": false,
   "domain": null,
   "lintScripts": false,

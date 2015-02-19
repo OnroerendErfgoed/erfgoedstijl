@@ -3,51 +3,45 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Foundation 5</title>
-  		<link href="/static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
-  		<script src="/bower_components/foundation/js/vendor/modernizr.js"></script>
+		<title>Erfgoedstijl</title>
+  		<link href="static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
 	</head>
 	<body>
-		 
-  
-
-<!-- header -->
+        
+            <!-- header -->
 <div class="wrapper clearfix">
 <div class="main-navigation-inner clearfix inner">
 <div class="logo-block">
-<a href="/">
+<a href="index.html">
 <h1>Styleguide</h1>
-<img src="/static/img/pyoes/OE-vlaanderen-logo.png" width="65">
+<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
 <h2>Vlaanderen</h2>
 <h4>is Onroerend Erfgoed</h4>
+
 </a>
 </div>
 </div>
 </div>
+<!-- end header -->
 
-<!-- navigation -->
-<!-- place navigation here -->
-<!-- end navigation -->
-
- <!-- end header -->
-
+        
+		 
+  
 
 <br>
 <h1 class="text-center">Navigation</h1>
-
-
-
- <div class="row">
-
-     <div class="large-12 columns">
+<div class="row">
+<div class="large-12 columns">
 
 
   
 
-
-
 <!-- navigation type 1-->
-type 1
+<p class="text-center">type 1</p>
+
+<!-- navigation type 1 -->
+
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">  
@@ -57,7 +51,7 @@ type 1
 
   <section class="top-bar-section inner-nav">
     <ul>
-      <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
       <li><a href="">test link 1</a></li>
       <li><a href="">test link 2</a></li>
       <li><a href="">test link 3</a></li>
@@ -66,9 +60,12 @@ type 1
 </nav>
 
 
+
 <!-- navigation type 2-->
-type 2
+<p class="text-center">type 2</p>
+
 <nav class="top-bar" data-topbar role="navigation">
+ 
   <ul class="title-area">
     <li class="name">
       <h1> <!-- a href="#">Title pagina</a --> </h1>
@@ -78,7 +75,6 @@ type 2
 
   <section class="top-bar-section">
 
-    <!-- Right Nav Section -->
     <ul class="">
       <li class="active"><a href="#">Home</a></li>
       <li class=""><a href="#">Link2</a></li>
@@ -95,17 +91,17 @@ type 2
       <li class=""><a href="#">Link4</a></li>
       <li class=""><a href="#">Link5</a></li>
       <li class=""><a href="#">Link6</a></li>
-
     </ul>
 
-
   </section>
+
 </nav>
 
 
 
-<!-- navigation type 3-->
-type 3
+<!-- navigation type 2-->
+<p class="text-center">type 3</p>
+
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
@@ -139,11 +135,10 @@ type 3
 
 
 
-
 <!-- sub navigation -->
-subnavigation
+<p class="text-center">subnavigation type 1</p>
 <dl class="sub-nav">
-  <dt>Filter:</dt>
+  <dt><!-- title --></dt>
   <dd class="active"><a href="#">All</a></dd>
   <dd><a href="#">Active</a></dd>
   <dd><a href="#">Pending</a></dd>
@@ -152,23 +147,26 @@ subnavigation
 
 
 <!-- breadcrumbs -->
+<p class="text-center">subnavigation type 2 breadcrumbs</p>
 
-breadcrumbs
-<ul class="breadcrumbs">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Features</a></li>
-  <li class="unavailable"><a href="#">Gene Splicing</a></li>
-  <li class="current"><a href="#">Cloning</a></li>
+<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#">Home</a><meta itemprop="position" content="1" /></li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#">niveau 1</a><meta itemprop="position" content="2" /></li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="unavailable"><a itemprop="item" href="#">niveau 2 niet actief</a><meta itemprop="position" content="3" /></li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="current"><a itemprop="item" href="#">Actief</a><meta itemprop="position" content="4" /></li>
 </ul>
 
 
-<!-- page navigation -->
-page navigation
+
+
+
+<!-- page navigation 1 -->
+<p class="text-center">subnavigation type 3 page navigation</p>
 <div class="pagination-centered">
   <ul class="pagination">
     <li class="arrow unavailable"><a href=""> &lsaquo; vorige</a></li>
     <li class=""><a href="">lijstscherm</a></li>
-    <li class="arrow"><a href="">volgende  &rsaquo;</a></li>
+    <li class=""><a href="">volgende  &rsaquo;</a></li>
   </ul>
 </div>
 
@@ -177,13 +175,73 @@ page navigation
 
 
 
-    </div>
-
-    </div>  
 
 
-  		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/static/js/foundation.min.js"></script>
+<!-- page navigation 2 -->
+<p class="text-center">subnavigation type 4 page navigation numbers</p>
+
+<div class="pagination-centered">
+  <ul class="pagination">
+    <li class="arrow unavailable"><a href="">1</a></li>
+    <li class=""><a href="">2</a></li>
+    <li class=""><a href="">3</a></li>
+    <li class=""><a href="">4</a></li>
+  </ul>
+</div>
+
+
+
+
+
+<!-- tab navigation  -->
+<p class="text-center">subnavigation type 5 tab navigation</p>
+
+
+<p class="text-center">Tabs</p>
+
+<dl class="tabs">
+  <dd class="active"><a href="#panel1">Tab 1</a></dd>
+  <dd><a href="#panel2">Tab 2</a></dd>
+  <dd><a href="#panel3">Tab 3</a></dd>
+  <dd><a href="#panel4">Tab 4</a></dd>
+</dl>
+
+
+
+<p class="text-center">Tabs + panels</p>
+
+<dl class="tabs" data-tab>
+  <dd class="active"><a href="#panel1">Tab 1</a></dd>
+  <dd><a href="#panel2">Tab 2</a></dd>
+  <dd><a href="#panel3">Tab 3</a></dd>
+  <dd><a href="#panel4">Tab 4</a></dd>
+</dl>
+
+
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel2">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel3">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel4">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+
+
+</div>
+</div>  
+
+
+        
+        
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="static/js/foundation.min.js"></script>
 <script>
 $(document).foundation();
 </script>
