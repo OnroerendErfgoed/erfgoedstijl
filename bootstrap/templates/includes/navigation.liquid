@@ -1,16 +1,46 @@
-<div class="navbar-header navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
-                <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Model</a></li>
-            </ul>
+
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
+                   <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Model</a></li> 
+                   <li {% if mixture.url == "grids" %}class="active"{% endif %}><a href="grids">Grids</a></li>
+                   <li {% if mixture.url == "elements" %}class="active"{% endif %}><a href="elements">Elementen</a></li>
+                </ul>
+
+                <div class="pull-right">
+                <ul class="nav pull-right" >
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff">Welcome, User <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
+                           <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Model</a></li> 
+                           <li {% if mixture.url == "grids" %}class="active"{% endif %}><a href="grids">Grids</a></li>
+                           <li {% if mixture.url == "elements" %}class="active"{% endif %}><a href="elements">Elementen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+
+
+            </div>
+
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-</div>
+        <!-- /.container -->
+    </nav>
+
+
+

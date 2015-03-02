@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:'Less NameError: .border-right-radius is undefined in \\Users\\tomvancamp\\Documents\\erfgoedstijl\\bootstrap\\public\\css\\less\\OE-button-groups.less on line 62, column 5: \A 61   &:not(:last-child):not(.dropdown-toggle) { \A 62     .border-right-radius(0); \A 63   } \A  \A '}body *{display:none}

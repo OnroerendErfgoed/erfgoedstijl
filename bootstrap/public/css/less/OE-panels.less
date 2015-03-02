@@ -7,9 +7,10 @@
 .panel {
   margin-bottom: @line-height-computed;
   background-color: @panel-bg;
-  border: 1px solid transparent;
-  /*border-radius: @panel-border-radius;*/
-  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+  border: 0px solid #fff;
+  border-radius: 0 !import;
+  /*.box-shadow(0 1px 1px rgba(0,0,0,.05));*/
+
 }
 
 // Panel contents
@@ -22,7 +23,8 @@
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  /*.border-top-radius((@panel-border-radius - 1));*/
+
+  
 
   > .dropdown .dropdown-toggle {
     color: inherit;
@@ -30,7 +32,6 @@
 }
 
 // Within heading, strip any `h*` tag of its default margins for spacing.
-
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -47,7 +48,7 @@
   padding: 10px 15px;
   background-color: @panel-footer-bg;
   border-top: 1px solid @panel-inner-border;
-  /*.border-bottom-radius((@panel-border-radius - 1));*/
+ .border-bottom-radius((@panel-border-radius - 1));
 }
 
 

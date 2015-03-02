@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: .make-grid-columns is undefined in \\Users\\tomvancamp\\Documents\\erfgoedstijl\\bootstrap\\public\\css\\less\\OE-grid.less on line 48, column 1: \A 47  \A 48 .make-grid-columns(); \A 49  \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 
