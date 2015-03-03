@@ -1,10 +1,12 @@
 body {
   font-family: "Flanders Art Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #F5F5F5;
 }
+
+article {padding:0 10px;}
 
 
 
@@ -1773,15 +1775,15 @@ body {
 
 // flanders-block-more link
 
-.fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa {float:$opposite-direction;text-decoration:none;}
+.fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa {float:@opposite-direction;text-decoration:none;}
 .fl-block .field a.more:hover{text-decoration:underline;}
-.fl-block .field a.more {font-family: $font-family-medium-serif;color:$dark-purple}
+.fl-block .field a.more {font-family: $font-family-medium-serif;color:@dark-purple}
 .fl-block .field a.fa {margin-top:2em;}
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
 .fl-block .field figure {float:$default-float;overflow:hidden;display:inline-block;margin:0.4em 1.5em 0.8em 0;padding:0;}
 
 
-.fl-block .block-date {text-transform: uppercase;border:none;background-color:$dark-purple;padding:0.75em 1.5em 0.65em;color:$white;}
+.fl-block .block-date {text-transform: uppercase;border:none;background-color:@dark-purple;padding:0.75em 1.5em 0.65em;color:$white;}
 .fl-block .field.block-date i {float:none;margin-right:0.4em;}
 .fl-block .field.block-image {border-bottom:0;}
 .fl-block .field.block-image img{width:100%;display:block;}
@@ -1799,31 +1801,31 @@ body {
 
 /* -- titles -- */
 
-.fl-block.style-1 .block-title, .fl-block.style-2 .block-title, .fl-block.style-3 .block-title { background-color:$dark-purple;margin:0;color:$white !important;font-size:$switch-font-size-med}
-.fl-block.style-3 .block-title {background-color:$fresh-blue; color:$white !important}
+.fl-block.style-1 .block-title, .fl-block.style-2 .block-title, .fl-block.style-3 .block-title { background-color:@dark-purple;margin:0;color:$white !important;font-size:@switch-font-size-med}
+.fl-block.style-3 .block-title {background-color:@fresh-blue; color:$white !important}
 
-.fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:$dark-purple !important}
-.fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:$white;display:block}
+.fl-block.style-1 .block-title.naked, .fl-block.style-2 .block-title.naked {color:@dark-purple !important}
+.fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:#fff;display:block}
 
-.fl-block .block-title, .fl-block .block-title.naked { background-color:$dark-purple;text-transform: uppercase; letter-spacing:1px;border:none; margin-top:-1px;padding:0.9em 1.4em 0.8em 1.2em;}
+.fl-block .block-title, .fl-block .block-title.naked { background-color:@dark-purple;text-transform: uppercase; letter-spacing:1px;border:none; margin-top:-1px;padding:0.9em 1.4em 0.8em 1.2em;}
 
-.fl-block .block-title.naked { background-color:$white !important;color:$dark-purple !important;padding:0;}
+.fl-block .block-title.naked { background-color:$white !important;color:@dark-purple !important;padding:0;}
 
-.block-text h3 a { color:$dark-purple !important;margin:-8px 0 0 0;letter-spacing:-1px}
+.block-text h3 a { color:@dark-purple !important;margin:-8px 0 0 0;letter-spacing:-1px}
 .block-text h3 a:hover { text-decoration:underline !important }
 
 
 /* -- social -- */
 
 .fl-block .field.social i.fa {float:none;margin:0 1em 0 0.4em;display:inline-block;line-height:1em;font-size:1.6em}
-.fl-block .fl-block{border-right:1px solid $mid-gray;border-bottom:1px solid $mid-gray ;}
+.fl-block .fl-block{border-right:1px solid @mid-gray;border-bottom:1px solid @mid-gray ;}
 .fl-block .field.social > a{font-weight:400;}
 .fl-block .field.social > a:hover{text-decoration: none;}
 
-.fl-block .field.social.twitter > a{color:$soc-twitter;}
-.fl-block .field.social.facebook > a{color:$soc-facebook;}
-.fl-block .field.social.mail > a{color:$soc-mail;}
-.fl-block .field.social.linkedin > a{color:$soc-linkedin;}
+.fl-block .field.social.twitter > a{color:@soc-twitter;}
+.fl-block .field.social.facebook > a{color:@soc-facebook;}
+.fl-block .field.social.mail > a{color:@soc-mail;}
+.fl-block .field.social.linkedin > a{color:@soc-linkedin;}
 
 .coloredbg {background-color:@light-purple !important; color:white}
 .coloredbg h3 a {color:white !important}
@@ -1891,6 +1893,62 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
 .color-cube {height:100px;width:100px;color:#fff;float:left;padding:5px}
 
 
+
+
+//
+// OE searchbox beeldbank
+//
+
+
+.fl-block-search {border-top:5px solid @dark-purple}
+.fl-block-search form {margin-top:25px}
+.fl-block-search_fieldset, .fl-block-search_fieldset input {border:none;padding:0;margin:0;line-height:16px}
+.fl-block-search_fieldset select  {width:95%}
+    
+.searchBox {position: relative;padding: 0px;}
+.searchBox input {box-sizing: border-box;width: 100%;padding: 20px;}
+.searchBox button {padding:12px 30px;position: absolute;top: 0px;right: 0px;text-transform: uppercase; }
+.searchBox button:before {content: '';position: absolute;display: block;height: 44px;top:0;left:0;width:0;}
+.searchBox small {font-size:0.8em;float:right;margin-bottom:20px;}
+
+.searchBox fieldset {background:none;border:none;padding:0;margin:0;font-size:0.8em;}
+.searchBox fieldset input {float:left; }
+.searchBox h3 { padding-bottom:60px;border:1px solid #C03 }
+
+
+/*over rule */
+
+.btn {
+  display: inline-block;
+  border-radius: 0px; 
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding:10px 30px ;
+ 
+
+}
+
+
+//
+// OE images CLASSES beeldbank
+//
+
+figure {margin:0 0 20px 0}
+figcaption {margin:0 0 20px 0;border-bottom:1px solid $light-gray;padding:10px 0;font-size: $small-font-size;}
+
+
+// beeldbank caption info detail image and tags
+
+.caption-info dt {font-size:1em;padding:10px 0 0 0;}
+.caption-info dd {margin:0;line-height:1.3em;}
+
+.bb-imagelarge {margin:0 0 30px 0;padding:0}
+
+
+// article place holder
+
+aside img {margin:5px 30px 5px 0}
 
 
 

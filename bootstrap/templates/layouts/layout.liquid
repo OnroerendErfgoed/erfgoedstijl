@@ -8,6 +8,19 @@
                 {{ "bootstrap-OE.css" | asset_url | stylesheet_tag }}
      
         <!-- TODO: Complete this project :) -->
+
+<!-- tooltip -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'top'
+    });
+});
+</script>
+
+
+
     </head>
     <body>
         {% include "header" %}
