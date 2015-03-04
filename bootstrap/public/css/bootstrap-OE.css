@@ -1,10 +1,4 @@
-body {
-  font-family: "Flanders Art Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #333333;
-  background-color: #F5F5F5;
-}
+
 
 article {padding:0 10px;}
 
@@ -1733,14 +1727,6 @@ article {padding:0 10px;}
 
 
 
-.bgimage {
-  background: url(../img/pyoes/header-img.jpg);
-  width: 960px;
-  height: 135px;
-  position: absolute;
-  right: 0;
-  z-index: 0;
-}
 
 
 
@@ -1775,7 +1761,7 @@ article {padding:0 10px;}
 
 // flanders-block-more link
 
-.fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa {float:@opposite-direction;text-decoration:none;}
+.fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa {float:right;text-decoration:none;}
 .fl-block .field a.more:hover{text-decoration:underline;}
 .fl-block .field a.more {font-family: $font-family-medium-serif;color:@dark-purple}
 .fl-block .field a.fa {margin-top:2em;}
@@ -1916,18 +1902,54 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
 .searchBox h3 { padding-bottom:60px;border:1px solid #C03 }
 
 
-/*over rule */
+/*overrule */
 
 .btn {
-  display: inline-block;
-  border-radius: 0px; 
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
   padding:10px 30px ;
- 
+  border-radius: 0px; 
+  text-transform: uppercase;
 
 }
+
+.btn-lg {
+
+font-size:14px; 
+
+}
+
+.btn-xs {
+ padding:3px 6px ;
+font-size:10px; 
+
+}
+
+
+
+/*MEDIA QUERIES OVERRULE*/
+
+/*
+@media screen and (min-width: 400px) and (max-width: 1171px) {
+    .whitefix {background: #fff;margin-left:-10px;}
+}
+*/
+
+
+@media screen and (min-width: 400px) {
+
+.whitefix {background: #fff}
+
+}
+
+
+@media screen and (max-width: 578px) {
+
+  .bgimage {background: none}
+  #service-navigation {display:none;}
+  .logo-block { background: none !important}
+}
+
+
+
 
 
 //
@@ -1962,7 +1984,8 @@ margin: 0 auto 15px auto;
 border-radius: 50%;
 width:150px;
 position: relative;
-background-color: $light-gray ;
+/*background-color: $light-gray ;*/
+background-color: #C03 ;
 }
 
 .circle:before {
@@ -1993,6 +2016,45 @@ font-size: 1em;
 }
 
 .score-text h3 { font-size: 2.5em;}
+
+
+
+//
+// OE custom LISTS
+//
+
+
+// li colored disk
+ul.disk {margin:10px 0;padding-left: 1em;}
+ul.disk li {list-style: disc outside none; color: @light-purple;}
+ul.disk li span {color: @dark-gray;}
+ul.disk li a {color:@fresh-blue !important; text-decoration:underline;margin-bottom:8px;}
+ul.disk li a:hover {text-decoration:none} 
+
+// li no disk
+ul.nodisk {margin-left: 0em;}
+ul.nodisk li {list-style: inside none;}
+
+// source list
+ul.source li {list-style-type: none;}
+ul.source {margin:20px 0;padding-left: 0;font-size:0.8em;}
+
+
+// reactions list
+ul.reactions {margin:0;font-size:0.9em}
+.reactions li {list-style-type:none;padding:5px 10px;}
+.reactions li:nth-child(2) {background-color:@light-gray}
+.reactions cite {font-weight:bold ;font-size:1em}
+.reactions blockquote {border:none;color:@dark-gray;padding-left:0;margin:0 0 5px 0}
+
+
+//ordered list
+ol > li {list-style-type: decimal;} 
+
+// ordered list no number
+ol.nonumbers {margin-left:0} 
+ol.nonumbers > li {list-style-type: none;} 
+
 
 
 

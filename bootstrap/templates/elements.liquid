@@ -3,10 +3,10 @@
 
 
 
- <div class="container">
-    <div class="col-xs-12 panel">
+<div class="col-md-12">
+  <div class="col-md-12">
 
-
+      
 <!-- buttons -->
 <p class="text-center">Buttons</p>
 
@@ -22,10 +22,12 @@
 <br>
 
 
+
+
 <!-- Expand Class -->
 
 <div class="btn-group-justified">
-    <div class="btn-group ">
+    <div class="btn-group">
     <button type="button" class="btn btn-lg btn-primary">Middle</button>
     </div>
  </div>
@@ -33,7 +35,7 @@
  <br>
 
 <div class="btn-group-justified">
-    <div class="btn-group ">
+    <div class="btn-group">
     <button type="button" class="btn btn-primary">Middle</button>
     </div>
  </div>
@@ -55,7 +57,7 @@
 
 
     <div class="btn-toolbar" role="toolbar">
-        <div class="btn-group btn-group-lg">
+        <div class="btn-group">
             <button type="button" class="btn btn-primary">Left</button>
             <button type="button" class="btn btn-primary">Middle</button>
             <button type="button" class="btn btn-primary">Right</button>
@@ -75,8 +77,18 @@
 
 
 
+    <div class="btn-primary pull-left disabled "><a href="#">Vorige</a></div>
+    <div class="btn-primary pull-right"><a href="#">Volgende</a></div>
+
+
+
+
+
+
+
 
 <hr>
+
 
 <p class="text-center">Dropdown button ( click )</p>
 
@@ -134,7 +146,6 @@
 
 
 
-
 <!-- tooltips -->
 <hr>
 <p class="text-center">Tooltips</p>
@@ -142,11 +153,13 @@
 <div class="bs-example"> 
     <ul class="list-inline">
         <li><a href="#" data-toggle="tooltip" data-original-title="Default tooltip">Tooltip</a></li>
-        <li><a href="#" data-toggle="tooltip" data-original-title="Another tooltip">Another tooltip</a></li>
         <li><a href="#" data-toggle="tooltip" data-original-title="A much longer tooltip to demonstrate the max-width of the Bootstrp tooltip.">Large tooltip</a></li>
-        <li><a href="#" data-toggle="tooltip" data-original-title="The last tip!">Last tooltip</a></li>
     </ul>
 </div>
+
+
+
+
 
 <!-- Lists -->
 <hr>
@@ -231,7 +244,7 @@
 <p class="text-center">Table 1</p>
 
 
-<table class="table">
+<table class="table table-hover">
     <thead>
       <tr>
         <th>#</th>
@@ -306,6 +319,21 @@
       </tr>
     </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -480,6 +508,16 @@
 
 <a href="#" class="button disabled [tiny small large]">Disabled Button</a>
 
+
+
+
+
+
+<label class="sr-only" for="inputHelpBlock">Input with help text</label>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+...
+<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+
 </form>
 <!-- end form type 1 -->
 
@@ -616,7 +654,7 @@
 
 <!-- social buttons on page -->
 
-<ul class="socialbox dropdown right clearfix">
+<ul class="socialbox  right clearfix">
     <li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
   <li class="mail"><a href="#"><i class="fa fa-envelope"></i> Mailen</a></li>
@@ -629,112 +667,67 @@
 <h1 class="text-center">alerts</h1>   
 
 
+<!-- Button trigger modal -->
+<a class="" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</a>
 
-<a href="#" data-reveal-id="myModal">Een dialoog venster</a>
 
-<div id="myModal" class="reveal-modal" data-reveal>
-  <h2>Lorem ipsum dolor sit amet</h2>
-  <p class="lead">Lorem ipsum dolor sit amet</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tempus feugiat tortor, congue ornare tellus tempus ac. Suspendisse ac sagittis orci, at iaculis lectus. Integer et nunc vel ante dictum sollicitudin. Nam ut sapien ac quam aliquet fermentum et et velit. Aliquam in tincidunt sem. Phasellus molestie metus elit, in semper arcu rhoncus ut.</p>
-  <a class="close-reveal-modal">&#215;</a>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ... 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 <br><br>
 
-
-
-
- <div class="row sg-pattern-styles">
-    <h1 class="page-header">Patterns<small> - Design and mark-up patterns unique to your site.</small></h1>
-    <div class="sg-markup sg-section"><div class="sg-display"><h2 class="sg-h2"><a id="sg-alerts" class="sg-anchor">alerts</a></h2><div class="row"><div class="col-md-8"><h3 class="sg-h3">Example</h3><!-- Sample pattern, your site's patterns will be different -->
 <div class="alert alert-warning">
   <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
 </div>
 
-<div class="alert alert-error">
+<div class="alert alert-danger">
   <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam. 
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
 </div>
-
-
-
-
-
-
 
 <div class="alert alert-success">
   <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
 </div>
 
 <div class="alert alert-info">
   <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
-</div></div><div class="col-md-4"><div class="well sg-doc"><h3 class="sg-h3">Usage Notes</h3><p>This is how the element is used:</p></div></div></div></div><!--/.sg-display--><div class="sg-markup-controls"><a class="btn btn-primary sg-btn sg-btn--source" href="#">View Source</a> <a class="sg-btn--top" href="#top">Back to Top</a> </div><div class="sg-source sg-animated"><a class="btn btn-default sg-btn sg-btn--select" href="#">Copy Source</a><pre class="prettyprint linenums
-
-
-
-
-
-
-
-
-
-
-
-
-<div data-alert class="alert-box success">
-  This is a success alert
-  <a href="#" class="close">&times;</a>
-</div>
-
-<div data-alert class="alert-box warning ">
-  This is a warning alert
-  <a href="#" class="close">&times;</a>
-</div>
-
-<div data-alert class="alert-box info ">
-  This is an info alert
-  <a href="#" class="close">&times;</a>
-</div>
-
-<div data-alert class="alert-box alert ">
-  This is an alert 
-  <a href="#" class="close">&times;</a>
-</div>
-
-<div data-alert class="alert-box secondary">
-  This is a secondary alert.
-  <a href="#" class="close">&times;</a>
-</div>
-
-<div data-alert class="alert-box custom">
-  This is a custom alert.
-</div>
-
-
-
-
-
-
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
 </div>
 
 
 
-<div data-alert class="well success">
-  This is a success alert
-  <a href="#" class="close">&times;</a>
-</div>
 
-btn btn-success
-
-
-
-
-
-<div class="well">Look, I'm in a well!</div>
-<div class="well well-small">Small Well</div>
-<div class="well well-large">Large Padding Well
-</div>
 
 
 
@@ -743,9 +736,8 @@ btn btn-success
 
 
 <div class="list-group">
-  <a href="#" class="list-group-item active">
-    Cras justo odio
-  </a>
+  <a href="#" class="list-group-item active">Cras justo odio</a>
+
   <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
   <a href="#" class="list-group-item">Morbi leo risus</a>
   <a href="#" class="list-group-item">Porta ac consectetur ac</a>
@@ -755,24 +747,19 @@ btn btn-success
 
 
 
-<p class="bg-primary">...</p>
-<p class="bg-success">...</p>
-<p class="bg-info">...</p>
-<p class="bg-warning">...</p>
-<p class="bg-danger">...</p>
-
-<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
 
 
 
 
 
-
-
-
-    </div>
+  
+   </div>
 </div>
+
+
+
+
 
 
 
