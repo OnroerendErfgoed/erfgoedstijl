@@ -19,10 +19,10 @@
 
   <h1>Erkende intergemeentelijke onroerenderfgoeddiensten</h1> 
 
-        <figure>
-          <img itemprop="image" src="https://www.onroerenderfgoed.be/assets/files/made/assets/files/content/images/Oostkerke_Lettenburgstr_IMG_9062_832_370_s_c1.jpg" class="img-responsive" alt="">
-          <figcaption>Maecenas ac tortor nec ligula facilisis commodo. Foto door <a href="#">Richard Clark</a></figcaption>
-        </figure>
+    <figure>
+      <img itemprop="image" src="https://www.onroerenderfgoed.be/assets/files/made/assets/files/content/images/Oostkerke_Lettenburgstr_IMG_9062_832_370_s_c1.jpg" class="img-responsive" alt="">
+      <figcaption>Maecenas ac tortor nec ligula facilisis commodo. Foto door <a href="#">Richard Clark</a></figcaption>
+    </figure>
         
 
 
@@ -128,59 +128,103 @@
 
 <!-- social buttons on page -->
 
-<ul class="socialbox dropdown right clearfix">
-    <li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+<ul class="socialbox dropdown pull-right clearfix">
+  <li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+  <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
   <li class="mail"><a href="#"><i class="fa fa-envelope"></i> Mailen</a></li>
-    <li class="print"><a href="#"><i class="fa fa-print"></i> Printen</a></li>
+  <li class="print"><a href="#"><i class="fa fa-print"></i> Printen</a></li> 
 </ul>
 
 <hr>
 
-<form class="clearfix">
+
+<div class="row clearfix">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+    <span class="pull-right"><button type="button" class="btn btn-lg btn-primary">Plaats reactie</button></span>
+    </div>
+</div>
+
+
+<form class="reactionsclearfix">
 
 <h5>Reacties (0)</h5>
 
 <h6>Reageer op dit artikel</h6>
 
 
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label1" class="left inline">Naam</label>
-        </div>
 
-        <div class="small-10 columns">
-          <input type="text" id="label1" placeholder="naam">
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Email adres</label>
-        </div>
-
-        <div class="small-10 columns">
-          <input type="text" id="label2" placeholder="email">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Reactie</label>
-        </div>
-
-        <div class="small-10 columns">
-          <textarea placeholder="omschrijving"></textarea>
-        </div>
-      </div>
-
-  
+  <div class="form-group">
+    <label for="label1">Naam</label>
+    <input type="email" class="form-control" id="label 1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="mail">Email adres</label>
+    <input type="password" class="form-control" id="mail" placeholder="email">
+  </div>
+  <div class="form-group">
+  <label for="label2" class="left inline">Reactie</label>
+  <textarea id="label2" class="form-control" placeholder="omschrijving"></textarea>
+  </div>
+ 
 
 
-<a href="#" class="button right [tiny small large]">Plaats reactie</a>
 
+
+
+
+  <div class="row">
+    <div class="col-md-6">Total cost</div>
+    <div class="col-md-6"><span class="pull-right"><button type="button" class="btn btn-lg btn-primary">Plaats reactie</button>
+</span></div>
+  </div>
+
+
+
+ 
 </form>
+
+
+
+
+
+
+
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
 
 
 
@@ -208,7 +252,7 @@
 
 </article>
 
-  </div>
+</div>
 
 
 
@@ -223,19 +267,21 @@
 
 <!-- start right column 4-->
 
-    <div class="col-md-4">
+<div class="col-md-4">
 
 
 <!-- search 1 -->
 
 <div class="large-12 ">
 
-<div class="panel fl-block-search">
+<div class="fl-block-search">
 
 <form name="" action="#" method="post" class="clearfix">
 
   <input type='text' placeholder='zoek' />
   <a href="#" class="button [tiny small large] right">ZOEKEN</a>
+
+  <button type="button" class="btn btn-lg btn-primary">zoeken</button>
 
   <fieldset class="fl-block-search_fieldset">
       <input id="checkbox1" type="checkbox"><label for="checkbox1">zoek binnen deze website</label><br>
@@ -250,49 +296,8 @@
 <!-- end search 1-->
 
 
-
-
-      
-
      
 <!-- nieuws 2 -->
-
-
-<div class="panel panel-primary">
-     <div class="panel-heading">
-       <h3 class="panel-title">Nieuws</h3>
-     </div>
-
-     <div class="panel-body">
-
-      <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-            <a itemprop="url" href="#">
-                <h5 itemprop="name">Vlaamse overheid is werkgever van het jaar</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-      </div>
-
-      <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-            <a itemprop="url" href="#">
-                <img itemprop="image" src="https://inventaris.onroerenderfgoed.be/afbeeldingen/180002?size=small.png" width="90" alt="Alt descritpion" />
-                <h5 itemprop="name">De stemmen zijn geteld</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-      </div>
-   
-      <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-           <a itemprop="url" href="#">
-                <h5 itemprop="name">Huurpremie na 4 jaar wachten op sociale woning</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-           </a>
-      </div>
-
-    
-    <div class="field"><a itemprop="url" class="more" href="#">toon alles  &rsaquo;</a></div>
-    
-     </div>
-   </div>
-
 
 
 
@@ -331,85 +336,11 @@
 <!-- end nieuws 2 -->
    
 
-<!-- downloads -->
-
-
-
-
-<div class="panel panel-primary">
-     <div class="panel-heading">
-       <h4 class="panel-title">Nieuwdssds</h4>
-     </div>
-     <div class="panel-body">
-        <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-            <a itemprop="url" href="#">
-                <h5 itemprop="name">Vlaamse overheid is werkgever van het jaar</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-      </div>
-
-      <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-            <a itemprop="url" href="#">
-                <img itemprop="image" src="https://inventaris.onroerenderfgoed.be/afbeeldingen/180002?size=small.png" width="90" alt="Alt descritpion" />
-                <h5 itemprop="name">De stemmen zijn geteld</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-            </a>
-      </div>
-   
-      <div itemscope="" itemtype="http://schema.org/Article" class="field full news">
-           <a itemprop="url" href="#">
-                <h5 itemprop="name">Huurpremie na 4 jaar wachten op sociale woning</h5> 
-                <time itemprop="datePublished" datetime="2014-04-30">30 april 2014</time>
-           </a>
-      </div>
-
-    
-    <div class="field"><a itemprop="url" class="more" href="#">toon alles  &rsaquo;</a></div>
-    
-     </div>
-   </div>
-
-
-
-
-<div class="fl-block style-3">
-      
-      <h4 itemprop="name" class="block-title field">Downloads</h4>
-      <div class="field full download"><a itemprop="url" href="#">De Onderwijsspiegel 2013  <i class="fa fa-download"></i></a></div>
-      <div class="field full download"><a itemprop="url" href="#">Studietoelagen 2013 <i class="fa fa-download"></i></a></div>
-      <div class="field full download"><a itemprop="url"  href="#">Subsidies &amp; steun 2013 <i class="fa fa-download"></i></a></div>
-      <div class="field"><a itemprop="url" class="more" href="#">meer downloads  &rsaquo;</a></div>
-
-   </div>
-
-<!-- end downloads -->
-
-
-
-<div class="list-group">
-  <a href="#" class="list-group-item active">
-    Downloads
-  </a>
-  <a href="#" itemprop="url" class="list-group-item">De Onderwijsspiegel 2013  <i class="fa fa-download right"></i></a>
-  <a href="#" itemprop="url" class="list-group-item">Studietoelagen 2013 <i class="fa fa-download"></i></a></a>
-  <a href="#" itemprop="url" class="list-group-item">Subsidies &amp; steun 2013 <i class="fa fa-download"></i></a>
-  <a href="#" itemprop="url" class="list-group-item">meer downloads  &rsaquo;</a></a>
-</div>
-
-
-
-
-
-   
      
 <!-- nieuwsfeed -->
 
 
-<div class="list-group">
-  <!--a href="#" class="list-group-item active">Nieuwsfeed</a -->
-
-
-      <div class="fl-block style-2">
+<div class="fl-block style-2">
 
         <h4 class="block-title field"><a itemprop="url" href="#">Nieuwsfeed</a></h4>
 
@@ -451,8 +382,8 @@
       
     <div class="field"><a itemprop="url" class="more" href="#">toon alles  &rsaquo;</a></div>
     
-    </div>
-     </div>
+</div>
+
 
 
 <!-- end nieuwsfeed  -->
@@ -461,71 +392,37 @@
 <!-- nieuwsfeed -->
 
 
-<div class="list-group">
-  <a href="#" class="list-group-item active">Nieuwsfeed</a>
 
-
-      <div class="fl-block style-2">
-
-
-
-          <div itemscope="" itemtype="http://schema.org/Article" class="field full rss">
-           <a itemprop="url" href="#" class="list-group-item">
-               <time itemprop="datePublished" datetime="" class="posted">16u</time>
-               <h5 itemprop="name">Vlaamse overheid is werkgever van het jaar</h5>  
-          </a>
-          </div>
-
-
-          <div itemscope="" itemtype="http://schema.org/Article" class="field full rss">
-            <a itemprop="url" href="#" class="list-group-item">
-                  <time itemprop="datePublished" datetime="" class="posted">16u</time>
-                  <h5 itemprop="name">De stemmen zijn geteld</h5> 
-              </a>
-          </div>
-   
-          <div itemscope="" itemtype="http://schema.org/Article" class="field full rss">
-            <a itemprop="url" href="#" class="list-group-item">
-                  <time itemprop="datePublished" datetime="" class="posted">14u</time>
-                  <h5 itemprop="name">Huurpremie na 4 jaar wachten op sociale woning</h5> 
-              </a>
-          </div>
-
-          <div itemscope="" itemtype="http://schema.org/Article" class="field full rss">
-             <a itemprop="url" href="#" class="list-group-item">
-                 <time itemprop="datePublished" datetime="" class="posted">14u</time>
-                 <h5 itemprop="name">Huurpremie na 4 jaar wachten op sociale woning</h5> 
-              </a>
-          </div>
-
-          <div itemscope="" itemtype="http://schema.org/Article" class="field full rss">
-             <a itemprop="url" href="#" class="list-group-item">
-                 <time itemprop="datePublished" datetime="" class="posted">14u</time>
-                 <h5 itemprop="name">Huurpremie na 4 jaar wachten op sociale woning</h5> 
-              </a>
-          </div>
+<div class="fl-block style-3">
       
-    <div class="field"><a itemprop="url" class="more" href="#">toon alles  &rsaquo;</a></div>
-    
-    </div>
-     </div>
+      <h4 itemprop="name" class="block-title field">Downloads</h4>
+      <div class="field full download"><a itemprop="url" href="#">De Onderwijsspiegel 2013  <i class="fa fa-download"></i></a></div>
+      <div class="field full download"><a itemprop="url" href="#">Studietoelagen 2013 <i class="fa fa-download"></i></a></div>
+      <div class="field full download"><a itemprop="url"  href="#">Subsidies &amp; steun 2013 <i class="fa fa-download"></i></a></div>
+      <div class="field"><a itemprop="url" class="more" href="#">meer downloads  &rsaquo;</a></div>
+
+</div>
 
 
-<!-- end nieuwsfeed  -->
 
 
 <!-- social on page -->
 
+<div class="fl-block style-3">
+  <h4 class="block-title field">Volg ons</h4>
+  <div class="field full social twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></div>
+  <div class="field full social facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></div>
+  <div class="field full social mail"><a href="#"><i class="fa fa-envelope"></i> mail</a></div>
+  <div class="field full social linkedin"><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></div>
 
-
-<div class="list-group">
-  <a href="#" class="list-group-item active">Volg ons</a>
-  <a href="#" class="list-group-item"><i class="fa fa-twitter"></i> Twitter</a>
-  <a href="#" class="list-group-item"><i class="fa fa-facebook-square"></i> Facebook</a>
-  <a href="#" class="list-group-item"><i class="fa fa-envelope"></i> Mail</a>
-  <a href="#" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
 </div>
-    </div>
+
+<!-- end social on page -->
+
+
+
+
+</div>
 
 
 <!-- end right column -->

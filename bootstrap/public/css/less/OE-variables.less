@@ -20,8 +20,6 @@
 @brand-danger:          #FF0000;
 
 
-
-
 @primary-color: #944EA1 !default;  
 @secondary-color: #e7e7e7 !default;
 @alert-color: #FF0000 !default;    
@@ -59,8 +57,10 @@
 @soc-mail_hover   : #7a588b;
 @soc-linkedin_hover : #006ca4;
 
+// OE specific
 
-
+@fresh-blue     : #2da3ce;
+@gray-blue      : #86abbe;
 
 
 //== Scaffolding
@@ -70,7 +70,7 @@
 //** Background color for `<body>`.
 @body-bg:               #F5F5F5;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @dark-gray;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -81,15 +81,18 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+@font-family-light-serif  : "Flanders Art Sans Light", Helvetica, Arial, sans-serif;
+@font-family-sans-serif   : "Flanders Art Sans", Helvetica, Arial, sans-serif;
+@font-family-medium-serif : "Flanders Art Sans Medium", Helvetica, Arial, sans-serif;
+@font-family-bold-serif   : "Flanders Art Sans Bold", Helvetica, Arial, sans-serif;
 
-@font-family-sans-serif:  "Flanders Art Sans", Helvetica, Arial, sans-serif;
 
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
+@font-size-base:          15px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // 
 @font-size-small:         ceil((@font-size-base * 0.85)); // 
 
@@ -99,9 +102,6 @@
 @font-size-h4:            ceil((@font-size-base * 1.2)); // 
 @font-size-h5:            ceil((@font-size-base * 1.1)); // 
 @font-size-h6:            ceil((@font-size-base * 1)); //  ~16px
-
-
-
 
 
 

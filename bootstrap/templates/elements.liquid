@@ -4,24 +4,19 @@
 
 
 <div class="col-md-12">
-  <div class="col-md-12">
 
-      
 <!-- buttons -->
 <p class="text-center">Buttons</p>
 
     <p>
     <button type="button" class="btn btn-lg btn-primary">Primary</button>
-    <button type="button" class="btn btn-lg btn-disabled">Disabled</button>
+    <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Disabled</button>
     <button type="button" class="btn btn-lg btn-success">Success</button>
     <button type="button" class="btn btn-lg btn-danger">Danger</button>
     </p>
 
-    
 
 <br>
-
-
 
 
 <!-- Expand Class -->
@@ -30,7 +25,7 @@
     <div class="btn-group">
     <button type="button" class="btn btn-lg btn-primary">Middle</button>
     </div>
- </div>
+</div>
 
  <br>
 
@@ -38,13 +33,13 @@
     <div class="btn-group">
     <button type="button" class="btn btn-primary">Middle</button>
     </div>
- </div>
+</div>
 
 
 <br>
       <p>
         <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary" disabled="disabled">Disabled</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-danger">Danger</button>
 
@@ -53,6 +48,7 @@
 
 
 <hr>
+
 <p class="text-center">Button group</p>
 
 
@@ -67,49 +63,41 @@
 
 
 <hr>
+
 <p class="text-center">Floats vorige /volgende</p>
 
-
   <ul class="pager">
-    <li class="previous disabled "><a href="#">Vorige</a></li>
+    <li class="previous disabled"><a href="#">Vorige</a></li>
     <li class="next"><a href="#">Volgende</a></li>
   </ul>
 
 
 
-    <div class="btn-primary pull-left disabled "><a href="#">Vorige</a></div>
-    <div class="btn-primary pull-right"><a href="#">Volgende</a></div>
+<div class="row">
 
+  <button type="button" class="btn btn-primary pull-left" disabled="disabled">Vorige</button>
+  <button type="button" class="btn btn-primary pull-right">Volgende</button>
 
-
-
-
-
-
+</div>
 
 <hr>
 
-
 <p class="text-center">Dropdown button ( click )</p>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary</button>
+<div class="btn-group">
+  
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary</button>
 
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Action</a></li>
-
                     <li><a href="#">Another action</a></li>
-
                     <li><a href="#">Something else here</a></li>
-
                     <li><a href="#">Separated link</a></li>
                 </ul>
-            </div><!-- /btn-group -->
+
+ </div><!-- /btn-group -->
 
          
-    
-
-
             <div class="btn-group">
                 <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="sr-only">Toggle Dropdown</span><span class="caret"></span></button>
 
@@ -126,16 +114,20 @@
 
       
 <hr>
+
+
 <p class="text-center">Labels</p>
  
-<span class="label">Regular Label</span>
-<span class="alert label">Alert Label</span>
-<span class="success label">Success Label</span>
-<span class="secondary label">Success Label</span>
+      <p>
+        <span class="btn btn-xs btn-primary">Primary</span>
+        <span class="btn btn-xs btn-success">Success</span>
+        <span class="btn btn-xs btn-info">Info</span>
+        <span class="btn btn-xs btn-warning">Warning</span>
+        <span class="btn btn-xs btn-danger">Danger</span>
+      </p>
 
 
       <p>
-        <button type="button" class="btn btn-xs btn-default">Default</button>
         <button type="button" class="btn btn-xs btn-primary">Primary</button>
         <button type="button" class="btn btn-xs btn-success">Success</button>
         <button type="button" class="btn btn-xs btn-info">Info</button>
@@ -143,11 +135,9 @@
         <button type="button" class="btn btn-xs btn-danger">Danger</button>
       </p>
 
-
-
-
 <!-- tooltips -->
 <hr>
+
 <p class="text-center">Tooltips</p>
 
 <div class="bs-example"> 
@@ -156,9 +146,6 @@
         <li><a href="#" data-toggle="tooltip" data-original-title="A much longer tooltip to demonstrate the max-width of the Bootstrp tooltip.">Large tooltip</a></li>
     </ul>
 </div>
-
-
-
 
 
 <!-- Lists -->
@@ -233,8 +220,6 @@
 <li>Datum : <time itemprop="datePublished" datetime="2014-12-16">16 december 2014</time></li>
 </ul>
 </section>   
-
-
 
 
 <!-- Tables -->
@@ -323,22 +308,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Utilities -->
 
 <hr>
@@ -354,7 +323,7 @@
 
 <!-- form type 1 -->
 
-<form>
+<form class="">
 
   <div class="row">
     <div class="large-12">
@@ -366,7 +335,7 @@
 
 
   <div class="row">
-    <div class="large-12 ">
+    <div class="large-12">
         <input type="text" placeholder="naam" class="error" />
         <small class="error">Gelieve bovenstaand veld correct in te vullen</small>
         <input type="text" placeholder="voornaam" />
@@ -376,31 +345,32 @@
     </div>
   </div>
 
+
  
-  <div class="row">
-    <div class="large-12 columns">
-      
-
-
-
 <div class="row">
-     
-    <div class="large-4 medium-4">
-        <input type="text" placeholder="telefoonnummer" />
-        <p id="nameHelpText">vb 000 00 00 00</p>
-    </div>            
 
-    <div class="large-4 medium-4">
-        <input type="text" placeholder="postcode" />
-    </div>
+  <div class="large-12">
+      
+      <div class="row">
+           
+          <div class="large-4 medium-4">
+              <input type="text" placeholder="telefoonnummer" />
+              <p id="nameHelpText">vb 000 00 00 00</p>
+          </div>            
 
-    <div class="large-4 medium-4">
-        <input type="text" placeholder="postcode" />
-    </div>
-                     
+          <div class="large-4 medium-4">
+              <input type="text" placeholder="postcode" />
+          </div>
+
+          <div class="large-4 medium-4">
+              <input type="text" placeholder="postcode" />
+          </div>
+                           
+      </div>
+
+  </div>
+
 </div>
-
-
 
 
   <div class="row">
@@ -519,12 +489,11 @@
 <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 
 </form>
+
 <!-- end form type 1 -->
 
 
-
-
-
+<!-- form 2 -->
 
 <p class="text-center">form 2</p>     
 
@@ -593,6 +562,12 @@
   </li>
   
 </ul>
+
+
+<!-- end form type 2 -->
+
+
+
 
 
 <hr>
@@ -704,64 +679,36 @@
 <div class="alert alert-warning">
   <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
   <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
 </div>
 
 <div class="alert alert-danger">
   <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam. 
   <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
 </div>
 
 <div class="alert alert-success">
   <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
   <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
 </div>
 
 <div class="alert alert-info">
   <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
   <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
 </div>
 
 
+<p class="bg-primary">
+<strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
+
+<p class="bg-success">...</p>
+<p class="bg-info">...</p>
+<p class="bg-warning">...</p>
+<p class="bg-danger">...</p>
 
 
 
-
-
-
-
-
-
-<div class="list-group">
-  <a href="#" class="list-group-item active">Cras justo odio</a>
-
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="list-group-item">Morbi leo risus</a>
-  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="list-group-item">Vestibu</a>
-
-  </div>
-
-
-
-
-
-
-
-
-
-  
-   </div>
 </div>
-
-
-
-
-
-
 
 
 {% endblock %}
