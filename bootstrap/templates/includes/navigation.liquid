@@ -15,13 +15,12 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-         <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
-                   <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Model</a></li> 
-                   <li {% if mixture.url == "grids" %}class="active"{% endif %}><a href="grids">Grids</a></li>
-                   <li {% if mixture.url == "elements" %}class="active"{% endif %}><a href="elements">Elementen</a></li>
-        
+        <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
+        <li {% if mixture.url == "grids" %}class="active"{% endif %}><a href="grids">Grids</a></li>
+        <li {% if mixture.url == "elements" %}class="active"{% endif %}><a href="elements">Elementen</a></li>   
       </ul>
      
       <ul class="nav navbar-nav navbar-right">

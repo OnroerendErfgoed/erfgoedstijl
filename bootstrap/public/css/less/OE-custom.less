@@ -3,6 +3,12 @@
 // OE custom CLASSES form and articles
 //
 
+.bg-primary {background-color:@brand-primary}
+.bg-success {background-color:@brand-success}
+.bg-info {background-color:@brand-info}
+.bg-warning {background-color:@brand-warning}
+.bg-danger {background-color:@brand-danger}
+
 
 // form custom
 
@@ -15,6 +21,7 @@ legend {text-transform:uppercase;font-size:0.8em}
 // errors
 .error {background: none !important}
 input.error {border: 1px solid @alert-color}
+input, textarea {color: @dark-gray !important}
 
 // select optionform beeldbank
 select {height:42px}
@@ -43,8 +50,6 @@ ul.tag-label  {margin:10px 0 0 0;}
 
 h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
 
-
-
 figcaption {font-size:11px;border-bottom:1px solid @light-gray}
 
 
@@ -68,7 +73,6 @@ font-size:14px;
 font-size:10px; 
 
 }
-
 
 
 /*MEDIA QUERIES OVERRULE*/
@@ -95,11 +99,6 @@ font-size:10px;
 }
 
 
-
-
-
-
-
 // temp
 
 /* inventaris article margin */
@@ -112,9 +111,3 @@ font-size:10px;
 }
 
 .color-cube {height:100px;width:100px;color:@white;float:left;padding:5px}
-
-
-
-
-
-

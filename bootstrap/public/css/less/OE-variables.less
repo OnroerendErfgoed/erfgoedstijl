@@ -92,7 +92,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          15px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // 
 @font-size-small:         ceil((@font-size-base * 0.85)); // 
 
@@ -104,8 +104,6 @@
 @font-size-h6:            ceil((@font-size-base * 1)); //  ~16px
 
 
-
-
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
@@ -113,7 +111,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    700;
+@headings-font-weight:    200;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -228,7 +226,7 @@
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            none;//@border-radius-base;
 //** Border color for inputs on focus
 @input-border-focus:             #66afe9;
 

@@ -66,10 +66,10 @@
 
 <p class="text-center">Floats vorige /volgende</p>
 
-  <ul class="pager">
+  <!-- ul class="pager">
     <li class="previous disabled"><a href="#">Vorige</a></li>
     <li class="next"><a href="#">Volgende</a></li>
-  </ul>
+  </ul -->
 
 
 
@@ -127,14 +127,6 @@
       </p>
 
 
-      <p>
-        <button type="button" class="btn btn-xs btn-primary">Primary</button>
-        <button type="button" class="btn btn-xs btn-success">Success</button>
-        <button type="button" class="btn btn-xs btn-info">Info</button>
-        <button type="button" class="btn btn-xs btn-warning">Warning</button>
-        <button type="button" class="btn btn-xs btn-danger">Danger</button>
-      </p>
-
 <!-- tooltips -->
 <hr>
 
@@ -146,6 +138,7 @@
         <li><a href="#" data-toggle="tooltip" data-original-title="A much longer tooltip to demonstrate the max-width of the Bootstrp tooltip.">Large tooltip</a></li>
     </ul>
 </div>
+
 
 
 <!-- Lists -->
@@ -219,7 +212,9 @@
 <li>Auteurs : <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">Kennes, Hilde</span></li>
 <li>Datum : <time itemprop="datePublished" datetime="2014-12-16">16 december 2014</time></li>
 </ul>
-</section>   
+</section>  
+
+
 
 
 <!-- Tables -->
@@ -270,7 +265,7 @@
 <p class="text-center">Table 2</p>
 
 
-<table class="table border">
+<table class="table table-hover">
     <thead>
       <tr>
         <th></th>
@@ -313,68 +308,127 @@
 <hr>
 
 <h1 class="text-center">Utilities</h1>
-
 <h2 class="text-center">Forms</h2>
 
 <!-- Form-->
-
 <p class="text-center">form + error</p>     
+
+<form class="reactionsclearfix">
+
+<h5>Reacties (0)</h5>
+<h6>Reageer op dit artikel</h6>
+
+<div class="form-group">
+    <label for="label1">Naam</label>
+    <input type="email" class="form-control" id="label 1" placeholder="Naam + Voornaam">
+</div>
+
+<div class="form-group">
+    <label for="label1">Naam</label>
+    <input type="text" class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+</div>
+
+
+<div class="form-group">
+    <input type="password" class="form-control" id="mail" placeholder="email">
+</div>
+
+<div class="form-group">
+  <textarea id="label2" class="form-control" placeholder="omschrijving"></textarea>
+</div>
+
+
+<div class="form-group has-success">
+  <input type="text" class="form-control" id="inputSuccess1" placeholder="omschrijving">
+  <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+</div>
+
+<div class="form-group has-warning">
+  <input type="text" class="form-control" id="inputWarning1" placeholder="omschrijving">
+  <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+</div>
+
+<div class="form-group has-error">
+  <input type="text" class="form-control" id="inputError1" placeholder="omschrijving">
+  <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+</div>
+
+
+
+<div class="has-success">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxSuccess" value="option1">
+      Checkbox with success
+    </label>
+  </div>
+</div>
+<div class="has-warning">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxWarning" value="option1">
+      Checkbox with warning
+    </label>
+  </div>
+</div>
+<div class="has-error">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxError" value="option1">
+      Checkbox with error
+    </label>
+  </div>
+</div>
+
+
+
+<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+<p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+<p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+<p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+</form>
 
 
 <!-- form type 1 -->
 
 <form class="">
 
-  <div class="row">
-    <div class="large-12">
-      <label>Naam
-        <input type="text" placeholder="naam en voornaam" />
+
+<div class="form-group">
+    <label for="label1">Naam</label>
+    <input type="email" id="label 1" placeholder="Select Box">
+    <label class="inline">Select Box
+        <select class="form-control">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
       </label>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="large-12">
-        <input type="text" placeholder="naam" class="error" />
-        <small class="error">Gelieve bovenstaand veld correct in te vullen</small>
-        <input type="text" placeholder="voornaam" />
-        <input type="text" placeholder="straat" />
-        <input type="text" placeholder="gemeente" name="name" aria-describedby="nameHelpText">
-        <p id="nameHelpText">Geef uw postcode of gemeente in</p>
-    </div>
-  </div>
-
-
- 
-<div class="row">
-
-  <div class="large-12">
-      
-      <div class="row">
-           
-          <div class="large-4 medium-4">
-              <input type="text" placeholder="telefoonnummer" />
-              <p id="nameHelpText">vb 000 00 00 00</p>
-          </div>            
-
-          <div class="large-4 medium-4">
-              <input type="text" placeholder="postcode" />
-          </div>
-
-          <div class="large-4 medium-4">
-              <input type="text" placeholder="postcode" />
-          </div>
-                           
-      </div>
-
-  </div>
-
 </div>
 
 
-  <div class="row">
-    <div class="large-12 columns">
+
+<label class="sr-only" for="inputHelpBlock">Select Box</label>
+  <label class="inline">Select Box
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+
+
+
+
+
+
+
+<div class="form-group">
       <label class="inline">Select Box
         <select>
           <option value="1">1</option>
@@ -383,9 +437,7 @@
           <option value="4">4</option>
         </select>
       </label>
-    </div>
-  </div>
-
+</div>
 
 
 
@@ -433,7 +485,9 @@
 
 
 <div class="row">
+
    <div class="large-12 columns">
+
       <form>
         <fieldset>
         <legend>Fieldset Legend</legend>
@@ -445,8 +499,109 @@
           </label>
         </fieldset>
       </form>
+
+
     </div>
+
 </div>
+
+
+
+<form>
+
+<div class="form-group">
+
+            <fieldset>
+
+                  <div class="large-6 columns">
+                              <legend>Fieldset Legend</legend>
+                              <label><!--Naam -->
+                              <input type="text" placeholder="Naam...">
+                              </label>
+                  </div>
+                  <div class="large-6 columns">
+                              <label>
+                              <input type="text" placeholder="Voornaam...">
+                              </label>
+                  </div>
+                  
+            </fieldset>
+
+    </div>
+</form>
+
+
+</div>
+
+
+<input class="span1" type="text" placeholder=".span1">
+<input class="span2" type="text" placeholder=".span2">
+<input class="span12" type="text" placeholder=".span12">
+
+
+
+<input class="input-block-level" type="text" placeholder=".input-block-level">
+
+
+
+
+
+
+<label class="checkbox">
+  <input type="checkbox" value="">
+  Option one is this and that—be sure to include why it's great
+</label>
+ 
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  Option one is this and that—be sure to include why it's great
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  Option two can be something else and selecting it will deselect option one
+</label>
+
+
+
+
+
+
+
+
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -464,7 +619,6 @@
 </div> 
 
 
-
 <label id="ageLabel">Slider</label>
 <div class="range-slider" data-slider>
   <span class="range-slider-handle" role="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText"></span>
@@ -473,77 +627,47 @@
 </div>
 
 
-
-<a href="#" class="button [tiny small large]">Default Button</a>
-
-<a href="#" class="button disabled [tiny small large]">Disabled Button</a>
-
-
-
-
-
-
 <label class="sr-only" for="inputHelpBlock">Input with help text</label>
 <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-...
 <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 
 </form>
 
 <!-- end form type 1 -->
 
-
 <!-- form 2 -->
 
 <p class="text-center">form 2</p>     
 
-<form class="clearfix">
 
-<h5>Reacties (0)</h5>
+<form class="form-horizontal">
 
-<h6>Reageer op dit artikel</h6>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label pull-left">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
 
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
 
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label1" class="left inline">Naam</label>
-        </div>
+  <div class="form group">
 
-        <div class="small-10 columns">
-          <input type="text" id="label1" placeholder="naam">
-        </div>
-      </div>
+    <div class="row"><span class="pull-right">
+    <button type="button" class="btn btn-lg btn-primary">Plaats reactie</button></span>
+    </div>
 
-
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Email adres</label>
-        </div>
-
-        <div class="small-10 columns">
-          <input type="text" id="label2" placeholder="email">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Reactie</label>
-        </div>
-
-        <div class="small-10 columns">
-          <textarea placeholder="omschrijving"></textarea>
-        </div>
-      </div>
-
-  
-
-
-<a href="#" class="button right [tiny small large]">Plaats reactie</a>
-
+  </div>
+ 
 </form>
 
 
-<p class="text-center">form reaction</p>     
+
 
 <h4>280 reacties</h4>
 
@@ -565,6 +689,10 @@
 
 
 <!-- end form type 2 -->
+
+
+
+
 
 
 
@@ -614,16 +742,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <hr>
 <h1 class="text-center">social 2</h1>   
 
@@ -642,33 +760,30 @@
 <h1 class="text-center">alerts</h1>   
 
 
-<!-- Button trigger modal -->
-<a class="" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</a>
+<!-- link trigger modal -->
+<a class="" data-toggle="modal" data-target="#myModal">Launch demo modal</a>
 
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h2 class="modal-title" id="myModalLabel">Modal title</h2>
+        <h3 class="modal-title" id="myModalLabel">Modal title 2</h3>
       </div>
+
       <div class="modal-body">
-        ... 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      <!-- div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      </div -->
+
     </div>
   </div>
 </div>
@@ -696,15 +811,6 @@
   <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 </div>
 
-
-<p class="bg-primary">
-<strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
-
-<p class="bg-success">...</p>
-<p class="bg-info">...</p>
-<p class="bg-warning">...</p>
-<p class="bg-danger">...</p>
 
 
 
