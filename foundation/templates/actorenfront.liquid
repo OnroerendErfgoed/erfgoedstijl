@@ -25,7 +25,7 @@
                         <option value="">ID</option>
                         <option value="">Naam</option>
                         <option value="">Organisatie</option>
-                        <option value="">4</option>
+                        <option value="">Type</option>
                       </select>
               </div>
 
@@ -40,8 +40,8 @@
 
             <ul class="tag-label clearfix">
               <li>Jouw selectie</li>
-              <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#10006;</span></a></li>
-              <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#10006;</span></a></li>
+              <li><a href="#">Organisatie / <strong>Onroerend erfgoed</strong></a> <a href="#"><span>&#10006;</span></a></li>
+              <li><a href="#">Naam / <strong>Koen</strong></a> <a href="#"><span>&#10006;</span></a></li>
               <li><a href="#">Alle filters verwijderen <span>&#10006;</span></a></li>
             </ul>
             <hr>
@@ -58,11 +58,11 @@
 
               <div class="large-4 medium-4 columns">
                   <select>
-                  <option value="">sorteer op</option>
-                  <option value="">datum/aflopend</option>
-                  <option value="">datum/oplopend</option>
-                  <option value="">titel/aflopend</option>
-                  <option value="">titel/oplopend</option>            
+                      <option value="">sorteer op</option>
+                      <option value="">ID</option>
+                      <option value="">Naam</option>
+                      <option value="">Organisatie</option>
+                      <option value="">Type</option>           
                   </select>
 
               </div>
@@ -73,76 +73,236 @@
 
 <div class="row">
             
-    <div class="large-3 medium-3 columns">
-    <div class="panel" style="padding:0;background:#efefef">
-        <h3 style="padding:10px"><a href="">Van Daele<br>Koen</a></h3>
-            <ul class="source" style="margin:0;padding:10px;">
-            <li>ID : 1</li>
-            <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
-            </ul>  
-    </div>    
-   </div>  
 
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3><a href="">Naam</a></h3>
-        <section>
-        <ul class="source">
-        <li>ID : 2</li>
-        <li>Adres :
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        <span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span>
-        </li>
-        </ul>
-        </section> 
-    </div>    
-   </div>  
 
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3><a href="actorenfront/detail">Naam</a></h3>
-        <section>
-        <ul class="source">
-        <li>ID : 3</li>
-        <li>Adres :
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        </li>
-        </ul>
-        </section> 
-    </div>    
-   </div>  
+<div class="large-3 medium-3 columns">
 
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3>Naam</h3>
-        <section>
-        <dl class="source">
-        <dt>ID : 4</dt>
-        <dd></dd>
-        <dt>Adres :</dt>
-        <dd>
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        </dd>
-        </dl>
-        </section> 
-    </div>    
-   </div>  
+    <div class="panel" style="padding:0;background:#efefef;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-user" style="color:#ccc;font-size:5em;padding:15px;float:left"></i></a>
+          
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail">Van Daele <br> Koen</a></h3></li>
+                        <li>ID : 1</li>
+                        <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
+                    </ul>
+          </div>
+    </div>  
 
 </div>  
 
 
 
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#efefef;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-building" style="color:#ccc;font-size:5em;padding:15px;float:left"></i></a>
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail-bedrijf">Onroerend Erfgoed</a></h3></li>
+                        <li>ID : 1</li>
+                        <li>
+        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
+        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
+        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
+                        </li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
 
 
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-building" style="color:#efefef;font-size:5em;padding:15px;float:left"></i></a>
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail-bedrijf">Onroerend Erfgoed</a></h3></li>
+                        <li>ID : 1</li>
+                        <li>
+        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
+        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
+        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
+                        </li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-user" style="color:#efefef;font-size:5em;padding:15px;float:left"></i></a>
+          
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail">Van Daele <br> Koen</a></h3></li>
+                        <li>ID : 1</li>
+                        <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
 
 
        </div>
+
+<!-- end row -->
+
+<!-- start row -->
+
+<div class="row">
+          
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#efefef;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-user" style="color:#ccc;font-size:3em;padding:15px;float:left"></i></a>
+          
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail">Van Daele <br> Koen</a></h3></li>
+                        <li>ID : 1</li>
+                        <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#efefef;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-building" style="color:#ccc;font-size:3em;padding:15px;float:left"></i></a>
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail-bedrijf">Onroerend Erfgoed</a></h3></li>
+                        <li>ID : 1</li>
+                        <li>
+        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
+        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
+        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
+                        </li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #d1d1d1">
+          <div class="clearfix">
+          <i class="fa fa-building" style="color:#e7e7e7;font-size:5em;padding:15px;float:left"></i></a>
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail-bedrijf">Onroerend Erfgoed</a></h3></li>
+                        <li>ID : 1</li>
+                        <li>
+        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
+        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
+        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
+                        </li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #a0d3e8">
+          <div class="clearfix">
+          <i class="fa fa-user" style="color:#a0d3e8;font-size:5em;padding:15px;float:left"></i></a>
+          
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail" style="color:#2da3ce">Van Daele <br> Koen</a></h3></li>
+                        <li>ID : 1</li>
+                        <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+</div>
+
+<!-- end row-->
+
+<!-- start row -->
+
+<div class="row">
+          
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #d1d1d1;">
+          <div class="clearfix">
+          <div class="" style="float:left;border-right:1px solid #efefef;margin-right:10px">
+          <i class="fa fa-user" style="color:#efefef;font-size:3em;padding:15px;"></i></a>
+          </div>
+          <h3 style="font-size:1em; margin:0;padding:15px 0 0 0;"><a href="actorenfront/detail">Van Daele <br> Koen</a></h3>
+          <small>ID : 1</small>    
+          </div>
+    </div>  
+
+</div>  
+
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#fff;border:1px dashed #d1d1d1;min-height:80px">
+          <div class="clearfix">
+          <div class="" style="float:left;border-right:1px solid #efefef;margin-right:10px">
+          <i class="fa fa-building" style="color:#efefef;font-size:3em;padding:15px;"></i></a>
+          </div>
+          <h3 style="font-size:1em; margin:0;padding:15px 0 0 0;"><a href="actorenfront/detail-bedrijf">Onroerend erfgoed</a></h3>
+          <small>ID : 1</small>    
+          </div>
+    </div>  
+
+</div>  
+
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#a0d3e8;border:1px dashed #d1d1d1;min-height:80px">
+          <div class="clearfix">
+          <i class="fa fa-user" style="color:#fff;font-size:3em;padding:8px 15px;float:left"></i></a>
+          
+                <h3 style="font-size:1em; margin:0;padding:15px 0 0 0;"><a href="actorenfront/detail" style="color:#fff">Van Daele <br> Koen</a></h3>
+                <small style="color:#fff">ID : 1</small>
+          
+          </div>
+    </div>  
+
+</div>  
+
+
+<div class="large-3 medium-3 columns">
+
+    <div class="panel" style="padding:0;background:#a0d3e8;border:1px dashed #d1d1d1;min-height:80px">
+          <div class="clearfix">
+          <i class="fa fa-building" style="color:#fff;font-size:3em;padding:15px;float:left"></i></a>
+                    <ul class="source" style="margin:5px 0 0 0;padding:3px 0;line-height:12px">
+                        <li><h3 style="font-size:1.2em; margin:0;padding:10px 0"><a href="actorenfront/detail-bedrijf">Onroerend Erfgoed</a></h3></li>
+                        <li>ID : 1</li>
+                    </ul>
+          </div>
+    </div>  
+
+</div>  
+
+
+</div>
+
+<!-- end row-->
+
+
     </div>
 
 </div>
@@ -151,103 +311,22 @@
 
 
 
-<div class="row">
-            
-    <div class="large-3 medium-3 columns">
-    <div class="panel" style="padding:0">
-        <h3 style="padding:10px"><a href="">Van Daele<br>Koen</a></h3>
-            <ul class="source" style="margin:0;padding:10px;background:#efefef">
-            <li>ID : 1</li>
-            <li><span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span></li>
-            </ul>    
-    </div>    
-   </div>  
-
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3><a href="">Naam</a></h3>
-        <section>
-        <ul class="source">
-        <li>ID : 2</li>
-        <li>Adres :
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        <span class="" itemprop="" itemscope itemtype="">Onroerend Erfgoed</span>
-        </li>
-        </ul>
-        </section> 
-    </div>    
-   </div>  
-
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3><a href="actorenfront/detail">Naam</a></h3>
-        <section>
-        <ul class="source">
-        <li>ID : 3</li>
-        <li>Adres :
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span><br>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        </li>
-        </ul>
-        </section> 
-    </div>    
-   </div>  
-
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3>Naam</h3>
-        <section>
-        <dl class="source">
-        <dt>ID : 4</dt>
-        <dd></dd>
-        <dt>Adres :</dt>
-        <dd>
-        <span class="" itemprop="streetAddress" itemscope itemtype="http://schema.org/PostalAddress">Koning Albertlaan 5</span>
-        <span class="" itemprop="postalCode" itemscope itemtype="http://schema.org/postalCode">0000</span>
-        <span class="" itemprop="addressLocality" itemscope itemtype="http://schema.org/addressLocality">Brussel</span>
-        </dd>
-        </dl>
-        </section> 
-    </div>    
-   </div>  
-
-</div>  
-
-
-<div class="row">
-
-    <div class="large-3 medium-3 columns">
-    <div class="panel">
-    <h3>Naam</h3>
-    <p>ID:5</p>
-    <p>Adres : Ipsum dolor sit amet</p>
-    </div>    
-   </div>  
-
-</div>  
-
-
 <!-- page navigation 2 -->
 
 <div class="pagination-centered">
   <ul class="pagination">
     <li><a href=""><</a></li>
     <li class="unavailable"><a href="">1</a> </li>
-    <li class=""><a href="">2</a></li>
+    <li class="current"><a href="">2</a></li>
     <li class=""><a href="">3</a></li>
-    <li class=""><a href="">4</a></li>
-    <li class=""><a href="">5</a></li>
     <li class="unavailable"><a href="">...</a></li>
     <li class=""><a href="">10</a></li>
     <li class=""><a href="">20</a></li>
     <li class=""><a href="">30</a></li>
-
     <li><a href="">></a></li>
   </ul>
 </div>
+
 
 
 
