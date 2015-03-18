@@ -6132,6 +6132,40 @@ ol.nonumbers {
 ol.nonumbers > li {
   list-style-type: none; }
 
+ul.source-authors li {
+  list-style-type: none; }
+
+ul.source-authors {
+  font-family: "Flanders Art Sans", Arial, sans-serif;
+  color: #753f7f;
+  margin: 20px 0 0 0;
+  font-size: 0.6em;
+  line-height: 1.6em; }
+
+.source-authors-block {
+  margin-top: 10px;
+  height: 255px;
+  width: 98%;
+  overflow: scroll; }
+
+ul.source-authors-list {
+  font-size: 0.8em;
+  line-height: 1.6em; }
+
+ul.source-authors-list li {
+  color: #3f3840;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 18px;
+  padding: 4px; }
+
+ul.source-authors-list li:hover {
+  background: #fbfbfb;
+  display: block; }
+
+ul.source-authors-list i {
+  color: #e5e5e5;
+  margin: 0 8px; }
+
 .circle {
   margin: 0 auto 15px auto;
   border-radius: 50%;
@@ -6305,23 +6339,42 @@ h4.header-img-panel {
 .color-cube {
   height: 100px;
   width: 100px;
-  color: #fff;
+  color: white;
   float: left;
   padding: 5px; }
 
-.source-authors {
-  padding: 16px 0 0 0; }
+.actoren-idcard {
+  padding: 0;
+  background: white;
+  border: 1px solid #e5e5e5; }
 
-.source-authors dt {
-  font-size: 0.8em;
-  font-family: "Flanders Art Sans", Arial, sans-serif;
-  padding: 0; }
+.actoren-idcard a {
+  display: block;
+  min-height: 78px; }
 
-.source-authors dd {
-  margin: 0 0 0 0px;
-  font-size: 0.7em;
-  line-height: 1.2em;
-  padding: 0 0 10px 0; }
+.actoren-idcard a:hover {
+  background: #fbfbfb;
+  display: block;
+  min-height: 78px; }
+
+.actoren-idcard h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 15px 0 0 0; }
+
+.actoren-icon-large, .actoren-icon-small {
+  float: left;
+  color: #ededed;
+  font-size: 4em;
+  padding: 0px 20px 0 0;
+  border-right: 1px solid #e5e5e5;
+  margin-right: 20px; }
+
+.actoren-icon-small {
+  border-right: 1px solid #e5e5e5;
+  margin-right: 15px;
+  font-size: 3em;
+  padding: 15px 20px; }
 
 .fl-block {
   margin: 0 0 2em 0;
@@ -6623,9 +6676,6 @@ table {
 
 .table tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
   background-color: #ededed; }
-
-.table tbody tr:hover td, .table tbody tr:hover th {
-  background-color: #F5F5F5; }
 
 .table.border tbody tr td, .table.border tr th {
   border-right: 1px solid #d5d5d5; }
