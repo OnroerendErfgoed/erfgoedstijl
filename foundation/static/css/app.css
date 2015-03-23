@@ -2237,11 +2237,11 @@ button::-moz-focus-inner {
     .dropdown.button.tiny::after, button.dropdown.tiny::after {
       border-color: white transparent transparent transparent; }
   .dropdown.button.small, button.dropdown.small {
-    padding-right: 3.0625rem; }
+    padding-right: 1.75rem; }
     .dropdown.button.small::after, button.dropdown.small::after {
-      border-width: 0.4375rem;
-      right: 1.3125rem;
-      margin-top: -0.15625rem; }
+      border-width: 0.25rem;
+      right: 0.75rem;
+      margin-top: -0.0625rem; }
     .dropdown.button.small::after, button.dropdown.small::after {
       border-color: white transparent transparent transparent; }
   .dropdown.button.large, button.dropdown.large {
@@ -3646,12 +3646,12 @@ dialog {
         top: 48%;
         margin-left: -0.375rem; }
   .split.button.small {
-    padding-right: 4.375rem; }
+    padding-right: 2.5rem; }
     .split.button.small span {
-      width: 2.625rem; }
+      width: 1.5rem; }
       .split.button.small span:after {
         border-top-style: solid;
-        border-width: 0.4375rem;
+        border-width: 0.25rem;
         top: 48%;
         margin-left: -0.375rem; }
   .split.button.large {
@@ -6069,6 +6069,12 @@ h6 {
 .fa-building:before {
   content: "\f0f7"; }
 
+.fa-question-sign:before {
+  content: "\f059"; }
+
+.fa-search:before {
+  content: "\f002"; }
+
 ul.disk {
   margin: 10px 0;
   padding-left: 1em; }
@@ -6375,6 +6381,46 @@ h4.header-img-panel {
   margin-right: 15px;
   font-size: 3em;
   padding: 15px 20px; }
+
+.placeholder-list li {
+  float: left !important;
+  list-style: none !important;
+  margin-left: 30px !important;
+  position: relative !important; }
+
+.placeholder-label {
+  line-height: 40px !important;
+  font-size: 10px !important;
+  position: absolute !important;
+  right: 120px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  opacity: 1 !important;
+  transition: opacity 5s ease !important;
+  z-index: 0 !important; }
+
+.placeholder-input {
+  border: 1px solid #ccc;
+  height: 35px;
+  padding: 0 10px !important;
+  width: 90% !important;
+  min-width: 200px !important;
+  position: relative !important;
+  font-size: 12px !important;
+  height: 35px !important;
+  z-index: 2; }
+
+.placeholder-label {
+  color: rgba(0, 0, 0, 0.99) !important; }
+
+.placeholder-label {
+  color: #000 !important; }
+
+.placeholder-input:focus + .placeholder-label {
+  right: 10px !important; }
+
+.placeholder-input:focus {
+  background-color: rgba(255, 255, 255, 0.6) !important; }
 
 .fl-block {
   margin: 0 0 2em 0;

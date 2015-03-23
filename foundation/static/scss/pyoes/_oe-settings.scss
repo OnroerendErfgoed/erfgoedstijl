@@ -9,6 +9,7 @@
 // c. Global
 // d. Media Query Ranges
 // e. Typography
+// 09. Dropdown Buttons
 // 20. Pagination
 // 21. Panels
 // 28. Sub Nav
@@ -181,6 +182,14 @@ $legend-bg: none;
 // Select variables
 $select-bg-color: $white;
 $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+
+
+
+// 09. Dropdown Buttons
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$button-pip-sml: rem-calc(4);
+$dropdown-button-padding-sml: $button-pip-sml * 7;
 
 
 // 20. Pagination
