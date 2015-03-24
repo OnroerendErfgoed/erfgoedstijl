@@ -1,0 +1,146 @@
+
+{% block content %} 
+  
+
+<!-- postregistratie menu -->
+
+<a href="#" data-reveal-id="myModal1" class="tiny button">Menu</a>
+
+<div id="myModal1" class="reveal-modal" data-reveal>
+
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+    <header class="clearfix">
+        <h3 class="left" style="margin:6px 20px 0 0"><h5>Een nieuw poststuk aanmaken</h5></h3>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">ZOEKEN</a></dd>
+              <dd><a href="#panel2" class="tiny">AANMAKEN</a></dd>
+            </dl>
+    </header>
+
+<div class="tabs-content">
+
+  <div class="content active" id="panel1">
+
+  <form style="padding-top:10px">
+
+  <div class="row">
+            
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="Datu " />
+         <input type="text" placeholder="voornaam" />
+         <input type="text" placeholder="email " />
+         <input type="text" placeholder="telefoon" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left"  style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
+              
+       <select>
+          <option value="0">Datum</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+  </div>
+
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+
+
+  </div>
+               
+
+  </div>
+
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">Zoek</a>
+  </div> 
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- end postregistratie menu -->
+
+
+    <div class="row">
+      <div class="large-12 columns">
+
+        <div class="panel">
+
+            <div class="row">
+          
+
+
+
+              <div class="large-6 medium-6 columns">
+              
+               <h1>Welkom op de post registratie applicatie.</h1>
+         
+              <p>Het agentschap Onroerend Erfgoed beschermt en registreert het onroerend erfgoed in Vlaanderen.</p>
+              <p>Je kan hier alle wettelijk rechtsgeldige beschermingsbeheersplannen raadplegen.</p>
+
+              </div>
+
+
+
+
+              <div class="large-6 medium-6 columns" style="border-left:1px solid #efefef">
+
+                
+                    <h3><i class="fa fa-question-sign" style="font-size:60px;color:#efefef;"></i> Op zoek in de databank?</h3>
+                    <strong>Zoeken gaat eenvoudig.</strong>
+                    <p>Je kan filteren op beschermingstype, provincie, rechtsgevolg, datum van ondertekening, … door een of meerdere vakjes aan te vinken en op zoeken te klikken.</p>
+                    <p>Je kan ook gebruik maken van een vrij zoekveld.</p>
+                    Ben je op zoek naar een ??? ?<br>
+                    Deze kun je vinden in onze ???.
+                
+<br><br>
+            
+
+                    <h3><i class="fa fa-search" style="font-size:60px;color:#efefef"></i> Vragen?</h3>
+                    <p>Stel je fouten vast of heb je een vraag over een beheersplan?</p> 
+                    Mail dan naar <a href="mailto:">???</a>.
+                        
+          
+
+              </div>
+
+<a href="aanmaken">aanmaken</a>
+
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+{% endblock %}
