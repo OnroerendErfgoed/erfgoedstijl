@@ -9,19 +9,29 @@
 
   <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
 
-    <header class="clearfix" style="margin-bottom:20px">
+    <header class="clearfix" style="margin-bottom:0px">
         <h3 class="left" style="margin:0 0"><h5>MENU</h5></h3>
             <dl class="tabs tiny" data-tab>
               <dd class="" style="margin:0 1px 0 0"><a href="#panel1" class="tiny button">Poststuk aanmaken</a></dd>
               <dd><a href="#panel2" style="margin:0 1px 0 0" class="tiny button">Info</a></dd>
-              <dd><a href="#panel3" style="margin:0 1px 0 0" class="tiny button">Mijn post</a></dd>
+              <dd>
+              <button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Mijn post
+              </button>
+              <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                <li><a href="#">alle post</a></li>
+                <li><a href="#">mijn post</a></li>
+                <li><a href="#">mijn groepen</a></li>
+                <li><a href="#">mijn processen</a></li>
+              </ul>
+              </dd>
+
             </dl>
     </header>
 
 <div class="clearfix">
 <div class="left"><h6>Poststukken</h6></div>
-<div class="left" style="margin:7px 0 0 20px;font-size:0.8em"><a href="" class="">refresh</a> <i class="fa fa-refresh"></i></div>
-<div class="right"><a href="" class="" style="font-size:0.8em">uitgebreid zoeken</a>  <i class="fa fa-chevron-right" style="font-size:0.8em"></i></div>
+<div class="left" style="margin:7px 0 0 20px;font-size:0.8em"><a href="" class="">refresh <i class="fa fa-refresh"></i> </a></div>
+<div class="right"><a href="" class="" style="font-size:0.8em">uitgebreid zoeken <i class="fa fa-chevron-right" style="font-size:0.8em"></i></a></div>
 </div>
 
 
@@ -83,19 +93,191 @@
     <div class="button-bar">
             <ul class="button-group">
               <li><h3 style="margin:10px 0 0 0;padding:0px 20px 0 0">Poststuk aanmaken</h3></li>
-              <li><a href="#" data-reveal-id="myModal1" class="tiny button">Algemeen</a></li>
+              <li><a href="#" class="tiny button">Algemeen</a></li>
               <li><a href="#" data-reveal-id="myModal2" class="tiny button">Rechten</a></li>
               <li><a href="#" data-reveal-id="myModal3" class="tiny button">Correspondenten</a></li>
-              <li><a href="#" data-reveal-id="myModal3" class="tiny button">Relaties</a></li>
-              <li><a href="#" data-reveal-id="myModal3" class="tiny button">documenten</a></li>
+              <li><a href="#" data-reveal-id="myModal4" class="tiny button">Relaties</a></li>
+              <li><a href="#" data-reveal-id="myModal5" class="tiny button">documenten</a></li>
             </ul>
     </div>
 
 
-<div class="panel">
-qsdmqksdmlqskd
+
+
+
+
+
+
+<div id="myModal1" class="reveal-modal" data-reveal>
+
+
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+
+    <header class="clearfix">
+        <h3 class="left" style="margin:6px 20px 0 0">Actoren</h3>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">ZOEKEN</a></dd>
+              <dd><a href="#panel2" class="tiny">AANMAKEN</a></dd>
+            </dl>
+    </header>
+
+
+<div class="tabs-content">
+
+<div class="content active" id="panel1">
+
+  <form style="padding-top:10px">
+      content panel 1
+  </form>
+
 </div>
 
+
+<!-- start aanmaken-->
+
+<div class="content" id="panel2">
+
+  <form style="padding-top:10px">
+      content panel 2
+  </form>
+
+</div>
+
+<!-- end aanmaken -->
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+      <div class="large-12 columns">
+
+        <div class="panel">
+
+            <div class="row">
+            
+             <div class="large-4 medium-4 columns">
+                  <h4>Metadata</h4>
+          <form>
+
+  
+        <select>
+          <option value="1">Datum</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+     
+
+
+
+
+              <div class="placeholder-container" tabindex="">
+                <label class="placeholder-label" for="Ons kenmerk">Ons kenmerk</label>
+                <input id="Ons kenmerk" class="placeholder-input" placeholder="Ons kenmerk" title="Ons kenmerk" type="text"/>
+              </div>
+            
+              <div class="placeholder-container" tabindex="">
+                <label class="placeholder-label" for="Uw kenmerk">Uw kenmerk</label>
+                <input id="Uw kenmerk" class="placeholder-input" placeholder="Uw kenmerk" title="Uw kenmerk" type="text"/>
+              </div>
+
+              <div class="placeholder-container" tabindex="">
+                <label class="placeholder-label" for="Onderwerp">Onderwerp</label>
+                <input id="Onderwerp" class="placeholder-input" placeholder="Onderwerp" title="Onderwerp" type="text"/>
+              </div>
+
+
+              <div class="row">
+                <div class="large-12 columns"> 
+                    <textarea placeholder="Omschrijving"></textarea>
+                </div>
+              </div>
+
+            
+            <label>Typering</label>
+
+              <!-- ul class="nodisk" tabindex="">
+                <li><input id="checkbox1" type="checkbox"><label for="checkbox1">Brief</label></li>
+                <li><input id="checkbox2" type="checkbox"><label for="checkbox2">Digitale Bouwaanvraag</label></li>
+                <li><input id="checkbox3" type="checkbox"><label for="checkbox3">Mail</label></li>
+              </ul -->
+
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Brief</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Digitale Bouwaanvraag</label>
+              <input id="checkbox3" type="checkbox"><label for="checkbox3">Mail</label>
+              
+          </form>
+
+              </div>            
+
+
+
+             <div class="large-4 medium-4 columns">
+                  <h4>Laatste Status</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales.</p>
+              </div>
+
+
+              <div class="large-4 medium-4 columns">
+                  <h4>Technisch</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus.</p>
+              </div>
+                     
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="clearfix text-center">
+      <a href="" class="tiny button">annuleer</a>
+      <a href="" class="tiny button">bewaar</a>
+  </div> 
 
 </div>
 </div>
