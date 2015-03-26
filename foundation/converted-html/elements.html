@@ -99,20 +99,28 @@
 
 <p class="text-center">Dropdown button ( click )</p>
 
-<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="small">Dropdown </button>
-<ul id="drop1" class="f-dropdown " data-dropdown-content aria-hidden="true" tabindex="-1">
+<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Dropdown </button>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
   <li><a href="#">link 1</a></li>
   <li><a href="#">link 2</a></li>
   <li><a href="#">link 3</a></li>
 </ul>
 
+<hr>
 
-<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
-<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+<p class="text-center">Dropdown Link ( click )</p>
+
+<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
+<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
   <li><a href="#">This is a link</a></li>
   <li><a href="#">This is another</a></li>
   <li><a href="#">Yet another</a></li>
 </ul>
+
+
+
+
+
 
 
 
@@ -309,8 +317,58 @@
 
 <p class="text-center">form + error</p>     
 
+<hr>
+
 
 <!-- form type 1 -->
+<!-- p class="text-center">Active placeholder</p>
+
+  <form id="">
+    <ul class="placeholder-list">
+      <li>
+        <input id="email" class="placeholder-input" name="email" placeholder="Your Email" title="Your Email" type="email" value="" required />
+        <label class="placeholder-label" for="email" style="color:red;">Your Emeeel</label>
+      </li>     
+    </ul>
+  </form -->
+
+
+<hr>
+
+<!-- form type 1 -->
+<p class="text-center">Inline textfield placeholder</p>
+
+
+
+<div class="row">
+  <div class="large-12 columns">
+
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="placeholder-container" tabindex="-1">
+            <label class="placeholder-label" for="email">E-mail</label>
+            <input id="email" class="placeholder-input" placeholder="name@mail.com" title="Your Email" type="text"/>
+          </div>
+        
+          <div class="placeholder-container" tabindex="-1">
+            <label class="placeholder-label" for="username">Username</label>
+            <input id="username" class="placeholder-input" placeholder="taeymma" title="Your Username" type="text"/>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 <form>
 
@@ -321,6 +379,18 @@
       </label>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div class="row">
@@ -668,5 +738,27 @@
 $(document).foundation();
 </script>
 
+
+
+
+<script>
+$(document).ready(function(){
+    if(!Modernizr.input.placeholder) {
+        $("input[placeholder]").each(function() {
+            var placeholder = $(this).attr("placeholder");
+
+            $(this).val(placeholder).focus(function() {
+                if($(this).val() == placeholder) {
+                    $(this).val("")
+                }
+            }).blur(function() {
+                if($(this).val() == "") {
+                    $(this).val(placeholder)
+                }
+            });
+        });
+    } // Modernizr placeholder
+});
+</script>
 	</body>
 </html>

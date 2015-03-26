@@ -49,7 +49,7 @@
       <li><a href="colors.html">Colors</a></li>
       <li><a href="elements.html">Elementen</a></li>
       <li><a href="images.html">Images</a></li>
-      <li>Media qsùdlqsdùm qkqsdkqmdkqkdmlqk</li>    
+      <li>Media</li>    
     </ul>
 
     <hr>
@@ -57,6 +57,8 @@
       <ul>
       <li><a href="article.html">Basic article page 8/4</a></li>
       <li><a href="article9-3.html">Basic article page 9/3</a></li>
+      <li><!--a href="404.html" -->Error 404 page<!-- /a --></li>
+   
       </ul> 
 
     <hr>
@@ -80,23 +82,29 @@
       <li>Theme Inventaris print article</li>
     </ul> 
 
-      <hr>
+    <!--    <hr>
 
     <ul>
       <li><a href="geoportaal.html">Theme Geoportaal</a></li>
     </ul>  
 
 
-      <hr>
+    <hr>
 
     <ul>
       <li><a href="beheersplannen.html">Theme Beheersplannen</a></li>
-    </ul> 
-
+    </ul>  -->
       <hr>
 
     <ul>
       <li><a href="actorenzoek.html">Zoekactoren</a></li>
+      <li><a href="actorenfront.html">Zoekactoren front-end</a></li>
+    </ul>   
+
+  <hr>
+    <ul>
+      <li><a href="postregistratie/index.html">Postregistratie</a></li>
+   
     </ul>     
 
   </div>
@@ -125,5 +133,27 @@
 $(document).foundation();
 </script>
 
+
+
+
+<script>
+$(document).ready(function(){
+    if(!Modernizr.input.placeholder) {
+        $("input[placeholder]").each(function() {
+            var placeholder = $(this).attr("placeholder");
+
+            $(this).val(placeholder).focus(function() {
+                if($(this).val() == placeholder) {
+                    $(this).val("")
+                }
+            }).blur(function() {
+                if($(this).val() == "") {
+                    $(this).val(placeholder)
+                }
+            });
+        });
+    } // Modernizr placeholder
+});
+</script>
 	</body>
 </html>
