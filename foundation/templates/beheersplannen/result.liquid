@@ -11,12 +11,11 @@
         
   <div class="panel fl-block-search">
 
-    <h3>Zoeken</h3>
 
     <form class="form-search" method="GET" action="/beheersplannen">
 
 
-        <input name="query" type="text" class="span2 search-query" value="" placeholder="Zoek een beheersplan.."/>
+        <input name="query" type="text" class="span2 search-query" value="" placeholder="Beheersplan naam"/>
     
         <select name="sort" class="span2">
         
@@ -27,25 +26,11 @@
                     
         </select>
  
-    
   
-        <input type="submit" class="button expand" value="Zoeken" />
-        <!-- input type="reset" id="reset-zoeken" class="button expand" value="Wissen" / -->
-        <script type="text/javascript">
-          $('#reset-zoeken').on('click', function(evt) {
-            $('.widget-zoeken form input[type="text"]').attr('value', '');
-            $('.widget-zoeken form select[name="sort"]').val('onderwerp');
-            $('.widget-zoeken form select[name="status"]').val(' ');
-            $('.widget-zoeken form input[type="checkbox"]').removeAttr('checked');
-          });
-        </script>
-    
- 
-<br><br>
 
      <h5>Beheersplantypes</h5>
 
-     <br>
+ 
 
         <ul id="aggregation_beheersplantypes" class="nodisk">
         
@@ -83,13 +68,27 @@
                 Subadres <small>(2)</small>
               </label>
             </li>
-    
+
+          <div class="right clearfix">
+            <small><a href="">Alle filters ongedaan maken <i class="fa fa-trash"> </i></a></small>
+          </div>
         </ul>
       
-  
-   <small><a href="">Alle filters ongedaan maken <i class="fa fa-trash"> </i></a></small>
+  <br>
 
 
+
+      <input type="submit" class="button expand tiny" value="Zoeken" />
+        <!-- input type="reset" id="reset-zoeken" class="button expand tiny small" value="Wissen" / -->
+        <script type="text/javascript">
+          $('#reset-zoeken').on('click', function(evt) {
+            $('.widget-zoeken form input[type="text"]').attr('value', '');
+            $('.widget-zoeken form select[name="sort"]').val('onderwerp');
+            $('.widget-zoeken form select[name="status"]').val(' ');
+            $('.widget-zoeken form input[type="checkbox"]').removeAttr('checked');
+          });
+        </script>
+    
     </form>
   </div>
 </div>
@@ -128,31 +127,15 @@
                             <img src="/static/img/leeg_beheersplan.jpg" title="Geen voorbeeld beschikbaar" />
                             
                         </div>
-                        <div class="inner">
-                            <h3>test
-                            </h3>
-                        </div>
-                        <div>
-                            <h4>ID 6</h4>
-                            
-                            <small>
-                                <div class="date" datetime="2015-01-16">16-01-2015</div>
-                            </small>
-                            
-                            <h5>
-  
-    
-    
-    <ul class="inline-list">
-      
-      
-        <li>Onroerend Erfgoed Beheersplan</li>
-      
-    </ul>
-  
-</h5>
-                        </div>
-                    </a>
+                            <div class="inner">
+                                <h3>Test</h3>
+                            </div>
+                      
+                            <h5>ID 6</h5>
+                            <small><div class="date" datetime="2015-01-16">16-01-2015</div></small>
+                            <h5>Onroerend Erfgoed Beheersplan</h5>
+                       
+              </a>
                 </div>
             </div>
             
@@ -166,27 +149,12 @@
                             <img src="/static/img/leeg_beheersplan.jpg" title="Geen voorbeeld beschikbaar" />
                             
                         </div>
-                        <div class="inner">
-                            <h3>Test
+                            <div class="inner">
+                                <h3>Test</h3>
+                            </div>
                             
-                            </h3>
-                        </div>
-                        <div>
-                            <h4>ID 1</h4>
-                            
-                            <h5>
-  
-    
-    
-    <ul class="inline-list">
-      
-      
-        <li>Onroerend Erfgoed Beheersplan</li>
-      
-    </ul>
-  
-</h5>
-                        </div>
+                            <h5>ID 1</h5>    
+                            <h5>Onroerend Erfgoed Beheersplan</h5>
                     </a>
                 </div>
             </div>
