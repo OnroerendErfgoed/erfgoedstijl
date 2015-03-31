@@ -1,0 +1,54 @@
+
+{% block content %} 
+  
+
+  <div class="row">
+      <div class="large-12 columns">
+
+        <div class="panel">
+
+            <div class="row">
+
+
+<form>
+     
+
+    <button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Selecteer een type</button>
+        <ul class="f-dropdown" id="drop1" class="" data-dropdown-content aria-hidden="true" tabindex="-1">
+           <li style="padding:5px 0 8px 0">
+                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                <label for="checkbox-1" class="checkbox-custom-label">Brief</label>
+           </li>
+           <li style="padding:5px 0 8px 0">
+                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                <label for="checkbox-2" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+            <li style="padding:5px 0 8px 0">
+                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" checked>
+                <label for="checkbox-3" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+       </ul>
+     
+
+    <ul class="tag-label-col clearfix">
+      <li>Toegevoegde types</li>
+      <li><a href="#">Brief</a> <a href="#"><span>&#215;</span></a></li>
+      <li><a href="#">Digitale bouwaanvraag</a> <a href="#"><span>&#215;</span></a></li>
+      <li><a href="#">Brief</a> <a href="#"><span>&#215;</span></a></li>
+      <li><a href="#">Digitale bouwaanvraag</a> <a href="#"><span>&#215;</span></a></li>
+    </ul>
+
+
+</form>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

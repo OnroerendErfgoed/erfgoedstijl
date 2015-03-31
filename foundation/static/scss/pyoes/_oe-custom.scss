@@ -39,11 +39,11 @@ ul.tag-label  {margin:10px 0 0 0;}
 
 // label colored
 ul.tag-label-col {margin:10px 0 0 0;}
-.tag-label-col li {float:$default-float;background-color:$fresh-blue;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.8em}
+.tag-label-col li {float:$default-float;background-color:$fresh-blue;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.8em;}
 .tag-label-col li:first-child {background:none;padding-left:0}
 .tag-label-col li:last-child {background-color:$fresh-blue;}
 .tag-label-col li a {text-decoration:none !important;color:$white}
-.tag-label-col li a span {margin:2px 0 0 10px;color:$white;font-size:1.1em;border-left:1px dotted $info-color;padding-left:10px;font-weight:bold;}
+.tag-label-col li a span {margin:2px 0 0 10px;color:$white;font-size:1.1em;border-left:1px dotted $info-color;padding-left:10px;font-family: $font-family-bold-serif;}
 
 
 

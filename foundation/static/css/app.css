@@ -5997,9 +5997,6 @@ h6 {
 .fa-download:before {
   content: "\f019"; }
 
-.fa-envelope:before {
-  content: "\f0e0"; }
-
 .fa-print:before {
   content: "\f02f"; }
 
@@ -6083,6 +6080,15 @@ h6 {
 
 .fa-trash:before {
   content: "\f014"; }
+
+.fa-check:before {
+  content: "\f046"; }
+
+.fa-remove:before {
+  content: "\f00d"; }
+
+.fa-envelope:before {
+  content: "\f0e0"; }
 
 ul.disk {
   margin: 10px 0;
@@ -6368,7 +6374,7 @@ ul.tag-label-col {
   font-size: 1.1em;
   border-left: 1px dotted #a0d3e8;
   padding-left: 10px;
-  font-weight: bold; }
+  font-family: "Flanders Art Sans Bold", Arial, sans-serif; }
 
 h4.header-img-panel {
   text-transform: uppercase;
