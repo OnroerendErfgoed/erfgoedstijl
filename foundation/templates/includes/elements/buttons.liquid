@@ -55,36 +55,79 @@
 
 <p class="text-center">Dropdown button ( click )</p>
 
-<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Dropdown </button>
-<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+<button data-dropdown="drop0" aria-controls="drop0" aria-expanded="false" class="button dropdown tiny">Dropdown </button>
+<ul id="drop0" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
   <li><a href="#">link 1</a></li>
   <li><a href="#">link 2</a></li>
   <li><a href="#">link 3</a></li>
 </ul>
 
 <hr>
+<p class="text-center">Dropdown button + checkboxes ( click )</p>
+
+<form class="clearfix">
+
+<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Selecteer een type</button>
+        <ul class="f-dropdown f-dropdown-padding" id="drop1" class="" data-dropdown-content aria-hidden="true" tabindex="-1">
+           <li>
+                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                <label for="checkbox-1" class="checkbox-custom-label">Brief</label>
+           </li>
+           <li>
+                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                <label for="checkbox-2" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+            <li>
+                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" checked>
+                <label for="checkbox-3" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+       </ul>
+</form>
+
+
+
+<hr>
 
 <p class="text-center">Dropdown Link ( click )</p>
 
-<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
-<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+<a data-dropdown="drop3" aria-controls="drop1" aria-expanded="false">Link met dropdown</a>
+<ul id="drop3" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
   <li><a href="#">This is a link</a></li>
   <li><a href="#">This is another</a></li>
   <li><a href="#">Yet another</a></li>
 </ul>
 
 
-
-
-
-
-
-
 <hr>
+
 <p class="text-center">Labels</p>
  
 <span class="label">Regular Label</span>
 <span class="alert label">Alert Label</span>
 <span class="success label">Success Label</span>
 <span class="secondary label">Success Label</span>
+
+
+<hr>
+
+<p class="text-center">Tags</p>
+<ul class="tag-label clearfix">
+  <li>Jouw selectie</li>
+  <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#215;</span></a></li>
+  <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#215;</span></li>
+  <li><a href="#">Alle filters verwijderen <span>&#215;</span></a></li>
+</ul>
+
+<hr>
+
+<p class="text-center">Tags colored</p>
+
+<ul class="tag-label-col clearfix">
+  <li>Toegevoegde types</li>
+  <li><a href="#">Brief</a> <a href="#"><span>&#215;</span></a></li>
+  <li><a href="#">Digitale bouwaanvraag</a> <a href="#"><span>&#215;</span></a></li>
+  <li><a href="#">Brief</a> <a href="#"><span>&#215;</span></a></li>
+  <li><a href="#">Digitale bouwaanvraag</a> <a href="#"><span>&#215;</span></a></li>
+</ul>
+
 

@@ -6090,6 +6090,9 @@ h6 {
 .fa-envelope:before {
   content: "\f0e0"; }
 
+.fa-plus:before {
+  content: "\f067"; }
+
 ul.disk {
   margin: 10px 0;
   padding-left: 1em; }
@@ -6186,6 +6189,18 @@ ul.source-authors-list li:hover {
 ul.source-authors-list i {
   color: #e5e5e5;
   margin: 0 8px; }
+
+ul.list-selected-items {
+  margin-top: -10px; }
+
+.list-selected-items li {
+  border-bottom: 1px solid #ededed; }
+
+.list-selected-items li i {
+  padding: 5px 0 0 0; }
+
+.f-dropdown-padding li {
+  padding: 5px 0 8px 0; }
 
 .circle {
   margin: 0 auto 15px auto;
@@ -6317,10 +6332,10 @@ article a:hover, .panel p a:hover {
   color: #2da3ce;
   text-decoration: none; }
 
-ul.tag-label {
+ul.tag-label, ul.tag-label-col {
   margin: 10px 0 0 0; }
 
-.tag-label li {
+.tag-label li, .tag-label-col li {
   float: left;
   background-color: #ededed;
   margin: 0 15px 10px 0;
@@ -6328,7 +6343,7 @@ ul.tag-label {
   padding: 4px 10px;
   font-size: 0.9em; }
 
-.tag-label li:first-child {
+.tag-label li:first-child, .tag-label-col li:first-child {
   background: none;
   padding-left: 0; }
 
@@ -6339,27 +6354,16 @@ ul.tag-label {
   text-decoration: none !important;
   color: black; }
 
-.tag-label li a span {
+.tag-label li a span, .tag-label-col li a span {
   margin: 2px 0 0 10px;
   color: #FF0000;
+  font-size: 1.1em;
   border-left: 1px solid white;
   padding-left: 10px;
   font-weight: bold; }
 
-ul.tag-label-col {
-  margin: 10px 0 0 0; }
-
 .tag-label-col li {
-  float: left;
-  background-color: #2da3ce;
-  margin: 0 15px 10px 0;
-  display: block;
-  padding: 4px 10px;
-  font-size: 0.8em; }
-
-.tag-label-col li:first-child {
-  background: none;
-  padding-left: 0; }
+  background-color: #2da3ce; }
 
 .tag-label-col li:last-child {
   background-color: #2da3ce; }
@@ -6369,12 +6373,8 @@ ul.tag-label-col {
   color: white; }
 
 .tag-label-col li a span {
-  margin: 2px 0 0 10px;
   color: white;
-  font-size: 1.1em;
-  border-left: 1px dotted #a0d3e8;
-  padding-left: 10px;
-  font-family: "Flanders Art Sans Bold", Arial, sans-serif; }
+  border-left: 1px dotted #a0d3e8; }
 
 h4.header-img-panel {
   text-transform: uppercase;
@@ -6524,6 +6524,18 @@ h4.header-img-panel {
   width: 1.25rem;
   height: 100% !important;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+); }
+
+.plus-icon {
+  padding-top: 12px;
+  padding-left: 8px;
+  color: #3f3840; }
+
+.plus-icon-link {
+  display: table-cell;
+  border-left: 1px dotted #d3d3d3;
+  float: left;
+  vertical-align: middle;
+  height: 37px; }
 
 .checkbox-custom, .radio-custom {
   opacity: 0;
