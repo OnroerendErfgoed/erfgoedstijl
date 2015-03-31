@@ -6563,6 +6563,9 @@ h4.header-img-panel {
   content: '\2714';
   color: #bbb; }
 
+select {
+  -moz-appearance: none !important; }
+
 .fl-block {
   margin: 0 0 2em 0;
   font-size: 14px; }
