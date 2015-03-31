@@ -6311,6 +6311,12 @@ input.error {
 select {
   height: 42px; }
 
+select:focus {
+  outline: none; }
+
+select {
+  -moz-appearance: none !important; }
+
 dt, b, strong {
   font-family: "Flanders Art Sans Bold", Arial, sans-serif;
   font-weight: 700; }
@@ -6494,7 +6500,8 @@ h4.header-img-panel {
   margin: 0;
   display: table-cell;
   background-color: transparent;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+  height: 37px; }
 
 .placeholder-container > .combo-dropdown {
   border: 0 !important; }
@@ -6574,9 +6581,6 @@ h4.header-img-panel {
 .radio-custom:checked + .radio-custom-label:before {
   content: '\2714';
   color: #bbb; }
-
-select {
-  -moz-appearance: none !important; }
 
 .fl-block {
   margin: 0 0 2em 0;
