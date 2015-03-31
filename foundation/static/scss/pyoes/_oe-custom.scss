@@ -29,13 +29,22 @@ article a, .panel p a  {color:$fresh-blue;text-decoration:underline}
 article a:hover, .panel p a:hover  {color:$fresh-blue;text-decoration:none}
 
 
-// beeldbank
+// beeldbank label
 ul.tag-label  {margin:10px 0 0 0;}
 .tag-label li {float:$default-float;background-color:$light-gray;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.9em}
 .tag-label li:first-child {background:none;padding-left:0}
 .tag-label li:last-child {background-color:$aluminum;}
 .tag-label li a  {text-decoration:none !important;color:$black}
-.tag-label li a span  {margin:2px 0 0 10px;color:$alert-color}
+.tag-label li a span  {margin:2px 0 0 10px;color:$alert-color;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
+
+// label colored
+ul.tag-label-col {margin:10px 0 0 0;}
+.tag-label-col li {float:$default-float;background-color:$fresh-blue;margin:0 15px 10px 0;display:block;padding:4px 10px;font-size:0.8em}
+.tag-label-col li:first-child {background:none;padding-left:0}
+.tag-label-col li:last-child {background-color:$fresh-blue;}
+.tag-label-col li a {text-decoration:none !important;color:$white}
+.tag-label-col li a span {margin:2px 0 0 10px;color:$white;font-size:1.1em;border-left:1px dotted $info-color;padding-left:10px;font-weight:bold;}
+
 
 
 
@@ -184,6 +193,9 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
 }
 
+
+
+
 //checkbox custom
 
 
@@ -196,7 +208,7 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
     display: inline-block;
     vertical-align: middle;
     margin: 5px;
-    cursor: pointer;
+    cursor: pointer;  font-size:0.8em;
 }
 
 .checkbox-custom-label, .radio-custom-label {
@@ -205,7 +217,7 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
 
 .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
     content: '';
-    background: $light-purple;
+    background: $fresh-blue;
     display: inline-block;
     vertical-align: middle;
     width: 20px;
@@ -213,11 +225,12 @@ h4.header-img-panel {text-transform:uppercase;font-size:1em;padding:20px 0}
     padding: 2px;
     margin-right: 10px;
     text-align: center;
+    font-size:0.8em;
 }
 
 .checkbox-custom:checked + .checkbox-custom-label:before {
     content: '\2714';
-    background: $dark-purple;
+    background: $fresh-blue;
     color: #fff;
 }
 
