@@ -50,17 +50,6 @@
 
 <a href="#" class="button alert">Alert Button</a>
 
-
-<br><br>
-
-
-<!-- Expand Class -->
-<a href="#" class="button expand">Expanded Button</a>
-
-<!-- Expand Class Small-->
-<a href="#" class="button expand [tiny small large]">Small Expanded Button</a>
-
-
 <br><br>
 
 <!-- Small Class -->
@@ -72,15 +61,40 @@
 
 <a href="#" class="button alert [tiny small large]">Alert Button</a>
 
+<br><br>
+
+<a href="#" class="button tiny">Default Button</a>
+
+<a href="#" class="button disabled tiny">Disabled Button</a>
+
+<a href="#" class="button success tiny">Color Button</a>
+
+<a href="#" class="button alert tiny">Alert Button</a>
+
+
+<br><br>
+
+<!-- Expand Class -->
+<a href="#" class="button expand">Expanded Button</a>
+
+<!-- Expand Class Small-->
+<a href="#" class="button expand small">Small Expanded Button</a>
+
+<!-- Expand Class Small-->
+<a href="#" class="button expand tiny">Small Expanded Button</a>
+
+
+
+
 
 <hr>
 <p class="text-center">Button group</p>
 
 <div class="button-bar">
   <ul class="button-group">
-    <li><a href="#" class="small button">Button 1</a></li>
-    <li><a href="#" class="small button">Button 2</a></li>
-    <li><a href="#" class="small button">Button 3</a></li>
+    <li><a href="#" class="tiny button">Button 1</a></li>
+    <li><a href="#" class="tiny button">Button 2</a></li>
+    <li><a href="#" class="tiny button">Button 3</a></li>
   </ul>
 </div>
 
@@ -89,8 +103,8 @@
 <p class="text-center">Floats vorige /volgende</p>
 
 <div class="clearfix">
-    <a class="small button right">Volgende</a>
-    <a class="small button left">Vorige</a>
+    <a class="tiny button right">Volgende</a>
+    <a class="tiny button left">Vorige</a>
 </div>
 
 
@@ -390,7 +404,7 @@
           <div class="placeholder-container" tabindex="-1">
             <label for="email">Email</label>
             <input id="email" placeholder="name@mail.com" title="Your Email" type="text" class="left" style="width: 70%;"/>
-            <select style="width: 30%;">
+            <select class="placeholder-input-border" style="width: 30%;">
               <option value=1>werk</option>
               <option value=2>thuis</option>
             </select>
@@ -414,8 +428,24 @@
           <a href="#" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
       </div>
 
+
+<!-- + error -->
+
+      <div class="placeholder-container error" tabindex="-1">
+          <label for="email">Telefoon</label>
+          <input id="email" placeholder="+32/0/000.00.00" type="text" class="" style="width:65%;float:left"/>
+          <select id="emailtype" class="placeholder-input-border" class="" style="width:25%;float:left">
+            <option value=1>thuis</option>
+            <option value=2 selected>werk</option>
+          </select>
+          <a href="#" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
+      </div>
+
+   <small class="error" style="margin-top:-10px">Gelieve bovenstaand veld correct in te vullen</small>
+
     </div>
   </div>
+
 
 
 

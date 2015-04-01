@@ -6368,6 +6368,14 @@ ul.tag-label, ul.tag-label-col {
   padding-left: 10px;
   font-weight: bold; }
 
+.tag-label li i {
+  margin: 2px 0 0 10px;
+  color: #FF0000;
+  font-size: 0.8em;
+  border-left: 1px solid white;
+  padding-left: 10px;
+  font-weight: bold; }
+
 .label-colored {
   background-color: #2da3ce; }
 
@@ -6500,7 +6508,8 @@ h4.header-img-panel {
   display: table-cell;
   background-color: transparent;
   -moz-appearance: none;
-  height: 37px; }
+  height: 37px;
+  font-size: 0.9em; }
 
 .placeholder-container > .combo-dropdown {
   border: 0 !important; }
@@ -6512,6 +6521,12 @@ h4.header-img-panel {
   display: table-cell;
   background-color: transparent !important;
   resize: vertical; }
+
+.placeholder-container.error {
+  border: 1px solid #FF0000 !important; }
+
+.placeholder-input-border {
+  border-left: 1px dotted #d3d3d3 !important; }
 
 .placeholder-input.dijitDateTextBox {
   padding-left: 0; }
