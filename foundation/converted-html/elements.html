@@ -99,38 +99,79 @@
 
 <p class="text-center">Dropdown button ( click )</p>
 
-<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Dropdown </button>
-<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+<button data-dropdown="drop0" aria-controls="drop0" aria-expanded="false" class="button dropdown tiny">Dropdown </button>
+<ul id="drop0" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
   <li><a href="#">link 1</a></li>
   <li><a href="#">link 2</a></li>
   <li><a href="#">link 3</a></li>
 </ul>
 
 <hr>
+<p class="text-center">Dropdown button + checkboxes ( click )</p>
+
+<form class="clearfix">
+
+<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Selecteer een type</button>
+        <ul class="f-dropdown f-dropdown-padding" id="drop1" class="" data-dropdown-content aria-hidden="true" tabindex="-1">
+           <li>
+                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                <label for="checkbox-1" class="checkbox-custom-label">Brief</label>
+           </li>
+           <li>
+                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                <label for="checkbox-2" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+            <li>
+                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" checked>
+                <label for="checkbox-3" class="checkbox-custom-label">Digitale bouwaanvraag</label>
+           </li>
+       </ul>
+       
+</form>
+
+
+
+<hr>
 
 <p class="text-center">Dropdown Link ( click )</p>
 
-<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
-<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+<a data-dropdown="drop3" aria-controls="drop1" aria-expanded="false">Link met dropdown</a>
+<ul id="drop3" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
   <li><a href="#">This is a link</a></li>
   <li><a href="#">This is another</a></li>
   <li><a href="#">Yet another</a></li>
 </ul>
 
 
-
-
-
-
-
-
 <hr>
+
 <p class="text-center">Labels</p>
  
 <span class="label">Regular Label</span>
 <span class="alert label">Alert Label</span>
 <span class="success label">Success Label</span>
 <span class="secondary label">Success Label</span>
+
+
+<hr>
+
+<p class="text-center">Tags</p>
+<ul class="tag-label clearfix">
+  <li>Jouw selectie</li>
+  <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#215;</span></a></li>
+  <li><a href="#">Fotograaf / <strong>iPhone</strong></a> <a href="#"><span>&#215;</span></li>
+  <li><a href="#">Alle filters verwijderen <span>&#215;</span></a></li>
+</ul>
+
+<hr>
+
+<p class="text-center">Tags colored</p>
+
+
+<span class="label label-colored"><a href="#">Brief<a/>  <a href="#"><span>&#215;</span></a></span>
+<span class="label label-colored"><a href="#">Digitale bouwaanvraag<a/>  <a href="#"><span>&#215;</span></a></span>
+
+
 
 
 
@@ -319,54 +360,62 @@
 
 <hr>
 
-
-<!-- form type 1 -->
-<!-- p class="text-center">Active placeholder</p>
-
-  <form id="">
-    <ul class="placeholder-list">
-      <li>
-        <input id="email" class="placeholder-input" name="email" placeholder="Your Email" title="Your Email" type="email" value="" required />
-        <label class="placeholder-label" for="email" style="color:red;">Your Emeeel</label>
-      </li>     
-    </ul>
-  </form -->
-
-
-<hr>
-
 <!-- form type 1 -->
 <p class="text-center">Inline textfield placeholder</p>
 
 
-
-<div class="row">
-  <div class="large-12 columns">
-
       <div class="row">
         <div class="large-4 columns">
+          <h5>Regular fields</h5>
           <div class="placeholder-container" tabindex="-1">
-            <label class="placeholder-label" for="email">E-mail</label>
-            <input id="email" class="placeholder-input" placeholder="name@mail.com" title="Your Email" type="text"/>
+            <label for="email">E-mail</label>
+            <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
+          </div>
+          <div class="placeholder-container" tabindex="-1">
+            <label for="username">Username</label>
+            <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
+          </div>
+         
+          <h5>Multiple fields same line</h5>
+          <div class="placeholder-container" tabindex="-1" style="width: 48%;">
+            <label for="email">Email</label>
+            <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
+          </div>
+          <div class="placeholder-container" tabindex="-1" class="right" style="width: 48%;">
+            <label for="username">Username</label>
+            <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
           </div>
         
+          <h5>Multiple fields in placeholder</h5>
           <div class="placeholder-container" tabindex="-1">
-            <label class="placeholder-label" for="username">Username</label>
-            <input id="username" class="placeholder-input" placeholder="taeymma" title="Your Username" type="text"/>
+            <label for="email">Email</label>
+            <input id="email" placeholder="name@mail.com" title="Your Email" type="text" class="left" style="width: 70%;"/>
+            <select style="width: 30%;">
+              <option value=1>werk</option>
+              <option value=2>thuis</option>
+            </select>
           </div>
-        </div>
+
+          <ul class="nodisk list-selected-items">
+            <li>
+              <small>mail@mail.be <a href=""><i class="fa fa-trash right"></i></a></small></li>
+            <li><small>mail@mail.be <a href=""><i class="fa fa-trash right"></i></a></small></li>
+          </ul>       
+              
+      
+
+      <div class="placeholder-container " tabindex="-1">
+          <label for="email">Telefoon</label>
+          <input id="email" placeholder="+32/0/000.00.00" type="text" class="" style="width:65%;float:left"/>
+          <select id="emailtype" class="placeholder-input-border" class="" style="width:25%;float:left">
+            <option value=1>thuis</option>
+            <option value=2 selected>werk</option>
+          </select>
+          <a href="#" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
       </div>
-    </div>  
 
-</div>
-
-
-
-
-
-
-
-
+    </div>
+  </div>
 
 
 
@@ -379,17 +428,6 @@
       </label>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
