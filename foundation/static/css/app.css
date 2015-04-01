@@ -6508,7 +6508,8 @@ h4.header-img-panel {
   display: table-cell;
   background-color: transparent;
   -moz-appearance: none;
-  height: 37px; }
+  height: 37px;
+  font-size: 0.9em; }
 
 .placeholder-container > .combo-dropdown {
   border: 0 !important; }
