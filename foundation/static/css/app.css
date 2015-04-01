@@ -6368,19 +6368,18 @@ ul.tag-label, ul.tag-label-col {
   padding-left: 10px;
   font-weight: bold; }
 
-.tag-label-col li {
+.label-colored {
   background-color: #2da3ce; }
 
-.tag-label-col li:last-child {
-  background-color: #2da3ce; }
-
-.tag-label-col li a {
+.label-colored a {
   text-decoration: none !important;
-  color: white; }
-
-.tag-label-col li a span {
   color: white;
-  border-left: 1px dotted #a0d3e8; }
+  padding-right: 3px; }
+
+.label-colored a span {
+  color: white;
+  border-left: 1px dotted #a0d3e8;
+  padding-left: 8px; }
 
 h4.header-img-panel {
   text-transform: uppercase;
@@ -6581,6 +6580,16 @@ h4.header-img-panel {
 .radio-custom:checked + .radio-custom-label:before {
   content: '\2714';
   color: #bbb; }
+
+.postreg-navbar {
+  margin: 0 auto;
+  width: 600px; }
+
+@media only screen and (max-width: 578px) {
+  .postreg-navbar {
+    margin: 0 auto;
+    width: 600px;
+    display: table-cell; } }
 
 .fl-block {
   margin: 0 0 2em 0;
