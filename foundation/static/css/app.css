@@ -6192,7 +6192,8 @@ ul.source-authors-list i {
 
 ul.list-selected-items {
   margin-top: -10px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-right: 10px; }
 
 .list-selected-items li {
   border-bottom: 1px solid #d5d5d5; }
