@@ -42,7 +42,7 @@ ul.source-authors li {list-style-type: none;}
 ul.source-authors  {font-family:$font-family-sans-serif;color:$dark-purple;margin:20px 0 0 0;font-size:0.6em;line-height:1.6em;}
 
 //temp?
-.source-authors-block {margin-top:10px;height:255px;width:98%;overflow:scroll}
+.source-authors-block {margin-top:10px;height:255px;width:98%;overflow-y:scroll}
 ul.source-authors-list  {font-size:0.8em;line-height:1.6em;}
 ul.source-authors-list li  {color:$dark-gray;border:1px solid $mid-gray;margin-bottom:18px;padding:4px}
 ul.source-authors-list li:hover  {background:$white-gray;display:block}
@@ -53,7 +53,7 @@ ul.source-authors-list i  {color:$mid-gray;margin:0 8px}
 
 ul.list-selected-items  {margin-top:-10px; margin-left: 10px; padding-right: 10px;}
 .list-selected-items li {border-bottom:1px solid $gray}
-.list-selected-items li i {padding:5px 0 0 0}
+.list-selected-items li i {padding:5px 0 0 0; cursor: pointer;}
 
 
 // list dropdown dropdown box
@@ -66,6 +66,7 @@ ul.list-selected-items  {margin-top:-10px; margin-left: 10px; padding-right: 10p
 ul.small-list li  {font-size:0.8em;margin:12px 0 0 0}
 ul.small-list li label {line-height:12px;min-height:12px}
 
+
 // beeldbank / beheersplannen label + colored
 
 ul.tag-label, ul.tag-label-col  {margin:10px 0 0 0;}
@@ -75,6 +76,5 @@ ul.tag-label, ul.tag-label-col  {margin:10px 0 0 0;}
 .tag-label li a  {text-decoration:none !important;color:$black}
 .tag-label li a span, .tag-label-col li a span  {margin:2px 0 0 10px;color:$alert-color;font-size:1.1em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
 .tag-label li i  {margin:2px 0 0 10px;color:$alert-color;font-size:0.8em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
-
 
 
