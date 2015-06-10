@@ -21,6 +21,10 @@
   border-top: none !important;
 }
 
+
+.time-block  {display: block;margin:0.6em 0 0 0}
+
+
 // flanders-block-large home
 
 .fl-block-largeimage {text-align:center}
@@ -44,7 +48,7 @@
 .fl-block .block-date {text-transform: uppercase;border:none;background-color:$dark-purple;padding:0.75em 1.5em 0.65em;color:$white;}
 .fl-block .field.block-date i {float:none;margin-right:0.4em;}
 .fl-block .field.block-image {border-bottom:0;}
-.fl-block .field.block-image img{width:100%;display:block;}
+.fl-block .field.block-image img {width:100%;display:block;}
 
 
 
