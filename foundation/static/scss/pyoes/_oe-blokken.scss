@@ -4,15 +4,16 @@
 //
 
 
-
 .fl-block  {margin: 0 0 2em 0;font-size:$switch-font-size-med;}
 .fl-block .field {border-bottom:1px solid $mid-gray;overflow:hidden;background-color:$white;position:relative;padding:1.6em 1.2em 1.2em 1.2em;}
 .fl-block .field p {margin:0;font-size:$switch-font-size-med;}
 
-.fl-block .field.full {padding:0;}
-.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;}
+.fl-block .field img {height:105px;overflow: hidden}
 
-.fl-block .field.full a:hover{background-color:$white-gray;text-decoration: none;}
+.fl-block .field.full {padding:0;}
+.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;min-height: 50px}
+
+.fl-block .field.full a:hover{background-color:$white-gray;text-decoration: none;min-height: 50px }
 .fl-block .field.full a h5, .fl-block .field.fullfeed a h5, .largeimagefield a h5 { text-transform: uppercase;font-family: $font-family-medium-serif;}
 .fl-block .field.full a:hover h5 {text-decoration: underline;}
 
@@ -22,7 +23,7 @@
 }
 
 
-.time-block  {display: block;margin:0.6em 0 0 0}
+.time-block  {display: block;margin:0.6em 0 0 0;font-size:0.8em}
 
 
 // flanders-block-large home
@@ -101,5 +102,9 @@
 
 .actoren-icon-large, .actoren-icon-small {float:$default-float;color:$light-gray;font-size:4em;padding:0px 20px 0 0;border-right:1px solid $mid-gray;margin-right:20px}
 .actoren-icon-small {border-right:1px solid $mid-gray;margin-right:15px;font-size:3em;padding:15px 20px}
+
+
+//inventaris result list 
+.result img {min-height:auto;width:150px}
 
 

@@ -5,18 +5,14 @@
 
 
 // li colored disk
-/*ul.disk {margin:10px 0;padding-left: 1em;}
-ul.disk li {list-style: disc outside none; color: $light-purple;}
-ul.disk li span {color: $dark-gray;}
-ul.disk li a {color:$fresh-blue !important; text-decoration:underline;margin-bottom:8px;}
-ul.disk li a:hover {text-decoration:none} */
-
-
 ul.disk          	{ list-style:none; padding:0; margin:10px 0; }
 ul.disk li          { padding-left:1em; position:relative; }
 ul.disk li:before   { content:"•"; color:$fresh-blue; position:absolute; left:0em; }
-
+ul.disk li a:link 	{ color:$light-purple;margin-bottom:8px;} 
+ul.disk li a:hover 	{ text-decoration:underline} 
 ul.disk ul         	{ list-style:none; padding:0; margin:5px 0; font-size:0.9em;}
+
+
 
 
 // li no disk
@@ -87,6 +83,35 @@ ul.tag-label, ul.tag-label-col  {margin:10px 0 0 0;}
 .tag-label li a span, .tag-label-col li a span  {margin:2px 0 0 10px;color:$alert-color;font-size:1.1em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
 .tag-label li i  {margin:2px 0 0 10px;color:$alert-color;font-size:0.8em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
 
+
+
+
+ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;}
+.newlist li a {display:block;padding:0px 0 0px 0}
+.newlist li a:hover {background:#efefef;display:block;padding:0px 0 0px 0;text-decoration:underline; -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;}
+.newlist li {clear:left;margin-bottom:1px}
+.newlist h5 {padding-top:15px;text-transform: uppercase;font-family: $font-family-medium-serif;}
+
+.newlist p {color:#333;margin:5px;font-size:0.8em}
+/*.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden;margin:20px}*/
+.newlist li figure {margin:20px}
+
+.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden}
+
+
+
+
+
+// cliplist
+ul.cliplistul {list-style:none;margin:0;padding:0;position:relative;}
+li.cliplist {float:left;width:130px}
+
+li.cliplist figure img {position: absolute; clip: rect(0px,150px,120px,0px);border:1px solid #C03}
+
+li.cliplist figure img {width:100px}
 
 
 
