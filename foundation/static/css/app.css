@@ -6250,64 +6250,58 @@ ul.tag-label, ul.tag-label-col {
 ul.newlist {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
-  color: #333; }
+  margin: 10px 0; }
 
-.newlist li a {
-  display: block;
-  padding: 0px 0 0px 0; }
+/*
+ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;background:#fff}
 
-.newlist li a:hover {
-  background: #efefef;
-  display: block;
-  padding: 0px 0 0px 0;
-  text-decoration: underline;
-  -webkit-transition: all 1s ease-in-out;
+.newlist li a {clear:left;display:block;padding:0px 0 0px 0}
+.newlist li a:hover {background:$light-gray;display:block;padding:0px 0 0px 0;text-decoration:none; -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;}
+.newlist li {display:block;border-bottom:1px solid #efefef}
+.newlist h5 {padding-top:0px;text-transform: uppercase;font-family: $font-family-medium-serif;}
 
-.newlist li {
-  clear: left;
-  margin-bottom: 1px; }
+.newlist p {color:#333;margin:5px;font-size:0.8em}
 
-.newlist h5 {
-  padding-top: 15px;
-  text-transform: uppercase;
-  font-family: "Flanders Art Sans Medium", Arial, sans-serif; }
-
-.newlist p {
-  color: #333;
-  margin: 5px;
-  font-size: 0.8em; }
-
+.newlist li figure {margin:0px;width:150px;float:left;margin-right:20px;height:150px;overflow:hidden;}
+.newlist li figure img {width:150px;}*/
 /*.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden;margin:20px}*/
-.newlist li figure {
-  margin: 20px; }
+.fl-block-largeimage {
+  margin-bottom: 30px;
+  text-align: center; }
 
-.newlist li figure img {
-  float: left;
-  width: 150px;
-  height: 150px;
-  overflow: hidden; }
+.fl-block-largeimage div {
+  text-align: center; }
 
-ul.cliplistul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.fl-block-largeimage h5 {
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.fl-block-largeimage span {
+  color: #d5d5d5; }
+
+.fl-block-largeimage a:hover {
+  text-decoration: underline; }
+
+.img-vert-list {
+  height: 180px;
+  width: 180px;
+  display: inline-block;
   position: relative; }
 
-li.cliplist {
-  float: left;
-  width: 130px; }
-
-li.cliplist figure img {
+.img-vert-list img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   position: absolute;
-  clip: rect(0px, 150px, 120px, 0px);
-  border: 1px solid #C03; }
-
-li.cliplist figure img {
-  width: 100px; }
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 .circle {
   margin: 0 auto 15px auto;
@@ -6432,13 +6426,15 @@ li.cliplist figure img {
 .fl-block .field.full > a {
   display: block;
   padding: 1.6em 1.4em 1.6em 1.4em;
-  color: #5e5e5e;
-  min-height: 50px; }
+  color: #5e5e5e; }
 
 .fl-block .field.full a:hover {
   background-color: #fbfbfb;
-  text-decoration: none;
-  min-height: 50px; }
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-decoration: none; }
 
 .fl-block .field.full a h5, .fl-block .field.fullfeed a h5, .largeimagefield a h5 {
   text-transform: uppercase;
@@ -6456,25 +6452,22 @@ li.cliplist figure img {
   margin: 0.6em 0 0 0;
   font-size: 0.8em; }
 
-.fl-block-largeimage {
+.result figure {
+  width: 150px;
+  background: #efefef;
   text-align: center; }
 
-.fl-block-largeimage img {
-  margin: 10px 0;
-  width: 180px;
-  height: 180px; }
+.result img {
+  min-height: auto;
+  height: 150px; }
 
-.fl-block-largeimage a h5 {
-  text-transform: uppercase; }
-
-.fl-block-largeimage a:hover h5 {
-  text-decoration: underline; }
-
-.fl-block-largeimage .posted {
-  line-height: 1em;
-  color: #989898;
-  margin-top: -0.5em; }
-
+/*
+.fl-block-largeimage {text-align:center}
+.fl-block-largeimage img {margin:10px 0;width:180px;height:180px}
+.fl-block-largeimage a h5 {text-transform: uppercase}
+.fl-block-largeimage a:hover h5 {text-decoration: underline}
+.fl-block-largeimage .posted {line-height:1em;color:$silver;margin-top:-0.5em;}
+*/
 .fl-block .field a.more, .fl-block .field a.fa, .fl-block .field i.fa {
   float: right;
   text-decoration: none; }
@@ -6642,10 +6635,6 @@ li.cliplist figure img {
   margin-right: 15px;
   font-size: 3em;
   padding: 15px 20px; }
-
-.result img {
-  min-height: auto;
-  width: 150px; }
 
 ul.socialbox {
   list-style: none;

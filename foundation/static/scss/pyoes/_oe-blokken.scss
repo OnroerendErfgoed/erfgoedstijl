@@ -11,9 +11,9 @@
 .fl-block .field img {height:105px;overflow: hidden}
 
 .fl-block .field.full {padding:0;}
-.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;min-height: 50px}
+.fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;}
 
-.fl-block .field.full a:hover{background-color:$white-gray;text-decoration: none;min-height: 50px }
+.fl-block .field.full a:hover{background-color:$white-gray;-webkit-transition: all 1s ease-in-out;-moz-transition: all 1s ease-in-out;-o-transition: all 1s ease-in-out;transition: all 1s ease-in-out;text-decoration: none; }
 .fl-block .field.full a h5, .fl-block .field.fullfeed a h5, .largeimagefield a h5 { text-transform: uppercase;font-family: $font-family-medium-serif;}
 .fl-block .field.full a:hover h5 {text-decoration: underline;}
 
@@ -25,15 +25,21 @@
 
 .time-block  {display: block;margin:0.6em 0 0 0;font-size:0.8em}
 
+//inventaris result list 
+.result figure {width:150px;background:#efefef;text-align:center}
+.result img {min-height:auto;height:150px}
+
+
+
 
 // flanders-block-large home
-
+/*
 .fl-block-largeimage {text-align:center}
 .fl-block-largeimage img {margin:10px 0;width:180px;height:180px}
 .fl-block-largeimage a h5 {text-transform: uppercase}
 .fl-block-largeimage a:hover h5 {text-decoration: underline}
 .fl-block-largeimage .posted {line-height:1em;color:$silver;margin-top:-0.5em;}
-
+*/
 
 
 // flanders-block-more link
@@ -104,7 +110,6 @@
 .actoren-icon-small {border-right:1px solid $mid-gray;margin-right:15px;font-size:3em;padding:15px 20px}
 
 
-//inventaris result list 
-.result img {min-height:auto;width:150px}
+
 
 

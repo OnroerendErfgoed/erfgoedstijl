@@ -14,7 +14,7 @@
 <div class="main-navigation-inner clearfix inner">
 <div class="logo-block">
 <a href="index.html">
-<h1>Styleguide</h1>
+<div class="logo-block-title"><h1>Styleguide</h1></div>
 <img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
 <h2>Vlaanderen</h2>
 <h4>is Onroerend Erfgoed</h4>
@@ -863,7 +863,7 @@
 
   <div class="large-3 columns">
       
-     <!-- statistieken  -->
+     <!-- evenementen  -->
         
 
 
@@ -883,7 +883,7 @@
 
 
 
-     <!-- end statistieken  -->
+     <!-- end evenementen  -->
         
   </div>
 
@@ -912,16 +912,11 @@
                     <li><a href="#">Agentschap voor Kwaliteitszorg in Onderwijs en Vorming</a></li>
                 </ul>
         
-
              </div>
 
     </div>
 
 </div>
-
-
-
-
      <!-- end agentschap -->
   
   </div>
@@ -1057,6 +1052,26 @@ $(document).ready(function(){
         });
     } // Modernizr placeholder
 });
+</script>
+
+<script>
+// Function that resizes the title to a appropriate size
+$( document ).ready(function () {
+  var element = $('.logo-block');
+  resize_title(element);
+});
+
+function resize_title(element){
+  var title = element.find('h1')[0];
+  var span = element.find('div.logo-block-title')[0];
+  var fontsize = $(title).css('font-size');
+  $(title).css('font-size', parseFloat(fontsize) - 1);
+  var padding = $(title).css('padding-top');
+  $(title).css('padding-top', parseFloat(padding) + 0.5);
+  if ($(title).width() > $(span).width()){
+    resize_title(element);
+  }
+};
 </script>
 	</body>
 </html>

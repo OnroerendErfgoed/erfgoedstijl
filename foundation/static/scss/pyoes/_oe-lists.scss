@@ -85,39 +85,35 @@ ul.tag-label, ul.tag-label-col  {margin:10px 0 0 0;}
 
 
 
+ul.newlist {list-style:none; padding:0; margin:10px 0;}
 
-ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;}
-.newlist li a {display:block;padding:0px 0 0px 0}
-.newlist li a:hover {background:#efefef;display:block;padding:0px 0 0px 0;text-decoration:underline; -webkit-transition: all 1s ease-in-out;
+/*
+ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;background:#fff}
+
+.newlist li a {clear:left;display:block;padding:0px 0 0px 0}
+.newlist li a:hover {background:$light-gray;display:block;padding:0px 0 0px 0;text-decoration:none; -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;}
-.newlist li {clear:left;margin-bottom:1px}
-.newlist h5 {padding-top:15px;text-transform: uppercase;font-family: $font-family-medium-serif;}
+.newlist li {display:block;border-bottom:1px solid #efefef}
+.newlist h5 {padding-top:0px;text-transform: uppercase;font-family: $font-family-medium-serif;}
 
 .newlist p {color:#333;margin:5px;font-size:0.8em}
+
+.newlist li figure {margin:0px;width:150px;float:left;margin-right:20px;height:150px;overflow:hidden;}
+.newlist li figure img {width:150px;}*/
+
+
 /*.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden;margin:20px}*/
-.newlist li figure {margin:20px}
-
-.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden}
 
 
+// vertical position list 
+.fl-block-largeimage  {margin-bottom:30px;text-align:center;}
+.fl-block-largeimage div {text-align:center}
+.fl-block-largeimage h5 {line-height:20px;text-transform:uppercase;}
+.fl-block-largeimage span {color:$gray;}
+.fl-block-largeimage a:hover {text-decoration: underline}
 
-
-
-// cliplist
-ul.cliplistul {list-style:none;margin:0;padding:0;position:relative;}
-li.cliplist {float:left;width:130px}
-
-li.cliplist figure img {position: absolute; clip: rect(0px,150px,120px,0px);border:1px solid #C03}
-
-li.cliplist figure img {width:100px}
-
-
-
-
-
-
-
-
+.img-vert-list {height: 180px; width: 180px;display: inline-block;position: relative;}
+.img-vert-list img {max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top:0;bottom:0;left:0;right:0;margin: auto}
 
