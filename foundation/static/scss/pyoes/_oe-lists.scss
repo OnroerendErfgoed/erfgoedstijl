@@ -7,9 +7,9 @@
 // li colored disk
 ul.disk          	{ list-style:none; padding:0; margin:10px 0; }
 ul.disk li          { padding-left:1em; position:relative; }
-ul.disk li:before   { content:"•"; color:$fresh-blue; position:absolute; left:0em; }
-ul.disk li a:link 	{ color:$light-purple;margin-bottom:8px;} 
-ul.disk li a:hover 	{ text-decoration:underline} 
+ul.disk li:before   { content:"•"; color:$light-purple; position:absolute; left:0em; }
+ul.disk li a:link 	{ color:$fresh-blue;margin-bottom:8px;text-decoration:underline} 
+ul.disk li a:hover 	{ text-decoration:none} 
 ul.disk ul         	{ list-style:none; padding:0; margin:5px 0; font-size:0.9em;}
 
 

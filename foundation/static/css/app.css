@@ -6070,6 +6070,9 @@ h6 {
 .fa-fw:before {
   content: "\f09e"; }
 
+.fa-globe:before {
+  content: "\f0ac"; }
+
 ul.disk {
   list-style: none;
   padding: 0;
@@ -6081,16 +6084,17 @@ ul.disk li {
 
 ul.disk li:before {
   content: "•";
-  color: #2da3ce;
+  color: #b05dbf;
   position: absolute;
   left: 0em; }
 
 ul.disk li a:link {
-  color: #b05dbf;
-  margin-bottom: 8px; }
+  color: #2da3ce;
+  margin-bottom: 8px;
+  text-decoration: underline; }
 
 ul.disk li a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 ul.disk ul {
   list-style: none;
@@ -6915,6 +6919,9 @@ article a, .panel p a {
 article a:hover, .panel p a:hover {
   color: #2da3ce;
   text-decoration: none; }
+
+.panel article h3, .panel article h4, .panel article h5 {
+  line-height: 1.3em; }
 
 /* Placeholder fields */
 .placeholder-container {
