@@ -6073,6 +6073,9 @@ h6 {
 .fa-globe:before {
   content: "\f0ac"; }
 
+.fa-book:before {
+  content: "\f02d"; }
+
 ul.disk {
   list-style: none;
   padding: 0;
@@ -6308,14 +6311,16 @@ ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;background:#fff
   margin: auto; }
 
 dl.def-besluit {
-  margin: 20px 0; }
+  margin: 20px 0 0 0; }
 
 .def-besluit dt {
-  font-size: 0.8em; }
+  font-size: 0.9em;
+  color: #3f3840;
+  font-weight: normal !important; }
 
 .def-besluit dd {
   margin-left: 160px;
-  margin-top: -26px; }
+  margin-top: -24px; }
 
 .circle {
   margin: 0 auto 15px auto;
