@@ -5612,7 +5612,7 @@ th.hide-for-touch {
   width: 65px; }
 
 .bgimage {
-  background: url(../img/pyoes/header-img.jpg);
+  background: url(../img/pyoes/header-img.jpg) no-repeat right;
   width: 80%;
   height: 135px;
   position: absolute;
@@ -5620,7 +5620,7 @@ th.hide-for-touch {
   z-index: 0; }
 
 .bgimage-bouwkunde {
-  background: url(../img/pyoes/dibe_1.jpg);
+  background: url(../img/pyoes/dibe_1.jpg) no-repeat right;
   width: 80%;
   height: 135px;
   position: absolute;
@@ -6307,6 +6307,16 @@ ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;background:#fff
   right: 0;
   margin: auto; }
 
+dl.def-besluit {
+  margin: 20px 0; }
+
+.def-besluit dt {
+  font-size: 0.8em; }
+
+.def-besluit dd {
+  margin-left: 160px;
+  margin-top: -26px; }
+
 .circle {
   margin: 0 auto 15px auto;
   border-radius: 50%;
@@ -6791,18 +6801,15 @@ figcaption {
   width: 70%; }
 
 .bb-vertical-large {
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0; }
 
-.bb-vertical-large img {
-  width: 70%; }
-
 .bb-horizontal-large {
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0; }
 
 .bb-horizontal-large img {
-  width: 70%; }
+  width: 60%; }
 
 aside img {
   margin: 5px 20px 5px 0; }
