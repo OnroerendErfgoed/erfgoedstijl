@@ -5643,7 +5643,7 @@ nav#main-navigation .main-navigation-inner {
 
 #service-navigation > li a {
   font-size: 0.75em;
-  color: #666666;
+  color: black;
   line-height: 1.8em; }
 
 #service-navigation > li > a {
@@ -5683,7 +5683,7 @@ nav#main-navigation .main-navigation-inner {
   position: relative;
   z-index: 100;
   background-color: white;
-  filter: alpha(opacity=60);
+  filter: alpha(opacity=90);
   opacity: .6;
   padding: 3px 0 8px 0;
   margin-top: 10px; }
@@ -6254,27 +6254,6 @@ ul.tag-label, ul.tag-label-col {
   padding-left: 10px;
   font-weight: bold; }
 
-ul.newlist {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0; }
-
-/*
-ul.newlist {list-style:none; padding:0; margin:10px 0;color:#333;background:#fff}
-
-.newlist li a {clear:left;display:block;padding:0px 0 0px 0}
-.newlist li a:hover {background:$light-gray;display:block;padding:0px 0 0px 0;text-decoration:none; -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;}
-.newlist li {display:block;border-bottom:1px solid #efefef}
-.newlist h5 {padding-top:0px;text-transform: uppercase;font-family: $font-family-medium-serif;}
-
-.newlist p {color:#333;margin:5px;font-size:0.8em}
-
-.newlist li figure {margin:0px;width:150px;float:left;margin-right:20px;height:150px;overflow:hidden;}
-.newlist li figure img {width:150px;}*/
-/*.newlist li figure img {float:left;width:150px;height:150px;overflow:hidden;margin:20px}*/
 .fl-block-largeimage {
   margin-bottom: 30px;
   text-align: center; }
@@ -6321,6 +6300,28 @@ dl.def-besluit {
 .def-besluit dd {
   margin-left: 160px;
   margin-top: -24px; }
+
+ul.listdownload {
+  list-style-type: none;
+  float: right;
+  padding: 24px 20px 0 0;
+  font-size: 0.8em; }
+
+.listdownload li {
+  float: left !important;
+  margin-left: 20px; }
+
+ul.listdownload li i {
+  color: gray;
+  float: left !important;
+  margin: 0px 10px 0 0;
+  font-size: 1.5em; }
+
+ul.listdownload li a {
+  color: #753f7f !important; }
+
+ul.listdownload li a:hover {
+  color: black !important; }
 
 .circle {
   margin: 0 auto 15px auto;
@@ -6422,7 +6423,8 @@ dl.def-besluit {
 
 .fl-block {
   margin: 0 0 2em 0;
-  font-size: 14px; }
+  font-size: 14px;
+  border: 1px solid #e5e5e5; }
 
 .fl-block .field {
   border-bottom: 1px solid #e5e5e5;
@@ -6473,8 +6475,10 @@ dl.def-besluit {
 
 .result figure {
   width: 150px;
-  background: #efefef;
-  text-align: center; }
+  background: #fff;
+  border: 1px solid #ededed;
+  text-align: center;
+  float: none; }
 
 .result img {
   min-height: auto;
@@ -7129,7 +7133,14 @@ select {
     width: 100%; }
   .bb-vertical-large img {
     width: 100%;
-    height: 400px; } }
+    height: 400px; }
+  .result figure {
+    float: none !important;
+    background: none;
+    width: 100%; }
+  .result img {
+    float: none !important;
+    height: 100% !important; } }
 
 /* inventaris article margin */
 .articlemargin {
