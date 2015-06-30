@@ -6016,7 +6016,7 @@ h6 {
 .fa-chevron-right:before {
   content: "\f054"; }
 
-.fa-file-pdf-o:before {
+fa-chevron-down .fa-file-pdf-o:before {
   content: "\f1c1"; }
 
 .fa-file-word-o:before {
@@ -6075,6 +6075,18 @@ h6 {
 
 .fa-book:before {
   content: "\f02d"; }
+
+.fa-angle-double-right:before {
+  content: "\f101"; }
+
+.fa-angle-double-down:before {
+  content: "\f103"; }
+
+.fa-caret-right:before {
+  content: "\f0da"; }
+
+.fa-caret-down:before {
+  content: "\f0d7"; }
 
 ul.disk {
   list-style: none;
@@ -6209,12 +6221,31 @@ ul.list-selected-items {
   padding: 0; }
 
 ul.small-list li {
-  font-size: 0.8em;
-  margin: 12px 0 0 0; }
+  font-size: 0.9em;
+  margin: 12px 0 0 0;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px; }
+
+ul.small-list li i {
+  margin: 0; }
 
 ul.small-list li label {
   line-height: 12px;
   min-height: 12px; }
+
+ul.small-list li:last-child {
+  padding-bottom: 12px; }
+
+ul.small-list ul {
+  margin: 0; }
+
+ul.small-list ul li {
+  font-size: 0.8em;
+  border-top: none;
+  margin: 0; }
+
+ul.small-list ul li input {
+  float: left; }
 
 ul.tag-label, ul.tag-label-col {
   margin: 10px 0 0 0; }

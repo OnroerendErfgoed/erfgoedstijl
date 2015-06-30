@@ -69,8 +69,18 @@ ul.list-selected-items  {margin-top:-10px; margin-left: 10px; padding-right: 10p
 // search list small - ex besluitendatabank
 
 .small-list {margin:0;border-bottom:1px solid $light-gray;padding:0;}
-ul.small-list li  {font-size:0.8em;margin:12px 0 0 0}
+ul.small-list li  {font-size:0.9em;margin:12px 0 0 0;border-top:1px solid $mid-gray;padding-top:10px}
+ul.small-list li i {margin:0;}
 ul.small-list li label {line-height:12px;min-height:12px}
+ul.small-list li:last-child {padding-bottom:12px}
+
+ul.small-list ul   {margin: 0}
+ul.small-list ul li  {font-size:0.8em;border-top:none;margin:0}
+ul.small-list ul li input {float:left;}
+ul.small-list ul li label {}
+
+
+
 
 
 // beeldbank / beheersplannen label + colored
