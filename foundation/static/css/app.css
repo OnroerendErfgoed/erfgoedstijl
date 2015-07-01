@@ -6076,17 +6076,14 @@ fa-chevron-down .fa-file-pdf-o:before {
 .fa-book:before {
   content: "\f02d"; }
 
-.fa-angle-double-right:before {
-  content: "\f101"; }
-
-.fa-angle-double-down:before {
-  content: "\f103"; }
-
 .fa-caret-right:before {
   content: "\f0da"; }
 
 .fa-caret-down:before {
   content: "\f0d7"; }
+
+.fa-info-circle:before {
+  content: "\f05a"; }
 
 ul.disk {
   list-style: none;
@@ -6320,17 +6317,16 @@ ul.tag-label, ul.tag-label-col {
   right: 0;
   margin: auto; }
 
-dl.def-besluit {
-  margin: 20px 0 0 0; }
+.def-besluit {
+  margin: 30px 0; }
 
-.def-besluit dt {
-  font-size: 0.9em;
-  color: #3f3840;
-  font-weight: normal !important; }
+.def-besluit td:first-child {
+  width: 150px;
+  font-size: 0.8em;
+  color: #3f3840; }
 
-.def-besluit dd {
-  margin-left: 160px;
-  margin-top: -24px; }
+.def-besluit td {
+  vertical-align: top; }
 
 ul.listdownload {
   list-style-type: none;
@@ -6905,6 +6901,9 @@ aside img {
 .alert-danger .alert-link {
   color: #843534;
   text-decoration: underline; }
+
+.alert-time {
+  background-color: #666; }
 
 .bg-primary {
   background-color: #944ea1; }
