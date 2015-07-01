@@ -6331,7 +6331,7 @@ ul.tag-label, ul.tag-label-col {
 ul.listdownload {
   list-style-type: none;
   float: right;
-  padding: 24px 20px 0 0;
+  padding: 3px 0 0 0;
   font-size: 0.8em; }
 
 .listdownload li {
