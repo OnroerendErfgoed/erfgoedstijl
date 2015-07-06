@@ -6,6 +6,7 @@
 		<title>Erfgoedstijl</title>
   		<link href="../static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
   		<script src="../bower_components/foundation/js/vendor/modernizr.js"></script>
+  		
 	</head>
 	<body>
         
@@ -63,7 +64,7 @@
 
    <section class="top-bar-section inner-nav">
 
-    <ul class="">
+<ul>
  <li class="active"><a href="../index.html">Home</a></li>
       <li><a href="">Bouwkundig</a></li>
       <li><a href="">Landschappelijk</a></li>
@@ -101,29 +102,33 @@
 
     <div class="panel">
 
+    <article>
 
-<article>
+    <header style="text-align:center;">   
+    <h1 itemprop="name">Dorpswoning met reclameschildering</h1>
+    <small>ID : 214860</small>
+    </header>
 
-<header style="margin:15px 0 0 0">
-      <h1 itemprop="name">Dorpswoning met reclameschildering <br>
-      <small>ID : 214860</small></h1>
-</header>
 
+        <div style="text-align:center;margin:20px 0">
+
+              <figure class="bb-vertical-large">
+              <!--img src="https://inventaris.onroerenderfgoed.be/afbeeldingen/217304?size=full" --><br>
+              <img src="https://inventaris.onroerenderfgoed.be/afbeeldingen/187263?size=full" style="width:25%">               
+              </figure>
+
+        <small><a href="">toon alle foto's</a></small></small>         
+        </div>
+
+
+
+
+<div style="background:#efefef;height:319px;margin:30px 0">kaart</div>
 
 
 <div class="row">
 
-  <div class="large-8 columns" style="margin-top:10px">
-
-  <div style="background:#efefef;height:319px; margin:0 0 30px 0">kaart</div>
-
-<ul class="clearing-thumbs small-block-grid-4" data-clearing>
-    <li><a class="" role="button" aria-label="Thumbnail" href="path/to/your/img.html"><img data-caption="caption 2 here..." src="https://inventaris.onroerenderfgoed.be/afbeeldingen/187263?size=full" style="height:200px"></a></li>
-    <li><a class="" role="button" aria-label="Thumbnail" href="path/to/your/img.html"><img data-caption="caption 2 here..." src="https://inventaris.onroerenderfgoed.be/afbeeldingen/187263?size=full" style="height:200px"></a></li>
-    <li><a class="" role="button" aria-label="Thumbnail" href="path/to/your/img.html"><img data-caption="caption 2 here..." src="https://inventaris.onroerenderfgoed.be/afbeeldingen/187263?size=full" style="height:200px"></a></li>
-    <li><a class="" role="button" aria-label="Thumbnail" href="path/to/your/img.html"><img data-caption="caption 2 here..." src="https://inventaris.onroerenderfgoed.be/afbeeldingen/187263?size=full" style="height:200px"></a></li>
-</ul>
-
+  <div class="large-9 columns">
 
 
     <h3>Administratieve Gegevens</h3>
@@ -235,8 +240,6 @@ Kadasterarchief Vlaams-Brabant, Londerzeel, 1ste afdeling, sectie C, mutatiesche
 </ul>
 </section>           
         
- 
-
 
 <hr>
 
@@ -263,7 +266,7 @@ Kadasterarchief Vlaams-Brabant, Londerzeel, 1ste afdeling, sectie C, mutatiesche
   </div>
 
 
-<div class="large-4 columns">
+<div class="large-3 columns" style="margin-top:54px">
   
 
 <!-- search 6 -->
@@ -467,12 +470,11 @@ Kadasterarchief Vlaams-Brabant, Londerzeel, 1ste afdeling, sectie C, mutatiesche
         
   		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../static/js/foundation.min.js"></script>
+<script src="static/js/foundation.clearing.js"></script>
+
 <script>
 $(document).foundation();
 </script>
-
-
-
 
 <script>
 $(document).ready(function(){
