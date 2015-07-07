@@ -6282,23 +6282,6 @@ ul.tag-label, ul.tag-label-col {
   padding-left: 10px;
   font-weight: bold; }
 
-.fl-block-largeimage {
-  margin-bottom: 30px;
-  text-align: center; }
-
-.fl-block-largeimage div {
-  text-align: center; }
-
-.fl-block-largeimage h5 {
-  line-height: 20px;
-  text-transform: uppercase; }
-
-.fl-block-largeimage span {
-  color: #d5d5d5; }
-
-.fl-block-largeimage a:hover {
-  text-decoration: underline; }
-
 .img-vert-list {
   height: 180px;
   width: 180px;
@@ -6450,8 +6433,7 @@ ul.listdownload li a:hover {
 
 .fl-block {
   margin: 0 0 2em 0;
-  font-size: 14px;
-  border: 1px solid #e5e5e5; }
+  font-size: 14px; }
 
 .fl-block .field {
   border-bottom: 1px solid #e5e5e5;
@@ -6518,6 +6500,22 @@ ul.listdownload li a:hover {
 .fl-block-largeimage a:hover h5 {text-decoration: underline}
 .fl-block-largeimage .posted {line-height:1em;color:$silver;margin-top:-0.5em;}
 */
+.fl-block-largeimage {
+  margin-bottom: 30px;
+  text-align: center; }
+
+.fl-block-largeimage div {
+  text-align: center; }
+
+.fl-block-largeimage h5 {
+  line-height: 20px; }
+
+.fl-block-largeimage h5:hover {
+  text-decoration: underline !important; }
+
+.fl-block-largeimage a span {
+  color: #d5d5d5; }
+
 .fl-block .field a.more, .fl-block .field a.fa, .fl-block .field i.fa {
   float: right;
   text-decoration: none; }

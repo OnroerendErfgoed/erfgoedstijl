@@ -4,7 +4,7 @@
 //
 
 
-.fl-block  {margin: 0 0 2em 0;font-size:$switch-font-size-med;border:1px solid $mid-gray}
+.fl-block  {margin: 0 0 2em 0;font-size:$switch-font-size-med;}
 .fl-block .field {border-bottom:1px solid $mid-gray;overflow:hidden;background-color:$white;position:relative;padding:1.6em 1.2em 1.2em 1.2em;}
 .fl-block .field p {margin:0;font-size:$switch-font-size-med;}
 
@@ -39,9 +39,15 @@
 .fl-block-largeimage .posted {line-height:1em;color:$silver;margin-top:-0.5em;}
 */
 
+// vertical position list 
+.fl-block-largeimage  {margin-bottom:30px;text-align:center;}
+.fl-block-largeimage div {text-align:center}
+.fl-block-largeimage h5 {line-height:20px}
+.fl-block-largeimage h5:hover {text-decoration: underline !important}
+.fl-block-largeimage a span {color:$gray;}
+
 
 // flanders-block-more link
-
 .fl-block .field a.more,.fl-block .field a.fa,.fl-block .field i.fa {float:$opposite-direction;text-decoration:none;}
 .fl-block .field a.more:hover{text-decoration:underline;}
 .fl-block .field a.more {font-family: $font-family-medium-serif;color:$dark-purple}
