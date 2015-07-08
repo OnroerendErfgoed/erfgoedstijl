@@ -2623,6 +2623,14 @@ figcaption {
   right: 0;
   z-index: 0;
 }
+.bgimage-documenten {
+  background: url(../img/pyoes/header-documenten-img.jpg);
+  width: 960px;
+  height: 135px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
 nav#main-navigation .main-navigation-inner {
   padding: 0;
   position: relative;
@@ -2679,8 +2687,8 @@ nav#main-navigation .main-navigation-inner {
   position: relative;
   z-index: 100;
   background-color: #ffffff;
-  filter: alpha(opacity=60);
-  opacity: .6;
+  filter: alpha(opacity=90);
+  opacity: .9;
   padding: 3px 0 8px 0;
   margin-top: 10px;
 }
@@ -5309,23 +5317,33 @@ address {
   content: "\f20c";
 }
 ul.disk {
+  list-style: none;
+  padding: 0;
   margin: 10px 0;
-  padding-left: 1em;
 }
 ul.disk li {
-  list-style: disc outside none;
+  padding-left: 1em;
+  position: relative;
+}
+ul.disk li:before {
+  content: "•";
   color: #b05dbf;
+  position: absolute;
+  left: 0em;
 }
-ul.disk li span {
-  color: #3f3840;
-}
-ul.disk li a {
-  color: #2da3ce !important;
-  text-decoration: underline;
+ul.disk li a:link {
+  color: #2da3ce;
   margin-bottom: 8px;
+  text-decoration: underline;
 }
 ul.disk li a:hover {
   text-decoration: none;
+}
+ul.disk ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  font-size: 0.9em;
 }
 ul.nodisk {
   margin-left: 0em;

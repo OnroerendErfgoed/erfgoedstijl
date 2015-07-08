@@ -1,19 +1,29 @@
+
+
 {
   "convertHtml": {
-    "relativePaths": false
+    "extension": ".html",
+    "path": null,
+    "ignoreUrls": null,
+    "relativePaths": true,
+    "default": null
   },
+
   "debug": false,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": [
-    "public"
-  ],
-  "preprocessorScriptOutput": "public/js",
-  "preprocessorStyleOutput": "public/css",
-  "projectDescription": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-  "projectName": "Bootstrap",
+    "static"
+    ],
+  "preprocessorScriptOutput": "static/js",
+  "preprocessorStyleOutput": "static/css",
+  "projectDescription": "The most advanced responsive front-end framework in the world.",
+  "projectName": "test2",
   "publishedId": null,
+  "sass": {
+    "useLibSass": true
+  },
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,

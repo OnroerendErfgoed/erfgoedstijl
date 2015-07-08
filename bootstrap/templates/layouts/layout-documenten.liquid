@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Mixture + Bootstrap{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ "bootstrap.css" | asset_url | stylesheet_tag }}
+
+     
+        <!-- TODO: Complete this project :) -->
+
+<!-- tooltip -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'bottom'
+    });
+});
+</script>
+
+    </head>
+
+
+    <body>
+        
+        {% include "header-documenten" %}
+        {% include "navigation-documenten" %}
+
+        <div class="container">
+            {% block content %} 
+            {% endblock %}
+        </div>
+
+        {% include "footer" %}
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        {{ "bootstrap.js" | asset_url | script_tag }}
+
+    </body>
+
+</html>
