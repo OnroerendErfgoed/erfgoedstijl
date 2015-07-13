@@ -1,0 +1,380 @@
+{% layout "layout-documenten" %}
+
+{% block content %}
+
+
+
+  <div class="col-md-12">
+
+
+ 
+<div class="col-md-9">
+  
+  <div class="panel">
+              
+  <div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<p>Various examples of Bootstrap styling applied to Sphinx constructs. You can
+view the <a class="reference external" href="./_sources/examples.txt">source</a> of this page to see the specific
+reStructuredText used to create these examples.</p>
+<div class="section" id="headings">
+<h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
+<p>This is a first level heading (<tt class="docutils literal"><span class="pre">h1</span></tt>).</p>
+<div class="section" id="sub-heading">
+<h3>Sub-Heading<a class="headerlink" href="#sub-heading" title="Permalink to this headline">¶</a></h3>
+<p>This is a second level heading (<tt class="docutils literal"><span class="pre">h2</span></tt>).</p>
+<div class="section" id="sub-sub-heading">
+<h4>Sub-Sub-Heading<a class="headerlink" href="#sub-sub-heading" title="Permalink to this headline">¶</a></h4>
+<p>This is a third level heading (<tt class="docutils literal"><span class="pre">h3</span></tt>).</p>
+</div>
+</div>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>The Sphinx Bootstrap Theme uses Bootstrap styling for <tt class="docutils literal"><span class="pre">inline</span> <span class="pre">code</span> <span class="pre">text</span></tt> and</p>
+<div class="highlight-python"><div class="highlight"><pre>multiline
+code text
+</pre></div>
+</div>
+<p>Here&#8217;s an included example with line numbers.</p>
+<p>It also works with existing Sphinx highlighting:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>Hello World<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Greet.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s">&quot;Hello World&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * Greet.</span>
+<span class="cm"> */</span>
+<span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span><span class="o">:</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="admonitions">
+<h2>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h2>
+<p>The Sphinx Bootstrap Theme uses the Bootstrap <tt class="docutils literal"><span class="pre">alert</span></tt> classes for Sphinx
+admonitions.</p>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a <strong>note</strong>.</p>
+</div>
+</div>
+<div class="section" id="todo">
+<h3>Todo<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">This is a <strong>todo</strong>.</p>
+</div>
+</div>
+<div class="section" id="warning">
+<h3>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is a <strong>warning</strong>.</p>
+</div>
+</div>
+<div class="section" id="danger">
+<h3>Danger<a class="headerlink" href="#danger" title="Permalink to this headline">¶</a></h3>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">This is <strong>danger</strong>-ous.</p>
+</div>
+</div>
+</div>
+<div class="section" id="footnotes">
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
+<p>I have footnoted a first item <a class="footnote-reference" href="#f1" id="id1">[1]</a> and second item <a class="footnote-reference" href="#f2" id="id2">[2]</a>.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>My first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>My second footnote.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="icons">
+<h2>Icons<a class="headerlink" href="#icons" title="Permalink to this headline">¶</a></h2>
+<p>Icons are different in Bootstrap 2 and 3, so you will only see an
+icon below for the version of Bootstrap that we used to build these docs.</p>
+<div class="section" id="bootstrap-2">
+<h3>Bootstrap 2<a class="headerlink" href="#bootstrap-2" title="Permalink to this headline">¶</a></h3>
+<p>The following template HTML:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;icon-star-empty&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</pre></div>
+</div>
+<p>translates to a neat star:</p>
+<span class="icon-star-empty"></span></div>
+<div class="section" id="bootstrap-3">
+<h3>Bootstrap 3<a class="headerlink" href="#bootstrap-3" title="Permalink to this headline">¶</a></h3>
+<p>The following template HTML:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star-empty&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</pre></div>
+</div>
+<p>translates to a neat star:</p>
+<span class="glyphicon glyphicon-star-empty"></span></div>
+</div>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Here are some examples of Sphinx
+<a class="reference external" href="http://sphinx-doc.org/rest.html#rst-tables">tables</a>. The Sphinx Bootstrap
+Theme removes all Sphinx <tt class="docutils literal"><span class="pre">docutils</span></tt> classes and replaces them with the
+default Bootstrap <tt class="docutils literal"><span class="pre">table</span></tt> class.  You can add additional table classes
+using the Sphinx <tt class="docutils literal"><span class="pre">cssclass::</span></tt> directive, as demonstrated in the following
+tables.</p>
+<div class="section" id="grid">
+<h3>Grid<a class="headerlink" href="#grid" title="Permalink to this headline">¶</a></h3>
+<p>A &#8220;<strong>bordered</strong>&#8221; grid table:</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header1</th>
+<th class="head">Header2</th>
+<th class="head">Header3</th>
+<th class="head">Header4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>row1, cell1</td>
+<td>cell2</td>
+<td>cell3</td>
+<td>cell4</td>
+</tr>
+<tr class="row-odd"><td>row2 ...</td>
+<td>...</td>
+<td>...</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>...</td>
+<td>...</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>which uses the directive:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. cssclass:: table-bordered
+</pre></div>
+</div>
+</div>
+<div class="section" id="simple">
+<h3>Simple<a class="headerlink" href="#simple" title="Permalink to this headline">¶</a></h3>
+<p>A simple &#8220;<strong>striped</strong>&#8221; table:</p>
+<table border="1" class="table-striped docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">H1</th>
+<th class="head">H2</th>
+<th class="head">H3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>cell1</td>
+<td>cell2</td>
+<td>cell3</td>
+</tr>
+<tr class="row-odd"><td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>which uses the directive:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. cssclass:: table-striped
+</pre></div>
+</div>
+<p>And a &#8220;<strong>hoverable</strong>&#8221; table:</p>
+<table border="1" class="table-hover docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">H1</th>
+<th class="head">H2</th>
+<th class="head">H3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>cell1</td>
+<td>cell2</td>
+<td>cell3</td>
+</tr>
+<tr class="row-odd"><td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>which uses the directive:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. cssclass:: table-hover
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="code-documentation">
+<h2>Code Documentation<a class="headerlink" href="#code-documentation" title="Permalink to this headline">¶</a></h2>
+<p>An example Python function.</p>
+<dl class="function">
+<dt id="format_exception">
+<tt class="descname">format_exception</tt><big>(</big><em>etype</em>, <em>value</em>, <em>tb</em><span class="optional">[</span>, <em>limit=None</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#format_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format the exception with a traceback.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>etype</strong> &#8211; exception type</li>
+<li><strong>value</strong> &#8211; exception value</li>
+<li><strong>tb</strong> &#8211; traceback object</li>
+<li><strong>limit</strong> (<em>integer or None</em>) &#8211; maximum number of stack frames to show</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list of strings</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>An example JavaScript function.</p>
+<dl class="class">
+<dt id="MyAnimal">
+<em class="property">class </em><tt class="descname">MyAnimal</tt><big>(</big><em>name</em><span class="optional">[</span>, <em>age</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#MyAnimal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>string</em>) &#8211; The name of the animal</li>
+<li><strong>age</strong> (<em>number</em>) &#8211; an optional age for the animal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3">
+
+  <div class="panel">
+    <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc customtoc">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">Sphinx Bootstrap Theme</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sidebar.html">Sidebar Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subdir/index.html">Subdirectory Page</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HISTORY.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TODO.html">Future Work</a></li>
+</ul>
+
+</ul>
+<hr><ul>
+<li><a class="reference internal" href="#">Examples</a><ul>
+<li><a class="reference internal" href="#headings">Headings</a><ul>
+<li><a class="reference internal" href="#sub-heading">Sub-Heading</a><ul>
+<li><a class="reference internal" href="#sub-sub-heading">Sub-Sub-Heading</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#code">Code</a></li>
+<li><a class="reference internal" href="#admonitions">Admonitions</a><ul>
+<li><a class="reference internal" href="#note">Note</a></li>
+<li><a class="reference internal" href="#todo">Todo</a></li>
+<li><a class="reference internal" href="#warning">Warning</a></li>
+<li><a class="reference internal" href="#danger">Danger</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
+<li><a class="reference internal" href="#icons">Icons</a><ul>
+<li><a class="reference internal" href="#bootstrap-2">Bootstrap 2</a></li>
+<li><a class="reference internal" href="#bootstrap-3">Bootstrap 3</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tables">Tables</a><ul>
+<li><a class="reference internal" href="#grid">Grid</a></li>
+<li><a class="reference internal" href="#simple">Simple</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#code-documentation">Code Documentation</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="sourcelink">
+  <a href="_sources/examples.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Zoeken.." />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+    </div>
+  </div>
+              
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+{% endblock %}
