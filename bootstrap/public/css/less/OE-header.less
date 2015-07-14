@@ -2,7 +2,7 @@
 
 .wrapper {background:@white}
 
-.logo-block { 
+.logo-block, .logo-block2 { 
         width:410px;     
         background: url(../img/pyoes/header-logo-bg.png) no-repeat;
         height:135px;
@@ -11,8 +11,7 @@
         padding:0 25px 0 13px;
        }
 
-.logo-block h1 { 
-        /*padding-top:45px;*/
+.logo-block h1, .logo-block2 h1  { 
         padding-top:30px;
         font-size:34px;
         color:@dark-purple;
@@ -20,7 +19,7 @@
         }
 
 
-.logo-block h2 {
+.logo-block h2, .logo-block2 h2 {
         font-size:23px;
         color:@dark-purple !important;
         float:left;
@@ -75,44 +74,26 @@ nav#main-navigation .main-navigation-inner {padding:0;position:relative;}
 .inner-nav{ margin: 0 auto; max-width: 1142px;} 
 
 
-
 /*header color / less height*/
 
 .bgimage-documenten {
         background:none !important;
-        background-color:#5e2d6d !important;
+        background-color:@dark-purple !important;
         width:960px;
         height:80px;
+        position:absolute;
+        right:0;
+        z-index:0;
         }
 
 
-.logo-blockk { 
-        width:410px;     
-        background: url(../img/pyoes/header-logo-bg.png) no-repeat;
-        height:80px;
-        position:relative;
-        z-index:40;
-        padding:0;
-        margin:0;
-       }
+.logo-block2 { height:80px;}
 
 
-.logo-blockk h1 { 
-        padding-top:10px;
-        font-size:30px;
-        color:@dark-purple;
-        float:left;
-        }
+.logo-block2 h1 { padding-top:2px;font-size:28px;}
+.logo-block2 h2 {font-size:23px;padding:20px 0 0 0;}
 
-
-.logo-blockk h2 {
-        font-size:23px;
-        color:@dark-purple !important;
-        float:left;
-        padding:20px 0 0 0;margin:0;
-        }
-
-.logo-blockk h4 {
+.logo-block2 h4 {
         font-size:12px;
         color:@dark-purple !important;
         float:left;
@@ -120,7 +101,7 @@ nav#main-navigation .main-navigation-inner {padding:0;position:relative;}
         margin:0;
         }
 
-.logo-blockk img {
+.logo-block2 img {
         float:left;
         padding:10px 0px 0 5px;
         vertical-align:bottom;
