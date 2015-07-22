@@ -6444,14 +6444,15 @@ ul.listdownload li a:hover {
 
 .fl-block .field p {
   margin: 0;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 0 0 20px 0; }
 
 .fl-block .field img {
   height: 105px;
   overflow: hidden; }
 
 .fl-block .field.full {
-  padding: 0; }
+  padding: 0px 0; }
 
 .fl-block .field.full > a {
   display: block;
@@ -6459,6 +6460,7 @@ ul.listdownload li a:hover {
   color: #5e5e5e; }
 
 .fl-block .field.full a:hover {
+  display: block;
   background-color: #fbfbfb;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
