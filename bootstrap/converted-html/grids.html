@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Model Example : Mixture + Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+     
+        <!-- TODO: Complete this project :) -->
+
+<!-- tooltip -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'bottom'
+    });
+});
+</script>
+
+
+
+    </head>
+    <body>
+        
+
+ <!-- header -->
+
+
+<!-- embed -->
+<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
+<!-- end embed vlaanderen -->
+
+<div class="wrapper">
+
+<div class="inner">
+<!-- header bg image -->
+<div class="bgimage"></div>
+<!-- end header bg image -->
+
+<div class="wrapper clearfix">
+<div class="main-navigation-inner clearfix inner">
+
+<!-- sub nav -->
+    <ul id="service-navigation" class="clearfix">
+    <li><a href="index.html">home onroerend erfgoed</a></li>
+    </ul>
+<!-- end sub nav -->
+
+
+
+<!-- logo -->
+<div class="logo-block">
+
+<a href="index.html">
+<h1>Inventaris</h1>
+<img src="public/img/pyoes/OE-vlaanderen-logo.png" width="65">
+<h2>Vlaanderen</h2>
+<h4>is Onroerend Erfgoed</h4>
+</a>
+
+</div>
+<!-- end logo -->
+
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+ <!-- end header -->
+
+
+
+
+
+
+
+        
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="grids.html">Grids</a></li>
+        <li ><a href="elements.html">Elementen</a></li>   
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+        <div class="container">
+            
+
+
+<p class="text-center">type 1</p>
+
+<!-- start full column 12-->
+
+<div class="col-md-12">
+  <div class="col-md-12 panel" style="">
+   <div class="col-md-12">
+      <h2>Content</h2>
+      <p><strong>Boxes with a white background include a div.panel element.<br> 
+      You can remove the 'panel' class for no white background and padding. It's not required at all for the grid.</strong></p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tempus feugiat tortor, congue ornare tellus tempus ac. Suspendisse ac sagittis orci, at iaculis lectus. Integer et nunc vel ante dictum sollicitudin. Nam ut sapien ac quam aliquet fermentum et et velit. Aliquam in tincidunt sem. Phasellus molestie metus elit, in semper arcu rhoncus ut.</p>
+
+   </div> 
+  </div>
+</div>
+
+
+<p class="text-center">type 2</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+      <div class="col-md-8">
+
+          <h2>Content</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+      </div>
+
+      <div class="col-md-4">
+
+          <h3>Content</h3>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+   </div>
+</div>
+
+
+
+
+
+
+<p class="text-center">type 3</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+      <div class="col-md-6">
+
+          <h2>Content col 1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+      </div>
+
+      <div class="col-md-3">
+
+          <h2>Content col 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+      <div class="col-md-3">
+
+          <h2>Content col 3</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+   </div>
+</div>
+
+
+
+
+<p class="text-center">type 4</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+      <div class="col-md-4">
+
+          <h2>Content col 1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+      </div>
+
+      <div class="col-md-4">
+
+          <h2>Content col 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+      <div class="col-md-4">
+
+          <h2>Content col 3</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+   </div>
+</div>
+
+
+
+
+<p class="text-center">type 5</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+      <div class="col-md-3">
+
+          <h2>Content col 1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+      </div>
+
+      <div class="col-md-3">
+
+          <h2>Content col 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+      <div class="col-md-3">
+
+          <h2>Content col 3</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+
+      <div class="col-md-3">
+
+          <h2>Content col 4</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+   </div>
+</div>
+
+
+
+<p class="text-center">type 6</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+      <div class="col-md-6">
+
+          <h2>Content col 1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+      </div>
+
+      <div class="col-md-6">
+
+          <h2>Content col 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+      </div>
+
+
+   </div>
+</div>
+
+
+
+
+<p class="text-center">type 6</p>
+
+
+<!-- start left column 3-->
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+          <h2>Content col 1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
+  
+   </div>
+</div>
+
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+          <h2>Content col 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+  
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-center">type 0</p>
+
+
+<!-- start left column 8-->
+<div class="col-md-8">
+  <div class="col-md-12 panel">
+
+     Content
+Boxes with a white background include a div.panel element. 
+You can remove the 'panel' class for no white background and padding. It's not required at all for the grid.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tempus feugiat tortor, congue ornare tellus tempus ac. Suspendisse ac sagittis orci, at iaculis lectus. Integer et nunc vel ante dictum sollicitudin. Nam ut sapien ac quam aliquet fermentum et et velit. Aliquam in tincidunt sem. Phasellus molestie metus elit, in semper arcu rhoncus ut.
+  
+   </div>
+</div>
+
+
+<!-- start right column 4-->
+
+<div class="col-md-4">
+  <div class="col-md-12 panel">
+
+        col 2
+
+  </div>
+</div>
+
+
+
+
+<p class="text-center">type 1</p>
+
+
+<!-- start left column 4-->
+<div class="col-md-4">
+  <div class="col-md-12 panel">
+
+        col 1
+  
+   </div>
+</div>
+
+<div class="col-md-4">
+  <div class="col-md-12 panel">
+
+        col 2
+  
+   </div>
+</div>
+
+<div class="col-md-4">
+  <div class="col-md-12 panel">
+
+        col 3
+  
+   </div>
+</div>
+
+
+
+<p class="text-center">type 2</p>
+
+
+<!-- start left column 3-->
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 1
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 2
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 3
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 4
+  
+   </div>
+</div>
+
+
+
+<p class="text-center">type 3</p>
+
+
+<!-- start left column 3-->
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+        col 1
+  
+   </div>
+</div>
+
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+        col 2
+  
+   </div>
+</div>
+
+
+
+
+
+<p class="text-center">type 4</p>
+
+
+<!-- start left column 3-->
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 1
+  
+   </div>
+</div>
+
+<div class="col-md-9">
+  <div class="col-md-12 panel">
+
+        col 2
+  
+   </div>
+</div>
+
+
+
+
+
+<p class="text-center">type 5</p>
+
+
+
+<div class="col-md-12">
+  <div class="col-md-12 panel">
+
+
+
+<div class="col-md-3">
+  <div class="col-md-12">
+
+        col 1
+         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12">
+
+        col 2
+         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12">
+
+        col 3
+         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12">
+
+        col 4
+         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+  
+   </div>
+</div>
+
+
+
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-center">type 6</p>
+
+
+<!-- start left column 3-->
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+        col 1
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 2
+  
+   </div>
+</div>
+
+<div class="col-md-3">
+  <div class="col-md-12 panel">
+
+        col 3
+  
+   </div>
+</div>
+
+
+
+
+
+
+<p class="text-center">type 6</p>
+
+
+<!-- start left column 3-->
+
+<div class="clearfix">
+
+<div class="col-md-6">
+  <div class="col-md-12 panel">
+
+        col 1<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        <br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+  
+   </div>
+</div>
+
+<div class="col-md-6">
+
+  <div class="col-md-12 panel">
+
+        col 2<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+  
+   </div>
+
+<div class="col-md-6 whitefix">
+  <div class="panel" style="">
+
+        col 3<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+  
+   </div>
+</div>
+
+<div class="col-md-6 whitefix">
+  <div class="panel">
+
+        col 4<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+        fsdfsdf<br>
+  
+   </div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="col-md-12">
+<div class="col-md-12 panel">
+  clkcjqlckjql
+</div>
+</div>
+
+
+<!-- start left column 3-->
+<div class="col-md-3">
+
+    <div class="list-group">
+      <a href="#" class="list-group-item active">Volg ons</a>
+      <a href="#" class="list-group-item"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="#" class="list-group-item"><i class="fa fa-facebook-square"></i> Facebook</a>
+      <a href="#" class="list-group-item"><i class="fa fa-envelope"></i> Mail</a>
+      <a href="#" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </div>
+  
+</div>
+
+<div class="col-md-3">
+
+     <div class="list-group">
+      <a href="#" class="list-group-item active">Volg ons</a>
+      <a href="#" class="list-group-item"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="#" class="list-group-item"><i class="fa fa-facebook-square"></i> Facebook</a>
+      <a href="#" class="list-group-item"><i class="fa fa-envelope"></i> Mail</a>
+      <a href="#" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+</div>
+
+<div class="col-md-3">
+
+    <div class="list-group">
+      <a href="#" class="list-group-item active">Volg ons</a>
+      <a href="#" class="list-group-item"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="#" class="list-group-item"><i class="fa fa-facebook-square"></i> Facebook</a>
+      <a href="#" class="list-group-item"><i class="fa fa-envelope"></i> Mail</a>
+      <a href="#" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+</div>
+
+<div class="col-md-3">
+
+    <div class="list-group">
+      <a href="#" class="list-group-item active">Volg ons</a>
+      <a href="#" class="list-group-item"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="#" class="list-group-item"><i class="fa fa-facebook-square"></i> Facebook</a>
+      <a href="#" class="list-group-item"><i class="fa fa-envelope"></i> Mail</a>
+      <a href="#" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+</div>
+
+<!-- social on page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+<!-- footer -->
+  <footer id="footer-bottom" role="contentinfo">
+    <div class="footer-bottom-inner inner">
+      <nav class="footer-doormat clearfix">
+        <ul>
+          <li><a class="active" href="#">Onderwijs &amp; vorming</a></li>
+          <li><a href="#">Leren</a></li>
+          <li><a href="#">Werken in het onderwijs</a></li>
+          <li><a href="#">A-Z index</a></li>
+          <li><a href="#">Wegwijs in de administratie</a></li>
+          <li><a href="#">Departementen</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Publicaties</a></li>
+          <li><a href="#">Nieuwsbrief</a></li>
+          <li><a href="#">Statistieken</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Publicaties</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><span class="is-vishidden">Language</span>
+            <ul class="lang-switch clearfix">
+              <li><a class="active" href="#">NL</a></li>
+              <li><a href="#">FR</a></li>
+              <li><a href="#">DE</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <article>
+          <a href="#"><img alt="Alt tag" src="img/footer-300x250.jpg"></a>
+        </article>
+      </nav>
+    </div>
+  </footer>
+
+
+
+<!-- embed vlaanderen -->
+<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/79a9f632dc8e45aa884f7924ee16f7bf?mtime=1421237274"></script>
+<!-- end embed vlaanderen -->
+
+
+ <!-- end footer -->
+
+</div>
+
+
+
+
+
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="public/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

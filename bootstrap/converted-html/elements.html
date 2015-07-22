@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Model Example : Mixture + Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+     
+        <!-- TODO: Complete this project :) -->
+
+<!-- tooltip -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'bottom'
+    });
+});
+</script>
+
+
+
+    </head>
+    <body>
+        
+
+ <!-- header -->
+
+
+<!-- embed -->
+<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
+<!-- end embed vlaanderen -->
+
+<div class="wrapper">
+
+<div class="inner">
+<!-- header bg image -->
+<div class="bgimage"></div>
+<!-- end header bg image -->
+
+<div class="wrapper clearfix">
+<div class="main-navigation-inner clearfix inner">
+
+<!-- sub nav -->
+    <ul id="service-navigation" class="clearfix">
+    <li><a href="index.html">home onroerend erfgoed</a></li>
+    </ul>
+<!-- end sub nav -->
+
+
+
+<!-- logo -->
+<div class="logo-block">
+
+<a href="index.html">
+<h1>Inventaris</h1>
+<img src="public/img/pyoes/OE-vlaanderen-logo.png" width="65">
+<h2>Vlaanderen</h2>
+<h4>is Onroerend Erfgoed</h4>
+</a>
+
+</div>
+<!-- end logo -->
+
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+ <!-- end header -->
+
+
+
+
+
+
+
+        
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li ><a href="grids.html">Grids</a></li>
+        <li class="active"><a href="elements.html">Elementen</a></li>   
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+        <div class="container">
+            
+
+
+
+<div class="col-md-12">
+
+  <!-- buttons -->
+  <p class="text-center">Buttons</p>
+
+  <p>
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+    <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Disabled</button>
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+  </p>
+
+
+  <br>
+
+
+  <!-- Expand Class -->
+
+  <div class="btn-group-justified">
+    <div class="btn-group">
+      <button type="button" class="btn btn-lg btn-primary">Middle</button>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="btn-group-justified">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Middle</button>
+    </div>
+  </div>
+
+  <br>
+
+  <p>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary" disabled="disabled">Disabled</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+  </p>
+
+  <hr>
+
+  <p class="text-center">Button group</p>
+
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Left</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">Right</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <p class="text-center">Floats vorige /volgende</p>
+
+  <!-- ul class="pager">
+    <li class="previous disabled"><a href="#">Vorige</a></li>
+    <li class="next"><a href="#">Volgende</a></li>
+  </ul -->
+
+
+
+  <div class="row">
+
+    <button type="button" class="btn btn-primary pull-left" disabled="disabled">Vorige</button>
+    <button type="button" class="btn btn-primary pull-right">Volgende</button>
+
+  </div>
+
+  <hr>
+
+  <p class="text-center">Dropdown button ( click )</p>
+
+  <div class="btn-group">
+
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary</button>
+
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+
+  </div><!-- /btn-group -->
+
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="sr-only">Toggle Dropdown</span><span class="caret"></span></button>
+
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div><!-- /btn-group -->
+
+
+  <hr>
+
+
+  <p class="text-center">Labels</p>
+
+  <p>
+    <span class="btn btn-xs btn-primary">Primary</span>
+    <span class="btn btn-xs btn-success">Success</span>
+    <span class="btn btn-xs btn-info">Info</span>
+    <span class="btn btn-xs btn-warning">Warning</span>
+    <span class="btn btn-xs btn-danger">Danger</span>
+  </p>
+
+
+  <!-- tooltips -->
+  <hr>
+
+  <p class="text-center">Tooltips</p>
+
+  <div class="bs-example"> 
+    <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip" data-original-title="Default tooltip">Tooltip</a></li>
+      <li><a href="#" data-toggle="tooltip" data-original-title="A much longer tooltip to demonstrate the max-width of the Bootstrp tooltip.">Large tooltip</a></li>
+    </ul>
+  </div>
+
+
+
+  <!-- Lists -->
+  <hr>
+
+  <h1 class="text-center">Lists</h1>
+
+  <p class="text-center">List 1</p>
+
+  <section>
+    <h4>List title</h4>
+    <ul class="disk">
+      <li><span>content <a href="index.html">link</a> content</span></li>
+      <li><span>content <a href="index.html">link</a></span></li>
+      <li><span><a href="index.html">link</a></span></li>
+    </ul>
+  </section>   
+
+  <p class="text-center">List 2</p>
+
+  <section>
+    <h5>NoDisk list item</h5>
+    <ul class="nodisk">
+      <li><a href="">List item with a much longer description or more content.</a></li>
+      <li>List <a href="">List item with a much longer description or more content.</a> item</li>
+      <li>List item </li>
+    </ul>
+  </section>
+
+  <p class="text-center">List 3</p>
+  <section>
+    <h5>Ordered list</h5>
+
+    <ol>
+      <li>List item with a much longer <a href="">description</a> or more content.</li>
+      <li>List item</li>
+      <li>List item
+        <ol>
+          <li>Nested <a hre="">List Item</a></li>
+          <li>Nested List Item</li>
+          <li>Nested List Item</li>
+        </ol>
+      </li>
+      <li>List item</li>
+      <li>List item</li>  
+      <li>List item</li>
+    </ol>
+
+  </section>
+
+  <p class="text-center">List 4</p>
+
+
+  <section>
+    <h5>No numbers Ordered list</h5>
+
+    <ol class="nonumbers">
+      <li>List item with a much longer <a href="">description</a> or more content.</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+
+  </section>
+
+
+  <p class="text-center">List 5</p>
+
+  <section>
+    <ul class="source">
+      <li>Bron : -</li>
+      <li>Auteurs : <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">Kennes, Hilde</span></li>
+      <li>Datum : <time itemprop="datePublished" datetime="2014-12-16">16 december 2014</time></li>
+    </ul>
+  </section>  
+
+
+
+
+  <!-- Tables -->
+  <hr>
+  <h1 class="text-center">Tables</h1>
+
+  <p class="text-center">Table 1</p>
+
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Thomas bell</td>
+        <td>Brick lane, London</td>
+        <td>thomas@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Yan Chapel</td>
+        <td>Toronto, Australia</td>
+        <td>Yan@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pit Sampras</td>
+        <td>Berlin, Germany</td>
+        <td>Pit@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Yan Chapel</td>
+        <td>Toronto, Australia</td>
+        <td>Yan@yahoo.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <p class="text-center">Table 2</p>
+
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th></th>
+        <th>2008</th>
+        <th>2009</th>
+        <th>2010</th>
+        <th>2011</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+        <td>65.565</td>
+        <td>487.455</td>
+        <td>254.786</td>
+        <td>254.786</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+        <td>65.565</td>
+        <td>487.455</td>
+        <td>254.786</td>
+        <td>254.786</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+        <td>5.565</td>
+        <td>487.455</td>
+        <td>2.786</td>
+        <td>24.786</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <!-- Utilities -->
+
+  <hr>
+
+  <h1 class="text-center">Utilities</h1>
+  <h2 class="text-center">Forms</h2>
+
+  <!-- Form-->
+  <p class="text-center">form + error</p>     
+
+  <form class="reactionsclearfix">
+
+    <h5>Reacties (0)</h5>
+    <h6>Reageer op dit artikel</h6>
+
+    <div class="form-group">
+      <label for="label1">Naam</label>
+      <input type="email" class="form-control" id="label 1" placeholder="Naam + Voornaam">
+    </div>
+
+    <div class="form-group">
+      <label for="label1">Naam</label>
+      <input type="text" class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+      <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    </div>
+
+
+    <div class="form-group">
+      <input type="password" class="form-control" id="mail" placeholder="email">
+    </div>
+
+    <div class="form-group">
+      <textarea id="label2" class="form-control" placeholder="omschrijving"></textarea>
+    </div>
+
+
+    <div class="form-group has-success">
+      <input type="text" class="form-control" id="inputSuccess1" placeholder="omschrijving">
+      <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+    </div>
+
+    <div class="form-group has-warning">
+      <input type="text" class="form-control" id="inputWarning1" placeholder="omschrijving">
+      <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+    </div>
+
+    <div class="form-group has-error">
+      <input type="text" class="form-control" id="inputError1" placeholder="omschrijving">
+      <span id="helpBlock" class="help-block text-danger">Lorem ipsum</span>
+    </div>
+
+
+
+    <div class="has-success">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="checkboxSuccess" value="option1">
+          Checkbox with success
+        </label>
+      </div>
+    </div>
+    <div class="has-warning">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="checkboxWarning" value="option1">
+          Checkbox with warning
+        </label>
+      </div>
+    </div>
+    <div class="has-error">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="checkboxError" value="option1">
+          Checkbox with error
+        </label>
+      </div>
+    </div>
+
+
+
+    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+    <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+    <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+    <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+    <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat fringilla magna, in hendrerit justo bibendum ut. Sed vulputate metus sed purus euismod pulvinar. </p>
+  </form>
+
+
+  <!-- form type 1 -->
+
+  <form class="">
+
+
+    <div class="form-group">
+      <label for="label1">Naam</label>
+      <input type="email" id="label 1" placeholder="Select Box">
+      <label class="inline">Select Box
+        <select class="form-control">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+    </div>
+
+
+    <label class="sr-only" for="inputHelpBlock">Select Box</label>
+    <label class="inline">Select Box
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </label>
+
+
+    <div class="form-group">
+      <label class="inline">Select Box
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+    </div>
+
+
+    <div class="row">
+
+      <div class="large-6 columns">
+        <label>Label bij radio</label>
+        <input type="radio" name="" value="" id="radio1"><label for="radio1">Radio 1</label>
+        <input type="radio" name="" value="" id="radio2"><label for="radio2">Radio 2</label>
+      </div>
+
+      <div class="large-6 columns">
+        <label>Label bij checkbox</label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="large-6 columns">
+        <input type="radio" name="" value="" id="radio3"><label for="radio3">Radio 3</label><br>
+        <input type="radio" name="" value="" id="radio4"><label for="radio4">Radio 4</label><br>
+      </div>
+
+      <div class="large-6 columns">
+        <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label><br>
+        <input id="checkbox4" type="checkbox"><label for="checkbox4">Checkbox 4</label><br>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Textarea Label
+          <textarea placeholder="omschrijving"></textarea>
+        </label>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+     <div class="large-12 columns">
+
+      <form>
+        <fieldset>
+          <legend>Fieldset Legend</legend>
+          <label><!--Naam -->
+            <input type="text" placeholder="Naam...">
+          </label>
+          <label>
+            <input type="text" placeholder="Voornaam...">
+          </label>
+        </fieldset>
+      </form>
+
+
+    </div>
+
+  </div>
+
+
+
+  <form>
+
+    <div class="form-group">
+
+      <fieldset>
+
+        <div class="large-6 columns">
+          <legend>Fieldset Legend</legend>
+          <label><!--Naam -->
+            <input type="text" placeholder="Naam...">
+          </label>
+        </div>
+        <div class="large-6 columns">
+          <label>
+            <input type="text" placeholder="Voornaam...">
+          </label>
+        </div>
+
+      </fieldset>
+
+    </div>
+  </form>
+
+
+</div>
+
+
+<input class="span1" type="text" placeholder=".span1">
+<input class="span2" type="text" placeholder=".span2">
+<input class="span12" type="text" placeholder=".span12">
+
+<input class="input-block-level" type="text" placeholder=".input-block-level">
+
+<label class="checkbox">
+  <input type="checkbox" value="">
+  Option one is this and that—be sure to include why it's great
+</label>
+
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  Option one is this and that—be sure to include why it's great
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  Option two can be something else and selecting it will deselect option one
+</label>
+
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+
+
+
+<div class="switch small">
+  <input id="exampleCheckboxSwitch" type="checkbox">
+  <label for="exampleCheckboxSwitch"></label>
+</div> 
+
+
+<!-- Using radio buttons – each switch turns off the other two -->
+
+<div class="switch small">
+  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label for="exampleRadioSwitch1"></label>
+</div> 
+
+
+<label id="ageLabel">Slider</label>
+<div class="range-slider" data-slider>
+  <span class="range-slider-handle" role="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText"></span>
+  <span class="range-slider-active-segment"></span>
+  <input type="hidden">
+</div>
+
+
+<label class="sr-only" for="inputHelpBlock">Input with help text</label>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+
+</form>
+
+<!-- end form type 1 -->
+
+<!-- form 2 -->
+
+<p class="text-center">form 2</p>     
+
+
+<form class="form-horizontal">
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label pull-left">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form group">
+
+    <div class="row"><span class="pull-right">
+      <button type="button" class="btn btn-lg btn-primary">Plaats reactie</button></span>
+    </div>
+
+  </div>
+
+</form>
+
+
+
+
+<h4>280 reacties</h4>
+
+<ul class="reactions">
+
+  <li>
+    <cite>naam</cite>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada ut nisl iaculis interdum. Integer in mauris eu velit consequat pulvinar in et lectus.</blockquote>
+    <span>12/01/15 14u34</span>
+  </li>
+
+  <li>
+    <cite>naam</cite>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada ut nisl iaculis interdum. Integer in mauris eu velit consequat pulvinar in et lectus.</blockquote>
+    <span>12/01/15 14u33</span>
+  </li>
+  
+</ul>
+
+
+<!-- end form type 2 -->
+
+
+
+<hr>
+<h1 class="text-center">statistieken</h1>     
+
+<!-- statistieken 1 -->
+
+
+<div class="fl-block style-2">
+
+  <h4 class="block-title field"><a href="#">Statistieken</a></h4>
+
+  <div class="field ">
+
+   <!-- circles -->    
+
+
+          <!--div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div -->
+
+
+            <div class="circle">
+              <div class="circle-inner">
+                <div class="score-text">
+                  <h3>82.057</h3> 
+                  <small>relicten bouwkundig <br>erfgoed</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- end circles -->
+
+            <a class="more" href="#">toon alles  &rsaquo;</a>
+
+          </div>
+
+        </div>
+
+
+
+
+        <hr>
+        <h1 class="text-center">social 2</h1>   
+
+        <!-- social buttons on page -->
+
+        <ul class="socialbox  right clearfix">
+          <li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li class="mail"><a href="#"><i class="fa fa-envelope"></i> Mailen</a></li>
+          <li class="print"><a href="#"><i class="fa fa-print"></i> Printen</a></li>
+        </ul>
+
+
+
+        <hr>
+        <h1 class="text-center">alerts</h1>   
+
+
+        <!-- link trigger modal -->
+        <a class="" data-toggle="modal" data-target="#myModal">Launch demo modal</a>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Modal title</h2>
+                <h3 class="modal-title" id="myModalLabel">Modal title 2</h3>
+              </div>
+
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+
+      <!-- div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div -->
+
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+
+<div class="alert alert-warning">
+  <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="alert alert-danger">
+  <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam. 
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="alert alert-success">
+  <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="alert alert-info">
+  <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+
+
+
+</div>
+
+
+
+        </div>
+
+        
+<!-- footer -->
+  <footer id="footer-bottom" role="contentinfo">
+    <div class="footer-bottom-inner inner">
+      <nav class="footer-doormat clearfix">
+        <ul>
+          <li><a class="active" href="#">Onderwijs &amp; vorming</a></li>
+          <li><a href="#">Leren</a></li>
+          <li><a href="#">Werken in het onderwijs</a></li>
+          <li><a href="#">A-Z index</a></li>
+          <li><a href="#">Wegwijs in de administratie</a></li>
+          <li><a href="#">Departementen</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Publicaties</a></li>
+          <li><a href="#">Nieuwsbrief</a></li>
+          <li><a href="#">Statistieken</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Publicaties</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><span class="is-vishidden">Language</span>
+            <ul class="lang-switch clearfix">
+              <li><a class="active" href="#">NL</a></li>
+              <li><a href="#">FR</a></li>
+              <li><a href="#">DE</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <article>
+          <a href="#"><img alt="Alt tag" src="img/footer-300x250.jpg"></a>
+        </article>
+      </nav>
+    </div>
+  </footer>
+
+
+
+<!-- embed vlaanderen -->
+<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/79a9f632dc8e45aa884f7924ee16f7bf?mtime=1421237274"></script>
+<!-- end embed vlaanderen -->
+
+
+ <!-- end footer -->
+
+</div>
+
+
+
+
+
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="public/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

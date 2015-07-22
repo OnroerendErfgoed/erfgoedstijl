@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:'Less NameError: variable @alert-padding is undefined in \\Users\\tomvancamp\\Documents\\erfgoedstijl\\bootstrap\\public\\css\\less\\OE-alerts.less on line 10, column 12: \A 9 .alert { \A 10   padding: @alert-padding; \A 11   margin-bottom: @line-height-computed; \A  \A '}body *{display:none}
