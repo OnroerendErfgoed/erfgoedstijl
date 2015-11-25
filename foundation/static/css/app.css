@@ -5768,12 +5768,14 @@ footer#footer-bottom .inner nav ul.lang-switch li {
   font-style: normal;
   font-weight: 400; }
 
-@font-face {
-  font-family: "Flanders Art Sans Bold";
-  src: url("../fonts/FlandersArtSans-Bold.eot");
-  src: url("../fonts/FlandersArtSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FlandersArtSans-Bold.woff") format("woff"), url("../fonts/FlandersArtSans-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700; }
+.demo-light {
+  font-family: "Flanders Art Sans Light"; }
+
+.demo-regular {
+  font-family: "Flanders Art Sans"; }
+
+.demo-medium {
+  font-family: "Flanders Art Sans Medium"; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
@@ -6968,6 +6970,9 @@ article a:hover, .panel p a:hover {
 
 .panel article h3, .panel article h4, .panel article h5 {
   line-height: 1.3em; }
+
+.body-bg-error {
+  background: #753f7f; }
 
 /* Placeholder fields */
 .placeholder-container {
