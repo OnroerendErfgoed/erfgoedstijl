@@ -3,17 +3,17 @@
 
 
 
-<div style="height:100%">
+<div class="body-bg-error" style="height:100%">
 
 
 	<div class="text-center" style="padding:20px 0">
-		<h1 style="font-size:60px;">
-			<i class="fa fa-warning"></i>
-			<span>404</span><br>
+		<h1 style="font-size:60px;color:#fff">
+			<i class="fa fa-warning" style="color:#fff"></i>
+			<span style="color:#fff">404</span><br>
 		</h1>
 
-		<h3>De pagina werd niet gevonden.</h3>
-		<h4 style="color:#753F7F !important"><strong>De pagina die je hebt opgevraagd, bestaat niet (meer) of ze is verplaatst.</strong></h4>
+		<h3><span style="color:#fff">De pagina werd niet gevonden.</span></h3>
+		<h4><strong><span style="color:#fff">De pagina die je hebt opgevraagd, bestaat niet (meer) of ze is verplaatst.</span></strong></h4>
 	</div>
 
 
@@ -42,6 +42,20 @@
 						
 						</Ul>
 
+					<!-- search 2 -->
+					<form>
+					    <div class="panel fl-block-search" style="margin-top:30px">
+
+								<form name="" action="#" method="post" class="clearfix">
+								<div class="searchBox">
+								    <input type='text' placeholder='zoek' />
+								    <button class="tiny">zoeken</button>
+								</div>
+								</form> 
+
+					    </div>
+					</form>
+					<!-- end search 2 -->
 
 					</div>
 
