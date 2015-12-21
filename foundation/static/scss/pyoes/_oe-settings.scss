@@ -28,7 +28,7 @@
 $base-font-size: 100%;
 
 // The $base-font-size is 100% while $base-line-height is 10%
- $base-line-height: 140%;
+$base-line-height: 140%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
@@ -133,7 +133,6 @@ $medium-range: (36.128em, 55.500em) !default;
 $large-range: (55.503em, 73.125em) !default;
 $xlarge-range: (73.128em, 120em) !default;
 $xxlarge-range: (120.063em, 99999999em) !default;
-
 
 
 // e. Typography

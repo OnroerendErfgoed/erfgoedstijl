@@ -1,0 +1,176 @@
+
+
+
+<a href="#" data-reveal-id="myModal">Een modal venster</a>
+
+<div id="myModal" class="reveal-modal" data-reveal>
+
+<header class="clearfix">
+
+  <h3>MENU</h3>
+
+
+
+
+        <ul class="button-group even-4">
+          <li><a href="#" class="button tiny">Button 1</a></li>
+          <li><a href="#" class="button tiny">Button 2</a></li>
+          <li><a href="#" class="button tiny">Button 3</a></li>
+          <li><a href="#" class="button tiny">Button 4</a></li>
+        </ul>
+
+
+
+
+   
+ </header> 
+
+
+  <p class="lead">Lorem ipsum dolor sit amet</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lacus, ultrices in orci id, porttitor finibus metus. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tempus feugiat tortor, congue ornare tellus tempus ac. Suspendisse ac sagittis orci, at iaculis lectus. Integer et nunc vel ante dictum sollicitudin. Nam ut sapien ac quam aliquet fermentum et et velit. Aliquam in tincidunt sem. Phasellus molestie metus elit, in semper arcu rhoncus ut.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<br>
+
+
+<!-- Een modal venster met tabs  -->
+
+<a href="#" data-reveal-id="myModal1">Een modal venster met tabs</a>
+
+<div id="myModal1" class="reveal-modal" data-reveal>
+
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+  <header class="clearfix">
+    <h3 class="left" style="margin:6px 20px 0 0">Title</h3>
+    <dl class="tabs tiny" data-tab>
+      <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">ITEM1</a></dd>
+      <dd><a href="#panel2" class="tiny">ITEM2</a></dd>
+    </dl>
+  </header>
+
+  <div class="tabs-content">
+
+ <!-- panel 1-->
+    <div class="content active" id="panel1">
+
+      <form>
+        <div class="row">
+          <div class="large-4 columns">col1</div>
+          <div class="large-4 columns">col2</div>
+          <div class="large-4 columns">col3</div>
+        </div>
+
+        <div class="clearfix text-center">
+          <a href="" class="small button">button</a>
+        </div> 
+      </form>
+
+    </div>
+
+<!-- end panel 1 -->
+
+  <!-- panel 2-->
+    <div class="content" id="panel2">
+
+     <form>
+        <div class="row">
+          <div class="large-4 columns">col1</div>
+          <div class="large-4 columns">col2</div>
+          <div class="large-4 columns">col3</div>
+        </div>
+
+        <div class="clearfix text-center">
+          <a href="" class="small button">bewaar</a>
+        </div> 
+    </form>
+
+    </div>
+  <!-- end panel 2 -->
+
+  </div>
+
+
+</div>
+
+</div>
+<!-- end Een modal venster met tabs -->
+
+
+
+
+
+
+
+
+
+<div class="expander-container">
+
+
+
+  <!--  expander container  -->
+<script>
+     function toggleExpand(elem) {
+       var expander = $(elem).parent();
+       var container = $(expander).parent();
+       // Close other expanded elements
+       container.children('div').not(expander).each(function () {
+         if ($(this).hasClass('expander-expanded')) {
+           $(this).removeClass('expander-expanded');
+         }
+       });
+       // Toggle this element
+       if ($(expander).hasClass('expander-expanded')) {
+         $(expander).removeClass('expander-expanded');
+       } else {
+         $(expander).addClass('expander-expanded');
+       }
+     }
+</script>
+
+
+  <div class="expander expander-expanded">
+        <div class="expander-header" onclick="toggleExpand(this)">
+        <h4>Expander 1</h4>
+        <div class="expander-icon"></div>
+        </div> 
+        <div class="expander-content"><p>Expander 1 content</p></div>
+  </div>
+
+
+  <div class="expander">
+        <div class="expander-header" onclick="toggleExpand(this)">
+          <h4>Expander 2</h4>
+          <div class="expander-icon"></div>
+        </div>
+        <div class="expander-content">
+          <p>Expander 2 content</p>
+        </div>
+
+  </div>
+
+
+  <div class="expander">
+        <div class="expander-header" onclick="toggleExpand(this)">
+          <h4>Expander 3</h4>
+          <div class="expander-icon"></div>
+  </div>
+        <div class="expander-content">
+          <p>Expander 3 content</p>
+        </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

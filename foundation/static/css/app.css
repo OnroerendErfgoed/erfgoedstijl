@@ -6122,6 +6122,12 @@ ul.nodisk {
 ul.nodisk li {
   list-style: inside none; }
 
+ul.nodisk li a:link {
+  text-decoration: underline; }
+
+ul.nodisk li a:hover {
+  text-decoration: none; }
+
 ul.source li {
   list-style-type: none; }
 
@@ -6855,6 +6861,49 @@ aside img {
 .figure-left {
   float: left;
   margin: 5px 20px 5px 0; }
+
+.expander-container {
+  width: 100%;
+  height: 100%;
+  display: inline-block; }
+
+.expander-container .expander {
+  border-bottom: 1px solid #ededed;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px 10px 20px; }
+
+.expander-container .expander .expander-content {
+  display: none; }
+
+.expander-container .expander .expander-header {
+  cursor: pointer;
+  min-height: 45px;
+  padding-top: 10px; }
+
+.expander-container .expander.expander-expanded .expander-content {
+  display: block;
+  width: 100%;
+  float: left;
+  padding-top: 10px; }
+
+.expander-container .expander-icon {
+  float: right;
+  margin-top: -36px; }
+
+.expander-container .expander .expander-icon:after {
+  content: '\f078';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit; }
+
+.expander-container .expander.expander-expanded .expander-icon:after {
+  content: '\f077';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit; }
 
 /* Icons main page */
 .icon-large-left {

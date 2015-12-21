@@ -6,6 +6,9 @@
 		<title>Foundation 5</title>
   		{{ "static/css/app.css" | asset_url | stylesheet_tag }}
   		<script src="{{ "modernizr.js" | asset_url }}"></script>
+  		<script src="{{ "jquery/dist/jquery.js" | asset_url }}"></script>
+
+  		
 	</head>
 	<body>
 		{% block content %}{% endblock %}
