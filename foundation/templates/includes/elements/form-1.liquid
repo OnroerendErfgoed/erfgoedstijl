@@ -19,21 +19,21 @@
          
           <h5>Multiple fields same line</h5>
 
+          <div class="row">
+              <div class="large-6 columns">
+              <div class="placeholder-container" tabindex="-1">
+                <label for="email">Email</label>
+                <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
+              </div>
+              </div>
 
-
-          <div class="large-6 columns" style="padding:0 8px 0 0">
-          <div class="placeholder-container" tabindex="-1">
-            <label for="email">Email</label>
-            <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
+              <div class="large-6 columns">
+              <div class="placeholder-container" tabindex="-1">
+                <label for="username">Username</label>
+                <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
+              </div>
+              </div>
           </div>
-        </div>
-
-        <div class="large-6 columns" style="padding:0 0 0 8px">
-          <div class="placeholder-container" tabindex="-1">
-            <label for="username">Username</label>
-            <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
-          </div>
-        </div>
 
 
           <h5>Multiple fields in placeholder</h5>
@@ -52,7 +52,6 @@
             <li><small>mail@mail.be <a href=""><i class="fa fa-trash right"></i></a></small></li>
           </ul>       
               
-      
 
       <div class="placeholder-container " tabindex="-1">
           <label for="email">Telefoon</label>
@@ -74,6 +73,7 @@
           <input type="checkbox" id="chk" checked />
           <label class="placeholder-checkbox-label" for="chk">Selecteer mij</label>
       </div>
+
 <!-- + error -->
 
       <div class="placeholder-container error" tabindex="-1">
@@ -86,7 +86,7 @@
           <a href="#" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
       </div>
 
-   <small class="error" style="margin-top:-10px">Gelieve bovenstaand veld correct in te vullen</small>
+     <small class="error" style="margin-top:-10px">Gelieve bovenstaand veld correct in te vullen</small>
 
     </div>
   </div>
@@ -96,9 +96,6 @@
 
 
 <h5>Label on top + placeholder</h5>
-
-
-
 
 <form>
 
@@ -127,7 +124,6 @@
     </div>
   </div>
 
-
   <div class="row">
     <div class="large-12 columns">
       <label>Tel
@@ -136,11 +132,6 @@
       </label> 
     </div>                               
   </div>
-
-
-
-
-
 
   <div class="row">
     <div class="large-12 columns">
@@ -155,8 +146,7 @@
     </div>
   </div>
 
-
-    <div class="row">
+  <div class="row">
     <div class="large-12 columns">
       <label>Textarea Label
         <textarea placeholder="omschrijving"></textarea>
@@ -182,18 +172,15 @@
   </div>
 
 
-
-
-
 <div class="row">
    <div class="large-12 columns">
       <form>
         <fieldset>
         <legend>Fieldset Legend</legend>
-          <label>
+          <label>Naam
           <input type="text" placeholder="Naam...">
           </label>
-          <label>
+          <label>Voornaam
           <input type="text" placeholder="Voornaam...">
           </label>
         </fieldset>
@@ -203,20 +190,31 @@
 
 
 
-<div class="switch small">
+<p class="text-center">Switch & slide</p>
+
+
+
+<div class="switch tiny">
   <input id="exampleCheckboxSwitch" type="checkbox">
   <label for="exampleCheckboxSwitch"></label>
 </div> 
 
+<div class="switch tiny">
+  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label for="exampleRadioSwitch1"></label>
+</div> 
+
+
+<div class="switch round tiny">
+  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+  <label for="exampleRadioSwitch3"></label>
+</div>
 
 <div class="range-slider" data-slider>
   <span class="range-slider-handle" role="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText"></span>
   <span class="range-slider-active-segment"></span>
   <input type="hidden">
 </div>
-
-
-
 
 </form>
 <!-- end form type 1 -->
