@@ -6096,6 +6096,12 @@ fa-chevron-down .fa-file-pdf-o:before {
 .fa-camera:before {
   content: "\f030"; }
 
+.fa-institution:before {
+  content: "\f19c"; }
+
+.fa-check:before {
+  content: "\f00c"; }
+
 ul.disk {
   list-style: none;
   padding: 0;
@@ -7151,6 +7157,38 @@ article a:hover, .panel p a:hover {
   font-size: 0.8em; }
 
 .placeholder-checkbox input[type="checkbox"]:checked + .placeholder-checkbox-label:after {
+  content: '\2714';
+  background: #2da3ce;
+  color: #fff; }
+
+/*small*/
+.placeholder-checkbox-sm input[type="checkbox"], .placeholder-checkbox-label-sm {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  cursor: pointer;
+  font-size: 0.7em; }
+
+.placeholder-checkbox-sm label {
+  position: relative;
+  width: 100%; }
+
+.placeholder-checkbox-sm input[type="checkbox"] {
+  opacity: 0;
+  position: absolute; }
+
+.placeholder-checkbox-sm input[type="checkbox"] + .placeholder-checkbox-label-sm:before {
+  content: '';
+  background: #2da3ce;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  padding: 0px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 0.8em; }
+
+.placeholder-checkbox-sm input[type="checkbox"]:checked + .placeholder-checkbox-label-sm:before {
   content: '\2714';
   background: #2da3ce;
   color: #fff; }
