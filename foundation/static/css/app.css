@@ -6102,6 +6102,9 @@ fa-chevron-down .fa-file-pdf-o:before {
 .fa-check:before {
   content: "\f00c"; }
 
+.fa-slideshare:before {
+  content: "\f1e7"; }
+
 ul.disk {
   list-style: none;
   padding: 0;
@@ -6355,6 +6358,12 @@ ul.listdownload li a {
 
 ul.listdownload li a:hover {
   color: black !important; }
+
+ul.soclogolist li {
+  list-style: inside none;
+  float: left;
+  font-size: 1.5rem;
+  margin: 8px 3px 0 15px; }
 
 .circle {
   margin: 0 auto 15px auto;

@@ -77,10 +77,6 @@ ul.small-list li:last-child {padding-bottom:12px}
 ul.small-list ul   {margin: 0}
 ul.small-list ul li  {font-size:0.8em;border-top:none;margin:0}
 ul.small-list ul li input {float:left;}
-ul.small-list ul li label {}
-
-
-
 
 
 // beeldbank / beheersplannen label + colored
@@ -114,6 +110,6 @@ ul.listdownload li a {color:$dark-purple !important;}
 ul.listdownload li a:hover {color:$black !important;}
 
 
-
-
+//app footer 
+ul.soclogolist li {list-style: inside none;float:$default-float;font-size:1.5rem;margin:8px 3px 0 15px}
 
