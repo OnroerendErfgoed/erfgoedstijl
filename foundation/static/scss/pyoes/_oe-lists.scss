@@ -89,9 +89,6 @@ ul.tag-label, ul.tag-label-col  {margin:10px 0 0 0;}
 .tag-label li a span, .tag-label-col li a span  {margin:2px 0 0 10px;color:$alert-color;font-size:1.1em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
 .tag-label li i  {margin:2px 0 0 10px;color:$alert-color;font-size:0.8em;border-left:1px solid $white;padding-left:10px;font-weight:bold;}
 
-
-
-
 .img-vert-list {height: 180px; width: 180px;display: inline-block;position: relative;}
 .img-vert-list img {max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top:0;bottom:0;left:0;right:0;margin: auto}
 
@@ -109,7 +106,29 @@ ul.listdownload li i {color:gray;float:left !important;margin:0px 10px 0 0;font-
 ul.listdownload li a {color:$dark-purple !important;}
 ul.listdownload li a:hover {color:$black !important;}
 
-
 //app footer 
 ul.soclogolist li {list-style: inside none;float:$default-float;font-size:1.5rem;margin:8px 3px 0 15px}
+
+
+// subnavigation panel 
+    div.subnav-panel {
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+      background:#fff;
+      border:1px solid $aluminum ;
+    }
+
+     div.subnav-panel span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+
+     div.subnav-panel:hover {
+      background:$white-gray;
+    }
+     div.subnav-panel h3 {
+      margin:20px 0;font-size:1.3rem
+    }
 
