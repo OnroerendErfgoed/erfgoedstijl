@@ -143,6 +143,7 @@
 </ul>
 
 <hr>
+<p class="text-center">React form</p>
 
 <form class="clearfix">
 
@@ -151,44 +152,38 @@
 <h6>Reageer op dit artikel</h6>
 
 
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label1" class="left inline">Naam</label>
-        </div>
-
-        <div class="small-10 columns">
-          <input type="text" id="label1" placeholder="naam">
-        </div>
-      </div>
+ <div class="row">
+    <div class="large-12 columns">
+      <label>Naam
+        <input type="text" placeholder="naam" />
+      </label>
+    </div>
+  </div>
 
 
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Email adres</label>
-        </div>
-
-        <div class="small-10 columns">
-          <input type="text" id="label2" placeholder="email">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="label2" class="left inline">Reactie</label>
-        </div>
-
-        <div class="small-10 columns">
-          <textarea placeholder="omschrijving"></textarea>
-        </div>
-      </div>
-
-  
+ <div class="row">
+    <div class="large-12 columns">
+      <label>Email adres
+       <input type="text" id="label2" placeholder="email">
+      </label>
+    </div>
+  </div>
 
 
-<a href="#" class="button right [tiny small large]">Plaats reactie</a>
+ <div class="row">
+    <div class="large-12 columns">
+      <label>Reactie
+        <textarea placeholder="omschrijving"></textarea>
+      </label>
+    </div>
+ </div>
+
+
+<a href="#" class="button right tiny">Plaats reactie</a>
 
 </form>
 
+<hr>
 
 
 
@@ -458,6 +453,44 @@ function resize_title(element){
     resize_title(element);
   }
 };
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
 </script>
 	</body>
 </html>

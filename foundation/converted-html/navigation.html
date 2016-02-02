@@ -30,7 +30,7 @@
   
 
 <br>
-<h1 class="text-center">Navigation</h1>
+<h1 class="text-center">Navigatie</h1>
 <div class="row">
 <div class="large-12 columns">
 
@@ -136,7 +136,7 @@
 
 
 <!-- sub navigation -->
-<p class="text-center">subnavigation type 1</p>
+<p class="text-center">subnavigatie type 1</p>
 <dl class="sub-nav">
   <dt><!-- title --></dt>
   <dd class="active"><a href="#">All</a></dd>
@@ -147,7 +147,7 @@
 
 
 <!-- breadcrumbs -->
-<p class="text-center">subnavigation type 2 breadcrumbs</p>
+<p class="text-center">subnavigatie type 2 : broodkruimelpad</p>
 
 <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
   <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#">Home</a><meta itemprop="position" content="1" /></li>
@@ -161,7 +161,7 @@
 
 
 <!-- page navigation 1 -->
-<p class="text-center">subnavigation type 3 page navigation</p>
+<p class="text-center">subnavigatie type 3 : page navigation</p>
 <div class="pagination-centered">
   <ul class="pagination">
     <li class="arrow unavailable"><a href=""> &lsaquo; vorige</a></li>
@@ -178,7 +178,7 @@
 
 
 <!-- page navigation 2 -->
-<p class="text-center">subnavigation type 4 page navigation numbers</p>
+<p class="text-center">subnavigatie type 4 : page navigation numbers</p>
 
 <div class="pagination-centered">
   <ul class="pagination">
@@ -194,7 +194,7 @@
 
 
 <!-- tab navigation  -->
-<p class="text-center">subnavigation type 5 tab navigation</p>
+<p class="text-center">subnavigatie type 5 : tab navigation</p>
 
 
 <p class="text-center">Tabs</p>
@@ -232,6 +232,82 @@
     <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
   </div>
 </div>
+
+<!-- large panel navigation  -->
+<p class="text-center">subnavigatie type 6 : panel navigation</p>
+
+
+
+  <div class="row large-8 columns small-centered">
+
+    <div class="large-4 columns text-center subnav-panel">
+      <a href="">
+      <div class="subnav-panel2">
+      <span><h3>Lorem ipsum dolor sit amet.</h3>
+        <button class="button tiny">button 1</button> <button class="button tiny">button 2</button>
+      </span>
+      </div>
+      </a>
+    </div>
+
+    <div class="large-4 columns text-center subnav-panel">
+      <a href="">
+      <div class="subnav-panel2">
+      <span><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <button class="button tiny">button 1</button> <button class="button tiny">button 2</button>
+      </span>
+      </div>
+      </a>
+    </div>
+
+    <div class="large-4 columns text-center subnav-panel">
+        <a href="">
+        <div class="subnav-panel2">
+        <span><h3>Lorem ipsum dolor sit amet.</h3></span>
+        </div>
+        </a>
+    </div>
+
+    <div class="large-4 columns text-center subnav-panel">
+      <a href="">
+      <div class="subnav-panel2">
+      <span><h3>Lorem ipsum dolor sit amet.</h3>
+        <button class="button tiny">button 1</button> <button class="button tiny">button 2</button>
+      </span>
+      </div>
+      </a>
+    </div>
+
+    <div class="large-4 columns text-center subnav-panel">
+      <a href="">
+      <div class="subnav-panel2">
+      <span><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      </span>
+      </div>
+      </a>
+    </div>
+
+    <div class="large-4 columns text-center subnav-panel">
+        <a href="">
+        <div class="subnav-panel2">
+        <span><h3>Lorem ipsum dolor sit amet.</h3></span>
+        </div>
+        </a>
+    </div>
+
+
+  </div>
+
+
+
+
+
+   
+
+
+
+
+
 
 
 </div>
@@ -286,6 +362,44 @@ function resize_title(element){
     resize_title(element);
   }
 };
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
 </script>
 	</body>
 </html>

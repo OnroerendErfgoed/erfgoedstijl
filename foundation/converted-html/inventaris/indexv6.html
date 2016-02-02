@@ -64,7 +64,7 @@
    <section class="top-bar-section inner-nav">
 
     <ul class="">
- <li class="active"><a href="../index.html">Home</a></li>
+      <li class="active"><a href="../index.html"><i class="fa fa-institution"></i></a></li>
       <li><a href="">Bouwkundig</a></li>
       <li><a href="">Landschappelijk</a></li>
       <li><a href="">Varend</a></li>
@@ -425,6 +425,44 @@ function resize_title(element){
     resize_title(element);
   }
 };
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="../sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
 </script>
 	</body>
 </html>

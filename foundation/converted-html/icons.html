@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Erfgoedstijl</title>
+  		<link href="static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+        
+            <!-- header -->
+<div class="wrapper clearfix">
+<div class="main-navigation-inner clearfix inner">
+<div class="logo-block">
+<a href="index.html">
+<div class="logo-block-title"><h1>Styleguide</h1></div>
+<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
+<h2>Vlaanderen</h2>
+<h4>is erfgoed</h4>
+
+</a>
+</div>
+</div>
+</div>
+<!-- end header -->
+
+        
+		 
+
+
+<div class="row">
+
+   <div class="large-12 columns">        
+        
+      <h1 class="text-center">Iconen</h1>
+          <div class="panel">
+            <i class="fa fa-download"></i>
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-print"></i>
+            <i class="fa fa-bar-chart"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-calendar-o"></i>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-pinterest-square"></i>
+            <i class="fa fa-google-plus-square"></i>
+            <i class="fa fa-calendar"></i>
+            <i class="fa fa-google-plus"></i>
+            <i class="fa fa-warning"></i>
+            <i class="fa fa-exclamation"></i>
+            <i class="fa fa-chevron-left"></i>
+            <i class="fa fa-chevron-right"></i>
+            <i class="fa fa-file-pdf-o"></i>
+            <i class="fa fa-file-word-o"></i>
+            <i class="fa fa-file-excel-o"></i>
+            <i class="fa fa-pencil"></i>
+            <i class="fa fa-save"></i>
+            <i class="fa fa-plus-circle"></i>
+            <i class="fa fa-trash-o:before"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-building"></i>
+            <i class="fa fa-search"></i>
+            <i class="fa fa-question-sign"></i>
+            <i class="fa fa-refresh"></i>
+            <i class="fa fa-trash"></i>
+            <i class="fa fa-remove"></i>
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-plus"></i>
+            <i class="fa fa-fw"></i>
+            <i class="fa fa-globe"></i>
+            <i class="fa fa-book"></i>
+            <i class="fa fa-caret-right"></i>
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-info-circle"></i>
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-upload"></i>
+            <i class="fa fa-camera"></i>
+            <i class="fa fa-institution"></i>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-slideshare"></i>
+            <br>
+            <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="blank">Complete icon set > </a> 
+        </div>
+  </div>
+
+ </div>
+
+
+
+
+
+      
+        
+        
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="static/js/foundation.min.js"></script>
+<script src="static/js/foundation.clearing.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+
+<script>
+$(document).ready(function(){
+    if(!Modernizr.input.placeholder) {
+        $("input[placeholder]").each(function() {
+            var placeholder = $(this).attr("placeholder");
+
+            $(this).val(placeholder).focus(function() {
+                if($(this).val() == placeholder) {
+                    $(this).val("")
+                }
+            }).blur(function() {
+                if($(this).val() == "") {
+                    $(this).val(placeholder)
+                }
+            });
+        });
+    } // Modernizr placeholder
+});
+</script>
+
+<script>
+// Function that resizes the title to a appropriate size
+$( document ).ready(function () {
+  var element = $('.logo-block');
+  resize_title(element);
+});
+
+function resize_title(element){
+  var title = element.find('h1')[0];
+  var span = element.find('div.logo-block-title')[0];
+  var fontsize = $(title).css('font-size');
+  $(title).css('font-size', parseFloat(fontsize) - 1);
+  var padding = $(title).css('padding-top');
+  $(title).css('padding-top', parseFloat(padding) + 0.5);
+  if ($(title).width() > $(span).width()){
+    resize_title(element);
+  }
+};
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
+</script>
+	</body>
+</html>

@@ -5572,6 +5572,9 @@ th.hide-for-touch {
 .wrapper {
   background: white; }
 
+.wrapper-short {
+  background: #944ea1; }
+
 .logo-block-site {
   width: 410px;
   background: url(../img/pyoes/header-logo-bg.png) no-repeat;
@@ -5663,9 +5666,6 @@ th.hide-for-touch {
   right: 0;
   z-index: 0; }
 
-.wrapper-short {
-  background: #753f7f; }
-
 .logo-block-short {
   width: 380px;
   background: url(../img/pyoes/header-logo-bg.png) no-repeat;
@@ -5696,7 +5696,7 @@ th.hide-for-touch {
   font-size: 12px;
   color: #753f7f !important;
   float: left;
-  padding: 0 0 0 3px;
+  padding-left: 3px;
   margin: 0; }
 
 .logo-block-short img {
@@ -5716,7 +5716,8 @@ ul.nav-short-item {
   float: left;
   width: 70px;
   font-size: 0.6rem;
-  border-right: 1px solid #944ea1; }
+  border-right: 1px solid #b05dbf;
+  display: block; }
 
 .nav-short-item li:last-child {
   border-right: 0px; }
@@ -5726,7 +5727,7 @@ ul.nav-short-item {
   margin: 8px 0 5px 0; }
 
 .nav-short-item a {
-  color: #fff; }
+  color: white; }
 
 nav#main-navigation .main-navigation-inner {
   padding: 0;
@@ -6157,9 +6158,6 @@ fa-chevron-down .fa-file-pdf-o:before {
 
 .fa-trash:before {
   content: "\f014"; }
-
-.fa-check:before {
-  content: "\f046"; }
 
 .fa-remove:before {
   content: "\f00d"; }

@@ -6,23 +6,26 @@
 		<title>Foundation 5</title>
   		<link href="static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
   		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  		
 	</head>
 	<body>
 		 
 
 
 
-<div class="body-bg-error" style="height:100%">
+<div style="height:100%">
 
 
 	<div class="text-center" style="padding:20px 0">
-		<h1 style="font-size:60px;color:#fff">
-			<i class="fa fa-warning" style="color:#fff"></i>
-			<span style="color:#fff">404</span><br>
+		<h1 style="font-size:60px;">
+			<i class="fa fa-warning"></i>
+			<span>404</span><br>
 		</h1>
 
-		<h3><span style="color:#fff">De pagina werd niet gevonden.</span></h3>
-		<h4><strong><span style="color:#fff">De pagina die je hebt opgevraagd, bestaat niet (meer) of ze is verplaatst.</span></strong></h4>
+		<h3>De pagina werd niet gevonden.</h3>
+		<h4 style="color:#753F7F !important"><strong>De pagina die je hebt opgevraagd, bestaat niet (meer) of ze is verplaatst.</strong></h4>
 	</div>
 
 
@@ -51,20 +54,6 @@
 						
 						</Ul>
 
-					<!-- search 2 -->
-					<form>
-					    <div class="panel fl-block-search" style="margin-top:30px">
-
-								<form name="" action="#" method="post" class="clearfix">
-								<div class="searchBox">
-								    <input type='text' placeholder='zoek' />
-								    <button class="tiny">zoeken</button>
-								</div>
-								</form> 
-
-					    </div>
-					</form>
-					<!-- end search 2 -->
 
 					</div>
 
@@ -124,6 +113,44 @@ function resize_title(element){
     resize_title(element);
   }
 };
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
 </script>
 	</body>
 </html>

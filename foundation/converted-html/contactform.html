@@ -44,42 +44,146 @@
        
 <section itemprop="articleBody">
 
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Cras leo lacus, ultrices in orci id, porttitor finibus metus</strong>. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque <a itemprop="url" href="">habitant morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas.</p>  
 
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Cras leo lacus, ultrices in orci id, porttitor finibus metus</strong>. Pellentesque iaculis libero a erat tempor, id interdum lectus sodales. Pellentesque <a itemprop="url" href="" >habitant morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas.</p>  
-
-
-
-<hr>
 
 
 <form>
 
+ <div class="row">
 
+
+        <div class="large-8 columns small-centered">
+
+          <div class="placeholder-container" tabindex="">
+            <label for="username">Voornaam</label>
+            <input id="username" placeholder="Voornaam" title="Your Username" type="text"/>
+          </div>
+
+          <div class="placeholder-container" tabindex="">
+            <label for="surname">Naam</label>
+            <input id="surname" placeholder="Naam" title="Your Ssername" type="text"/>
+          </div>
+
+
+          <div class="row">
+           <div class="large-9 columns">
+              <div class="placeholder-container" tabindex="">
+                <label for="street">Straat</label>
+                <input id="street" placeholder="Straatnaam" title="Street" type="text"/>
+              </div>
+           </div>
+           <div class="large-3 columns">
+           <div class="placeholder-container" tabindex="">
+                <label for="surname">Nr</label>
+                <input id="surname" placeholder="" title="Nr" type="text"/>
+              </div>
+          </div>
+          </div>
+
+          <div class="row">
+           <div class="large-3 columns">
+              <div class="placeholder-container" tabindex="">
+                <label for="street">Postcode</label>
+                <input id="street" placeholder="" title="Street" type="text"/>
+              </div>
+           </div>
+           <div class="large-9 columns">
+           <div class="placeholder-container" tabindex="">
+                <label for="surname">Gemeente</label>
+                <input id="surname" placeholder="" title="Gemeente" type="text"/>
+              </div>
+          </div>
+          </div>
+
+          <div class="placeholder-container" tabindex="">
+            <label for="email">E-mail</label>
+            <input id="email" placeholder="name@mail.com" title="Email" type="text"/>
+          </div>
+
+         
+      
   <div class="row">
-    <div class="large-12 columns">
-      <label class="inline">Maak een keuze
-        <select>
-          <option value="" selectes>Maak een keuze</option>
-          <option value="1">Ik wil een fout melden</option>
-          <option value="2">Ik heb een algemene vraag</option>
-        </select>
-      </label>
-    </div>
+        <div class="large-12 columns">
+            <select>
+              <option value="" selectes>Ik heb een vraag over ...</option>
+              <option value="1">Ik wil een fout melden</option>
+              <option value="2">Ik heb een algemene vraag</option>
+              <option value="3">Inventaris</option>
+              <option value="4">Bescherm</option>
+              <option value="5">Dossiers</option>
+              <option value="6">Premies</option>
+              <option value="7">Vergunning</option>
+              <option value="8">Andere</option>
+  
+
+            </select>
+
+in geval van Inventaris
+
+            
+
+ 
+
+
+
+
+   <div class="row">
+           <div class="large-3 columns">
+
+            <div class="placeholder-container" tabindex="">
+                    <label for="ID">ID</label>
+                    <input id="ID" placeholder="nummer" title="ID" type="text"/>
+            </div>
+             
+           </div>
+           <div class="large-9 columns">
+                 <select>
+                  <option value="" selectes>Kies een beheerder ...</option>
+                  <option value="1">Algemeen</option>
+                  <option value="2">Bouwkundig erfgoed</option>
+                  <option value="3">Centrale Archeologische INventaris</option>
+                  <option value="4">Landschappelijk erfgoed</option>
+                  <option value="3">Varend erfgoed</option>
+                  <option value="3">Wereldoorlogerfgoed</option>
+                  <option value="3">Beelden</option>
+              </select>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
   </div>
 
 
-
   <div class="row">
-    <div class="large-12 columns">
-      <label>Omschrijving
-        <textarea placeholder="omschrijving"></textarea>
-      </label>
-    </div>
+          <div class="large-12 columns">
+              <textarea placeholder="omschrijving" style="height:30px"></textarea>
+          </div>
   </div>
+
+
+  <div class="placeholder-checkbox" tabindex=" ">
+          <input type="checkbox" id="chk" checked />
+          <label class="placeholder-checkbox-label" for="chk">Stuur mij een kopie van mijn bericht</label>
+  </div>
+
+
+  <a href="#" class="button tiny right">Verzend</a>
+
 
 
 </form>
 <!-- end form type 1 -->
+
+
 
 
 </section>
@@ -276,6 +380,44 @@ function resize_title(element){
     resize_title(element);
   }
 };
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
 </script>
 	</body>
 </html>
