@@ -1,19 +1,20 @@
 {% layout "erfgoedstijl-layout" %}
 
 {% block content %} 
-  
-  <br>
+
+<br>
+
 
 <h1 class="text-center">Headers</h1>
 
- <!-- header -->
+<p class="text-center">Algemene hoofding</p>
 
+
+<!-- algemene header -->
 
 <!-- embed -->
 <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
 <!-- end embed vlaanderen -->
-
-
 
 <!-- header bg image -->
 <div class="bgimage-site"></div>
@@ -57,7 +58,7 @@
    <section class="top-bar-section inner-nav">
 
 <ul>
- <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/"><i class="fa fa-institution"></i></a></li>
       <li><a href="">Bouwkundig</a></li>
       <li><a href="">Landschappelijk</a></li>
       <li><a href="">Varend</a></li>
@@ -76,158 +77,26 @@
 
 </nav>
 
+<!-- end algemene header -->
 
+
+
+<p class="text-center">Submerk hoofding</p>
+<!-- sub site header -->
+{% include "inventaris-header" %}
  <!-- end header -->
 
 
-
- <!-- header -->
-
-
-<!-- embed -->
-<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
-<!-- end embed vlaanderen -->
-
-
-
-<!-- header bg image -->
-<div class="bgimage"></div>
-<!-- end header bg image -->
-
-<div class="wrapper clearfix">
-<div class="main-navigation-inner clearfix inner">
-
-<!-- sub nav -->
-    <ul id="service-navigation" class="clearfix">
-    <li><a href="/">home onroerend erfgoed</a></li>
-    </ul>
-<!-- end sub nav -->
-
-
-
-<!-- logo -->
-<div class="logo-block">
-<a href="/">
-<div class="logo-block-title"><h1>Inventaris</h1></div>
-<img src="/static/img/pyoes/OE-vlaanderen-logo.png" width="65">
-<h2>Vlaanderen</h2>
-<h4>is erfgoed</h4>
-</a>
-</div>
-<!-- end logo -->
-
-</div>
-</div>
-
-
-
-
-<nav class="top-bar" data-topbar role="navigation">
- 
-  <ul class="title-area">
-    <li class="name">
-      <h1> <!-- a href="#">Title pagina</a --> </h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-   <section class="top-bar-section inner-nav">
-
-<ul>
- <li class="active"><a href="/">Home</a></li>
-      <li><a href="">Bouwkundig</a></li>
-      <li><a href="">Landschappelijk</a></li>
-      <li><a href="">Varend</a></li>
-      <li><a href="">Wereldoorlog</a></li>
-      <li class="has-dropdown">
-        <a href="#">Andere</a>
-        <ul class="dropdown">
-          <li class=""><a href="#">FAQ</a></li>
-          <li class=""><a href="#">Status</a></li>
-        </ul>
-      </li>
-      <li class=""><a href="#">Aanmelden</a></li>
-    </ul>
-
-  </section>
-
-</nav>
-
-
+<p class="text-center">Applicatie hoofding</p>
+<!-- colored header ex. geoportaal -->
+{% include "geo-header" %}
  <!-- end header -->
 
 
-
-
-
-
-
-<!-- geoportaal -->
-
- <!-- header -->
-
-<!-- embed -->
-<script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
-<!-- end embed vlaanderen -->
-
-
-
-<!-- header bg image -->
-<!-- end header bg image -->
-
-<div class="wrapper-short clearfix">
-<div class="main-navigation-inner clearfix">
-
-<!-- sub nav -->
-    <!--ul id="service-navigation" class="clearfix">
-    <li><a href="/">home onroerend erfgoed</a></li>
-    </ul-->
-<!-- end sub nav -->
-
-
-<!-- logo -->
-<div class="logo-block-short left">
-<a href="/">
-<div class="logo-block-short-title"><h1>Geoportaal</h1></div>
-<img src="/static/img/pyoes/OE-vlaanderen-logo.png" width="65">
-<h2>Vlaanderen</h2><br>
-<h4>is erfgoed</h4>
-</a>
-</div>
-<!-- end logo -->
-
-<nav class="left">
-  <ul class="nav-short-item">
-  <li>
-    <a href="">
-    <i class="fa fa-camera"></I> <br><span>LABEL 1</span>
-    </a>
-  </li>
-  <li class="active">
-    <a href="">
-    <i class="fa fa-camera"></I> <br><span>LABEL 2</span>
-    </a>
-  </li>
-  </ul>
-</nav>
-
-<nav class="right">
-  <ul class="nav-short-item">
-  <li>
-    <a href="">
-    <i class="fa fa-camera"></I> <br><span>LABEL 3</span>
-    </a>
-  </li>
-</ul>
-</nav>
-
-</div>
-</div>
-
-<br><br>
+<p class="text-center">Applicatie hoofding back-end</p>
+<!-- white header ex. back-end post registratie -->
+{% include "app-backend-header" %}
  <!-- end header -->
-
-
 
 
 {% endblock %}

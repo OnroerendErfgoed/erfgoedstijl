@@ -1,10 +1,7 @@
-
+{% layout "app-backend-layout" %}
 {% block content %} 
   
 <!-- postregistratie menu -->
-
-
-<a href="#" data-reveal-id="myModal1" class="tiny button">Menu</a>
 
 <!-- pop menu -->
 
@@ -15,29 +12,46 @@
 <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
 
    <header class="clearfix" style="margin-bottom:0px">
+
         <h3>MENU</h3>
-            <dl class="tabs tiny" data-tab>
-              <dd class="active"><a href="" class="tiny button">Poststuk aanmaken</a></dd>
-              <dd><a href="" class="tiny button">Info</a></dd>
-              <dd>
-              <button data-dropdown="drop0" aria-controls="drop0" aria-expanded="false" class="button dropdown tiny">Mijn post
-              </button>
-              <ul id="drop0" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
-                <li><a href="#">alle post</a></li>
-                <li><a href="#">mijn post</a></li>
-                <li><a href="#">mijn groepen</a></li>
-                <li><a href="#">mijn processen</a></li>
-              </ul>
-              </dd>
-              <dd class="left">
-                <form name="" action="#" method="post" style="width:320px">
-                     <div class="searchBox">
-                         <input type='text' placeholder='zoek'  />
-                         <button class="button tiny">zoeken</button>
-                    </div>
-                </form></dd>
-            </dl>
+
+<div class="row">
+    <div class="large-12 columns"> 
+
+    <div class="large-3 columns" style="padding:1px"> 
+      <a href="" class="tiny button expand">Poststuk aanmaken</a>
+    </div>
+
+    <div class="large-3 columns" style="padding:1px"> 
+      <a href="" class="tiny button expand">Info</a>
+    </div>
+
+    <div class="large-3 columns expand" style="padding:1px"> 
+       <button data-dropdown="drop0" aria-controls="drop0" aria-expanded="false" class="button dropdown tiny">Mijn post</button>
+                  <ul id="drop0" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                    <li><a href="#">alle post</a></li>
+                    <li><a href="#">mijn post</a></li>
+                    <li><a href="#">mijn groepen</a></li>
+                    <li><a href="#">mijn processen</a></li>
+                  </ul>
+    </div>
+
+     <div class="large-3 columns" style="padding:1px">
+                <form name="" action="#" method="post">
+                         <div class="searchBox">
+                             <input type='text' placeholder='zoek'  />
+                             <button class="button tiny">zoeken</button>
+                        </div>
+                 </form>
+      </div> 
+
+     </div>
+ </div>
+
+
+
     </header> 
+
 
 
 <!-- post lijst -->
