@@ -59,13 +59,13 @@ $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
 
-$primary-color: #944EA1 !default;  
-$secondary-color: #e7e7e7 !default;
-$alert-color: #FF0000 !default;    
-$success-color: #43AC6A !default;  
-$warning-color: #f08a24 !default;  
-$info-color: #a0d3e8 !default;   
-$custom-color:#FFFFCC !default; 
+$primary-color: #944EA1 !default;  //mid purple default
+$secondary-color: #e7e7e7 !default; // gray
+$alert-color: #FF0000 !default;    // red
+$success-color: #43AC6A !default;  //green 
+$warning-color: #f08a24 !default;   // orange
+$info-color: #a0d3e8 !default;   // light blue
+$custom-color:#FFFFCC !default;  // light yellow
 
 
 $dark-purple    : rgb(117,63,127); 	// #753F7F  
@@ -100,6 +100,7 @@ $soc-linkedin_hover : #006ca4;
 
 $fresh-blue     : #2da3ce;
 $gray-blue      : #86abbe;
+
 
 
 // We use these to control various global styles

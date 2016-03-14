@@ -7121,13 +7121,13 @@ aside img {
   text-decoration: underline; }
 
 .alert-time {
-  background-color: #666; }
+  background-color: #666666; }
 
 .bg-primary {
   background-color: #944ea1; }
 
 .bg-success {
-  background-color: #43ac6a; }
+  background-color: #43AC6A; }
 
 .bg-info {
   background-color: #5bc0de; }
@@ -7136,7 +7136,16 @@ aside img {
   background-color: #f08a24; }
 
 .bg-danger {
-  background-color: #ff0000; }
+  background-color: #FF0000; }
+
+.bg-pending {
+  background-color: #FF0000; }
+
+.bg-info {
+  background-color: #a0d3e8; }
+
+.bg-yellow {
+  background-color: #FFFFCC; }
 
 .label-colored {
   background-color: #2da3ce; }
@@ -7150,6 +7159,12 @@ aside img {
   color: white;
   border-left: 1px dotted #a0d3e8;
   padding-left: 8px; }
+
+.label-dot {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  width: 8px;
+  height: 8px; }
 
 h4.header-img-panel {
   text-transform: uppercase;
