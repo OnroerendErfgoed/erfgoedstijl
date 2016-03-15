@@ -1,0 +1,626 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Erfgoedstijl</title>
+  		<link href="static/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+  		
+	</head>
+	<body>
+        
+            
+<!-- header -->
+<div class="wrapper-short-white clearfix">
+<div class="main-navigation-inner clearfix">
+
+<!-- logo -->
+<div class="logo-block-short-white left">
+<a href="index.html">
+<div class="logo-block-short-title-white"><h1>Postregistratie</h1></div>
+<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
+<h2>Vlaanderen</h2><br>
+<h4>is erfgoed</h4>
+</a>
+</div>
+<!-- end logo -->
+
+<nav class="left">
+ <a href="#" data-reveal-id="myModal1" class="tiny button" style="margin-top:10px"><i class="fa fa-bars"></i> Menu</a>
+</nav>
+
+<nav class="right">
+  <ul class="nav-short-item">
+  <li>
+    <a href="">
+    <i class="fa fa-user"></i> <br><span>AANMELDEN</span>
+    </a>
+  </li>
+</ul>
+</nav>
+
+</div>
+</div>
+
+<br><br>
+ <!-- end header -->
+
+        
+		 
+  
+
+
+<div class="row">
+
+
+<div class="large-12 columns">
+
+<div class="button-bar" style="width:290px;margin:0 auto;">
+        <ul class="button-group">
+          <li><a href="#" data-reveal-id="myModal1" class="tiny button">Actoren</a></li>
+          <li><a href="#" data-reveal-id="myModal2" class="tiny button">VKBO</a></li>
+          <li><a href="#" data-reveal-id="myModal3" class="tiny button">VKBP</a></li>
+        </ul>
+</div>
+
+
+<div class="panel">
+
+
+<!-- zoek actoren -->
+
+<div id="myModal1" class="reveal-modal" data-reveal>
+
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+    <header class="clearfix">
+        <h3 class="left" style="margin:6px 20px 0 0">Actoren</h3>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">ZOEKEN</a></dd>
+              <dd><a href="#panel2" class="tiny">AANMAKEN</a></dd>
+            </dl>
+    </header>
+
+<div class="tabs-content">
+
+  <div class="content active" id="panel1">
+
+  <form style="padding-top:10px">
+
+  <div class="row">
+            
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="naam " />
+         <input type="text" placeholder="voornaam" />
+         <input type="text" placeholder="email " />
+         <input type="text" placeholder="telefoon" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left"  style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
+              
+       <select>
+          <option value="0">België</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+  </div>
+
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+
+
+  </div>
+               
+
+  </div>
+
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">Zoek</a>
+  </div> 
+
+</form>
+
+</div>
+
+
+<!-- start aanmaken-->
+
+<div class="content" id="panel2">
+
+
+<div class="row">
+            
+
+  <div class="large-4 columns">
+
+      <input type="text" readonly="readonly" value="naam" />
+  
+      <input type="text" readonly="readonly" value="achternaam" />
+
+      <input type="text" readonly="readonly" value="e-mail" />
+   
+  <div class="clearfix">
+
+      <input type="text" placeholder="e-mail" class="left" style="width:60%" />
+      <select class="right" style="width:30%">
+          <option value="0">thuis</option>
+          <option value="1">werk</option>
+       </select>
+
+  </div>
+
+      <input type="text" readonly="readonly" value="telefoon" />
+
+  <div class="clearfix">
+
+       <input type="text" placeholder="telefoon" class="left" style="width:60%"" />
+       <select class="right" style="width:30%">
+          <option value="0">thuis</option>
+          <option value="1">werk</option>
+       </select>
+
+  </div>
+
+ 
+
+  </div>
+
+
+  <div class="large-4 columns">
+
+        <input type="text" readonly="readonly" value="straat" />
+
+        <input type="text" readonly="readonly" value="nummer" class="left" style="width:45%;" />
+        <input type="text" readonly="readonly" value="postbus" class="right" style="width:45%;" />
+        <div class="clearfix">
+        <input type="text" readonly="readonly" value="postcode" class="left" style="width:30%" />
+        <input type="text" readonly="readonly" value="gemeente" class="right" style="width:60%" />
+        </div>
+              
+        <input type="text" readonly="readonly" value="land" />
+          
+
+
+  </div>
+
+    <div class="large-4 columns">
+      
+      <input type="text" readonly="readonly" value="Actortype : " />
+      <input type="text" readonly="readonly" value="ID : 00-ABC-DEFGHIJ" />
+      <input type="text" readonly="readonly" value="RR : 00.00.00-000.00" />
+
+  </div>
+  </div>
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">bewaar</a>
+  </div> 
+
+
+
+</div>
+
+<!-- end aanmaken -->
+
+
+</div>
+
+</div>
+<!-- end zoek actoren -->
+
+
+
+
+<div id="myModal2" class="reveal-modal" data-reveal>
+
+<h3>VKBO</h3>
+
+<div class="tabs-content">
+
+<div class="content active" id="panel1">
+
+<form style="padding-top:10px">
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="naam " />
+  </div>
+
+  <div class="large-4 columns">
+
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%;" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left" style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
+
+  </div>
+
+  <div class="row">
+            
+      <div class="large-4 columns">
+      <input type="text" placeholder="pers id" /> 
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
+                     
+   </div>
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">zoek</a>
+  </div> 
+
+
+
+</form>
+
+
+</div>
+
+</div>
+
+ 
+<a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+
+</div>
+
+
+<div id="myModal3" class="reveal-modal" data-reveal>
+
+
+<h3>Zoek VKBP</h3>
+
+<div class="tabs-content">
+
+<div class="content active" id="panel1">
+
+
+
+  <form style="padding-top:10px">
+
+  <div class="row">
+            
+
+  <div class="large-4 columns">
+     <input type="text" placeholder="naam" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="straat" />
+        <input type="text" placeholder="nummer" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%;" />
+        <div class="clearfix">
+        <input type="text" placeholder="postcode" class="left" style="width:30%" />
+        <input type="text" placeholder="gemeente" class="right" style="width:60%" />
+        </div>
+  </div>
+
+  <div class="large-4 columns">
+      <input type="text" placeholder="rijksregisternummer" />
+  </div>
+                     
+   </div>
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">zoek</a>
+  </div> 
+
+
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- lijst -->
+
+<h5>Je zocht in Actoren op "naam"</h5>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Naam</th>
+        <th>Pers ID</th>
+        <th>Mail</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#" data-reveal-id="myModal5"><strong>Thomas Bell</strong></a></td>
+        <td></td>
+        <td></td>
+        <td><span class="success label right">updated</span></td>
+
+      </tr>
+      <tr>
+        <td><strong>Yan Chapel</strong></td>
+        <td></td>
+        <td></td>
+        <td><a href="#"><span class="label right ">kopieer naar actoren</span></a></td>
+      </tr>
+      <tr>
+        <td><strong>Pit Sampras</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>Yan Chapel</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>
+
+<!-- end lijst -->
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+
+
+<!-- zoek detail -->
+
+<div id="myModal5" class="reveal-modal" data-reveal>
+
+  <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+    <header class="clearfix">
+        <h3 class="left " style="margin:6px 20px 0 0">Actoren</h3>
+            <dl class="tabs tiny" data-tab>
+              <dd class="active" style="margin:0 1px"><a href="#panel1" class="tiny">PROFIEL</a></dd>
+              <dd><a href="#panel2" class="tiny">BEWERKEN</a></dd>
+            </dl>
+    </header>
+
+<div class="tabs-content">
+
+  <div class="content active" id="panel1">
+
+  <form style="padding-top:10px">
+
+
+
+  <div class="large-4 columns">
+         <input type="text" readonly="readonly" value="Thomas" />
+         <input type="text" readonly="readonly" value="Bell" />
+         <input type="text" readonly="readonly" value="Thomas@yahoo.com " />
+         <input type="text" readonly="readonly" value="0000/000000" />
+  </div>
+
+  <div class="large-4 columns">
+
+        <input type="text" readonly="readonly" value="Bellstraat" />
+        <input type="text" readonly="readonly" value="00" class="left" style="width:45%;" />
+        <input type="text" readonly="readonly" value="postbus" class="right" style="width:45%;" />
+
+        <div class="clearfix" style="clear:both;">
+        <input type="text" readonly="readonly" value="0000" class="left" style="width:30%" />
+        <input type="text" readonly="readonly" value="Antwerpen" class="right" style="width:60%" />
+        </div>
+
+        <input type="text" readonly="readonly" value="België" />
+              
+  </div>
+
+    <div class="row">
+            
+      <div class="large-4 columns">
+      <input type="text" readonly="readonly" value="Actortype: 1" />
+      <input type="text" readonly="readonly" value="ID : 00-ABC-DEFGHIJ" />
+      <input type="text" readonly="readonly" value="RR : 00.00.00-000.00" />
+  </div>
+        
+  </div>
+
+
+</form>
+
+</div>
+
+
+<!-- start bewerken-->
+
+<div class="content" id="panel2">
+
+
+<form style="padding-top:10px">
+ 
+ <div class="row">
+            
+
+  <div class="large-4 columns">
+         <input type="text" placeholder="Thomas " />
+         <input type="text" placeholder="Bell" />
+         <input type="text" placeholder="Thomas@yahoo.com " />
+         <input type="text" placeholder="0000/000000" />
+  </div>
+
+  <div class="large-4 columns">
+        <input type="text" placeholder="Bell straat" />
+        <input type="text" placeholder="00" class="left" style="width:45%;" />
+        <input type="text" placeholder="postbus" class="right" style="width:45%" />
+        <div class="clearfix">
+        <input type="text" placeholder="0000" class="left"  style="width:30%" />
+        <input type="text" placeholder="Antwerpen" class="right" style="width:60%" />
+        </div>
+              
+       <select>
+          <option value="0">België</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+  </div>
+
+      <div class="large-4 columns">
+
+       <select>
+          <option value="0">actortype</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+       </select>
+
+      <input type="text" placeholder="ID : 00-ABC-DEFGHIJ" /> 
+      <input type="text" placeholder="RR : 00.00.00-000.00" />
+
+  </div>
+               
+
+  </div>
+
+
+  <div class="clearfix text-center">
+      <a href="" class="small button">bewaar</a>
+  </div> 
+
+</form>
+  </div>
+
+
+</div>
+
+<!-- end aanmaken -->
+
+
+</div>
+
+</div>
+
+
+<!-- end zoek detail -->
+
+
+
+
+</div>
+
+
+
+        
+        
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="static/js/foundation.min.js"></script>
+<script src="static/js/foundation.clearing.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+
+<script>
+$(document).ready(function(){
+    if(!Modernizr.input.placeholder) {
+        $("input[placeholder]").each(function() {
+            var placeholder = $(this).attr("placeholder");
+
+            $(this).val(placeholder).focus(function() {
+                if($(this).val() == placeholder) {
+                    $(this).val("")
+                }
+            }).blur(function() {
+                if($(this).val() == "") {
+                    $(this).val(placeholder)
+                }
+            });
+        });
+    } // Modernizr placeholder
+});
+</script>
+
+<script>
+// Function that resizes the title to a appropriate size
+$( document ).ready(function () {
+  var element = $('.logo-block');
+  resize_title(element);
+});
+
+function resize_title(element){
+  var title = element.find('h1')[0];
+  var span = element.find('div.logo-block-title')[0];
+  var fontsize = $(title).css('font-size');
+  $(title).css('font-size', parseFloat(fontsize) - 1);
+  var padding = $(title).css('padding-top');
+  $(title).css('padding-top', parseFloat(padding) + 0.5);
+  if ($(title).width() > $(span).width()){
+    resize_title(element);
+  }
+};
+</script>
+
+
+
+
+
+<!-- for this example we used FlexSlider, feel free to implement your own/other js slider. -->
+<script src="sites/default/files/flanders-backbone/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flanders-slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      prevText: "<i class='fa fa-angle-left'></i>", 
+      nextText: "<i class='fa fa-angle-right'></i>", 
+      pauseOnAction: false,
+      animationSpeed: 400,
+      pauseOnHover: true,
+      start: function(slider) {
+        $('.total-slides').text(slider.count);
+      },
+      after: function(slider) {
+        $('.current-slide').text((slider.currentSlide)+1);
+      }
+    });
+  }); 
+</script>
+
+
+
+<script type="text/javascript">
+// video slider
+  $(function(){ 
+    $('.play-btn').click(function(){
+      $(this).parent().animate({bottom: -($(this).parent().outerHeight())},300);
+      $('.flanders-video').prepend("<iframe width='560' height='386' src='http://www.youtube.com/embed/" + $(this).attr('youtubeId') + "?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  }); 
+</script>
+	</body>
+</html>
