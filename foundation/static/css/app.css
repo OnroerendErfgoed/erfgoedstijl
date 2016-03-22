@@ -6216,6 +6216,12 @@ fa-chevron-down .fa-file-pdf-o:before {
 .fa-bars:before {
   content: "\f0c9"; }
 
+.fa-long-arrow-left:before {
+  content: "\f177"; }
+
+.fa-exchange:before {
+  content: "\f0ec"; }
+
 ul.disk {
   list-style: none;
   padding: 0;
