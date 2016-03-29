@@ -5,13 +5,13 @@
 
 
 /* Alt elements alert box */
-.alert-success { background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d; }
+.alert-success { background-color: $alert-success; border-color: #d6e9c6; color: #3c763d; }
 .alert-success .alert-link  { color: #2b542c; text-decoration: underline; }
-.alert-info { background-color: #d9edf7; border-color: #bce8f1; color: #31708f; }
+.alert-info { background-color: $alert-info; border-color: #bce8f1; color: #31708f; }
 .alert-info .alert-link { color: #245269;text-decoration: underline; }
-.alert-warning { background-color: #fcf8e3; border-color: #faebcc; color: #8a6d3b; }
+.alert-warning { background-color: $alert-warning; border-color: #faebcc; color: #8a6d3b; }
 .alert-warning .alert-link { color: #66512c;text-decoration: underline; }
-.alert-danger { background-color: #f2dede; border-color: #ebccd1; color: #a94442; }
+.alert-danger { background-color: $alert-danger; border-color: #ebccd1; color: #a94442; }
 .alert-danger .alert-link { color: #843534;text-decoration: underline; }
 .alert-time { background-color: $steel ; } // besluiten time list
 
