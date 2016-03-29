@@ -6129,7 +6129,7 @@ h6 {
 .fa-chevron-right:before {
   content: "\f054"; }
 
-fa-chevron-down .fa-file-pdf-o:before {
+.fa-file-pdf-o:before {
   content: "\f1c1"; }
 
 .fa-file-word-o:before {
@@ -6221,6 +6221,9 @@ fa-chevron-down .fa-file-pdf-o:before {
 
 .fa-exchange:before {
   content: "\f0ec"; }
+
+.fa-exclamation:before {
+  content: "\f12a"; }
 
 ul.disk {
   list-style: none;
