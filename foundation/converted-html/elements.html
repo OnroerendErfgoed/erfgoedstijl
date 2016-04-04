@@ -224,7 +224,6 @@
 <div class="clearfix">
 <div class="label-dot bg-primary left">&nbsp;</div>
 <div class="label-dot bg-success left">&nbsp;</div>
-<div class="label-dot bg-warning left">&nbsp;</div>
 <div class="label-dot bg-info left">&nbsp;</div>
 <div class="label-dot bg-warning left">&nbsp;</div>
 <div class="label-dot bg-danger left">&nbsp;</div>
@@ -558,28 +557,28 @@ table-app
             <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
           </div>
           <div class="placeholder-container" tabindex="-1">
-            <label for="username">Username</label>
+            <label for="username">Naam</label>
             <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
           </div>
          
           <div class="row">
               <div class="large-6 columns">
               <div class="placeholder-container" tabindex="-1">
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
               </div>
               </div>
 
               <div class="large-6 columns">
               <div class="placeholder-container" tabindex="-1">
-                <label for="username">Username</label>
+                <label for="username">Naam</label>
                 <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
               </div>
               </div>
           </div>
 
           <div class="placeholder-container" tabindex="-1">
-            <label for="email">Email</label>
+            <label for="email">E-mail</label>
             <input id="email" placeholder="name@mail.com" title="Your Email" type="text" class="left" style="width: 70%;"/>
             <select class="placeholder-input-border" style="width: 30%;">
               <option value=1>werk</option>
@@ -639,68 +638,78 @@ table-app
     </div>
   </div>
 
+</form>
+<!-- end form type 1 -->
 
-<hr>
 
 
-<h5>Label on top + placeholder</h5>
+
+
+
+
+
+<p class="text-center">form 2</p>     
+<form>
+
+
+
+<h5>Label bovenaan + placeholder</h5>
 
 <form>
 
   <div class="row">
     <div class="large-12 columns">
+
       <label>Naam
-        <input type="text" placeholder="naam en voornaam" />
+        <input type="text" placeholder="naam & voornaam" />
       </label>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="large-12 columns">
-       <label>Naam
-        <input type="text" placeholder="naam" class="error" />
-        <small class="error">Gelieve bovenstaand veld correct in te vullen</small>
+      <label>Naam
+        <input type="text" placeholder="naam & voornaam" class="error" />
       </label>
-    </div>
-  </div>
+      <small class="error">Gelieve bovenstaand veld correct in te vullen</small>
 
-   <div class="row">
-    <div class="large-12 columns">
+      <label>Naam
+        <input type="text" placeholder="naam & voornaam" disabled />
+      </label>
+
       <label>E-mail
-        <input type="text" placeholder="mail" />
+        <input type="text" placeholder="naam@naam.be" />
       </label>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="large-12 columns">
       <label>Tel
-        <input type="text" placeholder="telefoonnummer" />
-        <div style="margin:-16px 0 0 8px"><small id="nameHelpText">vb 000 00 00 00</small></div>
+        <input type="text" placeholder="+32 000 00 00 00" />
+        <div style="margin:-16px 0 0 8px"><small id="nameHelpText">extra informatie </small></div>
       </label> 
-    </div>                               
-  </div>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <label class="inline">Select Box
+      <label>Geboortedatum
+        <input type="text" placeholder="dd/mm/yyyy" />
+      </label> 
+
+
+       <label>Selecteer box
         <select>
+          <option value="0" selected>-- selecteer --</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
       </label>
+
+       <label>Textarea Label
+        <textarea placeholder="omschrijving"></textarea>
+      </label>
+
     </div>
   </div>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Textarea Label
-        <textarea placeholder="omschrijving"></textarea>
-      </label>
-    </div>
-  </div>
+
+
+
+
+
+
 
 
   <div class="row">
@@ -726,10 +735,10 @@ table-app
         <fieldset>
         <legend>Fieldset Legend</legend>
           <label>Naam
-          <input type="text" placeholder="Naam...">
+          <input type="text" placeholder="naam & voornaam">
           </label>
-          <label>Voornaam
-          <input type="text" placeholder="Voornaam...">
+          <label>E-mail
+          <input type="text" placeholder="naam@naam/be">
           </label>
         </fieldset>
       </form>
@@ -764,17 +773,10 @@ table-app
   <input type="hidden">
 </div>
 
+
 </form>
-<!-- end form type 1 -->
 
-
-
-
-
-
-
-
-<p class="text-center">form 2</p>     
+<p class="text-center">form reaction</p>     
 <p class="text-center">React form</p>
 
 <form class="clearfix">
@@ -816,8 +818,6 @@ table-app
 </form>
 
 <hr>
-
-<p class="text-center">form reaction</p>     
 
 <h4>280 reacties</h4>
 
