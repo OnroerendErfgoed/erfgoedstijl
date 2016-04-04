@@ -7421,14 +7421,22 @@ legend {
 input.error {
   border: 1px solid #FF0000; }
 
+input[type="text"][disabled] {
+  background: #ededed;
+  box-shadow: none; }
+
 select {
-  height: 42px; }
+  -moz-appearance: none !important; }
+
+select {
+  color: #a9a9a9;
+  height: 40px; }
 
 select:focus {
   outline: none; }
 
-select {
-  -moz-appearance: none !important; }
+option:not(:checked) {
+  background-color: #FFF; }
 
 @media only screen and (max-width: 578px) {
   .bgimage, #service-navigation, .temp-embed {
