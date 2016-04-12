@@ -35,12 +35,14 @@
 .logo-block-short-white { width:400px;height:60px; padding:0 25px 0 13px;}
 
 
-.nav-short-item {text-align:center }
-ul.nav-short-item  {list-style-type:none;margin-top:5px }
-.nav-short-item li  {float:$default-float;width:70px;font-size:0.6rem;border-right:1px solid $light-purple;display:block }
+.nav-short-item 	{text-align:center }
+ul.nav-short-item  	{list-style-type:none;margin-top:2px }
+.nav-short-item li  {float:$default-float;width:70px;padding:3px 0 4px 0;font-size:0.6rem;border-right:1px solid $light-purple;display:block }
+.nav-short-item li:hover,  .nav-short-item .active 	{background:$dark-purple;color:$white;display:block }
 .nav-short-item li:last-child {border-right:0px }
 .nav-short-item li i {font-size:1.4rem;margin:8px 0 5px 0 }
-.nav-short-item a {color:$white }
+.nav-short-item a 	{color:$white }
+
 
 
 

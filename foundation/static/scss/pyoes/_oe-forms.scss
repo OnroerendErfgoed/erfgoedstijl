@@ -69,3 +69,22 @@ option:not(:checked) {
     background-color: #FFF; 
 }
 
+
+label input:before [type="text"][required] {
+content: '*';
+}
+
+label input:required {
+  color:#C03;
+  content: '*';
+}
+
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+
+.form-small-caps {text-transform:uppercase;letter-spacing:1px;font-size:0.5rem}
+.form-more-info {margin:-16px 0 10px 8px}
+
