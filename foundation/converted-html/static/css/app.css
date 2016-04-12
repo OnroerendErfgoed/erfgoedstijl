@@ -5719,13 +5719,19 @@ th.hide-for-touch {
 
 ul.nav-short-item {
   list-style-type: none;
-  margin-top: 5px; }
+  margin-top: 2px; }
 
 .nav-short-item li {
   float: left;
   width: 70px;
+  padding: 3px 0 4px 0;
   font-size: 0.6rem;
   border-right: 1px solid #b05dbf;
+  display: block; }
+
+.nav-short-item li:hover, .nav-short-item .active {
+  background: #753f7f;
+  color: white;
   display: block; }
 
 .nav-short-item li:last-child {
@@ -5857,6 +5863,11 @@ footer#footer-bottom .inner nav ul.lang-switch li {
   float: left;
   margin-right: 0.5em;
   font-size: 0.875em; }
+
+.cookie-placer {
+  position: fixed;
+  bottom: -25px;
+  z-index: 100; }
 
 @font-face {
   font-family: "Flanders Art Sans Light";
@@ -6241,7 +6252,6 @@ ul.disk li:before {
   left: 0em; }
 
 ul.disk li a:link {
-  color: #2da3ce;
   margin-bottom: 8px;
   text-decoration: underline; }
 
@@ -7437,6 +7447,25 @@ select:focus {
 
 option:not(:checked) {
   background-color: #FFF; }
+
+label input:before [type="text"][required] {
+  content: '*'; }
+
+label input:required {
+  color: #C03;
+  content: '*'; }
+
+input:required:focus {
+  border: 1px solid red;
+  outline: none; }
+
+.form-small-caps {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.5rem; }
+
+.form-more-info {
+  margin: -16px 0 10px 8px; }
 
 @media only screen and (max-width: 578px) {
   .bgimage, #service-navigation, .temp-embed {

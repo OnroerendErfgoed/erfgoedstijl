@@ -11,35 +11,61 @@
         
             <!-- header -->
 <div class="wrapper clearfix">
-<div class="main-navigation-inner clearfix inner">
-<div class="logo-block">
-<a href="index.html">
-<div class="logo-block-title"><h1>Styleguide</h1></div>
-<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
-<h2>Vlaanderen</h2>
-<h4>is erfgoed</h4>
-
-</a>
-</div>
-</div>
+	<div class="main-navigation-inner clearfix inner">
+		<div class="logo-block">
+		<a href="index.html">
+			<div class="logo-block-title"><h1>Styleguide</h1></div>
+			<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
+			<h2>Vlaanderen</h2>
+			<h4>is erfgoed</h4>
+		</a>
+		</div>
+	</div>
 </div>
 <!-- end header -->
+
 
         
 		 
   
 
 <br>
-<h1 class="text-center">Elements</h1>
+<h1 class="text-center">Elementen</h1>
+
+
+
+<div class="row">
+<hr>	
+		<dl class="sub-nav text-center">
+		  <dt><!-- title --></dt>
+		  <dd><a href="#buttons">Buttons</a></dd>
+		  <dd><a href="#lists">Lists</a></dd>
+		  <dd><a href="#tables">Tables</a></dd>
+		  <dd><a href="#utilities">Utilities</a></dd>
+		  <dd><a href="#buttons">Tooltips</a></dd>
+		  <dd><a href="#lists">Statistieken</a></dd>
+		  <dd><a href="#tables">Tables</a></dd>
+		  <dd><a href="#social">Social artikel buttons</a></dd>
+		  <dd><a href="#panels">Callout panels & alerts</a></dd>
+		  <dd><a href="#componenten">Componenten</a></dd>
+		</dl>
+<hr>
+</div>
+
+
 
 
 
 <div class="row">
 
-	<div class="large-12 columns">
+<div class="large-12 columns">
+
 
 <!-- buttons -->
+
+<a name="buttons"></a> 
 <p class="text-center">Buttons</p>
+
 
 <a href="#" class="button">Default Button</a>
 
@@ -148,6 +174,16 @@
   <li><a href="#">This is another</a></li>
   <li><a href="#">Yet another</a></li>
 </ul>
+
+<hr>
+
+<p class="text-center">Download/ Upload</p>
+
+<div class="clearfix">
+    <a class="tiny button"> <i class="fa fa-download"></i> download</a>
+    <a class="tiny button"> <i class="fa fa-upload"></i> upload</a>
+</div>
+
 
 
 
@@ -266,7 +302,7 @@
 
 <!-- Lists -->
 <hr>
-
+<a name="lists"></a> 
 <h1 class="text-center">Lists</h1>
 
 <p class="text-center">List 1</p>
@@ -341,7 +377,7 @@
 
 
 <!-- Tables -->
-
+<a name="tables"></a> 
 <h1 class="text-center">Tables</h1>
 
 <p class="text-center">Table 1</p>
@@ -537,12 +573,12 @@ table-app
 <!-- Utilities -->
 
 <hr>
-
+<a name="utilities"></a> 
 <h1 class="text-center">Utilities</h1>
 
 <!-- Form-->
 
-<p class="text-center">form + error</p>     
+<p class="text-center">Form + error</p>     
 
 <hr>
 
@@ -553,11 +589,11 @@ table-app
       <div class="row">
         <div class="large-12 columns">
           <div class="placeholder-container" tabindex="-1">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail <sup>*</sup></label>
             <input id="email" placeholder="name@mail.com" title="Your Email" type="text"/>
           </div>
           <div class="placeholder-container" tabindex="-1">
-            <label for="username">Naam</label>
+            <label for="username">Naam <sup>*</sup></label>
             <input id="username" placeholder="taeymma" title="Your Username" type="text"/>
           </div>
          
@@ -633,7 +669,7 @@ table-app
           <a href="#" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
       </div>
 
-     <small class="error" style="margin-top:-10px">Gelieve bovenstaand veld correct in te vullen</small>
+     <small class="error" style="margin-top:-16px">Gelieve bovenstaand veld correct in te vullen</small>
 
     </div>
   </div>
@@ -648,7 +684,8 @@ table-app
 
 
 
-<p class="text-center">form 2</p>     
+<hr>
+<p class="text-center">Form 2</p>     
 <form>
 
 
@@ -660,8 +697,8 @@ table-app
   <div class="row">
     <div class="large-12 columns">
 
-      <label>Naam
-        <input type="text" placeholder="naam & voornaam" />
+      <label>Naam <sup>*</sup> of <small class="form-small-caps">verplicht</small>
+        <input type="text" placeholder="naam & voornaam" required />
       </label>
 
       <label>Naam
@@ -679,7 +716,7 @@ table-app
 
       <label>Tel
         <input type="text" placeholder="+32 000 00 00 00" />
-        <div style="margin:-16px 0 0 8px"><small id="nameHelpText">extra informatie </small></div>
+        <div class="form-more-info"><small>extra informatie </small></div>
       </label> 
 
       <label>Geboortedatum
@@ -776,7 +813,8 @@ table-app
 
 </form>
 
-<p class="text-center">form reaction</p>     
+<hr>
+<p class="text-center">Form reaction</p>     
 <p class="text-center">React form</p>
 
 <form class="clearfix">
@@ -838,6 +876,7 @@ table-app
 </ul>
 
 <hr>
+<a name="statistieken"></a> 
 <h1 class="text-center">Statistics</h1>     
   
 <!-- statistieken 1 -->
@@ -881,7 +920,7 @@ table-app
 
 
 <hr>
-
+<a name="social"></a> 
 <h1 class="text-center">Social in article</h1>   
 
 <!-- social buttons on page -->
@@ -894,39 +933,42 @@ table-app
 </ul>
 
 
-
 <hr>
-<h1 class="text-center">Colored panels & alerts</h1>   
+<a name="panels"></a> 
+<h1 class="text-center">Callout panels & alerts</h1>   
 
+<div data-alert class="panel">
+  basis panel
+</div>
 
 <div data-alert class="alert-box success">
-  This is a colored panel
+  succes panel
   <a href="#" class="close">&times;</a>
 </div>
 
 <div data-alert class="alert-box warning">
-  This is a colored panel
+  waarschuwing panel
   <a href="#" class="close">&times;</a>
 </div>
 
 <div data-alert class="alert-box info">
-  This is a colored panel
+  informatie panel
   <a href="#" class="close">&times;</a>
 </div>
 
 <div data-alert class="alert-box alert">
-  This is a colored panel 
+  alert panel 
   <a href="#" class="close">&times;</a>
 </div>
 
 
 <div data-alert class="alert-box secondary">
-  This is a colored panel
+  grijs panel
   <a href="#" class="close">&times;</a>
 </div>
 
 <div data-alert class="alert-box custom">
-  This is a custom alert.
+  custom panel
 </div>
 
 
@@ -934,25 +976,25 @@ table-app
 
 
 <div data-alert class="alert-box alert-success">
-  This is a success alert <a href="#" class="alert-link">link</a>
+  success panel alternatief <a href="#" class="alert-link">link</a>
   <a href="#" class="close">&times;</a>
 </div>
 
 
 <div data-alert class="alert-box alert-warning">
-  This is a warning alert <a href="#" class="alert-link">link</a>
+  waarschuwing panel alternatief <a href="#" class="alert-link">link</a>
   <a href="#" class="close">&times;</a>
 </div>
 
 
 <div data-alert class="alert-box alert-info">
-  This is an info alert <a href="#" class="alert-link">link</a>
+  info panel alternatief <a href="#" class="alert-link">link</a>
   <a href="#" class="close">&times;</a>
 </div>
 
 
 <div data-alert class="alert-box alert-danger">
-  This is an alert <a href="#" class="alert-link">link</a>
+  alert panel alternatief <a href="#" class="alert-link">link</a>
   <a href="#" class="close">&times;</a>
 </div>
 
@@ -960,12 +1002,13 @@ table-app
 
 
 
+<hr>
+<a name="componenten"></a> 
+<h1 class="text-center">Componenten</h1>   
 
-<h1 class="text-center">Components</h1>   
 
 
-
-<a href="#" data-reveal-id="myModal">A modal screen</a>
+<a href="#" data-reveal-id="myModal">Modal scherm</a>
 
 <div id="myModal" class="reveal-modal" data-reveal>
 
@@ -993,7 +1036,7 @@ table-app
 
 <!-- Een modal venster met tabs  -->
 
-<a href="#" data-reveal-id="myModal1">A modal screen + tabs</a>
+<a href="#" data-reveal-id="myModal1">Modal scherm + tabs</a>
 
 <div id="myModal1" class="reveal-modal" data-reveal>
 
