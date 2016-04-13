@@ -6251,6 +6251,11 @@ ul.disk li:before {
   position: absolute;
   left: 0em; }
 
+ul.disk li a {
+  color: #944ea1 !important;
+  margin-bottom: 8px;
+  text-decoration: underline; }
+
 ul.disk li a:link {
   margin-bottom: 8px;
   text-decoration: underline; }
@@ -6633,7 +6638,7 @@ div.subnav-panel h3 {
   overflow: hidden; }
 
 .fl-block .field.full {
-  padding: 0px 0; }
+  padding: 0; }
 
 .fl-block .field.full > a {
   display: block;
@@ -6720,7 +6725,6 @@ div.subnav-panel h3 {
 .fl-block .field figure {
   float: left;
   overflow: hidden;
-  display: inline-block;
   margin: 0.4em 1.5em 0.8em 0;
   padding: 0; }
 

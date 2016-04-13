@@ -8,7 +8,7 @@
 .fl-block .field {border-bottom:1px solid $mid-gray;overflow:hidden;background-color:$white;position:relative;padding:1.6em 1.2em 1.2em 1.2em;}
 .fl-block .field p {margin:0;font-size:$switch-font-size-med;padding:0 0 20px 0}
 .fl-block .field img {height:105px;overflow: hidden}
-.fl-block .field.full {padding:0px 0 ;}
+.fl-block .field.full {padding:0 ;}
 .fl-block .field.full > a {display:block;padding:1.6em 1.4em 1.6em 1.4em;color:#5e5e5e;}
 .fl-block .field.full a:hover{display:block;background-color:$white-gray;-webkit-transition: all 1s ease-in-out;-moz-transition: all 1s ease-in-out;-o-transition: all 1s ease-in-out;transition: all 1s ease-in-out;text-decoration: none; }
 
@@ -48,7 +48,7 @@
 .fl-block .field a.more {font-family: $font-family-medium-serif;color:$dark-purple}
 .fl-block .field a.fa {margin-top:2em;}
 .fl-block .field:last-child {border:none;padding-bottom:1.6em;}
-.fl-block .field figure {float:$default-float;overflow:hidden;display:inline-block;margin:0.4em 1.5em 0.8em 0;padding:0;}
+.fl-block .field figure {float:$default-float;overflow:hidden;margin:0.4em 1.5em 0.8em 0;padding:0;}
 
 
 .fl-block .block-date {text-transform: uppercase;border:none;background-color:$dark-purple;padding:0.75em 1.5em 0.65em;color:$white;}
@@ -56,16 +56,12 @@
 .fl-block .field.block-image {border-bottom:0;}
 .fl-block .field.block-image img {width:100%;display:block;}
 
-
-
 /* -- RSS newsfeed-- */
 
 .fl-block .field.full.rss a {padding:0.8em 1.4em 0.4em 1.4em;}
 .fl-block .field.full.rss a h5 {margin-right:1.8em;}
 .fl-block .field.full.rss a .posted { position: absolute;right:1.2em;font-size:$switch-font-size-sml;line-height:1em;
   color:$silver;top:50%;margin-top:-0.5em;}
-
-
 
 /* -- titles -- */
 
