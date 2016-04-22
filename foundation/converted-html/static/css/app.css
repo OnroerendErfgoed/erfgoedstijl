@@ -6801,6 +6801,10 @@ div.subnav-panel h3 {
 .block-text h3 a:hover {
   text-decoration: underline !important; }
 
+.event {
+  margin: 0 !important;
+  padding: 0 !important; }
+
 /* -- social -- */
 .fl-block .field.social i.fa {
   float: none;
