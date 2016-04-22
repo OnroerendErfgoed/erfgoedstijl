@@ -72,12 +72,12 @@
 .fl-block.style-1 a, .fl-block.style-2 a, .fl-block.style-3 a {color:$white;display:block}
 
 .fl-block .block-title, .fl-block .block-title.naked { background-color:$dark-purple;text-transform: uppercase; letter-spacing:1px;border:none; margin-top:-1px;padding:0.9em 1.4em 0.8em 1.2em;}
-
 .fl-block .block-title.naked { background-color:$white !important;color:$dark-purple !important;padding:0;}
 
 .block-text h3 a { color:$dark-purple !important;margin:-8px 0 0 0;letter-spacing:-1px}
 .block-text h3 a:hover { text-decoration:underline !important }
 
+.event {margin:0 !important;padding:0 !important}
 
 /* -- social -- */
 

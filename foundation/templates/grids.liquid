@@ -3,8 +3,10 @@
 {% block content %}  
 
 
-<h1 class="text-center">Grid types + panels</h1>
-<p class="text-center"><small>Verwijder panel class indien nodig</small></p>
+<h1 class="text-center">Grid types</h1>
+<p class="text-center">
+<small>+ panels onvolledige rijen, verwijderen van padding, centreren, ordenen
+</small></p>
 
 <p class="text-center">type 1</p>
 {% include "grids/grid-1" %}
@@ -44,6 +46,23 @@
 
 <p class="text-center">type 13</p>
 {% include "grids/grid-13" %}
+
+<!-- gebruikt als inventaris lay out voorbeeld -->
+<!--p class="text-center">type 14</p>
+{% include "grids/grid-13" %} -->
+
+<hr>
+<p class="text-center">type 15 - onvolledige rijen</p>
+{% include "grids/grid-15" %}
+<hr>
+<p class="text-center">type 16 - verwijderen van padding</p>
+{% include "grids/grid-16" %}
+<hr>
+<p class="text-center">type 17 - centreren</p>
+{% include "grids/grid-17" %}
+<hr>
+<p class="text-center">type 18 - ordenen</p>
+{% include "grids/grid-18" %}
 
 
 {% endblock %}
