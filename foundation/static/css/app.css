@@ -5607,14 +5607,6 @@ th.hide-for-touch {
   vertical-align: bottom;
   width: 70px; }
 
-.bgimage-site {
-  /*background:url(.../img/pyoes/header-img.jpg) no-repeat right;*/
-  width: 80%;
-  height: 135px;
-  position: absolute;
-  right: 0;
-  z-index: 0; }
-
 .logo-block {
   width: 410px;
   background: url(../img/pyoes/header-logo-bg.png) no-repeat;
@@ -5664,6 +5656,13 @@ th.hide-for-touch {
 
 .bgimage-bouwkunde {
   background: url(../img/pyoes/dibe_1.jpg) no-repeat right;
+  width: 80%;
+  height: 135px;
+  position: absolute;
+  right: 0;
+  z-index: 0; }
+
+.bgimage-site {
   width: 80%;
   height: 135px;
   position: absolute;
