@@ -18,14 +18,14 @@
 
 <div class="panel">
           
-        <h4>Gebruiker</h4>
-        
-         <hr>
+        <h4>Gebruiker</h4>  
           <div class="large-12 columns text-center">
             <input type="radio" name="" value="" id="radio1"><label for="radio1">Natuurlijk persoon</label>
             <input type="radio" name="" value="" id="radio2" checked><label for="radio2">Rechtspersoon</label>
           </div>
-        <hr>
+
+  <br>
+  <br>
 
    <div class="row">
 
@@ -160,7 +160,7 @@
 
 
     <input id="checkbox1" type="checkbox"><label for="checkbox1">publiekrechtelijk</label>
-      <input id="checkbox2" type="checkbox"><label for="checkbox2">privaatrechtelijk</label>
+    <input id="checkbox2" type="checkbox"><label for="checkbox2">privaatrechtelijk</label>
 
 
 </div>
@@ -175,12 +175,13 @@
 <div class="panel">
 
           <h4>Zakelijkrechthouder</h4>
-          <hr>
+       
             <div class="large-12 columns text-center">
               <input type="radio" name="" value="" id="radio1"><label for="radio1">Natuurlijk persoon</label>
               <input type="radio" name="" value="" id="radio2" checked><label for="radio2">Rechtspersoon</label>
             </div>
-          <hr>
+     
+     <br><br>
 
           <div class="row">
 
@@ -291,7 +292,7 @@
 <div class="panel">
 
           <h4>Bewaarplaats</h4>
-          <hr>
+         
 
          <!-- for illustration purposes-->
 
@@ -373,28 +374,24 @@
 <small class="form-small-caps">verplicht</small>
 
  <div class="large-12 columns">
-      <input type="radio" name="" value="" id="radio1" checked><label for="radio1">ja</label>
+      <input type="radio" name="" value="" id="radio1"><label for="radio1">ja</label>
       <input type="radio" name="" value="" id="radio2"><label for="radio2">nee</label>
 </div>
 
-<hr>
-
-
-
-
+<br><br><br>
 
 <strong>Referentie met CAI</strong>
 
 <div class="placeholder-container" tabindex="-1">
   <label for="url-${id}">URL</label>
-  <input data-dojo-attach-point='url' class="placeholder-input-border" style="width:55%; float:left;" type="text" id="url-${id}" pattern=""/>
+  <input data-dojo-attach-point='url' class="placeholder-input-border" style="width:90%; float:left;" type="text" id="url-${id}" pattern=""/>
   <a href="#" data-dojo-attach-event="onClick: _addUrl" class="plus-icon-link"><i class="fa fa-trash plus-icon"></i></a>
 </div>
 
 
 <div class="placeholder-container" tabindex="-1">
   <label for="url-${id}">URL</label>
-  <input data-dojo-attach-point='url' class="placeholder-input-border" style="width:55%; float:left;" type="text" id="url-${id}" pattern=""/>
+  <input data-dojo-attach-point='url' class="placeholder-input-border" style="width:90%; float:left;" type="text" id="url-${id}" pattern=""/>
   <a href="#" data-dojo-attach-event="onClick: _addUrl" class="plus-icon-link"><i class="fa fa-plus plus-icon"></i></a>
 </div>
 
@@ -402,8 +399,27 @@
 
 
 <div class="text-center">
-<button class="button tiny">Verzenden</button>
+<a href="#" data-reveal-id="myModal1" class="tiny button">Verzenden</a>
 </div>
+
+
+<!-- modal -->
+<div id="myModal1" class="reveal-modal" data-reveal>
+ <a class="close-reveal-modal" style="padding: 12px 18px">&#215;</a>
+
+<h3>Archeologische ensemble aanmaken</h3>
+<hr>
+<p>Archeologisch ensemble met ID xx werd aangemaakt.’</p>
+<hr>
+<div class="text-center">
+<a href="#" class="tiny button">Sluit</a>
+</div>
+
+</div>
+<!--end modal -->
+
+
+
 
 
 </div>
