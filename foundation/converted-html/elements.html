@@ -14,7 +14,7 @@
 	<div class="main-navigation-inner clearfix inner">
 		<div class="logo-block">
 		<a href="index.html">
-			<div class="logo-block-title"><h1>Styleguide</h1></div>
+			<div class="logo-block-title"><h1>Stijlgids</h1></div>
 			<img src="static/img/pyoes/OE-vlaanderen-logo.png" width="65">
 			<h2>Vlaanderen</h2>
 			<h4>is erfgoed</h4>
@@ -42,15 +42,13 @@
 		  <dd><a href="#lists">Lijsten</a></dd>
 		  <dd><a href="#tables">Tabellen</a></dd>
 		  <dd><a href="#utilities">Formulieren</a></dd>
-		  <dd><a href="#lists">Statistieken</a></dd>
+		  <dd><a href="#statistieken">Statistieken</a></dd>
 		  <dd><a href="#social">Social artikel knoppen</a></dd>
 		  <dd><a href="#panels">Callout panels & alerts</a></dd>
 		  <dd><a href="#componenten">Componenten</a></dd>
 		</dl>
 <hr>
 </div>
-
-
 
 
 
@@ -65,41 +63,41 @@
 <p class="text-center">Knoppen</p>
 
 
-<a href="#" class="button">Default Button</a>
+<a href="#" class="button">primair actief</a>
 
-<a href="#" class="button disabled">Disabled Button</a>
+<a href="#" class="button disabled">primair niet actief</a>
 
-<a href="#" class="button secondary">Color Button</a>
+<a href="#" class="button secondary">secundair actief</a>
 
-<a href="#" class="button success">Succes Button</a>
+<a href="#" class="button success">Succes</a>
 
-<a href="#" class="button alert">Alert Button</a>
+<a href="#" class="button alert">Fout</a>
 
 
 <br><br>
 
 <!-- Small Class -->
-<a href="#" class="button small">Default Button</a>
+<a href="#" class="button small">primair actief</a>
 
-<a href="#" class="button disabled small">Disabled Button</a>
+<a href="#" class="button disabled small">primair niet actief</a>
 
-<a href="#" class="button secondary small">Secondary Button</a>
+<a href="#" class="button secondary small">secundair actief</a>
 
-<a href="#" class="button success small">Succes Button</a>
+<a href="#" class="button success small">Succes</a>
 
-<a href="#" class="button alert small">Alert Button</a>
+<a href="#" class="button alert small">Fout</a>
 
 <br><br>
 
-<a href="#" class="button tiny">Default Button</a>
+<a href="#" class="button tiny">primair actief</a>
 
-<a href="#" class="button disabled tiny">Disabled Button</a>
+<a href="#" class="button disabled tiny">primair niet actief</a>
 
-<a href="#" class="button secondary tiny">Color Button</a>
+<a href="#" class="button secondary tiny">secundair actief</a>
 
-<a href="#" class="button success tiny">Color Button</a>
+<a href="#" class="button success tiny">Succes</a>
 
-<a href="#" class="button alert tiny">Alert Button</a>
+<a href="#" class="button alert tiny">Fout</a>
 
 
 
@@ -107,34 +105,34 @@
 <br><br>
 
 <!-- Expand Class -->
-<a href="#" class="button expand">Expanded Button</a>
+<a href="#" class="button expand">uitgelijnd</a>
 
 <!-- Expand Class Small-->
-<a href="#" class="button expand small">Small Expanded Button</a>
+<a href="#" class="button expand small">klein uitgelijnd</a>
 
 <!-- Expand Class Small-->
-<a href="#" class="button expand tiny">Tiny Expanded Button</a>
+<a href="#" class="button expand tiny">kleiner uitgelijnd</a>
 
 
 
 
 
 <hr>
-<p class="text-center">Button group</p>
+<p class="text-center">Groep</p>
 
 <div class="button-bar">
   <ul class="button-group">
-    <li><a href="#" class="button tiny">Button 1</a></li>
-    <li><a href="#" class="button tiny">Button 2</a></li>
-    <li><a href="#" class="button tiny">Button 3</a></li>
+    <li><a href="#" class="button tiny">knop 1</a></li>
+    <li><a href="#" class="button tiny">knop 2</a></li>
+    <li><a href="#" class="button tiny">knop 3</a></li>
   </ul>
 </div>
 
 
 <ul class="button-group even-3">
-  <li><a href="#" class="button tiny">Button 1</a></li>
-  <li><a href="#" class="button tiny">Button 2</a></li>
-  <li><a href="#" class="button tiny">Button 3</a></li>
+  <li><a href="#" class="button tiny">knop 1</a></li>
+  <li><a href="#" class="button tiny">knop 2</a></li>
+  <li><a href="#" class="button tiny">knop 3</a></li>
 </ul>
 
 
@@ -164,13 +162,13 @@
 
 <hr>
 
-<p class="text-center">Split Button ( click )</p>
+<p class="text-center">'split' knop ( click )</p>
 
-<a href="#" class="button split tiny">Split Button <span data-dropdown="drop"></span></a><br>
+<a href="#" class="button split tiny">split knop <span data-dropdown="drop"></span></a><br>
 <ul id="drop" class="f-dropdown" data-dropdown-content>
-  <li><a href="#">This is a link</a></li>
-  <li><a href="#">This is another</a></li>
-  <li><a href="#">Yet another</a></li>
+  <li><a href="#">link 1</a></li>
+  <li><a href="#">link 2</a></li>
+  <li><a href="#">link3</a></li>
 </ul>
 
 <hr>
@@ -213,22 +211,15 @@
        
 </form>
 
-
-
-
-
-
-
-
 <hr>
 
-<p class="text-center">Dropdown Link ( click )</p>
+<p class="text-center">Link met lijst ( aanklikken )</p>
 
-<a data-dropdown="drop3" aria-controls="drop1" aria-expanded="false">Link met dropdown</a>
+<a data-dropdown="drop3" aria-controls="drop1" aria-expanded="false">Link met lijst</a>
 <ul id="drop3" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-  <li><a href="#">This is a link</a></li>
-  <li><a href="#">This is another</a></li>
-  <li><a href="#">Yet another</a></li>
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
 </ul>
 
 
@@ -236,15 +227,15 @@
 
 <p class="text-center">Labels</p>
  
-<span class="label">Regular Label</span>
-<span class="alert label">Alert Label</span>
-<span class="success label">Success Label</span>
-<span class="warning label">Warning Label</span>
-<span class="secondary label">Secondary Label</span>
+<span class="label">Algemeen Label</span>
+<span class="alert label">Alarm Label</span>
+<span class="success label">Succes Label</span>
+<span class="warning label">Waarschuwing Label</span>
+<span class="secondary label">Secundair Label</span>
 
 <hr>
 
-<p class="text-center">Colored dots</p>
+<p class="text-center">badge</p>
 
 
 <small class="label bg-primary round">&nbsp;</small>
@@ -294,8 +285,7 @@
 <!-- tooltips -->
 <hr>
 <p class="text-center">Tooltips</p>
-
-<span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!">link met tooltip</span>
+<span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips - Lorem ipsum dolores vamit">link met tooltip</span>
 
 
 <!-- Lists -->
@@ -303,65 +293,65 @@
 <a name="lists"></a> 
 <h1 class="text-center">Lijsten</h1>
 
-<p class="text-center">List 1</p>
+<p class="text-center">Lijst 1</p>
 
 <section>
-<h4>List title</h4>
+<h4>Lijst titel</h4>
 <ul class="disk">
-<li>content <a href="index.html">link</a> content</li>
-<li>content <a href="index.html">link</a></li>
+<li>tekst <a href="index.html">link</a> tekst</li>
+<li>tekst <a href="index.html">link</a></li>
 <li><a href="index.html">link</a></li>
 </ul>
 </section>   
 <hr>
-<p class="text-center">List 2</p>
+<p class="text-center">Lijst 2</p>
 
 <section>
-<h5>NoDisk list item</h5>
+<h5>Geen cirkel lijst item</h5>
 <ul class="nodisk">
   <li><a href="">List item with a much longer description or more content.</a></li>
-  <li>List <a href="">List item with a much longer description or more content.</a> item</li>
-  <li>List item </li>
+  <li>Lijst <a href="">List item with a much longer description or more content.</a> item</li>
+  <li>Lijst item </li>
  </ul>
 </section>
 <hr>
-<p class="text-center">List 3</p>
+<p class="text-center">Lijst 3</p>
 <section>
-<h5>Ordered list</h5>
+<h5>Geordende lijst</h5>
 
 <ol>
-  <li>List item with a much longer <a href="">description</a> or more content.</li>
-  <li>List item</li>
-  <li>List item
+  <li>Lijst item with a much longer <a href="">description</a> or more content.</li>
+  <li>Lijst item</li>
+  <li>Lijst item
     <ol>
-      <li>Nested <a href="">List Item</a></li>
-      <li>Nested List Item</li>
-      <li>Nested List Item</li>
+      <li>Geneste lijst <a href="">Lijst Item link</a></li>
+      <li>Geneste lijst item</li>
+      <li>Geneste lijst item</li>
     </ol>
   </li>
-  <li>List item</li>
-  <li>List item</li>  
-  <li>List item</li>
+  <li>Lijst item</li>
+  <li>Lijst item</li>  
+  <li>Lijst item</li>
  </ol>
 
  </section>
 <hr>
-<p class="text-center">List 4</p>
+<p class="text-center">Lijst 4</p>
 
 
 <section>
-<h5>No numbers Ordered list</h5>
+<h5>Geordende lijst zonder nummering</h5>
 
 <ol class="nonumbers">
-  <li>List item with a much longer <a href="">description</a> or more content.</li>
-  <li>List item</li>
-  <li>List item</li>
+  <li>Lijst item met meer inhoud <a href="">een link</a> en nog meer inhoud.</li>
+  <li>Lijst item</li>
+  <li>Lijst item</li>
 </ol>
 
 </section>
 
 <hr>
-<p class="text-center">List 5</p>
+<p class="text-center">Lijst 5</p>
 
 <section>
 <ul class="source">
@@ -378,7 +368,7 @@
 <a name="tables"></a> 
 <h1 class="text-center">Tabellen</h1>
 
-<p class="text-center">Table 1</p>
+<p class="text-center">Tabel 1</p>
 
 base table
 <table>
@@ -454,7 +444,7 @@ table-app
 <small><a href="" class="right">refresh <i class="fa fa-refresh"></i></a></small>
 
 <hr>
-<p class="text-center">Table 2</p>
+<p class="text-center">Tabel 2</p>
 
 table-app
 <table class="table-app">
@@ -527,7 +517,7 @@ table-app
 
 
 <hr>
-<p class="text-center">Table 3</p>
+<p class="text-center">Tabel 3</p>
 
 
 <table class="table border">
@@ -1161,7 +1151,6 @@ table-app
 
 </div>
 </div>
-
 
 
 

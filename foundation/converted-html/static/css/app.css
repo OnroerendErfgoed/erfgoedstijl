@@ -7462,7 +7462,7 @@ label input:before [type="text"][required] {
   content: '*'; }
 
 label input:required {
-  color: #C03;
+  color: #000;
   content: '*'; }
 
 input:required:focus {
